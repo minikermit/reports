@@ -1,10 +1,12 @@
 class ReportLine < ActiveRecord::Base
 
+  belongs_to :report
   has_many :structures
   has_many :account_plans, :through => :structures
 
   validates_uniqueness_of :line_id
   validates_presence_of :line_id , :line_caption
+  validates_associated :reports
 
 end
 

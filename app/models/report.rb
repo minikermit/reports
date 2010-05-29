@@ -7,7 +7,9 @@ validates_uniqueness_of :reference
 validates_uniqueness_of :name
 validates_presence_of :reference
 validates_presence_of :name
+validates_presence_of :report_category
 validates_numericality_of :reference
+validates_associated :report_category
 
 end
 

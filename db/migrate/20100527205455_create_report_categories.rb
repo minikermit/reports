@@ -1,8 +1,8 @@
 class CreateReportCategories < ActiveRecord::Migration
   def self.up
     create_table :report_categories do |t|
-      t.string :name
-      t.string :comments
+      t.string :name, :limit   => 50, :null => false
+      t.string :comments  ,  :default => '-'
 
       t.timestamps
     end

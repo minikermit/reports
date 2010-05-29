@@ -3,8 +3,8 @@ class CreateAccountPlans < ActiveRecord::Migration
     create_table :account_plans do |t|
       t.string :account_id
       t.string :name
-      t.string :comments
-      t.integer :order
+      t.string :comments  ,  :default => '-'
+      t.integer :position ,  :default => 1
 
       t.timestamps
     end

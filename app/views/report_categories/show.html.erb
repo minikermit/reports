@@ -1,5 +1,5 @@
 
-  <h3>Category:
+  <h3 align='center' color='red'>
   <%=h @report_category.name %>
   </h3>
 
@@ -9,20 +9,36 @@
   </span>
 </p>
 
-
-<%= link_to 'Edit', edit_report_category_path(@report_category) %> |
 <%= link_to 'Back', report_categories_path %>
    <hr />
 
-<h4>Reports</h4>
+<h4>this category includes the following reports:</h4>
+
+  <table>
+      <tr>
+       <th> reference </th>
+       <th> </th>
+       <th align='left'> name </th>
+      </tr>
 
   <% for report in @report_category.reports %>
-    <li> <%= report.reference %> <%= report.name %> </li> <!--Created on report.created_at.strftime("%e %B, %Y") %--> 
+
+    <tr>
+     <td> <%= report.reference %> </td>
+     <td> ................... </td>      
+     <td><%= report.name %> </td>
+     <!--Created on report.created_at.strftime("%e %B, %Y") %-->
+    </tr>
   <% end %>
+  </table>
+
+
+  <br />
+  <br />
 
   <%= form_tag :action => "report", :id => @report_category %>
      <%= text_field "report", "reference" %> <%= text_field "report", "name" %><br />
-    <%= submit_tag "Add a new report" %>
+    <%= submit_tag "Add a new report in this category" %>
   </form>
 
 
