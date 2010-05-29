@@ -1,0 +1,31 @@
+<h1>New report_line</h1>
+
+<% form_for(@report_line) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :line_id %><br />
+    <%= f.text_field :line_id %>
+  </p>
+  <p>
+    <%= f.label :line_caption %><br />
+    <%= f.text_field :line_caption %>
+  </p>
+  <p>
+    <%= f.label :comments %><br />
+    <%= f.text_field :comments %>
+  </p>
+  <p>
+    <%= f.label :order %><br />
+    <%= f.text_field :order %>
+  </p>
+  <p>
+    <%= f.label :line_morphing %><br />
+    <%= f.text_field :line_morphing %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', report_lines_path %>

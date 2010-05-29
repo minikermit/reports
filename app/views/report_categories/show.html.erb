@@ -1,0 +1,27 @@
+
+  <h3>Category:
+  <%=h @report_category.name %>
+  </h3>
+
+<p>
+  <b>Comments:</b>
+  <%=h @report_category.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_category_path(@report_category) %> |
+<%= link_to 'Back', report_categories_path %>
+   <hr />
+
+<h4>Reports</h4>
+
+  <% for report in @report_category.reports %>
+    <li> <%= report.name %> </li> <!--Created on report.created_at.strftime("%e %B, %Y") %--> 
+  <% end %>
+
+  <%= form_tag :action => "report", :id => @report_category %>
+    <%= text_field "report", "name" %><br />
+    <%= submit_tag "Add a new report" %>
+  </form>
+
+

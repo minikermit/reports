@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  line_id: MyString
+  line_caption: MyString
+  comments: MyString
+  order: 1
+  line_morphing: MyString
+
+two:
+  line_id: MyString
+  line_caption: MyString
+  comments: MyString
+  order: 1
+  line_morphing: MyString

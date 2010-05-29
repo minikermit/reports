@@ -1,0 +1,22 @@
+<h1>Listing report_categories</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Comments</th>
+  </tr>
+
+<% @report_categories.each do |report_category| %>
+  <tr>
+    <td><%=h report_category.name %></td>
+    <td><%=h report_category.comments %></td>
+    <td><%= link_to 'Show', report_category %></td>
+    <td><%= link_to 'Edit', edit_report_category_path(report_category) %></td>
+    <td><%= link_to 'Destroy', report_category, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New report_category', new_report_category_path %>

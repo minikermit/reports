@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  reference: MyString
+  name: MyString
+  report_category_id: 1
+  comments: MyString
+  order: 1
+
+two:
+  reference: MyString
+  name: MyString
+  report_category_id: 1
+  comments: MyString
+  order: 1

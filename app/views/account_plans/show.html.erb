@@ -1,0 +1,23 @@
+<p>
+  <b>Account:</b>
+  <%=h @account_plan.account_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @account_plan.name %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%=h @account_plan.comments %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%=h @account_plan.order %>
+</p>
+
+
+<%= link_to 'Edit', edit_account_plan_path(@account_plan) %> |
+<%= link_to 'Back', account_plans_path %>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  report_line_id: 1
+  account_plan_id: 1
+
+two:
+  report_line_id: 1
+  account_plan_id: 1

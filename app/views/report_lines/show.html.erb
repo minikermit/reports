@@ -1,0 +1,28 @@
+<p>
+  <b>Line:</b>
+  <%=h @report_line.line_id %>
+</p>
+
+<p>
+  <b>Line caption:</b>
+  <%=h @report_line.line_caption %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%=h @report_line.comments %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%=h @report_line.order %>
+</p>
+
+<p>
+  <b>Line morphing:</b>
+  <%=h @report_line.line_morphing %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_line_path(@report_line) %> |
+<%= link_to 'Back', report_lines_path %>

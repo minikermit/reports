@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  account_id: MyString
+  name: MyString
+  comments: MyString
+  order: 1
+
+two:
+  account_id: MyString
+  name: MyString
+  comments: MyString
+  order: 1
