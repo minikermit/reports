@@ -6,7 +6,6 @@ class ReportLine < ActiveRecord::Base
 
   validates_uniqueness_of :line_id
   validates_presence_of :line_id , :line_caption
-  validates_associated :reports
 
 end
 

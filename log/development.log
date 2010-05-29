@@ -4717,3 +4717,9 @@ Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-29 09:35:2
 Rendering template within layouts/report_categories
 Rendering report_categories/index
 Completed in 48ms (View: 25, DB: 1) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-05-29 09:47:15) [GET]
+Rendering template within layouts/report_categories
+Rendering report_categories/new
+Completed in 50ms (View: 28, DB: 0) | 200 OK [http://localhost/report_categories/new]
