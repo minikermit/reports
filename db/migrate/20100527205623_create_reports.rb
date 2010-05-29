@@ -5,7 +5,7 @@ class CreateReports < ActiveRecord::Migration
       t.string :name
       t.integer :report_category_id
       t.string :comments
-      t.integer :order
+      t.integer :position,  :default => 1
 
       t.timestamps
     end

@@ -2,6 +2,10 @@ class ReportCategory < ActiveRecord::Base
 
 has_many :reports
 
+validates_uniqueness_of :name
+validates_presence_of :name    
+
+
 end
 
 # == Schema Information

@@ -3,6 +3,12 @@ class Report < ActiveRecord::Base
 belongs_to :report_category
 has_many :report_lines
 
+validates_uniqueness_of :reference
+validates_uniqueness_of :name
+validates_presence_of :reference
+validates_presence_of :name
+validates_numericality_of :reference
+
 end
 
 # == Schema Information

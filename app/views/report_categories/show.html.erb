@@ -4,8 +4,9 @@
   </h3>
 
 <p>
-  <b>Comments:</b>
-  <%=h @report_category.comments %>
+  <span style="font-weight: bold;">
+    Comments: <%=h @report_category.comments %>
+  </span>
 </p>
 
 
@@ -16,11 +17,11 @@
 <h4>Reports</h4>
 
   <% for report in @report_category.reports %>
-    <li> <%= report.name %> </li> <!--Created on report.created_at.strftime("%e %B, %Y") %--> 
+    <li> <%= report.reference %> <%= report.name %> </li> <!--Created on report.created_at.strftime("%e %B, %Y") %--> 
   <% end %>
 
   <%= form_tag :action => "report", :id => @report_category %>
-    <%= text_field "report", "name" %><br />
+     <%= text_field "report", "reference" %> <%= text_field "report", "name" %><br />
     <%= submit_tag "Add a new report" %>
   </form>
 
