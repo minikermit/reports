@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="53cdd2aa-28b7-454f-9c55-184ed1007fdc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20100527210731_create_report_lines.rb" afterPath="$PROJECT_DIR$/db/migrate/20100527210731_create_report_lines.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20100527205623_create_reports.rb" afterPath="$PROJECT_DIR$/db/migrate/20100527205623_create_reports.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/report.rb" afterPath="$PROJECT_DIR$/app/models/report.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/report_category.rb" afterPath="$PROJECT_DIR$/app/models/report_category.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20100527211141_report_lines_account_plans.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/report_line.rb" afterPath="$PROJECT_DIR$/app/models/report_line.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20100527205859_create_account_plans.rb" afterPath="$PROJECT_DIR$/db/migrate/20100527205859_create_account_plans.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20100527205455_create_report_categories.rb" afterPath="$PROJECT_DIR$/db/migrate/20100527205455_create_report_categories.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="" />
     </list>
     <ignored path="reports.iws" />
     <ignored path=".idea/workspace.xml" />
