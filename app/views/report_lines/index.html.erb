@@ -7,6 +7,8 @@
     <th>Comments</th>
     <th>Order</th>
     <th>Line morphing</th>
+    <th>Report</th>
+            
   </tr>
 
 <% @report_lines.each do |report_line| %>
@@ -16,6 +18,7 @@
     <td><%=h report_line.comments %></td>
     <td><%=h report_line.position %></td>
     <td><%=h report_line.line_morphing %></td>
+    <td><%=h report_line.report.name %></td>
     <td><%= link_to 'Show', report_line %></td>
     <td><%= link_to 'Edit', edit_report_line_path(report_line) %></td>
     <td><%= link_to 'Destroy', report_line, :confirm => 'Are you sure?', :method => :delete %></td>

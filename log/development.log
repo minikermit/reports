@@ -4723,3 +4723,126 @@ Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-05-29 09:47:15)
 Rendering template within layouts/report_categories
 Rendering report_categories/new
 Completed in 50ms (View: 28, DB: 0) | 200 OK [http://localhost/report_categories/new]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-05-29 22:52:42) [GET]
+  [4;36;1mReport Load (24.8ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Rendering template within layouts/reports
+Rendering reports/index
+Completed in 310ms (View: 151, DB: 25) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#new (for 127.0.0.1 at 2010-05-29 22:52:46) [GET]
+Rendering template within layouts/reports
+Rendering reports/new
+Completed in 112ms (View: 86, DB: 0) | 200 OK [http://localhost/reports/new]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-29 22:52:57) [GET]
+  [4;35;1mReportCategory Load (1.8ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 98ms (View: 71, DB: 2) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-05-29 22:53:00) [GET]
+Rendering template within layouts/report_categories
+Rendering report_categories/new
+Completed in 82ms (View: 53, DB: 0) | 200 OK [http://localhost/report_categories/new]
+
+
+Processing ReportCategoriesController#create (for 127.0.0.1 at 2010-05-29 22:53:07) [POST]
+  Parameters: {"report_category"=>{"name"=>"P", "comments"=>"-"}, "commit"=>"Create", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw="}
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'P') LIMIT 1[0m
+  [4;35;1mReportCategory Create (0.6ms)[0m   [0mINSERT INTO "report_categories" ("name", "created_at", "comments", "updated_at") VALUES('P', '2010-05-29 20:53:07', '-', '2010-05-29 20:53:07')[0m
+Redirected to http://localhost:3000/report_categories/2
+Completed in 459ms (DB: 1) | 302 Found [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-29 22:53:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;35;1mReport Load (0.3ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+Completed in 72ms (View: 47, DB: 1) | 200 OK [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-29 22:53:12) [GET]
+  [4;36;1mReportCategory Load (5.0ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 57ms (View: 31, DB: 5) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#edit (for 127.0.0.1 at 2010-05-29 22:53:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportCategory Load (1.1ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/edit
+Completed in 61ms (View: 42, DB: 1) | 200 OK [http://localhost/report_categories/2/edit]
+
+
+Processing ReportCategoriesController#update (for 127.0.0.1 at 2010-05-29 22:53:26) [PUT]
+  Parameters: {"report_category"=>{"name"=>"P&L", "comments"=>"-"}, "commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;36;1mReportCategory Load (3.6ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+  [4;35;1mReportCategory Load (0.2ms)[0m   [0mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'P&L' AND "report_categories".id <> 2) LIMIT 1[0m
+  [4;36;1mReport Load (1.7ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+  [4;35;1mReportCategory Update (26.6ms)[0m   [0mUPDATE "report_categories" SET "updated_at" = '2010-05-29 20:53:26', "name" = 'P&L' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/report_categories/2
+Completed in 211ms (DB: 32) | 302 Found [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-29 22:53:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportCategory Load (1.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+Completed in 44ms (View: 23, DB: 2) | 200 OK [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#report (for 127.0.0.1 at 2010-05-29 22:53:52) [POST]
+  Parameters: {"report"=>{"name"=>"Test report", "reference"=>"1000"}, "commit"=>"Add a new report in this category", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '1000') LIMIT 1[0m
+  [4;36;1mReport Load (2.1ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'Test report') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+  [4;36;1mReport Create (1.2ms)[0m   [0;1mINSERT INTO "reports" ("reference", "name", "position", "created_at", "comments", "updated_at", "report_category_id") VALUES('1000', 'Test report', 1, '2010-05-29 20:53:52', '-', '2010-05-29 20:53:52', 2)[0m
+Redirected to http://localhost:3000/report_categories/2
+Completed in 246ms (DB: 4) | 302 Found [http://localhost/report_categories/report/2]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-29 22:53:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+Completed in 104ms (View: 62, DB: 1) | 200 OK [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#report (for 127.0.0.1 at 2010-05-29 22:54:03) [POST]
+  Parameters: {"report"=>{"name"=>"2eme report", "reference"=>"1000"}, "commit"=>"Add a new report in this category", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+  [4;36;1mReport Load (4.8ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '1000') LIMIT 1[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = '2eme report') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Redirected to http://localhost:3000/report_categories/2
+Completed in 90ms (DB: 5) | 302 Found [http://localhost/report_categories/report/2]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-29 22:54:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportCategory Load (1.1ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+Completed in 77ms (View: 42, DB: 2) | 200 OK [http://localhost/report_categories/2]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-05-29 22:54:21) [GET]
+  [4;35;1mReport Load (0.9ms)[0m   [0mSELECT * FROM "reports" [0m
+Rendering template within layouts/reports
+Rendering reports/index
+Completed in 68ms (View: 38, DB: 1) | 200 OK [http://localhost/reports]

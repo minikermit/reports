@@ -22,7 +22,10 @@
   <b>Line morphing:</b>
   <%=h @report_line.line_morphing %>
 </p>
-
+<p>
+  <b>Report:</b>
+  <%=h @report_line.report.name %>
+</p>
 
 <%= link_to 'Edit', edit_report_line_path(@report_line) %> |
 <%= link_to 'Back', report_lines_path %>
