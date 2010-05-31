@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20100527213814) do
   create_table "structures", :force => true do |t|
     t.integer  "report_line_id"
     t.integer  "account_plan_id"
+    t.string   "comments",        :limit => 100, :default => "-"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -44,6 +44,9 @@
   <td> <%= report_line.line_id %> </td>
   <td> ................... </td>
   <td><%= report_line.line_caption %> </td>
+  <td><%= link_to 'Show', report_line %></td>
+  <td><%= link_to 'Edit', edit_report_line_path(report_line) %></td>   
+
   <!--Created on report.created_at.strftime("%e %B, %Y") %-->
  </tr>
    <% end %>
@@ -53,10 +56,14 @@
    <br />
    <br />
 
+
+<hr />
+  
+
   <%= form_tag :action => "reportline", :id => @report %>
   <%= label "report_line", "Line Id" %>
   <%= text_field "report_line", "line_id" %> <br />
-  <%= label "report_line", "Line caption" %>   
+  <%= label "report_line", "Caption" %>
   <%= text_field "report_line", "line_caption" %><br />
   <%= submit_tag "Add a new line to this report" %>
    </form>

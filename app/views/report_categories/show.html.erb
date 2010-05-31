@@ -28,10 +28,16 @@
      <td> ................... </td>      
      <td><%= report.name %> </td>
      <!--Created on report.created_at.strftime("%e %B, %Y") %-->
+     <td><%= link_to 'Show', report %></td>
+     <td><%= link_to 'Edit', edit_report_path(report) %></td> 
+
     </tr>
   <% end %>
   </table>
 
+
+<hr />
+  
 
   <br />
   <br />

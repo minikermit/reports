@@ -1,16 +1,16 @@
-<p>
-  <b>Line:</b>
-  <%=h @report_line.id %>  <%=h @report_line.line_id %>
-</p>
 
-<p>
-  <b>Line caption:</b>
-  <%=h @report_line.line_caption %>
-</p>
+<h3 align='center' color='red'>
+<%=h @report_line.line_caption %>
+</h3>
 
 <p>
   <b>Comments:</b>
   <%=h @report_line.comments %>
+</p>
+
+<p>
+  <b>Line:</b>
+  <%=h @report_line.line_id %>
 </p>
 
 <p>
@@ -50,6 +50,8 @@
   <td><%= account_plan.name %> </td>
   <td><%= account_plan.position %> </td>
   <!--Created on report.created_at.strftime("%e %B, %Y") %-->
+  <td><%= link_to 'Show', account_plan %></td>
+  <td><%= link_to 'Edit', edit_account_plan_path(account_plan) %></td>   
  </tr>
    <% end %>
    </table>
@@ -58,11 +60,16 @@
    <br />
    <br />
 
+<hr />
+
 <%= form_tag :action => "structure", :id => @report_line %>
 
    <%= label "structure", "Line Id" %><br />
    <%= text_field "structure", "report_line_id", :value => @report_line.id %><br />
    <%= label "structure", "Account Id" %><br />
    <%= text_field "structure", "account_plan_id" %><br />
+   <%= label "structure", "Comments" %><br />
+   <%= text_field "structure", "comments"%><br />
+
    <%= submit_tag "Map a new account to this report line" %>
 </form>

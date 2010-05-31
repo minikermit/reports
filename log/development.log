@@ -5930,3 +5930,1188 @@ Rendering report_lines/show
   [4;35;1mReport Load (1.9ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
   [4;36;1mAccountPlan Load (1.0ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 4)) [0m
 Completed in 83ms (View: 59, DB: 3) | 200 OK [http://localhost/report_lines/4]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-05-31 21:19:40) [GET]
+  [4;36;1mReportLine Load (5.4ms)[0m   [0;1mSELECT * FROM "report_lines" [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/index
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mReport Load (1.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Completed in 271ms (View: 197, DB: 7) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:19:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mReportLine Load (2.0ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 3) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mAccountPlan Load (0.7ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 3)) [0m
+Completed in 116ms (View: 83, DB: 3) | 200 OK [http://localhost/report_lines/3]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:19:52) [POST]
+  Parameters: {"structure"=>{"account_plan_id"=>"2", "report_line_id"=>"3"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"3"}
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 3) [0m
+  [4;35;1mStructure Load (1.5ms)[0m   [0mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 3 AND "structures".account_plan_id = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/report_lines/3
+Completed in 66ms (DB: 2) | 302 Found [http://localhost/report_lines/structure/3]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:19:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReportLine Load (0.7ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 3) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (1.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mAccountPlan Load (0.6ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 3)) [0m
+Completed in 386ms (View: 368, DB: 3) | 200 OK [http://localhost/report_lines/3]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:20:01) [POST]
+  Parameters: {"structure"=>{"account_plan_id"=>"1", "report_line_id"=>"3"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"3"}
+  [4;35;1mReportLine Load (1.1ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 3) [0m
+  [4;36;1mStructure Load (0.4ms)[0m   [0;1mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 3 AND "structures".account_plan_id = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/report_lines/3
+Completed in 61ms (DB: 1) | 302 Found [http://localhost/report_lines/structure/3]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:20:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 3) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mAccountPlan Load (0.7ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 3)) [0m
+Completed in 89ms (View: 74, DB: 2) | 200 OK [http://localhost/report_lines/3]
+  [4;36;1mSQL (9.4ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (156.5ms)[0m   [0;1mCREATE TABLE "account_plans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "account_id" varchar(255), "name" varchar(255), "comments" varchar(255) DEFAULT '-', "position" integer DEFAULT 1, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (5.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.8ms)[0m   [0;1mCREATE TABLE "report_categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50) NOT NULL, "comments" varchar(255) DEFAULT '-', "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (136.8ms)[0m   [0;1mCREATE TABLE "report_lines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "line_id" varchar(50) NOT NULL, "line_caption" varchar(50) NOT NULL, "comments" varchar(100) DEFAULT '-', "position" integer DEFAULT 1, "line_morphing" varchar(50), "report_id" integer(50) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (121.3ms)[0m   [0;1mCREATE TABLE "reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "reference" varchar(50) NOT NULL, "name" varchar(50) NOT NULL, "report_category_id" integer NOT NULL, "comments" varchar(100) DEFAULT '-', "position" integer DEFAULT 1, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (8.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (129.5ms)[0m   [0;1mCREATE TABLE "structures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "report_line_id" integer, "account_plan_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (116.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (110.2ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (106.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100527213814')[0m
+  [4;36;1mSQL (110.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100527210731')[0m
+  [4;35;1mSQL (99.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100527205623')[0m
+  [4;36;1mSQL (99.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100527205859')[0m
+  [4;35;1mSQL (99.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100527205455')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (187.8ms)[0m   [0;1mCREATE TABLE "account_plans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "account_id" varchar(255), "name" varchar(255), "comments" varchar(255) DEFAULT '-', "position" integer DEFAULT 1, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (153.0ms)[0m   [0;1mCREATE TABLE "report_categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50) NOT NULL, "comments" varchar(255) DEFAULT '-', "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (159.0ms)[0m   [0;1mCREATE TABLE "report_lines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "line_id" varchar(50) NOT NULL, "line_caption" varchar(50) NOT NULL, "comments" varchar(100) DEFAULT '-', "position" integer DEFAULT 1, "line_morphing" varchar(50), "report_id" integer(50) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (121.9ms)[0m   [0;1mCREATE TABLE "reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "reference" varchar(50) NOT NULL, "name" varchar(50) NOT NULL, "report_category_id" integer NOT NULL, "comments" varchar(100) DEFAULT '-', "position" integer DEFAULT 1, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (131.6ms)[0m   [0;1mCREATE TABLE "structures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "report_line_id" integer, "account_plan_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (156.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (88.2ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (2.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (138.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100527213814')[0m
+  [4;36;1mSQL (99.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100527210731')[0m
+  [4;35;1mSQL (99.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100527205623')[0m
+  [4;36;1mSQL (99.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100527205859')[0m
+  [4;35;1mSQL (99.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100527205455')[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 21:43:41) [GET]
+  [4;36;1mReportCategory Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: report_categories: SELECT * FROM "report_categories" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: report_categories: SELECT * FROM "report_categories" ):
+  app/controllers/report_categories_controller.rb:5:in `index'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (291.6ms)
+Rendered rescues/_request_and_response (4.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (158.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (82.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateReportCategories (20100527205455)
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE TABLE "report_categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(50) NOT NULL, "comments" varchar(255) DEFAULT '-', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527205455')[0m
+Migrating to CreateReports (20100527205623)
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "reference" varchar(50) NOT NULL, "name" varchar(50) NOT NULL, "report_category_id" integer NOT NULL, "comments" varchar(100) DEFAULT '-', "position" integer DEFAULT 1, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527205623')[0m
+Migrating to CreateAccountPlans (20100527205859)
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE TABLE "account_plans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "account_id" varchar(255), "name" varchar(255), "comments" varchar(255) DEFAULT '-', "position" integer DEFAULT 1, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527205859')[0m
+Migrating to CreateReportLines (20100527210731)
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE TABLE "report_lines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "line_id" varchar(50) NOT NULL, "line_caption" varchar(50) NOT NULL, "comments" varchar(100) DEFAULT '-', "position" integer DEFAULT 1, "line_morphing" varchar(50), "report_id" integer(50) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527210731')[0m
+Migrating to CreateStructures (20100527213814)
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TABLE "structures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "report_line_id" integer, "account_plan_id" integer, "comments" varchar(100) DEFAULT '-', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527213814')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_list("account_plans")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("report_categories")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("report_lines")[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mPRAGMA index_list("reports")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("structures")[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 21:44:14) [GET]
+  [4;35;1mReportCategory Load (1.0ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 85ms (View: 63, DB: 1) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-05-31 21:44:16) [GET]
+Rendering template within layouts/report_categories
+Rendering report_categories/new
+Completed in 43ms (View: 32, DB: 0) | 200 OK [http://localhost/report_categories/new]
+
+
+Processing ReportCategoriesController#create (for 127.0.0.1 at 2010-05-31 21:44:25) [POST]
+  Parameters: {"report_category"=>{"name"=>"Balance-Sheet", "comments"=>"-"}, "commit"=>"Create", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw="}
+  [4;36;1mReportCategory Load (1.4ms)[0m   [0;1mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'Balance-Sheet') LIMIT 1[0m
+  [4;35;1mReportCategory Create (1.7ms)[0m   [0mINSERT INTO "report_categories" ("name", "created_at", "comments", "updated_at") VALUES('Balance-Sheet', '2010-05-31 19:44:25', '-', '2010-05-31 19:44:25')[0m
+Redirected to http://localhost:3000/report_categories/1
+Completed in 182ms (DB: 3) | 302 Found [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:44:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportCategory Load (1.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;35;1mReport Load (0.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Completed in 82ms (View: 54, DB: 2) | 200 OK [http://localhost/report_categories/1]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 21:44:28) [GET]
+  [4;36;1mReportCategory Load (1.4ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 25ms (View: 12, DB: 1) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-05-31 21:44:31) [GET]
+Rendering template within layouts/report_categories
+Rendering report_categories/new
+Completed in 51ms (View: 28, DB: 0) | 200 OK [http://localhost/report_categories/new]
+
+
+Processing ReportCategoriesController#create (for 127.0.0.1 at 2010-05-31 21:44:35) [POST]
+  Parameters: {"report_category"=>{"name"=>"O", "comments"=>"-"}, "commit"=>"Create", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw="}
+  [4;35;1mReportCategory Load (0.8ms)[0m   [0mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'O') LIMIT 1[0m
+  [4;36;1mReportCategory Create (0.3ms)[0m   [0;1mINSERT INTO "report_categories" ("name", "created_at", "comments", "updated_at") VALUES('O', '2010-05-31 19:44:36', '-', '2010-05-31 19:44:36')[0m
+Redirected to http://localhost:3000/report_categories/2
+Completed in 149ms (DB: 1) | 302 Found [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:44:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+Completed in 51ms (View: 23, DB: 1) | 200 OK [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 21:44:39) [GET]
+  [4;35;1mReportCategory Load (5.8ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 53ms (View: 29, DB: 6) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#edit (for 127.0.0.1 at 2010-05-31 21:44:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/edit
+Completed in 267ms (View: 242, DB: 0) | 200 OK [http://localhost/report_categories/2/edit]
+
+
+Processing ReportCategoriesController#update (for 127.0.0.1 at 2010-05-31 21:44:45) [PUT]
+  Parameters: {"report_category"=>{"name"=>"Off", "comments"=>"-"}, "commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'Off' AND "report_categories".id <> 2) LIMIT 1[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+  [4;36;1mReportCategory Update (0.4ms)[0m   [0;1mUPDATE "report_categories" SET "updated_at" = '2010-05-31 19:44:45', "name" = 'Off' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/report_categories/2
+Completed in 151ms (DB: 1) | 302 Found [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:44:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (1.3ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+Completed in 46ms (View: 22, DB: 2) | 200 OK [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 21:44:49) [GET]
+  [4;35;1mReportCategory Load (3.0ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 40ms (View: 21, DB: 3) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#edit (for 127.0.0.1 at 2010-05-31 21:44:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/edit
+Completed in 57ms (View: 24, DB: 0) | 200 OK [http://localhost/report_categories/2/edit]
+
+
+Processing ReportCategoriesController#update (for 127.0.0.1 at 2010-05-31 21:44:56) [PUT]
+  Parameters: {"report_category"=>{"name"=>"Off-Balance-sheet", "comments"=>"-"}, "commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;35;1mReportCategory Load (2.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'Off-Balance-sheet' AND "report_categories".id <> 2) LIMIT 1[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+  [4;36;1mReportCategory Update (4.0ms)[0m   [0;1mUPDATE "report_categories" SET "updated_at" = '2010-05-31 19:44:56', "name" = 'Off-Balance-sheet' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/report_categories/2
+Completed in 173ms (DB: 7) | 302 Found [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:44:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportCategory Load (1.7ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+Completed in 59ms (View: 29, DB: 2) | 200 OK [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 21:45:00) [GET]
+  [4;35;1mReportCategory Load (0.8ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 57ms (View: 32, DB: 1) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-05-31 21:45:02) [GET]
+Rendering template within layouts/report_categories
+Rendering report_categories/new
+Completed in 42ms (View: 21, DB: 0) | 200 OK [http://localhost/report_categories/new]
+
+
+Processing ReportCategoriesController#create (for 127.0.0.1 at 2010-05-31 21:45:11) [POST]
+  Parameters: {"report_category"=>{"name"=>"P&L", "comments"=>"-"}, "commit"=>"Create", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw="}
+  [4;36;1mReportCategory Load (0.7ms)[0m   [0;1mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'P&L') LIMIT 1[0m
+  [4;35;1mReportCategory Create (3.5ms)[0m   [0mINSERT INTO "report_categories" ("name", "created_at", "comments", "updated_at") VALUES('P&L', '2010-05-31 19:45:11', '-', '2010-05-31 19:45:11')[0m
+Redirected to http://localhost:3000/report_categories/3
+Completed in 170ms (DB: 4) | 302 Found [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:45:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReportCategory Load (1.3ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 3) [0m
+Completed in 58ms (View: 30, DB: 2) | 200 OK [http://localhost/report_categories/3]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 21:45:14) [GET]
+  [4;36;1mReportCategory Load (2.8ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 223ms (View: 28, DB: 3) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:45:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 3) [0m
+Completed in 53ms (View: 25, DB: 1) | 200 OK [http://localhost/report_categories/3]
+
+
+Processing ReportCategoriesController#report (for 127.0.0.1 at 2010-05-31 21:45:26) [POST]
+  Parameters: {"report"=>{"name"=>"Interes", "reference"=>"1000"}, "commit"=>"Add a new report in this category", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"3"}
+  [4;35;1mReportCategory Load (1.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '1000') LIMIT 1[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'Interes') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReport Create (0.3ms)[0m   [0mINSERT INTO "reports" ("reference", "name", "position", "created_at", "comments", "updated_at", "report_category_id") VALUES('1000', 'Interes', 1, '2010-05-31 19:45:27', '-', '2010-05-31 19:45:27', 3)[0m
+Redirected to http://localhost:3000/report_categories/3
+Completed in 206ms (DB: 2) | 302 Found [http://localhost/report_categories/report/3]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:45:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 3) [0m
+Completed in 55ms (View: 29, DB: 1) | 200 OK [http://localhost/report_categories/3]
+
+
+Processing ReportCategoriesController#report (for 127.0.0.1 at 2010-05-31 21:45:39) [POST]
+  Parameters: {"report"=>{"name"=>"Interest expenses", "reference"=>"2000"}, "commit"=>"Add a new report in this category", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"3"}
+  [4;36;1mReportCategory Load (2.1ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReport Load (1.0ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '2000') LIMIT 1[0m
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'Interest expenses') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReport Create (0.3ms)[0m   [0;1mINSERT INTO "reports" ("reference", "name", "position", "created_at", "comments", "updated_at", "report_category_id") VALUES('2000', 'Interest expenses', 1, '2010-05-31 19:45:39', '-', '2010-05-31 19:45:39', 3)[0m
+Redirected to http://localhost:3000/report_categories/3
+Completed in 211ms (DB: 4) | 302 Found [http://localhost/report_categories/report/3]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:45:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mReportCategory Load (0.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (1.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 3) [0m
+Completed in 52ms (View: 29, DB: 2) | 200 OK [http://localhost/report_categories/3]
+
+
+Processing ReportCategoriesController#report (for 127.0.0.1 at 2010-05-31 21:45:49) [POST]
+  Parameters: {"report"=>{"name"=>"test", "reference"=>"2000"}, "commit"=>"Add a new report in this category", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"3"}
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReport Load (0.3ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '2000') LIMIT 1[0m
+  [4;35;1mReport Load (1.4ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'test') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Redirected to http://localhost:3000/report_categories/3
+Completed in 101ms (DB: 2) | 302 Found [http://localhost/report_categories/report/3]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 21:45:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (4.7ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 3) [0m
+Completed in 40ms (View: 22, DB: 5) | 200 OK [http://localhost/report_categories/3]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-05-31 21:46:06) [GET]
+  [4;35;1mReport Load (7.0ms)[0m   [0mSELECT * FROM "reports" [0m
+Rendering template within layouts/reports
+Rendering reports/index
+  [4;36;1mReportCategory Load (2.1ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Completed in 190ms (View: 147, DB: 9) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#new (for 127.0.0.1 at 2010-05-31 21:46:10) [GET]
+Rendering template within layouts/reports
+Rendering reports/new
+Completed in 271ms (View: 66, DB: 0) | 200 OK [http://localhost/reports/new]
+
+
+Processing ReportsController#create (for 127.0.0.1 at 2010-05-31 21:46:28) [POST]
+  Parameters: {"report"=>{"position"=>"1", "name"=>"Fiduciaries", "reference"=>"3000", "comments"=>"-", "report_category_id"=>"1"}, "commit"=>"Create", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw="}
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '3000') LIMIT 1[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'Fiduciaries') LIMIT 1[0m
+  [4;36;1mReportCategory Load (2.7ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReport Create (0.6ms)[0m   [0mINSERT INTO "reports" ("reference", "name", "position", "created_at", "comments", "updated_at", "report_category_id") VALUES('3000', 'Fiduciaries', 1, '2010-05-31 19:46:28', '-', '2010-05-31 19:46:28', 1)[0m
+Redirected to http://localhost:3000/reports/3
+Completed in 208ms (DB: 4) | 302 Found [http://localhost/reports]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 21:46:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (3.2ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+Completed in 88ms (View: 55, DB: 4) | 200 OK [http://localhost/reports/3]
+
+
+Processing ReportsController#reportline (for 127.0.0.1 at 2010-05-31 21:47:02) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"3", "report_line"=>{"line_id"=>"10000001", "line_caption"=>"Fiduciary deposits group"}}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '10000001') LIMIT 1[0m
+  [4;35;1mReportLine Create (0.3ms)[0m   [0mINSERT INTO "report_lines" ("position", "created_at", "comments", "updated_at", "line_morphing", "line_id", "report_id", "line_caption") VALUES(1, '2010-05-31 19:47:02', '-', '2010-05-31 19:47:02', NULL, '10000001', 3, 'Fiduciary deposits group')[0m
+Redirected to http://localhost:3000/reports/3
+Completed in 199ms (DB: 1) | 302 Found [http://localhost/reports/reportline/3]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 21:47:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+Completed in 325ms (View: 291, DB: 1) | 200 OK [http://localhost/reports/3]
+
+
+Processing ReportsController#reportline (for 127.0.0.1 at 2010-05-31 21:47:18) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"3", "report_line"=>{"line_id"=>"10000002", "line_caption"=>"Fiduciary loans group"}}
+  [4;35;1mReport Load (1.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '10000002') LIMIT 1[0m
+  [4;35;1mReportLine Create (0.3ms)[0m   [0mINSERT INTO "report_lines" ("position", "created_at", "comments", "updated_at", "line_morphing", "line_id", "report_id", "line_caption") VALUES(1, '2010-05-31 19:47:18', '-', '2010-05-31 19:47:18', NULL, '10000002', 3, 'Fiduciary loans group')[0m
+Redirected to http://localhost:3000/reports/3
+Completed in 167ms (DB: 2) | 302 Found [http://localhost/reports/reportline/3]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 21:47:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (2.1ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.7ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+Completed in 97ms (View: 63, DB: 3) | 200 OK [http://localhost/reports/3]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-05-31 21:47:27) [GET]
+  [4;35;1mReportLine Load (4.3ms)[0m   [0mSELECT * FROM "report_lines" [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/index
+  [4;36;1mReport Load (5.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Completed in 107ms (View: 63, DB: 10) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:47:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (0.7ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (0.3ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 261ms (View: 237, DB: 1) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-05-31 21:47:51) [GET]
+  [4;35;1mAccountPlan Load (2.6ms)[0m   [0mSELECT * FROM "account_plans" [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/index
+Completed in 104ms (View: 74, DB: 3) | 200 OK [http://localhost/account_plans]
+
+
+Processing AccountPlansController#new (for 127.0.0.1 at 2010-05-31 21:47:53) [GET]
+Rendering template within layouts/account_plans
+Rendering account_plans/new
+Completed in 80ms (View: 67, DB: 0) | 200 OK [http://localhost/account_plans/new]
+
+
+Processing AccountPlansController#create (for 127.0.0.1 at 2010-05-31 21:48:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "account_plan"=>{"position"=>"1", "name"=>"account 1", "comments"=>"-", "account_id"=>"1000"}}
+  [4;36;1mAccountPlan Create (1.1ms)[0m   [0;1mINSERT INTO "account_plans" ("name", "position", "created_at", "comments", "updated_at", "account_id") VALUES('account 1', 1, '2010-05-31 19:48:03', '-', '2010-05-31 19:48:03', '1000')[0m
+Redirected to http://localhost:3000/account_plans/1
+Completed in 151ms (DB: 1) | 302 Found [http://localhost/account_plans]
+
+
+Processing AccountPlansController#show (for 127.0.0.1 at 2010-05-31 21:48:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAccountPlan Load (0.4ms)[0m   [0mSELECT * FROM "account_plans" WHERE ("account_plans"."id" = 1) [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/show
+Completed in 77ms (View: 43, DB: 0) | 200 OK [http://localhost/account_plans/1]
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-05-31 21:48:06) [GET]
+  [4;36;1mAccountPlan Load (2.8ms)[0m   [0;1mSELECT * FROM "account_plans" [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/index
+Completed in 210ms (View: 187, DB: 3) | 200 OK [http://localhost/account_plans]
+
+
+Processing AccountPlansController#new (for 127.0.0.1 at 2010-05-31 21:48:09) [GET]
+Rendering template within layouts/account_plans
+Rendering account_plans/new
+Completed in 42ms (View: 21, DB: 0) | 200 OK [http://localhost/account_plans/new]
+
+
+Processing AccountPlansController#create (for 127.0.0.1 at 2010-05-31 21:48:19) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "account_plan"=>{"position"=>"1", "name"=>"Account 2", "comments"=>"-", "account_id"=>"2000"}}
+  [4;35;1mAccountPlan Create (1.0ms)[0m   [0mINSERT INTO "account_plans" ("name", "position", "created_at", "comments", "updated_at", "account_id") VALUES('Account 2', 1, '2010-05-31 19:48:19', '-', '2010-05-31 19:48:19', '2000')[0m
+Redirected to http://localhost:3000/account_plans/2
+Completed in 173ms (DB: 1) | 302 Found [http://localhost/account_plans]
+
+
+Processing AccountPlansController#show (for 127.0.0.1 at 2010-05-31 21:48:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mAccountPlan Load (0.4ms)[0m   [0;1mSELECT * FROM "account_plans" WHERE ("account_plans"."id" = 2) [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/show
+Completed in 63ms (View: 24, DB: 0) | 200 OK [http://localhost/account_plans/2]
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-05-31 21:48:22) [GET]
+  [4;35;1mAccountPlan Load (5.7ms)[0m   [0mSELECT * FROM "account_plans" [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/index
+Completed in 84ms (View: 48, DB: 6) | 200 OK [http://localhost/account_plans]
+
+
+Processing AccountPlansController#new (for 127.0.0.1 at 2010-05-31 21:48:24) [GET]
+Rendering template within layouts/account_plans
+Rendering account_plans/new
+Completed in 81ms (View: 44, DB: 0) | 200 OK [http://localhost/account_plans/new]
+
+
+Processing AccountPlansController#create (for 127.0.0.1 at 2010-05-31 21:48:32) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "account_plan"=>{"position"=>"1", "name"=>"Account 3", "comments"=>"-", "account_id"=>"3000"}}
+  [4;36;1mAccountPlan Create (0.3ms)[0m   [0;1mINSERT INTO "account_plans" ("name", "position", "created_at", "comments", "updated_at", "account_id") VALUES('Account 3', 1, '2010-05-31 19:48:32', '-', '2010-05-31 19:48:32', '3000')[0m
+Redirected to http://localhost:3000/account_plans/3
+Completed in 157ms (DB: 0) | 302 Found [http://localhost/account_plans]
+
+
+Processing AccountPlansController#show (for 127.0.0.1 at 2010-05-31 21:48:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mAccountPlan Load (0.8ms)[0m   [0mSELECT * FROM "account_plans" WHERE ("account_plans"."id" = 3) [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/show
+Completed in 44ms (View: 14, DB: 1) | 200 OK [http://localhost/account_plans/3]
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-05-31 21:48:35) [GET]
+  [4;36;1mAccountPlan Load (2.4ms)[0m   [0;1mSELECT * FROM "account_plans" [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/index
+Completed in 55ms (View: 32, DB: 2) | 200 OK [http://localhost/account_plans]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-05-31 21:48:47) [GET]
+  [4;35;1mReportLine Load (4.6ms)[0m   [0mSELECT * FROM "report_lines" [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/index
+  [4;36;1mReport Load (1.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Completed in 95ms (View: 63, DB: 6) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:48:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (0.7ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (0.3ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 83ms (View: 56, DB: 1) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:48:55) [POST]
+  Parameters: {"structure"=>{"account_plan_id"=>"2", "report_line_id"=>"2"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;35;1mReportLine Load (0.7ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+  [4;36;1mStructure Load (0.2ms)[0m   [0;1mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 2 AND "structures".account_plan_id = 2) LIMIT 1[0m
+  [4;35;1mStructure Create (1.8ms)[0m   [0mINSERT INTO "structures" ("created_at", "account_plan_id", "comments", "updated_at", "report_line_id") VALUES('2010-05-31 19:48:56', 2, '-', '2010-05-31 19:48:56', 2)[0m
+Redirected to http://localhost:3000/report_lines/2
+Completed in 405ms (DB: 3) | 302 Found [http://localhost/report_lines/structure/2]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:48:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportLine Load (1.1ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (2.1ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (1.0ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 103ms (View: 72, DB: 4) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:49:01) [POST]
+  Parameters: {"structure"=>{"account_plan_id"=>"1", "report_line_id"=>"2"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;35;1mReportLine Load (1.9ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+  [4;36;1mStructure Load (2.0ms)[0m   [0;1mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 2 AND "structures".account_plan_id = 1) LIMIT 1[0m
+  [4;35;1mStructure Create (0.3ms)[0m   [0mINSERT INTO "structures" ("created_at", "account_plan_id", "comments", "updated_at", "report_line_id") VALUES('2010-05-31 19:49:01', 1, '-', '2010-05-31 19:49:01', 2)[0m
+Redirected to http://localhost:3000/report_lines/2
+Completed in 175ms (DB: 4) | 302 Found [http://localhost/report_lines/structure/2]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:49:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (0.7ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 83ms (View: 58, DB: 2) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:49:02) [POST]
+  Parameters: {"structure"=>{"account_plan_id"=>"1", "report_line_id"=>"2"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+  [4;36;1mStructure Load (2.3ms)[0m   [0;1mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 2 AND "structures".account_plan_id = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/report_lines/2
+Completed in 40ms (DB: 3) | 302 Found [http://localhost/report_lines/structure/2]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:49:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportLine Load (1.1ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;36;1mReport Load (1.8ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mAccountPlan Load (0.6ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 129ms (View: 95, DB: 4) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:49:07) [POST]
+  Parameters: {"structure"=>{"account_plan_id"=>"2", "report_line_id"=>"2"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;36;1mReportLine Load (1.6ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+  [4;35;1mStructure Load (0.8ms)[0m   [0mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 2 AND "structures".account_plan_id = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/report_lines/2
+Completed in 69ms (DB: 2) | 302 Found [http://localhost/report_lines/structure/2]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:49:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (5.9ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (1.3ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 65ms (View: 41, DB: 8) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:49:12) [POST]
+  Parameters: {"structure"=>{"account_plan_id"=>"3", "report_line_id"=>"2"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2"}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+  [4;36;1mStructure Load (1.2ms)[0m   [0;1mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 2 AND "structures".account_plan_id = 3) LIMIT 1[0m
+  [4;35;1mStructure Create (0.3ms)[0m   [0mINSERT INTO "structures" ("created_at", "account_plan_id", "comments", "updated_at", "report_line_id") VALUES('2010-05-31 19:49:13', 3, '-', '2010-05-31 19:49:13', 2)[0m
+Redirected to http://localhost:3000/report_lines/2
+Completed in 147ms (DB: 2) | 302 Found [http://localhost/report_lines/structure/2]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:49:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (1.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (0.9ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 86ms (View: 57, DB: 3) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:49:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mAccountPlan Load (2.0ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 111ms (View: 73, DB: 3) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:49:26) [POST]
+  Parameters: {"structure"=>{"account_plan_id"=>"1", "report_line_id"=>"1"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"1"}
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+  [4;35;1mStructure Load (0.4ms)[0m   [0mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 1 AND "structures".account_plan_id = 1) LIMIT 1[0m
+  [4;36;1mStructure Create (1.3ms)[0m   [0;1mINSERT INTO "structures" ("created_at", "account_plan_id", "comments", "updated_at", "report_line_id") VALUES('2010-05-31 19:49:26', 1, '-', '2010-05-31 19:49:26', 1)[0m
+Redirected to http://localhost:3000/report_lines/1
+Completed in 410ms (DB: 2) | 302 Found [http://localhost/report_lines/structure/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:49:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportLine Load (2.9ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mAccountPlan Load (0.5ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 100ms (View: 62, DB: 4) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:51:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportLine Load (1.1ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (2.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (0.5ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 137ms (View: 103, DB: 4) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:52:02) [POST]
+  Parameters: {"structure"=>{"comments"=>"", "account_plan_id"=>"2000", "report_line_id"=>"1"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"1"}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+  [4;36;1mStructure Load (0.9ms)[0m   [0;1mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 1 AND "structures".account_plan_id = 2000) LIMIT 1[0m
+  [4;35;1mStructure Create (2.9ms)[0m   [0mINSERT INTO "structures" ("created_at", "account_plan_id", "comments", "updated_at", "report_line_id") VALUES('2010-05-31 19:52:02', 2000, '', '2010-05-31 19:52:02', 1)[0m
+Redirected to http://localhost:3000/report_lines/1
+Completed in 205ms (DB: 4) | 302 Found [http://localhost/report_lines/structure/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:52:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (0.7ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (0.6ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 81ms (View: 57, DB: 2) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#structure (for 127.0.0.1 at 2010-05-31 21:52:16) [POST]
+  Parameters: {"structure"=>{"comments"=>"This is a test", "account_plan_id"=>"2", "report_line_id"=>"1"}, "commit"=>"Map a new account to this report line", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"1"}
+  [4;35;1mReportLine Load (1.1ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+  [4;36;1mStructure Load (0.8ms)[0m   [0;1mSELECT "structures".id FROM "structures" WHERE ("structures"."report_line_id" = 1 AND "structures".account_plan_id = 2) LIMIT 1[0m
+  [4;35;1mStructure Create (0.3ms)[0m   [0mINSERT INTO "structures" ("created_at", "account_plan_id", "comments", "updated_at", "report_line_id") VALUES('2010-05-31 19:52:16', 2, 'This is a test', '2010-05-31 19:52:16', 1)[0m
+Redirected to http://localhost:3000/report_lines/1
+Completed in 211ms (DB: 2) | 302 Found [http://localhost/report_lines/structure/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 21:52:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (3.3ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 143ms (View: 104, DB: 4) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 22:58:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mReportLine Load (1.0ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 4) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ReportLine with ID=4):
+  app/controllers/report_lines_controller.rb:23:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (2325.4ms)
+Rendered rescues/_request_and_response (3.8ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 22:58:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportLine Load (1.1ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (1.2ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 414ms (View: 382, DB: 3) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 23:01:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportLine Load (1.5ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mAccountPlan Load (23.4ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 285ms (View: 239, DB: 25) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:12:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (1.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 97ms (View: 78, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#reportline (for 127.0.0.1 at 2010-05-31 23:13:40) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "authenticity_token"=>"h+67QglZYdMeegA+SxUhMZXLM7mqV7WHeAZ/qwIJXbU=", "id"=>"2", "report_line"=>{"line_id"=>"10000", "line_caption"=>"line 234"}}
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '10000') LIMIT 1[0m
+  [4;35;1mReportLine Create (0.5ms)[0m   [0mINSERT INTO "report_lines" ("position", "created_at", "comments", "updated_at", "line_morphing", "line_id", "report_id", "line_caption") VALUES(1, '2010-05-31 21:13:40', '-', '2010-05-31 21:13:40', NULL, '10000', 2, 'line 234')[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 158ms (DB: 1) | 302 Found [http://localhost/reports/reportline/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:13:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (2.3ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 119ms (View: 82, DB: 3) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#reportline (for 127.0.0.1 at 2010-05-31 23:13:55) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "authenticity_token"=>"h+67QglZYdMeegA+SxUhMZXLM7mqV7WHeAZ/qwIJXbU=", "id"=>"2", "report_line"=>{"line_id"=>"10000", "line_caption"=>"Line 345"}}
+  [4;35;1mReport Load (0.3ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '10000') LIMIT 1[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 44ms (DB: 1) | 302 Found [http://localhost/reports/reportline/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:13:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReport Load (0.3ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;36;1mReportCategory Load (2.2ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 273ms (View: 255, DB: 3) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#reportline (for 127.0.0.1 at 2010-05-31 23:14:20) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "authenticity_token"=>"h+67QglZYdMeegA+SxUhMZXLM7mqV7WHeAZ/qwIJXbU=", "id"=>"2", "report_line"=>{"line_id"=>"20000", "line_caption"=>"Line 432"}}
+  [4;36;1mReport Load (0.3ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mReportLine Load (0.8ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '20000') LIMIT 1[0m
+  [4;36;1mReportLine Create (0.3ms)[0m   [0;1mINSERT INTO "report_lines" ("position", "created_at", "comments", "updated_at", "line_morphing", "line_id", "report_id", "line_caption") VALUES(1, '2010-05-31 21:14:20', '-', '2010-05-31 21:14:20', NULL, '20000', 2, 'Line 432')[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 344ms (DB: 1) | 302 Found [http://localhost/reports/reportline/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:14:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (0.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 73ms (View: 52, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:15:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (0.8ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 83ms (View: 53, DB: 1) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:16:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReport Load (0.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (9.9ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 322ms (View: 90, DB: 11) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#reportline (for 127.0.0.1 at 2010-05-31 23:17:10) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "authenticity_token"=>"h+67QglZYdMeegA+SxUhMZXLM7mqV7WHeAZ/qwIJXbU=", "id"=>"2", "report_line"=>{"line_id"=>"30000", "line_caption"=>"Line 742"}}
+  [4;36;1mReport Load (0.8ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '30000') LIMIT 1[0m
+  [4;36;1mReportLine Create (0.3ms)[0m   [0;1mINSERT INTO "report_lines" ("position", "created_at", "comments", "updated_at", "line_morphing", "line_id", "report_id", "line_caption") VALUES(1, '2010-05-31 21:17:10', '-', '2010-05-31 21:17:10', NULL, '30000', 2, 'Line 742')[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 183ms (DB: 1) | 302 Found [http://localhost/reports/reportline/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:17:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (1.0ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 77ms (View: 54, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-05-31 23:17:24) [GET]
+  [4;36;1mReport Load (3.8ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Rendering template within layouts/reports
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.9ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Completed in 70ms (View: 51, DB: 5) | 200 OK [http://localhost/reports]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 23:17:40) [GET]
+  [4;36;1mReportCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 44ms (View: 26, DB: 1) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-05-31 23:17:46) [GET]
+Rendering template within layouts/report_categories
+Rendering report_categories/new
+Completed in 36ms (View: 24, DB: 0) | 200 OK [http://localhost/report_categories/new]
+
+
+Processing ReportCategoriesController#create (for 127.0.0.1 at 2010-05-31 23:18:01) [POST]
+  Parameters: {"report_category"=>{"name"=>"MAS", "comments"=>"-"}, "commit"=>"Create", "authenticity_token"=>"h+67QglZYdMeegA+SxUhMZXLM7mqV7WHeAZ/qwIJXbU="}
+  [4;35;1mReportCategory Load (0.8ms)[0m   [0mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'MAS') LIMIT 1[0m
+  [4;36;1mReportCategory Create (0.4ms)[0m   [0;1mINSERT INTO "report_categories" ("name", "created_at", "comments", "updated_at") VALUES('MAS', '2010-05-31 21:18:01', '-', '2010-05-31 21:18:01')[0m
+Redirected to http://localhost:3000/report_categories/4
+Completed in 150ms (DB: 1) | 302 Found [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 23:18:01) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 4) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 4) [0m
+Completed in 52ms (View: 34, DB: 1) | 200 OK [http://localhost/report_categories/4]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 23:18:10) [GET]
+  [4;35;1mReportCategory Load (1.3ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 49ms (View: 38, DB: 1) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 23:33:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportCategory Load (8.1ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Completed in 55ms (View: 29, DB: 9) | 200 OK [http://localhost/report_categories/1]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-05-31 23:33:31) [GET]
+  [4;36;1mReport Load (1.2ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Rendering template within layouts/reports
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Completed in 64ms (View: 49, DB: 2) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:33:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReport Load (0.3ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (2.1ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+Completed in 94ms (View: 76, DB: 3) | 200 OK [http://localhost/reports/3]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 23:33:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportLine Load (0.5ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mAccountPlan Load (1.1ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 100ms (View: 72, DB: 2) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-05-31 23:33:48) [GET]
+  [4;36;1mReportLine Load (6.5ms)[0m   [0;1mSELECT * FROM "report_lines" [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/index
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mReport Load (0.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Completed in 100ms (View: 73, DB: 8) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-05-31 23:34:06) [GET]
+  [4;36;1mReport Load (1.3ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Rendering template within layouts/reports
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (1.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Completed in 70ms (View: 49, DB: 3) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:34:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (1.8ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.8ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+Completed in 87ms (View: 66, DB: 3) | 200 OK [http://localhost/reports/3]
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-05-31 23:34:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportLine Load (5.2ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/edit
+Completed in 84ms (View: 58, DB: 5) | 200 OK [http://localhost/report_lines/1/edit]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-05-31 23:34:19) [GET]
+  [4;36;1mReportLine Load (1.4ms)[0m   [0;1mSELECT * FROM "report_lines" [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/index
+  [4;35;1mReport Load (1.7ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mReport Load (0.9ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Completed in 92ms (View: 73, DB: 4) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-05-31 23:36:19) [GET]
+  [4;36;1mReportCategory Load (1.1ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/index
+Completed in 281ms (View: 35, DB: 1) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-05-31 23:36:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportCategory Load (1.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/report_categories
+Rendering report_categories/show
+  [4;36;1mReport Load (5.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Completed in 63ms (View: 43, DB: 7) | 200 OK [http://localhost/report_categories/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-05-31 23:36:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mReport Load (0.7ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;36;1mReportCategory Load (4.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+Completed in 88ms (View: 52, DB: 6) | 200 OK [http://localhost/reports/3]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 23:36:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (0.8ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 93ms (View: 74, DB: 2) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-05-31 23:39:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportLine Load (0.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/report_lines
+Rendering report_lines/show
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mAccountPlan Load (0.6ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 510ms (View: 80, DB: 2) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing AccountPlansController#show (for 127.0.0.1 at 2010-05-31 23:39:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccountPlan Load (0.4ms)[0m   [0;1mSELECT * FROM "account_plans" WHERE ("account_plans"."id" = 1) [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/show
+Completed in 31ms (View: 8, DB: 0) | 200 OK [http://localhost/account_plans/1]
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-05-31 23:39:48) [GET]
+  [4;35;1mAccountPlan Load (1.3ms)[0m   [0mSELECT * FROM "account_plans" [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/index
+Completed in 57ms (View: 40, DB: 1) | 200 OK [http://localhost/account_plans]
+
+
+Processing AccountPlansController#edit (for 127.0.0.1 at 2010-05-31 23:39:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccountPlan Load (4.9ms)[0m   [0;1mSELECT * FROM "account_plans" WHERE ("account_plans"."id" = 1) [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/edit
+Completed in 112ms (View: 63, DB: 5) | 200 OK [http://localhost/account_plans/1/edit]
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-05-31 23:40:05) [GET]
+  [4;35;1mAccountPlan Load (2.8ms)[0m   [0mSELECT * FROM "account_plans" [0m
+Rendering template within layouts/account_plans
+Rendering account_plans/index
+Completed in 52ms (View: 36, DB: 3) | 200 OK [http://localhost/account_plans]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-05-31 23:40:23) [GET]
+  [4;36;1mSQL (4.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 114ms (View: 17, DB: 5) | 200 OK [http://localhost/rails/info/properties]
