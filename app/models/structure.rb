@@ -3,6 +3,8 @@ class Structure < ActiveRecord::Base
 belongs_to :account_plan
 belongs_to :report_line
 
+validates_uniqueness_of :report_line_id, :scope => :account_plan_id
+
 end
 
 # == Schema Information

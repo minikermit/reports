@@ -1,11 +1,11 @@
+  <h3 align='center' color='red'>
+  <%=h @report.name %>
+  </h3>
+
+
 <p>
   <b>Reference:</b>
   <%=h @report.reference %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%=h @report.name %>
 </p>
 
 <p>
@@ -14,8 +14,9 @@
 </p>
 
 <p>
-  <b>Comments:</b>
-  <%=h @report.comments %>
+  <span style="font-weight: bold;">
+    Comments: <%=h @report.comments %>
+  </span>
 </p>
 
 <p>
@@ -23,6 +24,41 @@
   <%=h @report.position %>
 </p>
 
-
-<%= link_to 'Edit', edit_report_path(@report) %> |
 <%= link_to 'Back', reports_path %>
+<hr />
+
+ <h4>this report includes the following lines:</h4>
+
+   <table>
+   <tr>
+    <th> position </th>
+    <th align='center'> Reference </th>
+    <th> </th>
+    <th align='left'> Name </th>
+   </tr>
+
+   <% for report_line in @report.report_lines %>
+
+ <tr>
+  <td align='center'><%= report_line.position %> </td>
+  <td> <%= report_line.line_id %> </td>
+  <td> ................... </td>
+  <td><%= report_line.line_caption %> </td>
+  <!--Created on report.created_at.strftime("%e %B, %Y") %-->
+ </tr>
+   <% end %>
+   </table>
+
+
+   <br />
+   <br />
+
+  <%= form_tag :action => "reportline", :id => @report %>
+  <%= label "report_line", "Line Id" %>
+  <%= text_field "report_line", "line_id" %> <br />
+  <%= label "report_line", "Line caption" %>   
+  <%= text_field "report_line", "line_caption" %><br />
+  <%= submit_tag "Add a new line to this report" %>
+   </form>
+
+

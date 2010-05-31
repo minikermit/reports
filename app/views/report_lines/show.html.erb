@@ -1,6 +1,6 @@
 <p>
   <b>Line:</b>
-  <%=h @report_line.line_id %>
+  <%=h @report_line.id %>  <%=h @report_line.line_id %>
 </p>
 
 <p>
@@ -29,3 +29,40 @@
 
 <%= link_to 'Edit', edit_report_line_path(@report_line) %> |
 <%= link_to 'Back', report_lines_path %>
+
+<hr />
+
+ <h4>this report line contains the following accounts: </h4>
+
+   <table>
+   <tr>
+    <th> Account id </th>
+    <th> </th>
+    <th align='left'> Account description </th>
+    <th> position </th>
+   </tr>
+
+   <% for account_plan in @report_line.account_plans %>
+
+ <tr>
+  <td><%= account_plan.account_id %> </td>
+  <td> ................... </td>
+  <td><%= account_plan.name %> </td>
+  <td><%= account_plan.position %> </td>
+  <!--Created on report.created_at.strftime("%e %B, %Y") %-->
+ </tr>
+   <% end %>
+   </table>
+
+
+   <br />
+   <br />
+
+<%= form_tag :action => "structure", :id => @report_line %>
+
+   <%= label "structure", "Line Id" %><br />
+   <%= text_field "structure", "report_line_id", :value => @report_line.id %><br />
+   <%= label "structure", "Account Id" %><br />
+   <%= text_field "structure", "account_plan_id" %><br />
+   <%= submit_tag "Map a new account to this report line" %>
+</form>

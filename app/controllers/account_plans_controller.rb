@@ -10,6 +10,9 @@ class AccountPlansController < ApplicationController
     end
   end
 
+
+
+
   # GET /account_plans/1
   # GET /account_plans/1.xml
   def show

@@ -10,6 +10,13 @@ class ReportLinesController < ApplicationController
     end
   end
 
+  def structure
+    ReportLine.find(params[:id]).structures.create(params[:structure])
+    flash[:notice] = "Added your new account mapping to the line"
+    redirect_to :action => "show", :id => params[:id]
+  end
+
+
   # GET /report_lines/1
   # GET /report_lines/1.xml
   def show

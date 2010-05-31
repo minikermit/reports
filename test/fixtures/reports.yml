@@ -14,16 +14,17 @@ two:
   comments: MyString
   order: 1
 
+
 # == Schema Information
 #
 # Table name: reports
 #
 #  id                 :integer         not null, primary key
-#  reference          :string(255)
-#  name               :string(255)
-#  report_category_id :integer
-#  comments           :string(255)
-#  order              :integer
+#  reference          :string(50)      not null
+#  name               :string(50)      not null
+#  report_category_id :integer         not null
+#  comments           :string(100)     default("-")
+#  position           :integer         default(1)
 #  created_at         :datetime
 #  updated_at         :datetime
 #

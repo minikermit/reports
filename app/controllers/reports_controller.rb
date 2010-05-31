@@ -10,6 +10,15 @@ class ReportsController < ApplicationController
     end
   end
 
+  def reportline
+    Report.find(params[:id]).report_lines.create(params[:report_line])
+    flash[:notice] = "Added your new report line"
+    redirect_to :action => "show", :id => params[:id]
+  end
+
+
+
+
   # GET /reports/1
   # GET /reports/1.xml
   def show
