@@ -14,12 +14,11 @@
   <p>
     <%= f.label :report_category_id %><br />
     <%= select("report", "report_category_id", ReportCategory.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
-
     <!--%= f.text_field :report_category_id %-->
   </p>
   <p>
     <%= f.label :comments %><br />
-    <%= f.text_field :comments %>
+    <%= f.text_field :comments, "rows" => 3, "cols" => 35  %>
   </p>
   <p>
     <%= f.label :position %><br />

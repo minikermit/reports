@@ -8,9 +8,8 @@
 
 <% @report_categories.each do |report_category| %>
   <tr>
-    <td><%=h report_category.name %></td>
+    <td><%= link_to report_category.name, report_category %></td>
     <td><%=h report_category.comments %></td>
-    <td><%= link_to 'Show', report_category %></td>
     <td><%= link_to 'Edit', edit_report_category_path(report_category) %></td>
     <td><%= link_to 'Destroy', report_category, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
