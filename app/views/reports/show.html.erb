@@ -1,3 +1,11 @@
+<ul id="crumbs">
+ <li><a href="#">Homes</a></li>
+ <li><%= link_to  "Report categories" , report_categories_path %></li>
+ <li><a href="#">Reports</a></li>
+ <li>You are on the list of reports page</li>
+</ul>
+
+
   <h3 align='center' color='red'>
   <%=h @report.name %>
   </h3>
@@ -41,11 +49,12 @@
 
  <tr>
   <td align='center'><%= report_line.position %> </td>
-  <td> <%= report_line.line_id %> </td>
+  <td><%= link_to report_line.line_id, report_line %></td>
+  <td> <%=  %> </td>
   <td> ................... </td>
   <td><%= report_line.line_caption %> </td>
-  <td><%= link_to 'Show', report_line %></td>
-  <td><%= link_to 'Edit', edit_report_line_path(report_line) %></td>   
+  <td><%= report_line.comments %> </td>
+  <td><%= link_to 'Edit', edit_report_line_path(report_line) %></td>
 
   <!--Created on report.created_at.strftime("%e %B, %Y") %-->
  </tr>
@@ -61,11 +70,15 @@
   
 
   <%= form_tag :action => "reportline", :id => @report %>
-  <%= label "report_line", "Line Id" %>
+  <%= label "report_line", "Line Id" %><br />
   <%= text_field "report_line", "line_id" %> <br />
-  <%= label "report_line", "Caption" %>
+  <%= label "report_line", "Name" %><br />
   <%= text_field "report_line", "line_caption" %><br />
+  <%= label "report_line", "Comments" %><br />
+  <%= text_area "report_line", "comments", "rows" => 3, "cols" => 35 %><br />
+  <%= label "report_line", "Position" %><br />
+  <%= text_field "report_line", "position" %><br />
   <%= submit_tag "Add a new line to this report" %>
-   </form>
+  </form>
 
 

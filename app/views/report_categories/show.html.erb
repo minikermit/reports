@@ -1,7 +1,13 @@
+<ul id="crumbs">
+ <li><a href="#">Homes</a></li>
+ <li><a href="#">Report categories</a></li>
+ <li>You are on the list of report categories page</li>
+</ul>
 
   <h3 align='center' color='red'>
   <%=h @report_category.name %>
   </h3>
+<li><a href="#">Report categories</a></li>
 
 <p>
   <span style="font-weight: bold;">
@@ -12,7 +18,7 @@
 <%= link_to 'Back', report_categories_path %>
    <hr />
 
-<h4>this category includes the following reports:</h4>
+<h4>This category includes the following reports:</h4>
 
   <table>
       <tr>
@@ -24,11 +30,10 @@
   <% for report in @report_category.reports %>
 
     <tr>
-     <td> <%= report.reference %> </td>
-     <td> ................... </td>      
+     <td><%= link_to report.reference, report %></td>
      <td><%= report.name %> </td>
-     <!--Created on report.created_at.strftime("%e %B, %Y") %-->
-     <td><%= link_to 'Show', report %></td>
+     <%= report.created_at.strftime("%e %B, %Y") %>
+
      <td><%= link_to 'Edit', edit_report_path(report) %></td> 
 
     </tr>
@@ -43,7 +48,14 @@
   <br />
 
   <%= form_tag :action => "report", :id => @report_category %>
-     <%= text_field "report", "reference" %> <%= text_field "report", "name" %><br />
+     <%= label "reference", "reference" %><br />
+     <%= text_field "report", "reference" %><br />
+     <%= label "name", "name" %><br />
+     <%= text_field "report", "name" %><br />
+     <%= label "position", "position" %><br />
+     <%= text_field "report", "position" %><br />
+
+  <br />
     <%= submit_tag "Add a new report in this category" %>
   </form>
 

@@ -3,17 +3,17 @@
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="53cdd2aa-28b7-454f-9c55-184ed1007fdc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/show.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20100527213814_create_structures.rb" afterPath="$PROJECT_DIR$/db/migrate/20100527213814_create_structures.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/new.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/show.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/show.html.erb" />
     </list>
-    <ignored path="reports.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="reports.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +34,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/report_lines/show.html.erb">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/reports/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="61" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.67639256">
+            <state line="15" column="22" selection-start="310" selection-end="310" vertical-scroll-proportion="-10.227273">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/reports/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="86" selection-start="378" selection-end="378" vertical-scroll-proportion="0.4116022">
               <folding />
             </state>
           </provider>
@@ -53,22 +62,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/report.rb" />
-        <option value="$PROJECT_DIR$/app/views/reports/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_lines/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/account_plan.rb" />
         <option value="$PROJECT_DIR$/app/controllers/account_plans_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/report_lines/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/models/report_line.rb" />
         <option value="$PROJECT_DIR$/app/models/structure.rb" />
         <option value="$PROJECT_DIR$/app/controllers/structures_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100527213814_create_structures.rb" />
-        <option value="$PROJECT_DIR$/app/views/reports/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_categories/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/reports/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_lines/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/reports/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/reports/new.html.erb" />
       </list>
     </option>
   </component>
@@ -106,7 +115,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -186,15 +194,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tasklist/app/controllers" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: reports">
     <configuration default="false" name="db:reset" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -433,15 +442,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: reports" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: reports" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.db:reset" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.db:create:all" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.db:create" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="8" class="java.lang.String" itemvalue="Rake.db:migrate:redo" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.db:reset" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.db:create:all" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate:redo" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="7" class="java.lang.String" itemvalue="Rails.Production: reports" />
+      <item index="8" class="java.lang.String" itemvalue="Rails.Development: reports" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -485,7 +494,6 @@
     <frame x="0" y="1" width="1366" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -498,6 +506,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -535,29 +544,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/account_plan.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="136" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/report_lines/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="79" selection-start="432" selection-end="432" vertical-scroll-proportion="0.49860725" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/report_lines/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="94" selection-end="94" vertical-scroll-proportion="-0.6818182" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/report_lines_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="46" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/report_line.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/account_plans_controller.rb">
@@ -567,70 +556,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/structures_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="310" selection-end="310" vertical-scroll-proportion="0.45112783">
-          <folding />
-        </state>
+        <state line="12" column="5" selection-start="310" selection-end="310" vertical-scroll-proportion="0.45112783" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/structure.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/reports_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="44" selection-start="1755" selection-end="1755" vertical-scroll-proportion="2.744361">
-          <folding />
-        </state>
+        <state line="73" column="44" selection-start="1755" selection-end="1755" vertical-scroll-proportion="2.744361" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20100527210731_create_report_lines.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="243" selection-end="278" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="24" selection-start="243" selection-end="278" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20100527213814_create_structures.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="274" selection-end="274" vertical-scroll-proportion="0.41353384">
+        <state line="11" column="36" selection-start="274" selection-end="274" vertical-scroll-proportion="0.41353384" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account_plans/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="53" selection-start="3" selection-end="3" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/report_line.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="48" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/report_lines/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="13" selection-start="620" selection-end="620" vertical-scroll-proportion="0.68700266">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reports/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/report_categories/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/report_categories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="52" selection-start="743" selection-end="743" vertical-scroll-proportion="0.6366048">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account_plans/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="53" selection-start="3" selection-end="3" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reports/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="59" selection-start="919" selection-end="919" vertical-scroll-proportion="0.68700266">
+        <state line="44" column="107" selection-start="783" selection-end="783" vertical-scroll-proportion="-30.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/report_categories/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="23" selection-start="664" selection-end="717" vertical-scroll-proportion="14.818182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reports/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="310" selection-end="310" vertical-scroll-proportion="-10.227273">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/report_lines/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="61" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.67639256">
+        <state line="77" column="69" selection-start="1815" selection-end="1815" vertical-scroll-proportion="-10.318182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reports/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="86" selection-start="378" selection-end="378" vertical-scroll-proportion="0.4116022">
           <folding />
         </state>
       </provider>

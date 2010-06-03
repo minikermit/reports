@@ -1,3 +1,10 @@
+<ul id="crumbs">
+ <li><a href="#">Homes</a></li>
+ <li><%= link_to  "Report categories" , report_categories_path %></li>
+  <li><%= link_to  "Reports" , reports_path %></li>
+ <li><a href="#">Report lines</a></li>
+ <li>You are on the list of report lines page</li>
+</ul>
 
 <h3 align='center' color='red'>
 <%=h @report_line.line_caption %>
@@ -45,12 +52,11 @@
    <% for account_plan in @report_line.account_plans %>
 
  <tr>
-  <td><%= account_plan.account_id %> </td>
+  <td><%= link_to account_plan.account_id, account_plan %></td>
   <td> ................... </td>
   <td><%= account_plan.name %> </td>
   <td><%= account_plan.position %> </td>
   <!--Created on report.created_at.strftime("%e %B, %Y") %-->
-  <td><%= link_to 'Show', account_plan %></td>
   <td><%= link_to 'Edit', edit_account_plan_path(account_plan) %></td>   
  </tr>
    <% end %>
@@ -69,7 +75,7 @@
    <%= label "structure", "Account Id" %><br />
    <%= text_field "structure", "account_plan_id" %><br />
    <%= label "structure", "Comments" %><br />
-   <%= text_field "structure", "comments"%><br />
+   <%= text_field "structure", "comments", "rows" => 3, "cols" => 35 %><br />
 
    <%= submit_tag "Map a new account to this report line" %>
 </form>

@@ -13,7 +13,9 @@
   </p>
   <p>
     <%= f.label :report_category_id %><br />
-    <%= f.text_field :report_category_id %>
+    <%= select("report", "report_category_id", ReportCategory.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
+
+    <!--%= f.text_field :report_category_id %-->
   </p>
   <p>
     <%= f.label :comments %><br />
