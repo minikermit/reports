@@ -27,7 +27,7 @@
        <th align='center'> name </th>
        <th> </th>
        <th align='right'> created on </th>
-       <th> </th>
+       <th> Comments </th>
       </tr>
 
   <% for report in @report_category.reports %>
@@ -37,6 +37,7 @@
      <td><%= report.name %> </td>
      <td> </td>
      <td><%= report.created_at.strftime("%e %B, %Y") %><td>
+     <td><%= report.comments %> </td>
 
      <td><%= link_to 'Edit', edit_report_path(report) %></td> 
 

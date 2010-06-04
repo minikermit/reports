@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="53cdd2aa-28b7-454f-9c55-184ed1007fdc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/show.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/new.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/new.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/new.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/report_categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/report_categories_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/index.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/index.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/account_plans_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/account_plans_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/show.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="reports.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,10 +31,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/reports/show.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/report_categories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="5" selection-start="788" selection-end="788" vertical-scroll-proportion="0.4429708">
+            <state line="18" column="47" selection-start="380" selection-end="380" vertical-scroll-proportion="-0.6818182">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="44" selection-start="367" selection-end="367" vertical-scroll-proportion="0.2785146">
               <folding />
             </state>
           </provider>
@@ -63,22 +59,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/reports/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reports/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_lines/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_lines/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/report_categories/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_categories/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_categories/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_categories/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/reports/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/report_lines/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/report_categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/account_plans_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/reports/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/reports/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/report_categories/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -206,7 +202,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="report_categories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="reports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,7 +542,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1366" height="766" extended-state="0" />
+    <frame x="-3046" y="1" width="1366" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -578,20 +596,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/report_lines/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="1" selection-start="121" selection-end="121" vertical-scroll-proportion="0.1193634">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/report_categories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="58" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0795756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/report_categories/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="1" selection-start="121" selection-end="121" vertical-scroll-proportion="0.1193634">
@@ -616,13 +620,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/reports/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="2" selection-start="173" selection-end="173" vertical-scroll-proportion="0.16574585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reports/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="170" selection-end="170" vertical-scroll-proportion="0.1193634">
           <folding />
         </state>
       </provider>
@@ -686,6 +683,27 @@
     <entry file="file://$PROJECT_DIR$/app/views/reports/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="5" selection-start="788" selection-end="788" vertical-scroll-proportion="0.4429708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reports/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="48" selection-start="643" selection-end="643" vertical-scroll-proportion="0.88063663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/report_categories/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="380" selection-end="380" vertical-scroll-proportion="-0.6818182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="44" selection-start="367" selection-end="367" vertical-scroll-proportion="0.2785146">
           <folding />
         </state>
       </provider>

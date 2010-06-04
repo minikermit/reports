@@ -13,18 +13,18 @@
   <tr>
     <th>Reference</th>
     <th>Name</th>
-    <th>Report category</th>
     <th>Comments</th>
     <th>Order</th>
+    <th>Report category</th>
   </tr>
 
 <% @reports.each do |report| %>
   <tr>
     <td><%= link_to report.reference, report %></td>    
     <td><%=h report.name %></td>
-    <td><%=h report.report_category.name %></td>
     <td><%=h report.comments %></td>
     <td><%=h report.position %></td>
+    <td><%=h report.report_category.name %></td>
     <td><%= link_to 'Edit', edit_report_path(report) %></td>
     <td><%= link_to 'Destroy', report, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
