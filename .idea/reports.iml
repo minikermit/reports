@@ -12,9 +12,27 @@
   <component name="GemRequirementsHolder" version="2">
     <requirement>
       <requirement>
+        <dependency name="authlogic" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gemcutter.org&quot;" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="config/boot.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rails_best_practices" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gemcutter.org&quot;" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="searchlogic" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gemcutter.org&quot;" />
+      </requirement>
+      <source from="config/environment.rb" />
     </requirement>
     <requirement>
       <requirement>
@@ -40,6 +58,8 @@
     <orderEntry type="library" name="[gem] activerecord (v2.3.8, /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8)" level="application" />
     <orderEntry type="library" name="[gem] activeresource (v2.3.8, /usr/local/lib/ruby/gems/1.8/gems/activeresource-2.3.8)" level="application" />
     <orderEntry type="library" name="[gem] sqlite3-ruby (v1.2.5, /usr/local/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5)" level="application" />
+    <orderEntry type="library" name="[gem] searchlogic (v2.4.19, /usr/local/lib/ruby/gems/1.8/gems/searchlogic-2.4.19)" level="application" />
+    <orderEntry type="library" name="[gem] authlogic (v2.1.5, /usr/local/lib/ruby/gems/1.8/gems/authlogic-2.1.5)" level="application" />
   </component>
 </module>
 
