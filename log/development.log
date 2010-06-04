@@ -8822,3 +8822,134 @@ Rendering reports/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
 Completed in 86ms (View: 61, DB: 5) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-04 11:26:15) [GET]
+  [4;36;1mReport Load (5.8ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Rendering template within layouts/reports
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Completed in 216ms (View: 151, DB: 7) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-04 11:26:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReport Load (0.8ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/reports
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (0.8ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 150ms (View: 121, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-04 11:26:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/crumbs.gif" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-04 11:29:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReport Load (1.3ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (1.9ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (2.5ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 125ms (View: 94, DB: 6) | 200 OK [http://localhost/reports/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-04 11:29:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/crumbs.gif" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-04 11:32:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReport Load (1.1ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (3.0ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Completed in 115ms (View: 85, DB: 4) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-04 11:32:51) [GET]
+  [4;35;1mReportCategory Load (2.4ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Completed in 98ms (View: 75, DB: 2) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-04 11:32:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (1.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Completed in 114ms (View: 86, DB: 2) | 200 OK [http://localhost/report_categories/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-04 11:33:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (7.7ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+Completed in 79ms (View: 48, DB: 8) | 200 OK [http://localhost/reports/3]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-04 11:33:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportLine Load (1.1ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;36;1mReport Load (0.8ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mAccountPlan Load (4.9ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 157ms (View: 122, DB: 7) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing AccountPlansController#show (for 127.0.0.1 at 2010-06-04 11:33:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAccountPlan Load (0.4ms)[0m   [0;1mSELECT * FROM "account_plans" WHERE ("account_plans"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering account_plans/show
+Completed in 79ms (View: 43, DB: 0) | 200 OK [http://localhost/account_plans/1]
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-06-04 11:33:46) [GET]
+  [4;35;1mAccountPlan Load (3.3ms)[0m   [0mSELECT * FROM "account_plans" [0m
+Rendering template within layouts/application
+Rendering account_plans/index
+Completed in 265ms (View: 48, DB: 3) | 200 OK [http://localhost/account_plans]

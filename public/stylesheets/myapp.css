@@ -1,0 +1,564 @@
+/* Normal HTML */
+
+/* Slide-out tab
+------------------------------------------------------------------*/
+.slide-out-div {
+    padding: 20px;
+    width: 250px;
+    background: #ccc;
+    border: 1px solid #29216d;
+}
+
+body { 
+		margin: 0 auto;
+		padding: 0;
+		background-color: #F1EFE4; 
+	}
+/*#D6D9DE*/
+
+#art-page-background-simple-gradient
+{
+		position: absolute;
+		background-image: url('../images/Page-BgSimpleGradient.jpg');
+		background-repeat: repeat-x;
+		top:0;
+		width:100%;
+		height: 900px;
+}
+/*Page-BgSimpleGradient2.jpg*/		
+
+H1   { color: rgb(0,0,51);
+	   font-size: 24px;
+	   margin: 0px 0px 15px 0px;
+	   text_align: right;
+}
+
+li .handle { color: #777 ; cursor: move ; font-size: 12px ; }
+
+/*.myappfooter {background:url(../images/header_backdrop.png);}*/
+
+.footer { 
+	text-align: center; 
+	}
+.footer a:link, #footer a:visited { 
+	margin-right: 20px; 
+	}
+
+.myapptitle   { color: rgb(76,146,176);
+	   font-size: 22px;
+	   display: block;
+	   font_weight: bold;
+	   margin: 0px 0px 0px 45px;
+	   text_align: right;
+}
+
+.myappsubtitle   { color: rgb(98,153,20);
+	   font-size: 18px;
+	   display: block;
+	   font_weight: bold;
+	   margin: 0px 0px 0px 45px;
+	   text_align: right;
+}
+
+a {text-decoration: none; }
+
+fieldset {
+border: 1px solid #B9C9FE;
+width: 95%;
+background: #D0DAFD;
+padding: 3px;
+margin:1.5em 1.5em 1.5em 1.5em ;
+}
+fieldset legend {
+background: #8BC867;
+padding: 6px;
+font-weight: bold;
+}
+
+label{
+	font-size:80%;
+	
+	display:block;
+	float:left;
+	width:100px;
+	text-align:left;
+	margin:6px 5px 0px 0px;
+}
+
+.button{
+	background-color:#fff9e7;
+	
+	border-width:1px;
+	border-style:solid;
+	border-color:#7c5b47;
+	
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+/* Header */
+#header {
+  background-image: url(/images/Header.jpg);
+  padding: 0px 0px 0px 0px;
+  margin-left: 0px;
+  height: 225px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+
+
+/* Start Content link style */
+/*
+The right order of link pseudo-classes: Link-Visited-Hover-Focus-Active.
+http://www.w3schools.com/CSS/css_pseudo_classes.asp
+http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states/
+*/
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #8B7D46;
+}
+
+/* Adds special style to an unvisited link. */
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #8B7D46;
+}
+
+/* Adds special style to a visited link. */
+a:visited, a.visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #323630;
+}
+
+/* :hover - adds special style to an element when you mouse over it. */
+a:hover, a.hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #B7951A;
+}
+
+/* Finish Content link style */
+
+/* Resert some headings default style & links default style for links in headings*/
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #4D544A;
+}
+
+h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 22px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #666F62;
+}
+
+h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 18px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #8B7D46;
+}
+
+h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #575F54;
+}
+
+h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #575F54;
+}
+
+h6, h6 a, h6 a:link, h6 a:visited, h6 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #575F54;
+}
+/* Finish Content headings Fonts & Colors  */
+/* end PostContent */
+
+/* begin PostBullets */
+/* Start Content list */
+ol, ul
+{
+	color: #343932;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+}
+
+li ol, li ul
+{
+	margin:0.5em 0 0.5em 2em;
+	padding:0;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+ol
+{
+	list-style-position:inside;
+	
+}
+
+/* begin Button */
+.art-button-wrapper .art-button
+{
+	display:inline-block;
+	width: auto;
+	outline:none;
+	border:none;
+	background:none;
+	line-height:27px;
+	margin:0 !important;
+	padding:0 !important;
+	overflow: visible;
+	cursor: default;
+	text-decoration: none !important;
+	z-index:0;
+}
+
+.art-button-wrapper
+{
+	display:inline-block;
+	position:relative;
+	height: 27px;
+	overflow:hidden;
+	white-space: nowrap;
+	width: auto;
+	z-index:0;
+}
+
+.firefox2 .art-button-wrapper
+{
+	display:block;
+	float:left;
+}
+
+.art-button-wrapper .art-button
+{
+	display:block;
+	height: 27px;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+	white-space: nowrap;
+	text-align: left;
+	padding: 0 11px !important;
+	line-height: 27px;
+	text-decoration: none !important;
+	color: #000000 !important;
+}
+
+input, select
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+}
+
+.art-button-wrapper.hover .art-button, .art-button:hover
+{
+	color: #000000 !important;
+	text-decoration: none !important;
+}
+
+.art-button-wrapper.active .art-button
+{
+	color: #FCF9ED !important;
+}
+
+.art-button-wrapper .l, .art-button-wrapper .r
+{
+	display:block;
+	position:absolute;
+	z-index:-1;
+	height: 81px;
+	background-image: url('images/Button.png');
+}
+
+.art-button-wrapper .l
+{
+	left:0;
+	right:14px;
+}
+
+.art-button-wrapper .r
+{
+	width:421px;
+	right:0;
+	clip: rect(auto, auto, auto, 407px);
+}
+
+.art-button-wrapper.hover .l, .art-button-wrapper.hover .r
+{
+	top: -27px;
+}
+
+.art-button-wrapper.active .l, .art-button-wrapper.active .r
+{
+	top: -54px;
+}
+
+
+/* end Button */
+
+
+/* begin Footer */
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 944px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url('/images/Footer.png');
+	width: 944px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url('/images/rssIcon.png');
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 32px;
+    cursor: default;
+}
+
+
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#221F11;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-Footer .art-Footer-text a:link
+{
+	text-decoration: none;
+	color: #665C33;
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+}
+
+.art-Footer .art-Footer-text a:visited
+{
+	text-decoration: none;
+	color: #191B18;
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+}
+
+.art-Footer .art-Footer-text a:hover
+{
+	text-decoration: none;
+	color: #866D13;
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+}
+/* end Footer */
+
+/* begin PageFooter */
+.art-page-footer, .art-page-footer a, .art-page-footer a:link, .art-page-footer a:visited, .art-page-footer a:hover
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+/* end PageFooter */
+
+/* Simple scalable breadcrumb by Veerle Pieters
+------------------------------------------------------------------*/
+
+ul, li {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	}		
+#crumbs {
+	height:2.3em;
+	border:1px solid #dedede;
+	}
+#crumbs li {
+	float:left;
+	line-height:2.3em;
+	color:#777;
+	padding-left:.75em;
+	}		
+#crumbs li a {
+	background:url(/images/crumbs.gif) no-repeat right center;
+	display:block;
+	padding:0 15px 0 0;
+	}							
+#crumbs li a:link,
+#crumbs li a:visited {
+	color:#777;
+	text-decoration:none;
+	}	
+#crumbs a:link, 
+#crumbs a:visited,	
+#crumbs li a:hover,
+#crumbs li a:focus {
+	color:#dd2c0d;
+	}		
+	
+/* jquery tabs */
+
+.ui-tabs .ui-tabs-hide { display:none;}	
+
+/* Grid table rounded corner design */
+
+#rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 45px;
+	width: 800px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#rounded-corner thead th.rounded-company
+{
+	background: #b9c9fe url('/images/table-images/left.png') left -1px no-repeat;
+}
+#rounded-corner thead th.rounded-q4
+{
+	background: #b9c9fe url('/images/table-images/right.png') right -1px no-repeat;
+}
+#rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+#rounded-corner td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+#rounded-corner tfoot td.rounded-foot-left
+{
+	background: #e8edff url('/images/table-images/botleft.png') left bottom no-repeat;
+}
+#rounded-corner tfoot td.rounded-foot-right
+{
+	background: #e8edff url('/images/table-images/botright.png') right bottom no-repeat;
+}
+#rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
+}
