@@ -1,3 +1,13 @@
+<ul id="crumbs">
+ <li><a href="#">Homes</a></li>
+ <li><%= link_to  "Report categories" , report_categories_path %></li>
+  <li><%= link_to  "Reports" , reports_path %></li>
+ <li><a href="#">Report lines</a></li>
+ <li>You are creating a new report line</li>
+</ul>
+
+<br/>
+
 <h1>New report_line</h1>
 
 <% form_for(@report_line) do |f| %>
