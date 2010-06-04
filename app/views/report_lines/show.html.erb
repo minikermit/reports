@@ -1,8 +1,8 @@
 <ul id="crumbs">
  <li><a href="#">Homes</a></li>
  <li><%= link_to  "Report categories" , report_categories_path %></li>
-  <li><%= link_to  "Reports" , reports_path %></li>
- <li><a href="#">Report lines</a></li>
+ <li><%= link_to  "Reports" , reports_path %></li>
+ <li><%= link_to  "Report lines" , report_lines_path %></li>
  <li>You are looking at a specific report line</li>
 </ul>
 
@@ -48,7 +48,8 @@
     <th> Account id </th>
     <th> </th>
     <th align='left'> Account description </th>
-    <th> position </th>
+    <th> Position </th>
+    <th> Created on </th>
    </tr>
 
    <% for account_plan in @report_line.account_plans %>
@@ -58,7 +59,8 @@
   <td> ................... </td>
   <td><%= account_plan.name %> </td>
   <td><%= account_plan.position %> </td>
-  <!--Created on report.created_at.strftime("%e %B, %Y") %-->
+  <td> </td>
+  <!--td report.created_at.strftime("%e %B, %Y") %> </td!-->
   <td><%= link_to 'Edit', edit_account_plan_path(account_plan) %></td>   
  </tr>
    <% end %>
@@ -78,6 +80,6 @@
    <%= text_field "structure", "account_plan_id" %><br />
    <%= label "structure", "Comments" %><br />
    <%= text_field "structure", "comments", "rows" => 3, "cols" => 35 %><br />
-
+   <br/>
    <%= submit_tag "Map a new account to this report line" %>
 </form>

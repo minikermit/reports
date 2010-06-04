@@ -1,7 +1,7 @@
 <ul id="crumbs">
  <li><a href="#">Homes</a></li>
  <li><%= link_to  "Report categories" , report_categories_path %></li>
- <li><a href="#">Reports</a></li>
+ <li><%= link_to  "Reports" , reports_path %></li>
  <li>You are looking at a specific report</li>
 </ul>
 
@@ -23,7 +23,7 @@
 </p>
 
 <p>
-  <span style="font-weight: bold;">
+  <span style="font-weight: small;">
     Comments: <%=h @report.comments %>
   </span>
 </p>
@@ -40,20 +40,21 @@
 
    <table>
    <tr>
-    <th> position </th>
     <th align='center'> Reference </th>
     <th> </th>
     <th align='left'> Name </th>
+     <th> Position </th>
+     <th> Comments </th>
    </tr>
 
    <% for report_line in @report.report_lines %>
 
  <tr>
-  <td align='center'><%= report_line.position %> </td>
   <td><%= link_to report_line.line_id, report_line %></td>
   <td> <%=  %> </td>
   <td> ................... </td>
   <td><%= report_line.line_caption %> </td>
+   <td align='center'><%= report_line.position %> </td>
   <td><%= report_line.comments %> </td>
   <td><%= link_to 'Edit', edit_report_line_path(report_line) %></td>
 
@@ -79,6 +80,7 @@
   <%= text_area "report_line", "comments", "rows" => 3, "cols" => 35 %><br />
   <%= label "report_line", "Position" %><br />
   <%= text_field "report_line", "position" %><br />
+  <br/>
   <%= submit_tag "Add a new line to this report" %>
   </form>
 

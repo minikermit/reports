@@ -2,7 +2,7 @@ class ReportCategoriesController < ApplicationController
   # GET /report_categories
   # GET /report_categories.xml
   def index
-    @report_categories = ReportCategory.all
+    @report_categories = ReportCategory.all(:order => 'name')
 
     respond_to do |format|
       format.html # index.html.erb
