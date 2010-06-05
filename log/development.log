@@ -9706,3 +9706,1224 @@ Rendering reports/show
   [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
   [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 6) [0m
 Completed in 269ms (View: 239, DB: 1) | 200 OK [http://localhost/reports/6]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-05 21:04:05) [GET]
+  [4;36;1mReport Load (4.4ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (1.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Completed in 502ms (View: 436, DB: 6) | 200 OK [http://localhost/reports]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:04:26) [GET]
+
+ActionController::RoutingError (No route matches "/prioritize_reportlines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:05:05) [GET]
+
+ActionController::RoutingError (No route matches "/prioritize_reportlines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:05:09) [GET]
+
+ActionController::RoutingError (No route matches "/prioritize_reportlines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:05:22) [GET]
+
+ActionController::RoutingError (No route matches "/prioritize_report_lines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:05:38) [GET]
+
+ActionController::RoutingError (No route matches "/prioritize_report_lines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/prioritize_report_lines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:07:51) [GET]
+
+ActionController::RoutingError (No route matches "/prioritize_report_lines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:08:34) [GET]
+
+ActionController::RoutingError (No route matches "/report/1/prioritize_report_lines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:08:43) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+  [4;35;1mReport Load (3.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Report with ID=prioritize_report_lines):
+  app/controllers/reports_controller.rb:33:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (306.1ms)
+Rendered rescues/_request_and_response (5.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#1 (for 127.0.0.1 at 2010-06-05 21:09:16) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, prioritize_report_lines, reportline, show, and update):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#2 (for 127.0.0.1 at 2010-06-05 21:09:50) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, edit, index, new, prioritize_report_lines, reportline, show, and update):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:10:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mReportLine Load (2.7ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '10000001' AND "report_lines".id <> 1) LIMIT 1[0m
+  [4;35;1mReportLine Update (1.3ms)[0m   [0mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:10:04', "position" = NULL WHERE "id" = 1[0m
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '10000002' AND "report_lines".id <> 2) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.4ms)[0m   [0mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:10:04', "position" = NULL WHERE "id" = 2[0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '24365' AND "report_lines".id <> 6) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.3ms)[0m   [0mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:10:04', "position" = NULL WHERE "id" = 6[0m
+Completed in 496ms (View: 1, DB: 6) | 200 OK [http://localhost/reports/prioritize_report_lines/3]
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:10:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.5ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.6ms)[0m   [0mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:10:17', "position" = NULL WHERE "id" = 7[0m
+Completed in 186ms (View: 1, DB: 2) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:10:29) [GET]
+
+ActionController::RoutingError (No route matches "/report/prioritize_report_lines/1" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:11:01) [GET]
+
+ActionController::RoutingError (No route matches "/report/prioritize_report_lines/1" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:11:10) [GET]
+
+ActionController::RoutingError (No route matches "/report/prioritize_report_lines/1" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-06-05 21:11:16) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+
+NameError (uninitialized constant ReportController):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (102.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-06-05 21:11:21) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+
+NameError (uninitialized constant ReportController):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (65.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:11:47) [GET]
+
+ActionController::RoutingError (No route matches "/report/prioritize_report_lines" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:11:59) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+  [4;36;1mReport Load (2.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Report with ID=prioritize_report_lines):
+  app/controllers/reports_controller.rb:33:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (310.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:12:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (1.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;35;1mReportLine Load (1.3ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+Completed in 78ms (View: 2, DB: 3) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:12:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (2.3ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 144ms (View: 111, DB: 3) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#reportline (for 127.0.0.1 at 2010-06-05 21:13:33) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"1", "report_line"=>{"position"=>"2", "comments"=>" iofh j ureigj tp t tjh iotjhtj", "line_id"=>"9489857", "line_caption"=>"Test 2"}}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE (report_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mReportLine Create (2.1ms)[0m   [0;1mINSERT INTO "report_lines" ("position", "created_at", "comments", "updated_at", "line_morphing", "line_id", "report_id", "line_caption") VALUES(1, '2010-06-05 19:13:33', ' iofh j ureigj tp t tjh iotjhtj', '2010-06-05 19:13:33', NULL, '9489857', 1, 'Test 2')[0m
+Redirected to http://localhost:3000/reports/1
+Completed in 191ms (DB: 3) | 302 Found [http://localhost/reports/reportline/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:13:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (1.7ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (1.1ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 108ms (View: 78, DB: 3) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#reportline (for 127.0.0.1 at 2010-06-05 21:14:14) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"1", "report_line"=>{"position"=>"", "comments"=>"test", "line_id"=>"566", "line_caption"=>"test 5"}}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566') LIMIT 1[0m
+  [4;36;1mReportLine Load (1.6ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE (report_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;35;1mReportLine Create (2.4ms)[0m   [0mINSERT INTO "report_lines" ("position", "created_at", "comments", "updated_at", "line_morphing", "line_id", "report_id", "line_caption") VALUES(2, '2010-06-05 19:14:14', 'test', '2010-06-05 19:14:14', NULL, '566', 1, 'test 5')[0m
+Redirected to http://localhost:3000/reports/1
+Completed in 193ms (DB: 5) | 302 Found [http://localhost/reports/reportline/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:14:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (1.8ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 130ms (View: 100, DB: 3) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:22:14) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Report with ID=prioritize_report_lines):
+  app/controllers/reports_controller.rb:33:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (439.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:22:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (1.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReportLine Load (6.2ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;35;1mReportLine Load (1.5ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;36;1mReportLine Update (1.0ms)[0m   [0;1mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:22:47', "position" = NULL WHERE "id" = 8[0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+  [4;36;1mReportLine Update (0.4ms)[0m   [0;1mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:22:48', "position" = NULL WHERE "id" = 9[0m
+Completed in 325ms (View: 1, DB: 11) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-05 21:24:52) [GET]
+
+ActionController::RoutingError (No route matches "/report/1" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:25:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (1.8ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (2.1ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 144ms (View: 109, DB: 4) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:26:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (1.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (1.0ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 98ms (View: 75, DB: 3) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:27:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (1.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (1.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 131ms (View: 104, DB: 3) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:28:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (4.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 490ms (View: 450, DB: 5) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-06-05 21:31:52) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mReportLine Load (1.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering report_lines/edit
+  [4;36;1mReport Load (4.3ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Completed in 141ms (View: 107, DB: 6) | 200 OK [http://localhost/report_lines/7/edit]
+
+
+Processing ReportLinesController#update (for 127.0.0.1 at 2010-06-05 21:32:05) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"7", "report_line"=>{"position"=>"3", "comments"=>"hgjkb klhjlihj jlijij i", "line_morphing"=>"", "report_id"=>"1", "line_id"=>"775654", "line_caption"=>"test 3"}}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 7) [0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;35;1mReportLine Update (1.8ms)[0m   [0mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:32:05', "position" = 3 WHERE "id" = 7[0m
+Redirected to http://localhost:3000/report_lines/7
+Completed in 172ms (DB: 3) | 302 Found [http://localhost/report_lines/7]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-05 21:32:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (2.9ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mAccountPlan Load (0.3ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 7)) [0m
+Completed in 515ms (View: 475, DB: 4) | 200 OK [http://localhost/report_lines/7]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-05 21:32:11) [GET]
+  [4;35;1mReportLine Load (8.4ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mReport Load (1.3ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Completed in 196ms (View: 164, DB: 11) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-06-05 21:32:17) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mReportLine Load (1.6ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering report_lines/edit
+  [4;36;1mReport Load (1.3ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Completed in 102ms (View: 74, DB: 3) | 200 OK [http://localhost/report_lines/9/edit]
+
+
+Processing ReportLinesController#update (for 127.0.0.1 at 2010-06-05 21:32:23) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"9", "report_line"=>{"position"=>"12", "comments"=>"test", "line_morphing"=>"", "report_id"=>"1", "line_id"=>"566", "line_caption"=>"test 5"}}
+  [4;35;1mReportLine Load (1.6ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 9) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.9ms)[0m   [0mUPDATE "report_lines" SET "line_morphing" = '', "updated_at" = '2010-06-05 19:32:23', "position" = 12 WHERE "id" = 9[0m
+Redirected to http://localhost:3000/report_lines/9
+Completed in 173ms (DB: 3) | 302 Found [http://localhost/report_lines/9]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-05 21:32:24) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mReportLine Load (1.7ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mAccountPlan Load (0.3ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 9)) [0m
+Completed in 114ms (View: 81, DB: 2) | 200 OK [http://localhost/report_lines/9]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-05 21:32:27) [GET]
+  [4;35;1mReportLine Load (5.2ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mReport Load (2.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReport Load (1.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Completed in 171ms (View: 135, DB: 10) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-06-05 21:32:31) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mReportLine Load (0.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering report_lines/edit
+  [4;36;1mReport Load (2.2ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Completed in 122ms (View: 72, DB: 3) | 200 OK [http://localhost/report_lines/8/edit]
+
+
+Processing ReportLinesController#update (for 127.0.0.1 at 2010-06-05 21:32:37) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"8", "report_line"=>{"position"=>"2", "comments"=>" iofh j ureigj tp t tjh iotjhtj", "line_morphing"=>"", "report_id"=>"1", "line_id"=>"9489857", "line_caption"=>"Test 2"}}
+  [4;35;1mReportLine Load (0.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 8) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;35;1mReportLine Update (1.7ms)[0m   [0mUPDATE "report_lines" SET "line_morphing" = '', "updated_at" = '2010-06-05 19:32:37', "position" = 2 WHERE "id" = 8[0m
+Redirected to http://localhost:3000/report_lines/8
+Completed in 163ms (DB: 3) | 302 Found [http://localhost/report_lines/8]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-05 21:32:37) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mReportLine Load (1.9ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (1.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mAccountPlan Load (0.8ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 8)) [0m
+Completed in 131ms (View: 97, DB: 4) | 200 OK [http://localhost/report_lines/8]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-05 21:32:43) [GET]
+  [4;35;1mReportLine Load (5.3ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (1.1ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mReport Load (1.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReport Load (3.9ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Completed in 175ms (View: 141, DB: 12) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-06-05 21:32:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mReportLine Load (0.5ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering report_lines/edit
+  [4;36;1mReport Load (1.4ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Completed in 341ms (View: 65, DB: 2) | 200 OK [http://localhost/report_lines/6/edit]
+
+
+Processing ReportLinesController#update (for 127.0.0.1 at 2010-06-05 21:32:52) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"6", "report_line"=>{"position"=>"6", "comments"=>"-", "line_morphing"=>"", "report_id"=>"3", "line_id"=>"24365", "line_caption"=>"fgfhgfj"}}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 6) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '24365' AND "report_lines".id <> 6) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.5ms)[0m   [0mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:32:52', "position" = 6 WHERE "id" = 6[0m
+Redirected to http://localhost:3000/report_lines/6
+Completed in 170ms (DB: 1) | 302 Found [http://localhost/report_lines/6]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-05 21:32:53) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mReportLine Load (1.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (0.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (3.1ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 6)) [0m
+Completed in 157ms (View: 121, DB: 5) | 200 OK [http://localhost/report_lines/6]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-05 21:32:58) [GET]
+  [4;35;1mReportLine Load (4.9ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (0.8ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mReport Load (2.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Completed in 405ms (View: 372, DB: 9) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-06-05 21:33:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering report_lines/edit
+  [4;36;1mReport Load (4.5ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Completed in 103ms (View: 69, DB: 5) | 200 OK [http://localhost/report_lines/2/edit]
+
+
+Processing ReportLinesController#update (for 127.0.0.1 at 2010-06-05 21:33:08) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"2", "report_line"=>{"position"=>"7", "comments"=>"-", "line_morphing"=>"", "report_id"=>"3", "line_id"=>"10000002", "line_caption"=>"Fiduciary loans group"}}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '10000002' AND "report_lines".id <> 2) LIMIT 1[0m
+  [4;35;1mReportLine Update (1.3ms)[0m   [0mUPDATE "report_lines" SET "line_morphing" = '', "updated_at" = '2010-06-05 19:33:08', "position" = 7 WHERE "id" = 2[0m
+Redirected to http://localhost:3000/report_lines/2
+Completed in 156ms (DB: 2) | 302 Found [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-05 21:33:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (1.4ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 2)) [0m
+Completed in 159ms (View: 129, DB: 2) | 200 OK [http://localhost/report_lines/2]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-05 21:33:12) [GET]
+  [4;35;1mReportLine Load (2.9ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReport Load (1.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Completed in 166ms (View: 145, DB: 5) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-06-05 21:33:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportLine Load (1.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_lines/edit
+  [4;36;1mReport Load (1.9ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Completed in 119ms (View: 86, DB: 3) | 200 OK [http://localhost/report_lines/1/edit]
+
+
+Processing ReportLinesController#update (for 127.0.0.1 at 2010-06-05 21:33:26) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"1", "report_line"=>{"position"=>"8", "comments"=>"-", "line_morphing"=>"", "report_id"=>"3", "line_id"=>"10000001", "line_caption"=>"Fiduciary deposits group"}}
+  [4;35;1mReportLine Load (1.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '10000001' AND "report_lines".id <> 1) LIMIT 1[0m
+  [4;35;1mReportLine Update (5.2ms)[0m   [0mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:33:26', "position" = 8 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/report_lines/1
+Completed in 169ms (DB: 7) | 302 Found [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-05 21:33:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReportLine Load (1.3ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (1.1ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (1.8ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 1)) [0m
+Completed in 432ms (View: 395, DB: 4) | 200 OK [http://localhost/report_lines/1]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-05 21:33:30) [GET]
+  [4;35;1mReportLine Load (8.6ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (1.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mReport Load (0.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReport Load (1.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Completed in 168ms (View: 134, DB: 12) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:33:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.7ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;36;1mReportLine Update (2.5ms)[0m   [0;1mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:33:54', "position" = NULL WHERE "id" = 7[0m
+  [4;35;1mReportLine Load (4.1ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;36;1mReportLine Update (1.9ms)[0m   [0;1mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:33:54', "position" = NULL WHERE "id" = 8[0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+  [4;36;1mReportLine Update (0.3ms)[0m   [0;1mUPDATE "report_lines" SET "updated_at" = '2010-06-05 19:33:54', "position" = NULL WHERE "id" = 9[0m
+Completed in 413ms (View: 1, DB: 10) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:37:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (1.9ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReportLine Load (2.6ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;36;1mReportLine Load (0.8ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+Completed in 91ms (View: 2, DB: 6) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:37:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (2.1ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (1.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (2.0ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 152ms (View: 108, DB: 6) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-05 21:47:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (2.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mAccountPlan Load (0.3ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 3)) [0m
+Completed in 408ms (View: 355, DB: 3) | 200 OK [http://localhost/report_lines/3]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-05 21:47:39) [GET]
+  [4;35;1mReportLine Load (5.4ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (2.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReport Load (1.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReport Load (1.3ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Completed in 171ms (View: 139, DB: 11) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-05 21:47:43) [GET]
+  [4;35;1mReport Load (9.1ms)[0m   [0mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Completed in 204ms (View: 166, DB: 10) | 200 OK [http://localhost/reports]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-05 21:47:46) [GET]
+  [4;36;1mReportCategory Load (2.5ms)[0m   [0;1mSELECT * FROM "report_categories" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Completed in 84ms (View: 63, DB: 3) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-05 21:47:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (1.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Completed in 135ms (View: 111, DB: 2) | 200 OK [http://localhost/report_categories/1]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-05 21:48:02) [GET]
+  [4;35;1mReportCategory Load (4.0ms)[0m   [0mSELECT * FROM "report_categories" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Completed in 66ms (View: 45, DB: 4) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-05 21:48:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (2.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 3) [0m
+Completed in 82ms (View: 56, DB: 2) | 200 OK [http://localhost/report_categories/3]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-05 21:48:30) [GET]
+  [4;36;1mReportCategory Load (2.7ms)[0m   [0;1mSELECT * FROM "report_categories" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Completed in 87ms (View: 66, DB: 3) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-05 21:48:33) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mReportCategory Load (2.7ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 4) [0m
+Completed in 67ms (View: 39, DB: 3) | 200 OK [http://localhost/report_categories/4]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-05 21:48:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mReportCategory Load (0.9ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (2.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 4) [0m
+Completed in 63ms (View: 39, DB: 3) | 200 OK [http://localhost/report_categories/4]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-05 21:48:36) [GET]
+  [4;35;1mReportCategory Load (1.4ms)[0m   [0mSELECT * FROM "report_categories" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Completed in 73ms (View: 51, DB: 1) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-05 21:48:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 2) [0m
+Completed in 55ms (View: 36, DB: 1) | 200 OK [http://localhost/report_categories/2]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-05 21:48:41) [GET]
+  [4;36;1mReportCategory Load (4.4ms)[0m   [0;1mSELECT * FROM "report_categories" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Completed in 72ms (View: 45, DB: 4) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-05 21:48:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (2.9ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Completed in 91ms (View: 55, DB: 3) | 200 OK [http://localhost/report_categories/1]
+
+
+Processing ReportsController#edit (for 127.0.0.1 at 2010-06-05 21:48:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering reports/edit
+  [4;36;1mReportCategory Load (2.1ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Completed in 118ms (View: 87, DB: 3) | 200 OK [http://localhost/reports/3/edit]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-05 21:48:53) [GET]
+  [4;35;1mReport Load (4.1ms)[0m   [0mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Completed in 129ms (View: 101, DB: 5) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:49:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (2.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;36;1mReportLine Load (0.8ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;35;1mReportLine Load (1.5ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;36;1mReportLine Load (0.6ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+Completed in 94ms (View: 2, DB: 6) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:49:31) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Report with ID=prioritize_report_lines):
+  app/controllers/reports_controller.rb:33:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (123.9ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#1 (for 127.0.0.1 at 2010-06-05 21:49:47) [GET]
+  Parameters: {"id"=>"prioritize_report_lines"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:50:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReportLine Load (5.1ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;36;1mReportLine Load (1.1ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+Completed in 97ms (View: 2, DB: 7) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:50:17) [GET]
+  Parameters: {"id"=>"lisr"}
+  [4;35;1mReport Load (1.3ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Report with ID=lisr):
+  app/controllers/reports_controller.rb:20:in `prioritize_report_lines'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (115.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:50:20) [GET]
+  Parameters: {"id"=>"list"}
+  [4;36;1mReport Load (2.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Report with ID=list):
+  app/controllers/reports_controller.rb:20:in `prioritize_report_lines'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (324.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:50:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReportLine Load (2.1ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+Completed in 85ms (View: 1, DB: 3) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 21:52:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReportLine Load (2.5ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+Completed in 111ms (View: 8, DB: 4) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 21:59:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (0.7ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (1.1ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (0.7ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for #<ReportLine:0xb168d10>) on line #93 of app/views/reports/show.html.erb:
+90:   <% @report.report_lines.each do |t| %>
+91:     <li id="report_line_<%= t.id -%>">
+92:       <span class="name">
+93:         <%= t.name -%>
+94:       </span>
+95:       <span class="handle">[handle]<span>
+96:     </li>
+
+    app/views/reports/show.html.erb:93
+    app/views/reports/show.html.erb:90
+    app/controllers/reports_controller.rb:35:in `show'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (263.7ms)
+Rendered rescues/_request_and_response (10.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-05 22:01:34) [GET]
+  [4;36;1mReport Load (4.4ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Completed in 519ms (View: 129, DB: 5) | 200 OK [http://localhost/reports/]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-05 22:01:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.9ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (2.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 143ms (View: 111, DB: 4) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 22:02:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReportLine Load (4.5ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;35;1mReportLine Load (0.9ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;36;1mReportLine Load (3.3ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+Completed in 100ms (View: 2, DB: 9) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-05 22:04:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.7ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '775654' AND "report_lines".id <> 7) LIMIT 1[0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '9489857' AND "report_lines".id <> 8) LIMIT 1[0m
+  [4;35;1mReportLine Load (1.4ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '566' AND "report_lines".id <> 9) LIMIT 1[0m
+Completed in 331ms (View: 2, DB: 3) | 200 OK [http://localhost/reports/prioritize_report_lines/1]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-05 22:04:57) [GET]
+  [4;36;1mReport Load (3.8ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.8ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Completed in 152ms (View: 118, DB: 5) | 200 OK [http://localhost/reports/]

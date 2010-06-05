@@ -1,17 +1,19 @@
+<p>test</p>
+
+
 <ul id="reportlines-list">
   <% @report.report_lines.each do |t| %>
     <li id="report_line_<%= t.id -%>">
       <span class="name">
         <%= t.name -%>
       </span>
-      <span class="handle">[handle]<span>
+      <span class="handle">[handle]</span>
     </li>
   <% end %>
 </ul>
 
 
-
-<% content_for :javascript do %>
+<% content_for :myjavascript do %>
 
   <% javascript_tag do %>
      $('#reportlines-list').sortable(
@@ -31,7 +33,7 @@
                 complete: function(request){
                     $('#reportlines-list').effect('highlight');
                   },
-                url: '/reports/prioritize_reportlines'})
+                url: '/reports/prioritize_report_lines'})
             }
           })
     <% end %>

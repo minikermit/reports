@@ -10,22 +10,21 @@ class ReportsController < ApplicationController
     end
   end
 
-  def reportline
+  def report_line
     Report.find(params[:id]).report_lines.create(params[:report_line])
     flash[:notice] = "Added your new report line"
     redirect_to :action => "show", :id => params[:id]
   end
 
-  def prioritize_reportlines
+  def prioritize_report_lines
     report = Report.find(params[:id])
     report_lines = report.report_lines
     report_lines.each do |report_line|
-    report_line.position = params['report_line'].index(report_line.id.to_s) + 1
-    report_line.save
+      report_line.position = params['report_line'].index(report_line.id.to_s) + 1
+      report_line.save
    end
     render :nothing => true
   end
-
 
   # GET /reports/1
   # GET /reports/1.xml

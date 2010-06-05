@@ -15,6 +15,7 @@
 <p>
   <b>Reference:</b>
   <%=h @report.reference %>
+  <%=h @report.id %>
 </p>
 
 <p>
@@ -36,7 +37,7 @@
 <%= link_to 'Back', reports_path %>
 <hr />
 
- <h4>this report includes the following lines:</h4>
+ <h4>This report includes the following lines:</h4>
 
    <table>
    <tr>
@@ -51,8 +52,8 @@
 
  <tr>
   <td><%= link_to report_line.line_id, report_line %></td>
-  <td> <%=  %> </td>
-  <td> ................... </td>
+  <td> </td>
+  <td> </td>
   <td><%= report_line.line_caption %> </td>
    <td align='center'><%= report_line.position %> </td>
   <td><%= report_line.comments %> </td>
@@ -71,17 +72,15 @@
 <hr />
   
 
-  <%= form_tag :action => "reportline", :id => @report %>
+  <%= form_tag :action => "report_line", :id => @report %>
   <%= label "report_line", "Line Id" %><br />
   <%= text_field "report_line", "line_id" %> <br />
   <%= label "report_line", "Name" %><br />
   <%= text_field "report_line", "line_caption" %><br />
-  <%= label "report_line", "Comments" %><br />
-  <%= text_area "report_line", "comments", "rows" => 3, "cols" => 35 %><br />
-  <%= label "report_line", "Position" %><br />
+  <%= label "report_line", "comments" %><br />
+  <%= text_area "report_line", "comments", "rows" => 3, "cols" => 30 %><br />
+  <%= label "report_line", "position" %><br />
   <%= text_field "report_line", "position" %><br />
   <br/>
   <%= submit_tag "Add a new line to this report" %>
   </form>
-
-
