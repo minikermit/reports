@@ -4,6 +4,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :account_plans
 
   map.resources :reports
+  # add the :collection option
+  map.resources :reports, :collection => { :prioritize_report_liness => :post }
 
   map.resources :report_categories
 

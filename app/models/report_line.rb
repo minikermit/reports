@@ -4,6 +4,8 @@ class ReportLine < ActiveRecord::Base
   has_many :structures
   has_many :account_plans, :through => :structures
 
+  acts_as_list    :scope => :report
+
   validates_uniqueness_of :line_id
   validates_presence_of :line_id , :line_caption
 
@@ -24,4 +26,3 @@ end
 #  created_at    :datetime
 #  updated_at    :datetime
 #
-
