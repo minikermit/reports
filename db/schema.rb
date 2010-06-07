@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100527213814) do
+ActiveRecord::Schema.define(:version => 20100605205625) do
 
   create_table "account_plans", :force => true do |t|
     t.string   "account_id"
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(:version => 20100527213814) do
     t.datetime "updated_at"
   end
 
+  add_index "report_lines", ["report_id"], :name => "index_report_lines_on_report_id"
+
   create_table "reports", :force => true do |t|
     t.string   "reference",          :limit => 50,                   :null => false
     t.string   "name",               :limit => 50,                   :null => false
@@ -48,6 +50,8 @@ ActiveRecord::Schema.define(:version => 20100527213814) do
     t.datetime "updated_at"
   end
 
+  add_index "reports", ["report_category_id"], :name => "index_reports_on_report_category_id"
+
   create_table "structures", :force => true do |t|
     t.integer  "report_line_id"
     t.integer  "account_plan_id"
@@ -55,5 +59,8 @@ ActiveRecord::Schema.define(:version => 20100527213814) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "structures", ["account_plan_id"], :name => "index_structures_on_account_plan_id"
+  add_index "structures", ["report_line_id"], :name => "index_structures_on_report_line_id"
 
 end

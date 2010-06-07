@@ -1,7 +1,7 @@
-class CreateStructures < ActiveRecord::Migration
+class AddIndexStructures < ActiveRecord::Migration
   def self.up
-    add_index :structures, :report_line_id, :unique => true
-    add_index :structures, :account_plan_id, :unique => true
+    add_index :structures, :report_line_id  #, :unique => true
+    add_index :structures, :account_plan_id #, :unique => true
   end
 
   def self.down

@@ -1,3 +1,5 @@
+<!-- This is the breadcrumb part -->
+
 <ul id="crumbs">
  <li><a href="#">Homes</a></li>
  <li><%= link_to  "Report categories" , report_categories_path %></li>
@@ -6,6 +8,9 @@
 </ul>
 
 <br/>
+
+
+<!-- This is the edit part -->
 
 <h1>Editing report</h1>
 
@@ -27,7 +32,7 @@
   </p>
   <p>
     <%= f.label :comments %><br />
-    <%= f.text_field :comments, "rows" => 3, "cols" => 35  %>
+    <%= f.text_field :comments, "rows" => 3, "cols" => 30  %>
   </p>
   <p>
     <%= f.label :position %><br />
