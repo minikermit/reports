@@ -5,7 +5,8 @@
 
   <p>
     <%= f.label :account_id %><br />
-    <%= f.text_field :account_id %>
+    <!--%= f.text_field :account_id %--!>
+    <%= f.text_field :auto_account_plan_account_id, :class => 'autocomplete', 'data-autocomplete-url'=>autocomplete_for_account_plan_account_id_path %>
   </p>
   <p>
     <%= f.label :name %><br />

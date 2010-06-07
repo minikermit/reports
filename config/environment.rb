@@ -18,6 +18,7 @@ Rails::Initializer.run do |config|
   config.gem 'authlogic', :source => "http://gemcutter.org"
   config.gem 'searchlogic', :source => "http://gemcutter.org"
   config.gem 'rails_best_practices', :source => "http://gemcutter.org"
+  config.gem 'simple_autocomplete' 
   # config.gem "bj"                                                   
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"

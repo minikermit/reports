@@ -1,4 +1,7 @@
 class AccountPlansController < ApplicationController
+
+  autocomplete_for :account_plan, :account_id, :limit => 15, :order => 'created_at DESC'
+
   # GET /account_plans
   # GET /account_plans.xml
   def index

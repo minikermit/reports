@@ -1,4 +1,5 @@
 class ReportLinesController < ApplicationController
+
   # GET /report_lines
   # GET /report_lines.xml
   def index
