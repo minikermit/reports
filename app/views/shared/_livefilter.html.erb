@@ -1,0 +1,10 @@
+<% content_for :myjavascript do %>
+
+    <%= javascript_include_tag 'JqueryLiveFilter/jquery.liveFilter', :cache => true %>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('table.live_filter').liveFilter('basic');
+		});
+	</script>
+<% end %>
