@@ -6,9 +6,15 @@
 
 <br/>
 
-<h1>Listing report_categories</h1>
 
-<table>
+
+<div id="page_wrapper">
+		<div id="table_wrapper">
+			<h1>Listing report_categories</h1>
+
+          <input class="filter" name="livefilter" type="text" value="" />
+
+<table class="live_filter">
   <tr>
     <th>Name</th>
     <th>Comments</th>
@@ -16,7 +22,7 @@
 
 <% @report_categories.each do |report_category| %>
   <tr>
-    <td><%= link_to report_category.name, report_category %></td>
+    <td class="title"><%= link_to report_category.name, report_category %></td>
     <td><%=h report_category.comments %></td>
     <td><%= link_to 'Edit', edit_report_category_path(report_category) %></td>
     <td><%= link_to 'Destroy', report_category, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -27,3 +33,17 @@
 <br />
 
 <%= link_to 'New report_category', new_report_category_path %>
+
+
+
+<% content_for :myjavascript do %>
+
+    <%= javascript_include_tag 'JqueryLiveFilter/jquery.liveFilter', :cache => true %>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('table.live_filter').liveFilter('basic');
+		});
+	</script>
+<% end %>
+
