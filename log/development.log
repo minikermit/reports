@@ -11126,3 +11126,174 @@ Rendering template within layouts/application
 Rendering report_categories/index
 Rendered shared/_livefilter (1.0ms)
 Completed in 50ms (View: 25, DB: 3) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-07 22:39:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReportCategory Load (0.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (1.9ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Completed in 112ms (View: 86, DB: 2) | 200 OK [http://localhost/report_categories/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-07 22:40:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mReport Load (1.1ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (2.0ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 3) [0m
+Completed in 397ms (View: 367, DB: 3) | 200 OK [http://localhost/reports/3]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-07 22:40:23) [GET]
+  [4;36;1mReport Load (3.1ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (4.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (3.9ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (0.7ms)
+Completed in 136ms (View: 102, DB: 11) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-07 22:40:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportLine Load (1.6ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 114ms (View: 84, DB: 2) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-07 22:40:58) [GET]
+  [4;35;1mReport Load (3.3ms)[0m   [0mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (1.2ms)
+Completed in 360ms (View: 93, DB: 4) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-07 22:41:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mReport Load (1.3ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (1.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportLine Load (2.6ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Completed in 110ms (View: 80, DB: 5) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-07 22:41:06) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mAccountPlan Load (1.0ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 7)) [0m
+Completed in 153ms (View: 122, DB: 2) | 200 OK [http://localhost/report_lines/7]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-07 22:41:10) [GET]
+  [4;35;1mReportLine Load (7.8ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReport Load (1.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReport Load (1.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendered shared/_livefilter (1.3ms)
+Completed in 172ms (View: 143, DB: 11) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-07 22:41:10) [GET]
+  [4;35;1mReportLine Load (6.3ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReport Load (1.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendered shared/_livefilter (2.7ms)
+Completed in 237ms (View: 207, DB: 9) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-07 22:44:13) [GET]
+  [4;35;1mReportLine Load (5.6ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (1.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReport Load (1.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendered shared/_livefilter (3.2ms)
+Completed in 421ms (View: 391, DB: 9) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-06-07 22:44:58) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mReportLine Load (1.2ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering report_lines/edit
+  [4;36;1mReport Load (2.2ms)[0m   [0;1mSELECT * FROM "reports" [0m
+Completed in 124ms (View: 94, DB: 3) | 200 OK [http://localhost/report_lines/5/edit]
+
+
+Processing ReportLinesController#update (for 127.0.0.1 at 2010-06-07 22:45:10) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"zeqXZhjf6Y0Teewd2zrZ9jKjEjqfve5dOQBTfqyPYQw=", "id"=>"5", "report_line"=>{"position"=>"1", "comments"=>"-", "line_morphing"=>"", "report_id"=>"3", "line_id"=>"30000", "line_caption"=>"Line 742"}}
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 5) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = '30000' AND "report_lines".id <> 5) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.3ms)[0m   [0mUPDATE "report_lines" SET "line_morphing" = '', "updated_at" = '2010-06-07 20:45:10', "report_id" = 3 WHERE "id" = 5[0m
+Redirected to http://localhost:3000/report_lines/5
+Completed in 195ms (DB: 1) | 302 Found [http://localhost/report_lines/5]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-07 22:45:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Load (1.8ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mAccountPlan Load (0.4ms)[0m   [0;1mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 5)) [0m
+Completed in 357ms (View: 328, DB: 3) | 200 OK [http://localhost/report_lines/5]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-07 22:45:16) [GET]
+  [4;35;1mReportLine Load (4.8ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (0.9ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mReport Load (2.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 3) [0m
+Rendered shared/_livefilter (0.7ms)
+Completed in 165ms (View: 133, DB: 8) | 200 OK [http://localhost/report_lines]

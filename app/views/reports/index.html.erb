@@ -1,3 +1,5 @@
+<!-- This is the breadcrumb part -->
+
 <ul id="crumbs">
  <li><a href="#">Homes</a></li>
  <li><%= link_to  "Report categories" , report_categories_path %></li>
@@ -7,9 +9,21 @@
 
 <br/>
 
-<h1>Listing reports</h1>
 
-<table>
+
+<!-- This is the list part -->
+
+<div id="page_wrapper">
+		<div id="table_wrapper">
+          <h1>Listing reports</h1>
+
+          <!-- This is the live filter input field part -->
+
+          <input class="filter" name="livefilter" type="text" value="" />
+
+<br/>          
+
+<table class="live_filter">
   <tr>
     <th>Reference</th>
     <th>Name</th>
@@ -34,3 +48,12 @@
 <br />
 
 <%= link_to 'New report', new_report_path %>
+
+    </div>
+ </div>
+
+
+<!-- This is the javascript part -->
+<!-- TODO Move this part to a shared helper ! -->
+
+<%= render :partial => "shared/livefilter" %>
