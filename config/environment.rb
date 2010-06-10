@@ -18,7 +18,14 @@ Rails::Initializer.run do |config|
   config.gem 'authlogic', :source => "http://gemcutter.org"
   config.gem 'searchlogic', :source => "http://gemcutter.org"
   config.gem 'rails_best_practices', :source => "http://gemcutter.org"
-  config.gem 'simple_autocomplete' 
+  config.gem 'simple_autocomplete'
+  config.gem "annotate"
+  config.gem "ancestry"
+  config.gem "mislav-will_paginate", :lib => 'will_paginate', :source => 'http://gems.github.com', :version => '~> 2.2.3'
+  config.gem "mail"
+  config.gem "haml"
+
+
   # config.gem "bj"                                                   
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"

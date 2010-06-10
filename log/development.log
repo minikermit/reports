@@ -11513,3 +11513,281 @@ Rendering template within layouts/application
 Rendering report_categories/index
 Rendered shared/_livefilter (0.7ms)
 Completed in 82ms (View: 54, DB: 7) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-09 22:59:59) [GET]
+  [4;36;1mReport Load (3.2ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (4.1ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (1.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (23.3ms)
+Completed in 505ms (View: 437, DB: 9) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-09 23:27:31) [GET]
+  [4;36;1mReport Load (5.2ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (1.1ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (0.8ms)
+
+ActionView::TemplateError (undefined local variable or method `current_user' for #<ActionView::Base:0xaf66fe4>) on line #19 of app/views/layouts/application.html.erb:
+16: 
+17:     <div id="user_nav">
+18: 
+19:       <% if !current_user %>
+20:          <%= link_to "Register", new_user_path %> |
+21:          <%= link_to "Login", login_path %>
+22:          <% else %>
+
+    app/views/layouts/application.html.erb:19
+    app/controllers/reports_controller.rb:7:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (395.8ms)
+Rendered rescues/_request_and_response (25.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-09 23:34:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (4.5ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (2.1ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.8ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (3.2ms)
+Completed in 227ms (View: 199, DB: 7) | 200 OK [http://localhost/reports]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-06-09 23:34:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `login' for #<UserSession: no credentials provided>) on line #6 of app/views/user_sessions/new.html.erb:
+3: <% form_for @user_session, :url => user_sessions_path do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= f.label :login %><br />
+6:   <%= f.text_field :login %><br />
+7:   <br />
+8:   <%= f.label :password %><br />
+9:   <%= f.password_field :password %><br />
+
+    app/views/user_sessions/new.html.erb:6
+    searchlogic (2.4.19) lib/searchlogic/rails_helpers.rb:72:in `fields_for'
+    searchlogic (2.4.19) lib/searchlogic/rails_helpers.rb:61:in `form_for'
+    app/views/user_sessions/new.html.erb:3
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (162.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateReportCategories (20100527205455)
+Migrating to CreateReports (20100527205623)
+Migrating to CreateAccountPlans (20100527205859)
+Migrating to CreateReportLines (20100527210731)
+Migrating to CreateStructures (20100527213814)
+Migrating to AddIndexReports (20100605205623)
+Migrating to AddIndexReportLines (20100605205624)
+Migrating to AddIndexStructures (20100605205625)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("account_plans")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("report_categories")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_list("report_lines")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_report_lines_on_report_id')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("reports")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_reports_on_report_category_id')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mPRAGMA index_list("structures")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_structures_on_account_plan_id')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_structures_on_report_line_id')[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateReportCategories (20100527205455)
+Migrating to CreateReports (20100527205623)
+Migrating to CreateAccountPlans (20100527205859)
+Migrating to CreateReportLines (20100527210731)
+Migrating to CreateStructures (20100527213814)
+Migrating to AddIndexReports (20100605205623)
+Migrating to AddIndexReportLines (20100605205624)
+Migrating to AddIndexStructures (20100605205625)
+Migrating to CreateSessions (20100609045554)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609045554')[0m
+Migrating to CreateUsers (20100609211921)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "shortname" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609211921')[0m
+Migrating to AddExtraFieldsUser (20100609232205)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: Cannot add a NOT NULL column with default value NULL: ALTER TABLE "users" ADD "login" varchar(255) NOT NULL[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-09 23:48:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (4.1ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (1.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (1.0ms)
+Completed in 414ms (View: 386, DB: 5) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-09 23:51:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (4.0ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (1.5ms)
+Completed in 158ms (View: 135, DB: 5) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-09 23:51:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (2.9ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (1.9ms)
+Completed in 148ms (View: 125, DB: 4) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#edit (for 127.0.0.1 at 2010-06-09 23:52:26) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/edit
+  [4;35;1mReportCategory Load (1.3ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Completed in 124ms (View: 98, DB: 2) | 200 OK [http://localhost/reports/1/edit]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-09 23:52:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (4.9ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (2.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (1.0ms)
+Completed in 134ms (View: 104, DB: 8) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-09 23:53:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (2.6ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+  [4;35;1mReportCategory Load (1.1ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 3) [0m
+Rendered shared/_livefilter (4.1ms)
+Completed in 362ms (View: 114, DB: 4) | 200 OK [http://localhost/reports]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-09 23:56:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `login' for #<User:0xae4c7bc>) on line #10 of app/views/users/_form.html.erb:
+7:   <%= f.label :shortname %><br />
+8:   <%= f.text_field  :shortname %><br />
+9:   <%= f.label :login %><br />
+10:   <%= f.text_field :login %><br />
+11:   <%= f.label :email %><br />
+12:   <%= f.text_field :email %><br />
+13:   <br />
+
+    app/views/users/_form.html.erb:10
+    searchlogic (2.4.19) lib/searchlogic/rails_helpers.rb:72:in `fields_for'
+    searchlogic (2.4.19) lib/searchlogic/rails_helpers.rb:61:in `form_for'
+    app/views/users/_form.html.erb:1
+    app/views/users/new.html.erb:3
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (415.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
