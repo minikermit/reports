@@ -7,6 +7,7 @@ class StructureTest < ActiveSupport::TestCase
   end
 end
 
+
 # == Schema Information
 #
 # Table name: structures
@@ -14,6 +15,7 @@ end
 #  id              :integer         not null, primary key
 #  report_line_id  :integer
 #  account_plan_id :integer
+#  comments        :string(100)     default("-")
 #  created_at      :datetime
 #  updated_at      :datetime
 #

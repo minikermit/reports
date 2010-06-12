@@ -1,6 +1,27 @@
-<h1>Listing account_plans</h1>
+<!-- This is the breadcrumb part -->
 
-<table>
+<ul id="crumbs">
+ <li><a href="#">Homes</a></li>
+ <li><%= link_to  "Account Plan" , account_plans_path %></li>
+ <li>You are on the list of accounts page</li>
+</ul>
+
+<br/>
+
+
+<!-- This is the list part -->
+
+<div id="page_wrapper">
+		<div id="table_wrapper">
+          <h1>Listing account plan</h1>
+
+          <!-- This is the live filter input field part -->
+
+          <input class="filter" name="livefilter" type="text" value="" />
+
+<br/>
+
+<table class="live_filter">
   <tr>
     <th>Account</th>
     <th>Name</th>
@@ -24,3 +45,13 @@
 <br />
 
 <%= link_to 'New account_plan', new_account_plan_path %>
+
+    </div>
+
+ </div>
+
+
+<!-- This is the javascript part -->
+
+<%= render :partial => "shared/livefilter" %>
+

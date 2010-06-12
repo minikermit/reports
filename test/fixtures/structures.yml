@@ -8,6 +8,7 @@ two:
   report_line_id: 1
   account_plan_id: 1
 
+
 # == Schema Information
 #
 # Table name: structures
@@ -15,6 +16,7 @@ two:
 #  id              :integer         not null, primary key
 #  report_line_id  :integer
 #  account_plan_id :integer
+#  comments        :string(100)     default("-")
 #  created_at      :datetime
 #  updated_at      :datetime
 #

@@ -23,11 +23,14 @@
 
   <table>
       <tr>
-       <th> reference </th>
+       <th  align='left'> reference </th>
        <th align='center'> name </th>
        <th> </th>
+       <th> </th>
+       <th> </th>
        <th align='right'> created on </th>
-       <th> Comments </th>
+       <th  align='center'> Comments </th>
+       <th> </th>
       </tr>
 
   <% for report in @report_category.reports %>
@@ -35,6 +38,8 @@
     <tr>
      <td><%= link_to report.reference, report %></td>
      <td><%= report.name %> </td>
+     <td> </td>
+     <td> </td>
      <td> </td>
      <td><%= report.created_at.strftime("%e %B, %Y") %><td>
      <td><%= report.comments %> </td>
@@ -57,8 +62,11 @@
      <%= text_field "report", "reference" %><br />
      <%= label "name", "name" %><br />
      <%= text_field "report", "name" %><br />
-     <%= label "position", "position" %><br />
+     <%= label "report", "comments" %><br />
+     <%= text_area "report", "comments", "rows" => 3, "cols" => 30 %><br />
+     <%= label "report", "position" %><br />
      <%= text_field "report", "position" %><br />
+
 
     <br />
     <%= submit_tag "Add a new report in this category" %>

@@ -6,7 +6,11 @@ class CreateReports < ActiveRecord::Migration
       t.integer :report_category_id, :null => false
       t.string :comments , :limit   => 100,  :default => '-'
       t.integer :position,  :default => 1
-
+      t.string :created_by, :limit   => 50, :default => '-'
+      t.string :updated_by, :limit   => 50, :default => '-'
+      t.string :updated_with, :limit   => 50, :default => '-'
+      t.boolean :record_validity, :default => '1'
+      t.boolean :record_visibility, :default => '1'
       t.timestamps
     end
   end

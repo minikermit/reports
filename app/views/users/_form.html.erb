@@ -1,0 +1,29 @@
+<% form_for @user do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %><br />
+  <%= f.label :shortname %><br />
+  <%= f.text_field  :shortname %><br />
+  <%= f.label :login %><br />
+  <%= f.text_field :login %><br />
+  <%= f.label :email %><br />
+  <%= f.text_field :email %><br />
+  <br />
+
+  <%= f.label :password %><br />
+  <%= f.password_field :password %><br />
+  <br />
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %><br />
+  </p>
+
+  <%= f.submit "Register" %>
+<% end %>
+
+
+
+
+
+

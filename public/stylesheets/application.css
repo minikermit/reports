@@ -1,0 +1,248 @@
+body {
+  background-color: #4B7399;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: disc;
+}
+
+
+/*
+ Project: CSSKarma
+ Created on: 10/2/09
+ Author: Tim Wright - www.csskarma.com
+------------------------------------*/
+
+/*
+ * Reset browser defaults
+-----------------------------*/
+body,div,dl,dt,dd,ul,ol,
+li,h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,p,
+blockquote,th,td                   { margin:0;padding:0;}
+body                               { line-height:1;color:#222;background:#fff;}
+h1,h2,h3,h4,h5,h6,p                { font-size:100%;font-weight:400;}
+ol,ul                              { list-style:none;}
+caption,cite,code,th               { font-style:normal;font-weight:400;}
+fieldset,img                       { border:0;}
+caption,th                         { text-align:left;}
+:focus                             { outline:1px dotted #eee;}
+table                              { border-collapse:collapse;border-spacing:0;}
+hr                                 { border:0;border-top:1px solid #555;margin:0;height:1px;}
+label,
+button,
+input[type="submit"]               { cursor:pointer;}
+
+
+/* this is my CSS below */
+
+#container p.fineprint { font-size:10px;color:#777;line-height:1.2; }
+
+hr {border: none 0;
+border-top: 1px dashed #000;/*the border*/
+width: 95%;
+height: 1px;/*whatever the total width of the border-top and border-bottom equal*/
+
+}
+
+#container p.commenttext {
+     background: #9bc561 ; /*url(/images/jqgrid/ui-bg_flat_55_fbec88_40x100.png) repeat-x bottombottom;*/
+     border-top:1px solid #c5f386;
+     padding: 0 20px 10px 20px;
+     color:#fafcf6;
+}
+
+/*
+ * General Elements
+-----------------------------*/
+html                               { text-align:center; }
+body                               { background:#f6f6f6 ; font:12px/1.3 Tahoma, Arial, Sans-serif;
+                                     text-align:left; }
+h1                                 { font-size:30px; }
+h2                                 { font-size:22px;margin:0 0 10px; }
+h3                                 { font-size:20px; }
+h4                                 { font-size:18px; }
+h5                                 { font-size:14px; }
+h6                                 { font-size:12px; }
+p                                  { margin:0 0 15px;line-height:1.8; }
+p,
+ul,
+ol                                 { font-size:12px; }
+ul,
+ol                                 { margin:0 0 15px 30px; }
+ul                                 { list-style:disc; }
+ol                                 { list-style:decimal; }
+li                                 { line-height:1.8; }
+dl                                 {  }
+dd                                 { margin:0 0 20px;line-height:1.8 }
+dt                                 { font-size:16px; }
+pre                                { -moz-border-radius-topleft:7px;-webkit-border-radius-top-left:7px;overflow:auto;padding:10px;background:#e4e4e4;color:#222;width:575px;border:1px solid #ccc;margin:15px 0 30px; }
+iframe                             { width:590px; }
+pre span{color:#888;}
+blockquote{width:66%;margin:0 auto 25px;border-left:10px solid #ccc;padding:0 15px;}
+blockquote cite{display:block;padding:5px 0 0;font-style:italic;text-align:right;}
+
+/*
+ Archors
+*/
+a                                  { color:#036;overflow:hidden;text-decoration:none; }
+a:hover,
+a:focus                            { color:#00509f; }
+
+/*
+ * Feed Selection Form
+ ----------------------------------*/
+#selection                   { padding:5px 10px 10px;background:#333;color:#fff;clear:both; }
+#selection label             { padding-left:10px; }
+#selection li label          { padding-left:3px; }
+#selection label:hover       { color:#ccc; }
+#selection ul                { font-size:12px;margin:5px 10px 15px 20px; }
+#selection ul li             { margin:2px 0; list-style: none; } 
+#selection #btn-submit       { display:block;margin-top:10px;margin-left:10px;text-transform:capitalize; }
+p#getform                    { padding:0;border-top:10px solid #222;clear:both;text-align:right;height:30px; }
+p#getform a                  { background:#222 url(/images/dots.gif) no-repeat center 85%;padding:0 10px;line-height:30px;
+                               padding-bottom:3px;display:block;float:right;color:#fff;-moz-border-radius-bottomleft:5px;
+                               -webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-webkit-border-bottom-right-radius:5px; }
+p#getform a:hover            { background-color:#111; }
+p#getform a:focus            { background-color:#000; }
+
+/*
+ * left Navigation
+ ----------------------------------*/
+
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+}
+ul#navigation li {
+    width: 100px;
+}
+ul#navigation li a {
+    display: block;
+    margin-left: -2px;
+    width: 100px;
+    height: 70px;
+    background-color:#CFCFCF;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border:1px solid #AFAFAF;
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    /*-moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    */
+    opacity: 0.6;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+ul#navigation .home a{
+    background-image: url(../images/icons64/office_folders.png);
+}
+ul#navigation .about a      {
+    background-image: url(../images/icons64/green_arrow_down.png);
+}
+ul#navigation .search a      {
+    background-image: url(../images/icons64/blue_arrow_up.png);
+}
+ul#navigation .podcasts a      {
+    background-image: url(../images/icons64/red_flag.png);
+}
+ul#navigation .rssfeed a   {
+    background-image: url(../images/icons64/open_store.png);
+}
+ul#navigation .photos a     {
+    background-image: url(../images/icons64/lock.png);
+}
+ul#navigation .contact a    {
+    background-image: url(../images/icons64/help_balloon.png);
+}
+
+/*
+ * User nav
+ ----------------------------------*/
+
+#user_nav {
+    float: right;
+    font-size: 8px;
+}
