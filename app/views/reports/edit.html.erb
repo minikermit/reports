@@ -1,47 +1,29 @@
-<!-- This is the breadcrumb part -->
 
-<ul id="crumbs">
- <li><a href="#">Homes</a></li>
- <li><%= link_to  "Report categories" , report_categories_path %></li>
- <li><%= link_to  "Reports" , reports_path %></li>
- <li>You are editing a report</li>
-</ul>
+<% content_for :article2 do %>
 
-<br/>
+<h2 class="art-postheader">
+  Editing report
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
+  <%= render :partial => 'form' %>
+
+  <%= link_to 'Show', @report %> |
+  <%= link_to 'Back', reports_path %>
 
 
-<!-- This is the edit part -->
+        <blockquote>
+            <p>
+                &#8220;This stylesheet is going to help so freaking much.&#8221;
+                <br />
+                -Blockquote
+            </p>
+        </blockquote>
+      <br />
 
-<h1>Editing report</h1>
+    <!-- /article-content -->
+</div>
 
-<% form_for(@report) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :reference %><br />
-    <%= f.text_field :reference %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :report_category_id %><br />
-    <%= select("report", "report_category_id", ReportCategory.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
-    <!--%= f.text_field :report_category_id %-->
-  </p>
-  <p>
-    <%= f.label :comments %><br />
-    <%= f.text_field :comments, "rows" => 3, "cols" => 30  %>
-  </p>
-  <p>
-    <%= f.label :position %><br />
-    <%= f.text_field :position %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
 <% end %>
-
-<%= link_to 'Show', @report %> |
-<%= link_to 'Back', reports_path %>

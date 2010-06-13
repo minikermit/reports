@@ -1,41 +1,27 @@
-<ul id="crumbs">
- <li><a href="#">Homes</a></li>
- <li><%= link_to  "Report categories" , report_categories_path %></li>
- <li><%= link_to  "Reports" , reports_path %></li>
-  <li>You are creating a new report</li>
-</ul>
+<% content_for :article2 do %>
 
-<br/>
+<h2 class="art-postheader">
+  New report
+</h2>
 
-<h1>New report</h1>
+<div class="art-postcontent">
+    <!-- article-content -->
+  <%= render :partial => 'form' %>
 
-<% form_for(@report) do |f| %>
-  <%= f.error_messages %>
+  <%= link_to 'Back', reports_path %>
 
-  <p>
-    <%= f.label :reference %><br />
-    <%= f.text_field :reference %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :report_category_id %><br />
-    <%= select("report", "report_category_id", ReportCategory.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
-    <!--%= f.text_field :report_category_id %-->
-  </p>
-  <p>
-    <%= f.label :comments %><br />
-    <%= f.text_field :comments, "rows" => 3, "cols" => 35  %>
-  </p>
-  <p>
-    <%= f.label :position %><br />
-    <%= f.text_field :position %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+
+        <blockquote>
+            <p>
+                &#8220;This stylesheet is going to help so freaking much.&#8221;
+                <br />
+                -Blockquote
+            </p>
+        </blockquote>
+      <br />
+
+    <!-- /article-content -->
+</div>
+
+
 <% end %>
-
-<%= link_to 'Back', reports_path %>

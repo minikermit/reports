@@ -48,6 +48,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="mysql" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/database.yml" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="config/boot.rb" />
@@ -108,6 +114,7 @@
     <orderEntry type="library" name="[gem] ancestry (v1.2.0, /usr/local/lib/ruby/gems/1.8/gems/ancestry-1.2.0)" level="application" />
     <orderEntry type="library" name="[gem] polyglot (v0.3.1, /usr/local/lib/ruby/gems/1.8/gems/polyglot-0.3.1)" level="application" />
     <orderEntry type="library" name="[gem] mime-types (v1.16, /home/owner/.gem/ruby/1.8/gems/mime-types-1.16)" level="application" />
+    <orderEntry type="library" name="[gem] mysql (v2.8.1, /usr/local/lib/ruby/gems/1.8/gems/mysql-2.8.1)" level="application" />
   </component>
 </module>
 

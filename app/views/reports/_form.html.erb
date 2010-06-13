@@ -1,0 +1,36 @@
+<% form_for(@report) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :reference %><br />
+    <%= f.text_field :reference %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :report_category_id %><br />
+    <%= select("report", "report_category_id", ReportCategory.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
+    <!--%= f.text_field :report_category_id %-->
+  </p>
+  <p>
+    <%= f.label :comments %><br />
+    <%= f.text_field :comments, "rows" => 3, "cols" => 30  %>
+  </p>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+  <p  class="input.title">
+    <span> <%= f.label :Record_Validity %></span>
+    <span> <%= f.check_box :record_validity, :class => 'checkbox'  %></span><br />
+    <span> <%= f.label :Record_Visibility %></span>
+    <span> <%= f.check_box :record_visibility, :class => 'checkbox' %></span><br />
+  </p>
+
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>
+

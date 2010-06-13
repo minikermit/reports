@@ -2,14 +2,13 @@
  <li><a href="#">Homes</a></li>
  <li><%= link_to  "Report categories" , report_categories_path %></li>
  <li><%= link_to  "Reports" , reports_path %></li>
- <li><%= link_to  "Report lines" , report_lines_path %></li>
- <li>You are creating a new report line</li>
+  <li>You are creating a new report</li>
 </ul>
 
 <br/>
 
-<h1>New report_line</h1>
+<h1>New report</h1>
 
 <%= render :partial => 'form' %>
 
-<%= link_to 'Back', report_lines_path %>
+<%= link_to 'Back', reports_path %>

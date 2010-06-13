@@ -14,11 +14,12 @@ end
 
 
 
+
 # == Schema Information
 #
 # Table name: report_categories
 #
-#  id                        :integer         not null, primary key
+#  id                        :integer(4)      not null, primary key
 #  report_category_id        :string(50)      not null
 #  category_type             :string(50)      not null
 #  category_type_description :string(50)      not null
@@ -28,8 +29,8 @@ end
 #  created_by                :string(50)      default("-")
 #  updated_by                :string(50)      default("-")
 #  updated_with              :string(50)      default("-")
-#  record_validity           :boolean         default(TRUE)
-#  record_visibility         :boolean         default(TRUE)
+#  record_validity           :boolean(1)      default(TRUE)
+#  record_visibility         :boolean(1)      default(TRUE)
 #  created_at                :datetime
 #  updated_at                :datetime
 #

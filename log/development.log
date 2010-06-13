@@ -15138,3 +15138,2244 @@ ActionController::RoutingError (No route matches "/report_categories/1/images/co
   -e:1
 
 Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-13 18:29:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;35;1mReport Load (1.9ms)[0m   [0mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+Rendered shared/_livefilter (2.3ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 41ms (View: 10, DB: 2) | 200 OK [http://localhost/reports]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-13 18:29:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/01.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-13 18:29:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/02.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-13 18:29:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/03.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-13 18:29:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/contact.jpg" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:41:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:41:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:41:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing Rails::InfoController#properties (for 192.168.0.130 at 2010-06-13 18:41:46) [GET]
+  [4;36;1mSQL (2.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 119ms (View: 17, DB: 10) | 200 OK [http://192.168.0.156/rails/info/properties]
+
+
+Processing ReportCategoriesController#index (for 192.168.0.130 at 2010-06-13 18:42:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (1.5ms)[0m   [0;1mSELECT * FROM "report_categories" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 24ms (View: 14, DB: 2) | 200 OK [http://192.168.0.156/report_categories]
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:43:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/01.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:43:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/contact.jpg" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:43:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/03.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:43:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/02.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#edit (for 192.168.0.130 at 2010-06-13 18:45:38) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/edit
+Rendered report_categories/_form (16.4ms)
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 43ms (View: 27, DB: 0) | 200 OK [http://192.168.0.156/report_categories/1/edit]
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:45:59) [GET]
+
+ActionController::RoutingError (No route matches "/report_categories/1/images/01.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:45:59) [GET]
+
+ActionController::RoutingError (No route matches "/report_categories/1/images/03.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:45:59) [GET]
+
+ActionController::RoutingError (No route matches "/report_categories/1/images/02.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 18:45:59) [GET]
+
+ActionController::RoutingError (No route matches "/report_categories/1/images/contact.jpg" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#update (for 192.168.0.130 at 2010-06-13 18:47:20) [PUT]
+  Parameters: {"report_category"=>{"record_validity"=>"1", "name"=>"GreenBook 2", "comments"=>"This is a comment", "category_kind"=>"GB", "record_visibility"=>"1", "category_type_description"=>"Accounting", "category_type"=>"ACT", "report_category_id"=>"Cat1"}, "commit"=>"Save", "action"=>"update", "_method"=>"put", "authenticity_token"=>"pnBwT9lzsWZR8k17qAkbTaJnv9a1ayHqXLlxIZLgk1E=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportCategory Load (0.2ms)[0m   [0mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'GreenBook 2' AND "report_categories".id <> 1) LIMIT 1[0m
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+  [4;35;1mReportCategory Update (0.3ms)[0m   [0mUPDATE "report_categories" SET "updated_at" = '2010-06-13 16:47:20', "name" = 'GreenBook 2' WHERE "id" = 1[0m
+Redirected to http://192.168.0.156:3000/report_categories/1
+Completed in 150ms (DB: 1) | 302 Found [http://192.168.0.156/report_categories/1]
+
+
+Processing ReportCategoriesController#show (for 192.168.0.130 at 2010-06-13 18:47:26) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 36ms (View: 20, DB: 1) | 200 OK [http://192.168.0.156/report_categories/1]
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 18:48:02) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 18:48:02) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 18:48:02) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to jpg (for 192.168.0.130 at 2010-06-13 18:48:02) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#index (for 192.168.0.130 at 2010-06-13 19:00:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (1.1ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+Rendered shared/_livefilter (1.0ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://192.168.0.156/reports]
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:01:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/01.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:01:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/02.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:01:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/03.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:01:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/contact.jpg" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#new (for 192.168.0.130 at 2010-06-13 19:03:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"reports"}
+Rendering template within layouts/application
+Rendering reports/new
+  [4;35;1mReportCategory Load (0.6ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 44ms (View: 27, DB: 1) | 200 OK [http://192.168.0.156/reports/new]
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:03:43) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:03:43) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:03:43) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to jpg (for 192.168.0.130 at 2010-06-13 19:03:43) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#create (for 192.168.0.130 at 2010-06-13 19:04:29) [POST]
+  Parameters: {"report"=>{"position"=>"1", "name"=>"report  12", "reference"=>"12", "comments"=>"This is a comment", "report_category_id"=>"1"}, "commit"=>"Create", "action"=>"create", "authenticity_token"=>"pnBwT9lzsWZR8k17qAkbTaJnv9a1ayHqXLlxIZLgk1E=", "controller"=>"reports"}
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '12') LIMIT 1[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'report 12') LIMIT 1[0m
+  [4;36;1mReportCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReport Create (0.6ms)[0m   [0mINSERT INTO "reports" ("reference", "name", "position", "record_validity", "created_at", "comments", "updated_at", "record_visibility", "created_by", "updated_by", "report_category_id", "updated_with") VALUES('12', 'report 12', 1, 't', '2010-06-13 17:04:29', 'This is a comment', '2010-06-13 17:04:29', 't', '-', '-', 1, '-')[0m
+Redirected to http://192.168.0.156:3000/reports/1
+Completed in 297ms (DB: 1) | 302 Found [http://192.168.0.156/reports]
+
+
+Processing ReportsController#show (for 192.168.0.130 at 2010-06-13 19:04:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.7ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 55ms (View: 41, DB: 1) | 200 OK [http://192.168.0.156/reports/1]
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:05:11) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:05:11) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:05:11) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to jpg (for 192.168.0.130 at 2010-06-13 19:05:11) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#show (for 192.168.0.130 at 2010-06-13 19:15:16) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.3ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 46ms (View: 32, DB: 1) | 200 OK [http://192.168.0.156/reports/1]
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:16:28) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:16:28) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:16:28) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to jpg (for 192.168.0.130 at 2010-06-13 19:16:28) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#index (for 192.168.0.130 at 2010-06-13 19:18:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (1.7ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendered shared/_livefilter (1.3ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 44ms (View: 32, DB: 2) | 200 OK [http://192.168.0.156/reports]
+
+
+Processing ReportsController#index (for 192.168.0.130 at 2010-06-13 19:18:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (1.6ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 38ms (View: 26, DB: 2) | 200 OK [http://192.168.0.156/reports]
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:19:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/01.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:19:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/03.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:19:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/02.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:19:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/contact.jpg" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#edit (for 192.168.0.130 at 2010-06-13 19:20:32) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/edit
+  [4;35;1mReportCategory Load (0.7ms)[0m   [0mSELECT * FROM "report_categories" [0m
+Rendered reports/_form (29.6ms)
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 59ms (View: 46, DB: 1) | 200 OK [http://192.168.0.156/reports/1/edit]
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:21:38) [GET]
+
+ActionController::RoutingError (No route matches "/reports/1/images/01.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:21:38) [GET]
+
+ActionController::RoutingError (No route matches "/reports/1/images/02.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:21:38) [GET]
+
+ActionController::RoutingError (No route matches "/reports/1/images/03.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 19:21:38) [GET]
+
+ActionController::RoutingError (No route matches "/reports/1/images/contact.jpg" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#update (for 192.168.0.130 at 2010-06-13 19:21:38) [PUT]
+  Parameters: {"report"=>{"record_validity"=>"1", "position"=>"1", "name"=>"report  12", "reference"=>"12", "comments"=>"This is a comment too", "record_visibility"=>"1", "report_category_id"=>"1"}, "commit"=>"Save", "action"=>"update", "_method"=>"put", "authenticity_token"=>"pnBwT9lzsWZR8k17qAkbTaJnv9a1ayHqXLlxIZLgk1E=", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '12' AND "reports".id <> 1) LIMIT 1[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'report 12' AND "reports".id <> 1) LIMIT 1[0m
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;35;1mReport Update (0.3ms)[0m   [0mUPDATE "reports" SET "updated_at" = '2010-06-13 17:21:38', "comments" = 'This is a comment too' WHERE "id" = 1[0m
+Redirected to http://192.168.0.156:3000/reports/1
+Completed in 165ms (DB: 2) | 302 Found [http://192.168.0.156/reports/1]
+
+
+Processing ReportsController#show (for 192.168.0.130 at 2010-06-13 19:21:47) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 229ms (View: 216, DB: 1) | 200 OK [http://192.168.0.156/reports/1]
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:22:39) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:22:39) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:22:39) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to jpg (for 192.168.0.130 at 2010-06-13 19:22:39) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#report_line (for 192.168.0.130 at 2010-06-13 19:23:11) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"pnBwT9lzsWZR8k17qAkbTaJnv9a1ayHqXLlxIZLgk1E=", "id"=>"1", "controller"=>"reports", "report_line"=>{"position"=>"2", "comments"=>"This is a test", "line_id"=>"GB18_234", "line_caption"=>"Line 234"}}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.1ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = 'GB18_234') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.5ms)[0m   [0mSELECT * FROM "report_lines" WHERE (report_id = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.3ms)[0m   [0;1mINSERT INTO "report_lines" ("position", "created_at", "comments", "updated_at", "line_morphing", "line_id", "report_id", "line_caption") VALUES(1, '2010-06-13 17:23:11', 'This is a test', '2010-06-13 17:23:11', NULL, 'GB18_234', 1, 'Line 234')[0m
+Redirected to http://192.168.0.156:3000/reports/1
+Completed in 123ms (DB: 2) | 302 Found [http://192.168.0.156/reports/report_line/1]
+
+
+Processing ReportsController#show (for 192.168.0.130 at 2010-06-13 19:23:25) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.8ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 53ms (View: 39, DB: 2) | 200 OK [http://192.168.0.156/reports/1]
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:24:00) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:24:00) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to png (for 192.168.0.130 at 2010-06-13 19:24:01) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#images to jpg (for 192.168.0.130 at 2010-06-13 19:24:01) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"reports"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, prioritize_report_lines, report_line, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (17.4ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (144.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (122.4ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateReportCategories (20100527205455)
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "report_categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "report_category_id" varchar(50) NOT NULL, "category_type" varchar(50) NOT NULL, "category_type_description" varchar(50) NOT NULL, "category_kind" varchar(50) NOT NULL, "name" varchar(50) NOT NULL, "comments" varchar(255) DEFAULT '-', "created_by" varchar(50) DEFAULT '-', "updated_by" varchar(50) DEFAULT '-', "updated_with" varchar(50) DEFAULT '-', "record_validity" boolean DEFAULT '1', "record_visibility" boolean DEFAULT '1', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527205455')[0m
+Migrating to CreateReports (20100527205623)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "reference" varchar(50) NOT NULL, "name" varchar(50) NOT NULL, "report_category_id" integer NOT NULL, "comments" varchar(100) DEFAULT '-', "position" integer DEFAULT 1, "created_by" varchar(50) DEFAULT '-', "updated_by" varchar(50) DEFAULT '-', "updated_with" varchar(50) DEFAULT '-', "record_validity" boolean DEFAULT '1', "record_visibility" boolean DEFAULT '1', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527205623')[0m
+Migrating to CreateAccountPlans (20100527205859)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "account_plans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "account_id" varchar(255), "name" varchar(255), "comments" varchar(255) DEFAULT '-', "position" integer DEFAULT 1, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527205859')[0m
+Migrating to CreateReportLines (20100527210731)
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE TABLE "report_lines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "report_id" integer(50) NOT NULL, "line_id" varchar(50) NOT NULL, "parent_line_id" varchar(50), "line_caption" varchar(50) NOT NULL, "uo" varchar(1) DEFAULT '+', "comments" varchar(100) DEFAULT '-', "position" integer DEFAULT 1, "line_morphing" varchar(50), "line_style" varchar(50), "created_by" varchar(50) DEFAULT '-', "updated_by" varchar(50) DEFAULT '-', "updated_with" varchar(50) DEFAULT '-', "record_validity" boolean DEFAULT '1', "record_visibility" boolean DEFAULT '1', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527210731')[0m
+Migrating to CreateStructures (20100527213814)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "structures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "report_line_id" integer, "account_plan_id" integer, "comments" varchar(100) DEFAULT '-', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100527213814')[0m
+Migrating to AddIndexReports (20100605205623)
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("reports")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE INDEX "index_reports_on_report_category_id" ON "reports" ("report_category_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100605205623')[0m
+Migrating to AddIndexReportLines (20100605205624)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("report_lines")[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE INDEX "index_report_lines_on_report_id" ON "report_lines" ("report_id")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100605205624')[0m
+Migrating to AddIndexStructures (20100605205625)
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("structures")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE INDEX "index_structures_on_report_line_id" ON "structures" ("report_line_id")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("structures")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_info('index_structures_on_report_line_id')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE INDEX "index_structures_on_account_plan_id" ON "structures" ("account_plan_id")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100605205625')[0m
+Migrating to CreateSessions (20100609045554)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609045554')[0m
+Migrating to CreateUsers (20100609211921)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "shortname" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609211921')[0m
+Migrating to AddExtraFieldsUser (20100609232205)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: Cannot add a NOT NULL column with default value NULL: ALTER TABLE "users" ADD "login" varchar(255) NOT NULL[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (119.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (522.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (78.3ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (528.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (18.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateReportCategories (20100527205455)
+  [4;36;1mSQL (187.6ms)[0m   [0;1mCREATE TABLE `report_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `report_category_id` varchar(50) NOT NULL, `category_type` varchar(50) NOT NULL, `category_type_description` varchar(50) NOT NULL, `category_kind` varchar(50) NOT NULL, `name` varchar(50) NOT NULL, `comments` varchar(255) DEFAULT '-', `created_by` varchar(50) DEFAULT '-', `updated_by` varchar(50) DEFAULT '-', `updated_with` varchar(50) DEFAULT '-', `record_validity` tinyint(1) DEFAULT '1', `record_visibility` tinyint(1) DEFAULT '1', `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (133.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100527205455')[0m
+Migrating to CreateReports (20100527205623)
+  [4;36;1mSQL (225.9ms)[0m   [0;1mCREATE TABLE `reports` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `reference` varchar(50) NOT NULL, `name` varchar(50) NOT NULL, `report_category_id` int(11) NOT NULL, `comments` varchar(100) DEFAULT '-', `position` int(11) DEFAULT 1, `created_by` varchar(50) DEFAULT '-', `updated_by` varchar(50) DEFAULT '-', `updated_with` varchar(50) DEFAULT '-', `record_validity` tinyint(1) DEFAULT '1', `record_visibility` tinyint(1) DEFAULT '1', `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (54.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100527205623')[0m
+Migrating to CreateAccountPlans (20100527205859)
+  [4;36;1mSQL (172.7ms)[0m   [0;1mCREATE TABLE `account_plans` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `account_id` varchar(255), `name` varchar(255), `comments` varchar(255) DEFAULT '-', `position` int(11) DEFAULT 1, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100527205859')[0m
+Migrating to CreateReportLines (20100527210731)
+  [4;36;1mSQL (209.6ms)[0m   [0;1mCREATE TABLE `report_lines` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `report_id` integer NOT NULL, `line_id` varchar(50) NOT NULL, `parent_line_id` varchar(50), `line_caption` varchar(50) NOT NULL, `uo` varchar(1) DEFAULT '+', `comments` varchar(100) DEFAULT '-', `position` int(11) DEFAULT 1, `line_morphing` varchar(50), `line_style` varchar(50), `created_by` varchar(50) DEFAULT '-', `updated_by` varchar(50) DEFAULT '-', `updated_with` varchar(50) DEFAULT '-', `record_validity` tinyint(1) DEFAULT '1', `record_visibility` tinyint(1) DEFAULT '1', `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100527210731')[0m
+Migrating to CreateStructures (20100527213814)
+  [4;36;1mSQL (132.6ms)[0m   [0;1mCREATE TABLE `structures` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `report_line_id` int(11), `account_plan_id` int(11), `comments` varchar(100) DEFAULT '-', `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100527213814')[0m
+Migrating to AddIndexReports (20100605205623)
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW KEYS FROM `reports`[0m
+  [4;35;1mSQL (373.9ms)[0m   [0mCREATE INDEX `index_reports_on_report_category_id` ON `reports` (`report_category_id`)[0m
+  [4;36;1mSQL (54.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100605205623')[0m
+Migrating to AddIndexReportLines (20100605205624)
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `report_lines`[0m
+  [4;36;1mSQL (453.8ms)[0m   [0;1mCREATE INDEX `index_report_lines_on_report_id` ON `report_lines` (`report_id`)[0m
+  [4;35;1mSQL (43.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100605205624')[0m
+Migrating to AddIndexStructures (20100605205625)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `structures`[0m
+  [4;35;1mSQL (343.6ms)[0m   [0mCREATE INDEX `index_structures_on_report_line_id` ON `structures` (`report_line_id`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `structures`[0m
+  [4;35;1mSQL (313.0ms)[0m   [0mCREATE INDEX `index_structures_on_account_plan_id` ON `structures` (`account_plan_id`)[0m
+  [4;36;1mSQL (54.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100605205625')[0m
+Migrating to CreateSessions (20100609045554)
+  [4;35;1mSQL (183.2ms)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (356.3ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (291.0ms)[0m   [0mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;36;1mSQL (43.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100609045554')[0m
+Migrating to CreateUsers (20100609211921)
+  [4;35;1mSQL (139.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `shortname` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (44.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100609211921')[0m
+Migrating to AddExtraFieldsUser (20100609232205)
+  [4;35;1mSQL (327.3ms)[0m   [0mALTER TABLE `users` ADD `login` varchar(255) NOT NULL[0m
+  [4;36;1mSQL (312.7ms)[0m   [0;1mALTER TABLE `users` ADD `email` varchar(255) NOT NULL[0m
+  [4;35;1mSQL (314.6ms)[0m   [0mALTER TABLE `users` ADD `crypted_password` varchar(255) NOT NULL[0m
+  [4;36;1mSQL (301.3ms)[0m   [0;1mALTER TABLE `users` ADD `password_salt` varchar(255) NOT NULL[0m
+  [4;35;1mSQL (680.4ms)[0m   [0mALTER TABLE `users` ADD `persistence_token` varchar(255) NOT NULL[0m
+  [4;36;1mSQL (312.7ms)[0m   [0;1mALTER TABLE `users` ADD `single_access_token` varchar(255) NOT NULL[0m
+  [4;35;1mSQL (324.1ms)[0m   [0mALTER TABLE `users` ADD `perishable_token` varchar(255) NOT NULL[0m
+  [4;36;1mSQL (280.9ms)[0m   [0;1mALTER TABLE `users` ADD `login_count` int(11) NOT NULL[0m
+  [4;35;1mSQL (312.7ms)[0m   [0mALTER TABLE `users` ADD `failed_login_count` int(11) NOT NULL[0m
+  [4;36;1mSQL (323.8ms)[0m   [0;1mALTER TABLE `users` ADD `last_request_at` datetime[0m
+  [4;35;1mSQL (290.5ms)[0m   [0mALTER TABLE `users` ADD `current_login_at` datetime[0m
+  [4;36;1mSQL (281.2ms)[0m   [0;1mALTER TABLE `users` ADD `last_login_at` datetime[0m
+  [4;35;1mSQL (312.8ms)[0m   [0mALTER TABLE `users` ADD `current_login_ip` varchar(255)[0m
+  [4;36;1mSQL (368.8ms)[0m   [0;1mALTER TABLE `users` ADD `last_login_ip` varchar(255)[0m
+  [4;35;1mSQL (43.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100609232205')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (69.3ms)[0m   [0mSHOW FIELDS FROM `account_plans`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `account_plans`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `account_plans`[0m
+  [4;36;1mSQL (32.9ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `report_categories`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `report_categories`[0m
+  [4;35;1mSQL (8.2ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `report_lines`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `report_lines`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `reports`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `reports`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mSHOW FIELDS FROM `structures`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `structures`[0m
+  [4;36;1mSQL (15.4ms)[0m   [0;1mSHOW KEYS FROM `structures`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+
+
+Processing ReportsController#show (for 192.168.0.130 at 2010-06-13 20:28:22) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Report with ID=1):
+  app/controllers/reports_controller.rb:32:in `show'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (53.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#index (for 192.168.0.130 at 2010-06-13 20:28:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Load (1.2ms)[0m   [0mSELECT * FROM "report_categories" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Rendered shared/_livefilter (1.2ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 151ms (View: 6, DB: 1) | 200 OK [http://192.168.0.156/report_categories]
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 20:29:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/01.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 20:29:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/02.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 20:29:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/03.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 20:29:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/contact.jpg" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#new (for 192.168.0.130 at 2010-06-13 20:29:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"report_categories"}
+Rendering template within layouts/application
+Rendering report_categories/new
+Rendered report_categories/_form (19.0ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 182ms (View: 170, DB: 0) | 200 OK [http://192.168.0.156/report_categories/new]
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:30:00) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:30:00) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:30:00) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to jpg (for 192.168.0.130 at 2010-06-13 20:30:00) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#create (for 192.168.0.130 at 2010-06-13 20:30:22) [POST]
+  Parameters: {"report_category"=>{"record_validity"=>"1", "name"=>"GreenBook", "comments"=>"-", "category_kind"=>"GB", "record_visibility"=>"1", "category_type_description"=>"Accounting", "category_type"=>"ACT", "report_category_id"=>"1"}, "commit"=>"Save", "action"=>"create", "authenticity_token"=>"pnBwT9lzsWZR8k17qAkbTaJnv9a1ayHqXLlxIZLgk1E=", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT "report_categories".id FROM "report_categories" WHERE ("report_categories"."name" = 'GreenBook') LIMIT 1[0m
+  [4;35;1mReportCategory Create (0.5ms)[0m   [0mINSERT INTO "report_categories" ("name", "record_validity", "created_at", "comments", "category_kind", "updated_at", "record_visibility", "created_by", "category_type_description", "category_type", "updated_by", "report_category_id", "updated_with") VALUES('GreenBook', 't', '2010-06-13 18:30:22', '-', 'GB', '2010-06-13 18:30:22', 't', '-', 'Accounting', 'ACT', '-', '1', '-')[0m
+Redirected to http://192.168.0.156:3000/report_categories/1
+Completed in 131ms (DB: 1) | 302 Found [http://192.168.0.156/report_categories]
+
+
+Processing ReportCategoriesController#show (for 192.168.0.130 at 2010-06-13 20:30:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.3ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 34ms (View: 20, DB: 1) | 200 OK [http://192.168.0.156/report_categories/1]
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:30:58) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:30:58) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:30:58) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to jpg (for 192.168.0.130 at 2010-06-13 20:30:58) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#report (for 192.168.0.130 at 2010-06-13 20:30:58) [POST]
+  Parameters: {"report"=>{"position"=>"", "name"=>"", "reference"=>"", "comments"=>""}, "commit"=>"Add a new report in this category", "action"=>"report", "authenticity_token"=>"pnBwT9lzsWZR8k17qAkbTaJnv9a1ayHqXLlxIZLgk1E=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '') LIMIT 1[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = '') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Redirected to http://192.168.0.156:3000/report_categories/1
+Completed in 43ms (DB: 1) | 302 Found [http://192.168.0.156/report_categories/report/1]
+
+
+Processing ReportCategoriesController#report (for 192.168.0.130 at 2010-06-13 20:31:45) [POST]
+  Parameters: {"report"=>{"position"=>"2", "name"=>"Report 1", "reference"=>"1", "comments"=>"This is a comment"}, "commit"=>"Add a new report in this category", "action"=>"report", "authenticity_token"=>"pnBwT9lzsWZR8k17qAkbTaJnv9a1ayHqXLlxIZLgk1E=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '1') LIMIT 1[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'Report 1') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReport Create (2.5ms)[0m   [0;1mINSERT INTO "reports" ("reference", "name", "position", "record_validity", "created_at", "comments", "updated_at", "record_visibility", "created_by", "updated_by", "report_category_id", "updated_with") VALUES('1', 'Report 1', 2, 't', '2010-06-13 18:31:45', 'This is a comment', '2010-06-13 18:31:45', 't', '-', '-', 1, '-')[0m
+Redirected to http://192.168.0.156:3000/report_categories/1
+Completed in 174ms (DB: 3) | 302 Found [http://192.168.0.156/report_categories/report/1]
+
+
+Processing ReportCategoriesController#show (for 192.168.0.130 at 2010-06-13 20:31:56) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports".report_category_id = 1) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 64ms (View: 51, DB: 1) | 200 OK [http://192.168.0.156/report_categories/1]
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:32:28) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"01", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:32:28) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"02", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to png (for 192.168.0.130 at 2010-06-13 20:32:28) [GET]
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"03", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#images to jpg (for 192.168.0.130 at 2010-06-13 20:32:28) [GET]
+  Parameters: {"format"=>"jpg", "action"=>"images", "id"=>"contact", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#edit (for 192.168.0.130 at 2010-06-13 20:32:47) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/edit
+  [4;36;1mReportCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Rendered reports/_form (29.2ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 47ms (View: 34, DB: 1) | 200 OK [http://192.168.0.156/reports/1/edit]
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 20:33:07) [GET]
+
+ActionController::RoutingError (No route matches "/reports/1/images/01.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 20:33:08) [GET]
+
+ActionController::RoutingError (No route matches "/reports/1/images/contact.jpg" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 20:33:08) [GET]
+
+ActionController::RoutingError (No route matches "/reports/1/images/03.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 192.168.0.130 at 2010-06-13 20:33:08) [GET]
+
+ActionController::RoutingError (No route matches "/reports/1/images/02.png" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-13 22:47:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;35;1mReport Load (2.6ms)[0m   [0mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendered shared/_livefilter (3.1ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 106ms (View: 92, DB: 3) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-13 22:54:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;35;1mReport Load (2.2ms)[0m   [0mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (1.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendered shared/_livefilter (1.3ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (8.8ms)
+Completed in 114ms (View: 97, DB: 4) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-13 23:02:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;35;1mReport Load (1.6ms)[0m   [0mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendered shared/_livefilter (1.2ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Completed in 190ms (View: 34, DB: 2) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#edit (for 127.0.0.1 at 2010-06-13 23:02:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Load (1.9ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/edit
+  [4;36;1mReportCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Rendered reports/_form (31.4ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 60ms (View: 41, DB: 3) | 200 OK [http://localhost/reports/1/edit]
+
+
+Processing ReportsController#update (for 127.0.0.1 at 2010-06-13 23:03:33) [PUT]
+  Parameters: {"report"=>{"record_validity"=>"1", "position"=>"3", "name"=>"Report 1", "reference"=>"1", "comments"=>"This is a comment aussi", "record_visibility"=>"1", "report_category_id"=>"1"}, "commit"=>"Save", "action"=>"update", "_method"=>"put", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '1' AND "reports".id <> 1) LIMIT 1[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'Report 1' AND "reports".id <> 1) LIMIT 1[0m
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+  [4;36;1mReport Update (0.3ms)[0m   [0;1mUPDATE "reports" SET "updated_at" = '2010-06-13 21:03:33', "comments" = 'This is a comment aussi', "position" = 3 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/reports/1
+Completed in 183ms (DB: 2) | 302 Found [http://localhost/reports/1]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:03:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.3ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 1) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 72ms (View: 45, DB: 1) | 200 OK [http://localhost/reports/1]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-13 23:07:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (1.3ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendered shared/_livefilter (0.9ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Completed in 185ms (View: 31, DB: 2) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#new (for 127.0.0.1 at 2010-06-13 23:08:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"reports"}
+Rendering template within layouts/application
+Rendering reports/new
+  [4;36;1mReportCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "report_categories" [0m
+Rendered reports/_form (31.6ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 59ms (View: 41, DB: 1) | 200 OK [http://localhost/reports/new]
+
+
+Processing ReportsController#create (for 127.0.0.1 at 2010-06-13 23:08:49) [POST]
+  Parameters: {"report"=>{"record_validity"=>"1", "position"=>"5", "name"=>"Report 45", "reference"=>"45", "comments"=>"this is also a comment", "record_visibility"=>"1", "report_category_id"=>"1"}, "commit"=>"Save", "action"=>"create", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "controller"=>"reports"}
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT "reports".id FROM "reports" WHERE ("reports"."reference" = '45') LIMIT 1[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT "reports".id FROM "reports" WHERE ("reports"."name" = 'Report 45') LIMIT 1[0m
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReport Create (0.4ms)[0m   [0;1mINSERT INTO "reports" ("reference", "name", "position", "record_validity", "created_at", "comments", "updated_at", "record_visibility", "created_by", "updated_by", "report_category_id", "updated_with") VALUES('45', 'Report 45', 5, 't', '2010-06-13 21:08:49', 'this is also a comment', '2010-06-13 21:08:49', 't', '-', '-', 1, '-')[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 182ms (DB: 1) | 302 Found [http://localhost/reports]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:08:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.3ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 56ms (View: 37, DB: 1) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:13:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;36;1mReport Load (0.9ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.7ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 63ms (View: 45, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:14:24) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.3ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 61ms (View: 44, DB: 1) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:16:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 63ms (View: 44, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#report_line (for 127.0.0.1 at 2010-06-13 23:17:36) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"2", "controller"=>"reports", "report_line"=>{"position"=>"13", "comments"=>"This is a new line", "line_id"=>"GB18_222", "line_caption"=>"Form 18 Line 22"}}
+  [4;35;1mReport Load (1.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = 'GB18_222') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.3ms)[0m   [0mSELECT * FROM "report_lines" WHERE (report_id = 2) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.4ms)[0m   [0;1mINSERT INTO "report_lines" ("position", "record_validity", "created_at", "comments", "updated_at", "uo", "record_visibility", "line_morphing", "created_by", "report_id", "line_id", "line_style", "updated_by", "parent_line_id", "line_caption", "updated_with") VALUES(1, 't', '2010-06-13 21:17:36', 'This is a new line', '2010-06-13 21:17:36', '+', 't', NULL, '-', 2, 'GB18_222', NULL, '-', NULL, 'Form 18 Line 22', '-')[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 155ms (DB: 2) | 302 Found [http://localhost/reports/report_line/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:17:36) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.7ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 88ms (View: 67, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:18:04) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (3.9ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (2.5ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 271ms (View: 249, DB: 5) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#report_line (for 127.0.0.1 at 2010-06-13 23:19:29) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"2", "controller"=>"reports", "report_line"=>{"position"=>"3", "comments"=>"This is another line with a longer comment.", "line_id"=>"GB18_224", "line_caption"=>"Form 18 Line 24"}}
+  [4;35;1mReport Load (4.1ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mReportLine Load (2.5ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = 'GB18_224') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT * FROM "report_lines" WHERE (report_id = 2) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.3ms)[0m   [0;1mINSERT INTO "report_lines" ("position", "record_validity", "created_at", "comments", "updated_at", "uo", "record_visibility", "line_morphing", "created_by", "report_id", "line_id", "line_style", "updated_by", "parent_line_id", "line_caption", "updated_with") VALUES(2, 't', '2010-06-13 21:19:29', 'This is another line with a longer comment.', '2010-06-13 21:19:29', '+', 't', NULL, '-', 2, 'GB18_224', NULL, '-', NULL, 'Form 18 Line 24', '-')[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 164ms (DB: 7) | 302 Found [http://localhost/reports/report_line/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:19:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (0.9ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 74ms (View: 59, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#report_line (for 127.0.0.1 at 2010-06-13 23:20:09) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"2", "controller"=>"reports", "report_line"=>{"position"=>"4", "comments"=>"This is another comment", "line_id"=>"GB18_225", "line_caption"=>"Form 18 Line 26"}}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = 'GB18_225') LIMIT 1[0m
+  [4;36;1mReportLine Load (0.6ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE (report_id = 2) ORDER BY position DESC LIMIT 1[0m
+  [4;35;1mReportLine Create (0.5ms)[0m   [0mINSERT INTO "report_lines" ("position", "record_validity", "created_at", "comments", "updated_at", "uo", "record_visibility", "line_morphing", "created_by", "report_id", "line_id", "line_style", "updated_by", "parent_line_id", "line_caption", "updated_with") VALUES(3, 't', '2010-06-13 21:20:09', 'This is another comment', '2010-06-13 21:20:09', '+', 't', NULL, '-', 2, 'GB18_225', NULL, '-', NULL, 'Form 18 Line 26', '-')[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 162ms (DB: 2) | 302 Found [http://localhost/reports/report_line/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:20:09) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.7ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (1.3ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 222ms (View: 205, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:21:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mReportLine Load (1.2ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 105ms (View: 84, DB: 2) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-13 23:22:48) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Load (0.6ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mReportLine Load (1.3ms)[0m   [0;1mSELECT * FROM "report_lines" WHERE ("report_lines".report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 87ms (View: 66, DB: 3) | 200 OK [http://localhost/reports/2]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-13 23:28:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;35;1mReport Load (1.8ms)[0m   [0mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendered shared/_livefilter (1.0ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 55ms (View: 44, DB: 2) | 200 OK [http://localhost/reports]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-13 23:30:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (1.6ms)[0m   [0;1mSELECT * FROM "reports" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "report_categories" WHERE ("report_categories"."id" = 1) [0m
+Rendered shared/_livefilter (1.2ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 61ms (View: 45, DB: 2) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mReport Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mUser Columns (9.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mStructure Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `structures`[0m
+  [4;35;1mReportCategory Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportLine Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mAccountPlan Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `account_plans`[0m
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-13 23:37:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_lines"}
+  [4;35;1mReportLine Load (2.0ms)[0m   [0mSELECT * FROM "report_lines" ORDER BY position[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;36;1mReport Load (0.5ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 79ms (View: 62, DB: 2) | 200 OK [http://localhost/report_lines]
+
+
+Processing ReportLinesController#new (for 127.0.0.1 at 2010-06-13 23:37:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"report_lines"}
+Rendering template within layouts/application
+Rendering report_lines/new
+  [4;35;1mReport Load (0.8ms)[0m   [0mSELECT * FROM "reports" [0m
+Rendered report_lines/_form (44.5ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 126ms (View: 94, DB: 1) | 200 OK [http://localhost/report_lines/new]
+
+
+Processing ReportLinesController#create (for 127.0.0.1 at 2010-06-13 23:38:49) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"create", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "controller"=>"report_lines", "report_line"=>{"record_validity"=>"1", "position"=>"5", "comments"=>"new comment", "record_visibility"=>"1", "line_morphing"=>"", "report_id"=>"2", "line_style"=>"", "line_id"=>"GB18_234", "parent_line_id"=>"GB18_23", "line_caption"=>"Form 18 Line 25"}}
+  [4;36;1mReportLine Load (0.2ms)[0m   [0;1mSELECT "report_lines".id FROM "report_lines" WHERE ("report_lines"."line_id" = 'GB18_234') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT * FROM "report_lines" WHERE (report_id = 2) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.4ms)[0m   [0;1mINSERT INTO "report_lines" ("position", "record_validity", "created_at", "comments", "updated_at", "uo", "record_visibility", "line_morphing", "created_by", "report_id", "line_id", "line_style", "updated_by", "parent_line_id", "line_caption", "updated_with") VALUES(4, 't', '2010-06-13 21:38:49', 'new comment', '2010-06-13 21:38:49', '+', 't', '', '-', 2, 'GB18_234', '', '-', 'GB18_23', 'Form 18 Line 25', '-')[0m
+Redirected to http://localhost:3000/report_lines/4
+Completed in 157ms (DB: 1) | 302 Found [http://localhost/report_lines]
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-13 23:38:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"report_lines"}
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT * FROM "report_lines" WHERE ("report_lines"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT * FROM "reports" WHERE ("reports"."id" = 2) [0m
+  [4;35;1mAccountPlan Load (0.3ms)[0m   [0mSELECT "account_plans".* FROM "account_plans" INNER JOIN "structures" ON "account_plans".id = "structures".account_plan_id WHERE (("structures".report_line_id = 4)) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 97ms (View: 81, DB: 1) | 200 OK [http://localhost/report_lines/4]

@@ -10,38 +10,7 @@
 
 <h1>Editing report_line</h1>
 
-<% form_for(@report_line) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :line_id %><br />
-    <%= f.text_field :line_id %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :line_caption %>
-  </p>
-  <p>
-    <%= f.label :comments %><br />
-    <%= f.text_field :comments, "rows" => 3, "cols" => 35  %>
-  </p>
-  <p>
-    <%= f.label :position %><br />
-    <%= f.text_field :position %>
-  </p>
-  <p>
-    <%= f.label :line_morphing %><br />
-    <%= f.text_field :line_morphing %>
-  </p>
-    <p>
-      <%= f.label :report_id %><br />
-      <!--%= f.text_field :report_id %-->
-      <%= select("report_line", "report_id", Report.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
-    </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
+<%= render :partial => 'form' %>
 
 <%= link_to 'Show', @report_line %> |
 <%= link_to 'Back', report_lines_path %>

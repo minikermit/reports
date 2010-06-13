@@ -1,18 +1,27 @@
-<% content_for :article2 do %>
+<!-- This is the breadcrumb part -->
 
-<h2 class="art-postheader">
-  Listing reports
-</h2>
+<ul id="crumbs">
+ <li><a href="#">Homes</a></li>
+ <li><%= link_to  "Report categories" , report_categories_path %></li>
+ <li><%= link_to  "Reports" , reports_path %></li>
+ <li>You are on the list of reports page</li>
+</ul>
 
-<div class="art-postcontent">
-    <!-- article-content -->
+<br/>
+
+
+
+<!-- This is the list part -->
 
 <div id="page_wrapper">
 		<div id="table_wrapper">
+          <h1>Listing reports</h1>
+
           <!-- This is the live filter input field part -->
+
           <input class="filter" name="livefilter" type="text" value="" />
 
-<br/>          
+<br/>
 
 <table class="live_filter">
   <tr>
@@ -25,7 +34,7 @@
 
 <% @reports.each do |report| %>
   <tr>
-    <td><%= link_to report.reference, report %></td>    
+    <td><%= link_to report.reference, report %></td>
     <td><%=h report.name %></td>
     <td><%=h report.comments %></td>
     <td><%=h report.position %></td>
@@ -40,27 +49,12 @@
 
 <%= link_to 'New report', new_report_path %>
 
-
     </div>
  </div>
 
-        <blockquote>
-            <p>
-                &#8220;This is a list of available reports.&#8221;
-                <br />
-                -Blockquote
-            </p>
-        </blockquote>
-      <br />
-
-    <!-- /article-content -->
-</div>
 
 <!-- This is the javascript part -->
+
 <%= render :partial => "shared/livefilter" %>
-
-<% end %>
-
-
 
 <% content_for :side do %>  <p>A simple page</p> <% end %> 

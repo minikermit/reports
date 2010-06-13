@@ -1,0 +1,47 @@
+<% form_for(@report_line) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :line_id %><br />
+    <%= f.text_field :line_id %>
+  </p>
+  <p>
+    <%= f.label :parent_line_id %><br />
+    <%= f.text_field :parent_line_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :line_caption %>
+  </p>
+  <p>
+    <%= f.label :comments %><br />
+    <%= f.text_field :comments, "rows" => 3, "cols" => 35  %>
+  </p>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+  <p>
+    <%= f.label :line_morphing %><br />
+    <%= f.text_field :line_morphing %>
+  </p>
+  <p>
+    <%= f.label :line_style %><br />
+    <%= f.text_field :line_style %>
+  </p>
+  <p>
+      <%= f.label :report_id %><br />
+      <!--%= f.text_field :report_id %-->
+      <%= select("report_line", "report_id", Report.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
+  </p>
+  <p  class="input.title">
+    <span> <%= f.label :Record_Validity %></span>
+    <span> <%= f.check_box :record_validity, :class => 'checkbox'  %></span><br />
+    <span> <%= f.label :Record_Visibility %></span>
+    <span> <%= f.check_box :record_visibility, :class => 'checkbox' %></span><br />
+  </p>
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+
+<% end %>
