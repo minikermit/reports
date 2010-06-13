@@ -8,20 +8,6 @@
 
 <h1>New report_category</h1>
 
-<% form_for(@report_category) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :comments %><br />
-    <%= f.text_field :comments, "rows" => 3, "cols" => 30  %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+<%= render :partial => 'form' %>
 
 <%= link_to 'Back', report_categories_path %>

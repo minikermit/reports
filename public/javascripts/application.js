@@ -22,6 +22,7 @@ $(document).ready(function() {
 
 });
 
+// Jquery : Autocomplete
     jQuery(function($){//on document ready
       //autocomplete
       $('input.autocomplete').each(function(){
@@ -29,3 +30,13 @@ $(document).ready(function() {
         $input.autocomplete($input.attr('data-autocomplete-url'));
       });
     });
+
+// Jquery : Calendar datepicker (non obstrusive)
+ $(function (){
+     $('#tasklist_due_date').datepicker();
+ });
+
+// Jquery : flexselect plugin
+jQuery(document).ready(function() {
+  $("select[class*=flexselect]").flexselect();
+});

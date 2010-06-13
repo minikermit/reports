@@ -1,0 +1,42 @@
+<% form_for(@report_category) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :category_type %><br />
+    <%= f.text_field :category_type %>
+  </p>
+  <p>
+    <%= f.label :category_type_description %><br />
+    <%= f.text_field :category_type_description %>
+  </p>
+  <p>
+    <%= f.label :category_kind %><br />
+    <%= f.text_field :category_kind %>
+  </p>
+  <p>
+    <%= f.label :category_id %><br />
+    <%= f.text_field :report_category_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :comments %><br />
+    <%= f.text_field :comments, "rows" => 3, "cols" => 30  %>
+  </p>
+  <p  class="input.title">
+    <span> <%= f.label :Record_Validity %></span>
+    <span> <%= f.check_box :record_validity, :class => 'checkbox'  %></span><br />
+    <span> <%= f.label :Record_Visibility %></span>
+    <span> <%= f.check_box :record_visibility, :class => 'checkbox' %></span><br />
+  </p>
+
+
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+
+<% end %>
+
+
