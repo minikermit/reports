@@ -1,5 +1,7 @@
 class AccountPlan < ActiveRecord::Base
 
+acts_as_tree
+
 has_many :structures
 has_many :report_lines, :through => :structures
 

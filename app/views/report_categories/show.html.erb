@@ -73,3 +73,49 @@
   </form>
 
 
+<hr />
+
+
+  <br />
+  <br />
+
+
+
+<ul id="reports-list">
+  <% @report_category.reports.each do |t| %>
+    <li id="report_<%= t.id -%>">
+      <span class="name">
+        <%= t.name -%>
+      </span>
+      <span class="handle">[handle]</span>
+    </li>
+  <% end %>
+</ul>
+
+
+<% content_for :myjavascript do %>
+
+  <% javascript_tag do %>
+     $('#reports-list').sortable(
+        {
+          axis: 'y',
+          dropOnEmpty:false,
+          handle: '.handle',
+          cursor: 'crosshair',
+          items: 'li',
+          opacity: 0.4,
+          scroll: true,
+          update: function(){
+            $.ajax({
+                type: 'post',
+                data: $('#reports-list').sortable('serialize') + '&id=<%=@report_category.id-%>',
+                dataType: 'script',
+                complete: function(request){
+                    $('#reports-list').effect('highlight');
+                  },
+                url: '/report_categories/prioritize_reports'})
+            }
+          })
+    <% end %>
+
+<% end %>

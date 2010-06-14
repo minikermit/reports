@@ -43,6 +43,18 @@ class ReportCategoriesController < ApplicationController
     @report_category = ReportCategory.find(params[:id])
   end
 
+
+  def prioritize_reports
+  report_category = ReportCategory.find(params[:id])
+  reports = report_category.reports
+  reports.each do |report|
+    report.position = params['report'].index(report.id.to_s) + 1
+    report.save
+  end
+    render :nothing => true
+  end
+
+
   # POST /report_categories
   # POST /report_categories.xml
   def create
@@ -87,3 +99,7 @@ class ReportCategoriesController < ApplicationController
     end
   end
 end
+
+
+
+

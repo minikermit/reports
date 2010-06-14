@@ -2,11 +2,11 @@
 
 // This sets up the proper header for rails to understand the request type,
 // and therefore properly respond to js requests (via respond_to block, for example)
-$.ajaxSetup({
+jQuery.ajaxSetup({
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
 })
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
   // UJS authenticity token fix: add the authenticy_token parameter
   // expected by any Rails POST request.
@@ -32,7 +32,7 @@ $(document).ready(function() {
     });
 
 // Jquery : Calendar datepicker (non obstrusive)
- $(function (){
+ jQuery(function (){
      $('#tasklist_due_date').datepicker();
  });
 

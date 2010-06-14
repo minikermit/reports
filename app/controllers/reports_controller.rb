@@ -17,14 +17,15 @@ class ReportsController < ApplicationController
   end
 
   def prioritize_report_lines
-    report = Report.find(params[:id])
-    report_lines = report.report_lines
-    report_lines.each do |report_line|
-      report_line.position = params['report_line'].index(report_line.id.to_s) + 1
-      report_line.save
-   end
+  report = Report.find(params[:id])
+  report_lines = report.report_lines
+  report_lines.each do |report_line|
+    report_line.position = params['report_line'].index(report_line.id.to_s) + 1
+    report_line.save
+  end
     render :nothing => true
   end
+
 
   # GET /reports/1
   # GET /reports/1.xml

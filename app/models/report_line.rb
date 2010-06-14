@@ -5,6 +5,7 @@ class ReportLine < ActiveRecord::Base
   has_many :account_plans, :through => :structures
 
   acts_as_list    :scope => :report
+  default_scope :order => "position ASC"
 
   validates_uniqueness_of :line_id
   validates_presence_of :line_id , :line_caption

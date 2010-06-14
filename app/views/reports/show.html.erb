@@ -87,8 +87,64 @@
 
       <br />
 
+      <hr />
+
+
+  <br />
+  <br />
+
+  <blockquote>
+      <p>
+          &#8220;You can sort the lines below (use the handle).&#8221;
+          <br />
+          Press refresh to see the immediate effect of the reordering. This reordering is effective only for a given report.
+      </p>
+  </blockquote>
+
+
+<ul id="report_lines-list">
+  <% @report.report_lines.each do |t| %>
+    <li id="report_line_<%= t.id -%>">
+      <span class="line_caption">
+        <%= t.line_caption -%>
+      </span>
+      <span class="handle">[handle]</span>
+    </li>
+  <% end %>
+</ul>
+
+
+
+
     <!-- /article-content -->
 </div>
 
+
+<% end %>
+
+<% content_for :myjavascript do %>
+
+  <% javascript_tag do %>
+     $('#report_lines-list').sortable(
+        {
+          axis: 'y',
+          dropOnEmpty:false,
+          handle: '.handle',
+          cursor: 'crosshair',
+          items: 'li',
+          opacity: 0.4,
+          scroll: true,
+          update: function(){
+            $.ajax({
+                type: 'post',
+                data: $('#report_lines-list').sortable('serialize') + '&id=<%=@report.id-%>',
+                dataType: 'script',
+                complete: function(request){
+                    $('#report_lines-list').effect('highlight');
+                  },
+                url: '/reports/prioritize_report_lines'})
+            }
+          })
+    <% end %>
 
 <% end %>

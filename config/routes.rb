@@ -13,10 +13,10 @@ ActionController::Routing::Routes.draw do |map|
 
 
   map.resources :reports
-  # add the :collection option
-  map.resources :report, :collection => { :prioritize_report_lines => :post }
-
+  map.resources :reports, :collection => { :prioritize_report_lines => :post }
+  
   map.resources :report_categories
+  map.resources :report_categories, :collection => { :prioritize_reports => :post }
 
   # The priority is based upon order of creation: first created -> highest priority.
 

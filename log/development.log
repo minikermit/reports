@@ -17379,3 +17379,1869 @@ Rendered shared/_menubar (0.1ms)
 Rendered shared/_template2 (0.1ms)
 Rendered shared/_sidebar (0.2ms)
 Completed in 97ms (View: 81, DB: 1) | 200 OK [http://localhost/report_lines/4]
+  [4;36;1mSQL (18.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-14 22:36:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (97.8ms)[0m   [0;1mSELECT * FROM `reports` ORDER BY position, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+Rendered shared/_livefilter (2.1ms)
+Rendered shared/_menubar (24.0ms)
+Completed in 327ms (View: 194, DB: 137) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#new (for 127.0.0.1 at 2010-06-14 22:36:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"reports"}
+  [4;35;1mReport Columns (66.0ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/new
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM `report_categories` [0m
+Rendered reports/_form (61.3ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (22.1ms)
+Completed in 224ms (View: 145, DB: 68) | 200 OK [http://localhost/reports/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-14 22:37:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Load (4.0ms)[0m   [0mSELECT * FROM `report_categories` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Rendered shared/_livefilter (1.7ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (11.5ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 282ms (View: 258, DB: 4) | 200 OK [http://localhost/report_categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-06-14 22:37:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+Rendering template within layouts/application
+Rendering report_categories/new
+Rendered report_categories/_form (43.6ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 90ms (View: 74, DB: 2) | 200 OK [http://localhost/report_categories/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#create (for 127.0.0.1 at 2010-06-14 22:37:47) [POST]
+  Parameters: {"report_category"=>{"record_validity"=>"1", "name"=>"Balance-Sheet", "comments"=>"-", "category_kind"=>"BL", "record_visibility"=>"1", "category_type_description"=>"Accounting", "category_type"=>"ACT", "report_category_id"=>"1"}, "commit"=>"Save", "action"=>"create", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReportCategory Load (60.6ms)[0m   [0mSELECT `report_categories`.id FROM `report_categories` WHERE (`report_categories`.`name` = BINARY 'Balance-Sheet') LIMIT 1[0m
+  [4;36;1mReportCategory Create (35.0ms)[0m   [0;1mINSERT INTO `report_categories` (`name`, `record_validity`, `created_at`, `comments`, `category_kind`, `updated_at`, `record_visibility`, `created_by`, `category_type_description`, `category_type`, `updated_by`, `report_category_id`, `updated_with`) VALUES('Balance-Sheet', 1, '2010-06-14 20:37:47', '-', 'BL', '2010-06-14 20:37:47', 1, '-', 'Accounting', 'ACT', '-', '1', '-')[0m
+  [4;35;1mSQL (86.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/report_categories/1
+Completed in 228ms (DB: 184) | 302 Found [http://localhost/report_categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 22:37:47) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (1.3ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 288ms (View: 274, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-14 22:37:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM `report_categories` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+  [4;36;1mReportCategory Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 31ms (View: 19, DB: 2) | 200 OK [http://localhost/report_categories]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#new (for 127.0.0.1 at 2010-06-14 22:38:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+Rendering template within layouts/application
+Rendering report_categories/new
+Rendered report_categories/_form (18.3ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 44ms (View: 29, DB: 2) | 200 OK [http://localhost/report_categories/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#create (for 127.0.0.1 at 2010-06-14 22:38:25) [POST]
+  Parameters: {"report_category"=>{"record_validity"=>"1", "name"=>"GreenBook", "comments"=>"-", "category_kind"=>"GB", "record_visibility"=>"1", "category_type_description"=>"Accounting", "category_type"=>"ACT", "report_category_id"=>"2"}, "commit"=>"Save", "action"=>"create", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT `report_categories`.id FROM `report_categories` WHERE (`report_categories`.`name` = BINARY 'GreenBook') LIMIT 1[0m
+  [4;35;1mReportCategory Create (0.4ms)[0m   [0mINSERT INTO `report_categories` (`name`, `record_validity`, `created_at`, `comments`, `category_kind`, `updated_at`, `record_visibility`, `created_by`, `category_type_description`, `category_type`, `updated_by`, `report_category_id`, `updated_with`) VALUES('GreenBook', 1, '2010-06-14 20:38:26', '-', 'GB', '2010-06-14 20:38:26', 1, '-', 'Accounting', 'ACT', '-', '2', '-')[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/report_categories/2
+Completed in 245ms (DB: 54) | 302 Found [http://localhost/report_categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 22:38:26) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.7ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 2) ORDER BY position ASC[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.6ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 42ms (View: 25, DB: 3) | 200 OK [http://localhost/report_categories/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-14 22:38:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` ORDER BY position, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+Rendered shared/_livefilter (5.4ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#new (for 127.0.0.1 at 2010-06-14 22:38:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"reports"}
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/new
+  [4;36;1mReportCategory Load (0.4ms)[0m   [0;1mSELECT * FROM `report_categories` [0m
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+Rendered reports/_form (183.5ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 204ms (View: 193, DB: 3) | 200 OK [http://localhost/reports/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#create (for 127.0.0.1 at 2010-06-14 22:39:14) [POST]
+  Parameters: {"report"=>{"record_validity"=>"1", "position"=>"3", "name"=>"Report 12", "reference"=>"2", "comments"=>"-", "record_visibility"=>"1", "report_category_id"=>"1"}, "commit"=>"Save", "action"=>"create", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "controller"=>"reports"}
+  [4;36;1mReport Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` = BINARY '2') LIMIT 1[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` = BINARY 'Report 12') LIMIT 1[0m
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Create (0.3ms)[0m   [0;1mINSERT INTO `reports` (`reference`, `name`, `position`, `record_validity`, `created_at`, `comments`, `updated_at`, `record_visibility`, `created_by`, `updated_by`, `report_category_id`, `updated_with`) VALUES('2', 'Report 12', 3, 1, '2010-06-14 20:39:14', '-', '2010-06-14 20:39:14', 1, '-', '-', 1, '-')[0m
+  [4;35;1mSQL (43.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/reports/1
+Completed in 127ms (DB: 50) | 302 Found [http://localhost/reports]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-14 22:39:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.4ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) [0m
+Rendered shared/_menubar (0.4ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 120ms (View: 101, DB: 5) | 200 OK [http://localhost/reports/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-14 22:39:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM `reports` ORDER BY position, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReport Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReportCategory Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (1.3ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendered shared/_livefilter (3.7ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 60ms (View: 46, DB: 5) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#new (for 127.0.0.1 at 2010-06-14 22:39:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"reports"}
+  [4;35;1mReport Columns (5.9ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/new
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `report_categories` [0m
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+Rendered reports/_form (32.4ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 54ms (View: 36, DB: 8) | 200 OK [http://localhost/reports/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#create (for 127.0.0.1 at 2010-06-14 22:40:02) [POST]
+  Parameters: {"report"=>{"record_validity"=>"1", "position"=>"1", "name"=>"Report 24", "reference"=>"5", "comments"=>"-", "record_visibility"=>"1", "report_category_id"=>"1"}, "commit"=>"Save", "action"=>"create", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` = BINARY '5') LIMIT 1[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` = BINARY 'Report 24') LIMIT 1[0m
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Create (0.4ms)[0m   [0;1mINSERT INTO `reports` (`reference`, `name`, `position`, `record_validity`, `created_at`, `comments`, `updated_at`, `record_visibility`, `created_by`, `updated_by`, `report_category_id`, `updated_with`) VALUES('5', 'Report 24', 1, 1, '2010-06-14 20:40:02', '-', '2010-06-14 20:40:02', 1, '-', '-', 1, '-')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/reports/2
+Completed in 272ms (DB: 54) | 302 Found [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-14 22:40:03) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.3ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 2) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (5.4ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (4.0ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 2) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 68ms (View: 35, DB: 12) | 200 OK [http://localhost/reports/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-14 22:40:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM `reports` ORDER BY position, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReportCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendered shared/_livefilter (4.5ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 48ms (View: 32, DB: 4) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#new (for 127.0.0.1 at 2010-06-14 22:40:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"reports"}
+  [4;36;1mReport Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/new
+  [4;35;1mReportCategory Load (0.2ms)[0m   [0mSELECT * FROM `report_categories` [0m
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+Rendered reports/_form (34.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 211ms (View: 38, DB: 4) | 200 OK [http://localhost/reports/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#create (for 127.0.0.1 at 2010-06-14 22:41:03) [POST]
+  Parameters: {"report"=>{"record_validity"=>"1", "position"=>"2", "name"=>"Report 245", "reference"=>"4", "comments"=>"-", "record_visibility"=>"1", "report_category_id"=>"2"}, "commit"=>"Save", "action"=>"create", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "controller"=>"reports"}
+  [4;35;1mReport Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReport Load (2.3ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` = BINARY '4') LIMIT 1[0m
+  [4;36;1mReport Load (0.3ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` = BINARY 'Report 245') LIMIT 1[0m
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 2) [0m
+  [4;35;1mReport Create (0.3ms)[0m   [0mINSERT INTO `reports` (`reference`, `name`, `position`, `record_validity`, `created_at`, `comments`, `updated_at`, `record_visibility`, `created_by`, `updated_by`, `report_category_id`, `updated_with`) VALUES('4', 'Report 245', 2, 1, '2010-06-14 20:41:03', '-', '2010-06-14 20:41:03', 1, '-', '-', 2, '-')[0m
+  [4;36;1mSQL (38.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/reports/3
+Completed in 98ms (DB: 47) | 302 Found [http://localhost/reports]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-14 22:41:04) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"reports"}
+  [4;35;1mReport Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 3) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 2) [0m
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 3) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 71ms (View: 47, DB: 6) | 200 OK [http://localhost/reports/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-14 22:41:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM `reports` ORDER BY position, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.2ms)
+Completed in 52ms (View: 35, DB: 4) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-14 22:41:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (0.6ms)[0m   [0;1mSELECT * FROM `report_categories` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+  [4;35;1mReportCategory Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 44ms (View: 25, DB: 2) | 200 OK [http://localhost/report_categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 22:41:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 81ms (View: 66, DB: 7) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:11:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 64ms (View: 48, DB: 5) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:11:35) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (93.5ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:12:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 61ms (View: 46, DB: 5) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:12:44) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (259.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#edit (for 127.0.0.1 at 2010-06-14 23:12:57) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"reports"}
+  [4;36;1mReport Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 2) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/edit
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` [0m
+  [4;35;1mReportCategory Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+Rendered reports/_form (38.5ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 84ms (View: 68, DB: 6) | 200 OK [http://localhost/reports/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-14 23:13:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` ORDER BY position, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendered shared/_livefilter (1.5ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 61ms (View: 43, DB: 3) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:13:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 49ms (View: 36, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:13:43) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (1.4ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (67.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:13:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 58ms (View: 38, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:15:45) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 266ms (View: 253, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:15:57) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.5ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (205.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:19:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"proritize_reports", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ReportCategory with ID=proritize_reports):
+  app/controllers/report_categories_controller.rb:22:in `show'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (58.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#proritize_reports (for 127.0.0.1 at 2010-06-14 23:19:25) [GET]
+  Parameters: {"action"=>"proritize_reports", "id"=>"1", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to proritize_reports. Actions: create, destroy, edit, index, new, prioritize_reports, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:19:33) [GET]
+  Parameters: {"action"=>"prioritize_reports", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.2ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` IS NULL) LIMIT 1[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Redirected to http://localhost:3000/report_categories/1
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/report_categories_controller.rb:16:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (66.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#1 (for 127.0.0.1 at 2010-06-14 23:19:50) [GET]
+  Parameters: {"action"=>"1", "id"=>"prioritize_reports", "controller"=>"report_categories"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, prioritize_reports, report, show, and update):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:19:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"prioritize_reports", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (1.6ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ReportCategory with ID=prioritize_reports):
+  app/controllers/report_categories_controller.rb:22:in `show'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (217.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:20:00) [GET]
+  Parameters: {"action"=>"prioritize_reports", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` IS NULL) LIMIT 1[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Redirected to http://localhost:3000/report_categories/1
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/report_categories_controller.rb:16:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (69.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:20:04) [GET]
+  Parameters: {"action"=>"show", "id"=>"prioritize_reports", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ReportCategory with ID=prioritize_reports):
+  app/controllers/report_categories_controller.rb:22:in `show'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (60.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-14 23:20:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Load (0.8ms)[0m   [0;1mSELECT * FROM `report_categories` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+  [4;35;1mReportCategory Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+Rendered shared/_livefilter (2.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 68ms (View: 45, DB: 3) | 200 OK [http://localhost/report_categories/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:20:40) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 54ms (View: 36, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:20:51) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (69.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-14 23:22:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Load (0.5ms)[0m   [0mSELECT * FROM `report_categories` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+Rendered shared/_livefilter (3.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.7ms)
+Completed in 49ms (View: 31, DB: 2) | 200 OK [http://localhost/report_categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:22:44) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 56ms (View: 39, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:22:54) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (68.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:22:58) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 47ms (View: 34, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-14 23:26:14) [GET]
+
+ActionController::RoutingError (No route matches "/report_category/1" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:26:22) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (2.6ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 64ms (View: 39, DB: 4) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:27:47) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 219ms (View: 198, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:28:07) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (210.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:28:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 48ms (View: 33, DB: 4) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:28:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.2ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 62ms (View: 45, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:29:01) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.7ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (1.5ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (150.1ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:29:04) [POST]
+  Parameters: {"report"=>["2", "1"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "2":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (71.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:29:07) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (73.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:36:40) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (1.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 89ms (View: 69, DB: 4) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:37:06) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.2ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (68.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:40:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 61ms (View: 48, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:40:44) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (70.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:41:03) [POST]
+  Parameters: {"report"=>["2", "1"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.2ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "2":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (77.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:41:05) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"Dli5qY9+N70JM7cBvSrYrN/SYXRLDQHpMbmNGOFDmz8=", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (215.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:42:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.2ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.3ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 58ms (View: 34, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:43:15) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3/lib/will_paginate/finder.rb:164:in `method_missing'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (62.9ms)
+Rendered rescues/_request_and_response (4.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:46:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 62ms (View: 44, DB: 4) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-14 23:56:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.2ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (20.8ms)
+Rendered shared/_template2 (10.3ms)
+Rendered shared/_sidebar (24.5ms)
+Completed in 363ms (View: 289, DB: 6) | 200 OK [http://localhost/report_categories/1]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-14 23:56:29) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+
+NoMethodError (undefined method `stringify_keys!' for "1":String):
+  app/controllers/report_categories_controller.rb:14:in `report'
+  app/controllers/report_categories_controller.rb:51:in `prioritize_reports'
+  app/controllers/report_categories_controller.rb:50:in `prioritize_reports'
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (64.6ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-15 00:01:08) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 54ms (View: 38, DB: 6) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#prioritize_reports (for 127.0.0.1 at 2010-06-15 00:01:24) [POST]
+  Parameters: {"report"=>["1", "2"], "action"=>"prioritize_reports", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReport Load (44.3ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` = BINARY '5' AND `reports`.id <> 2) LIMIT 1[0m
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` = BINARY 'Report 24' AND `reports`.id <> 2) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReportLine Load (0.9ms)[0m   [0mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 2) ORDER BY position ASC[0m
+  [4;36;1mReport Update (48.2ms)[0m   [0;1mUPDATE `reports` SET `updated_at` = '2010-06-14 22:01:25', `position` = 2 WHERE `id` = 2[0m
+  [4;35;1mSQL (61.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReport Load (0.8ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` = BINARY '2' AND `reports`.id <> 1) LIMIT 1[0m
+  [4;36;1mReport Load (0.9ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` = BINARY 'Report 12' AND `reports`.id <> 1) LIMIT 1[0m
+  [4;35;1mReportCategory Load (0.2ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReport Update (0.2ms)[0m   [0mUPDATE `reports` SET `updated_at` = '2010-06-14 22:01:25', `position` = 1 WHERE `id` = 1[0m
+  [4;36;1mSQL (52.1ms)[0m   [0;1mCOMMIT[0m
+Completed in 433ms (View: 2, DB: 213) | 200 OK [http://localhost/report_categories/prioritize_reports]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-15 00:02:02) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (1.4ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (1.2ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReport Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 88ms (View: 62, DB: 8) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#edit (for 127.0.0.1 at 2010-06-15 00:02:07) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.6ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/edit
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` [0m
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+Rendered reports/_form (49.2ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 93ms (View: 71, DB: 4) | 200 OK [http://localhost/reports/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-15 00:11:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;35;1mReport Load (0.5ms)[0m   [0mSELECT * FROM `reports` ORDER BY position, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 2) [0m
+Rendered shared/_livefilter (8.7ms)
+Rendered shared/_menubar (0.1ms)
+Completed in 221ms (View: 58, DB: 3) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-15 00:11:32) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReportLine Load (0.7ms)[0m   [0mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 77ms (View: 59, DB: 4) | 200 OK [http://localhost/reports/1]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#report_line (for 127.0.0.1 at 2010-06-15 00:11:50) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"reports", "report_line"=>{"position"=>"1", "comments"=>"", "line_id"=>"12", "line_caption"=>"This is line 1"}}
+  [4;36;1mReport Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+  [4;36;1mReportLine Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '12') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM `report_lines` WHERE (report_id = 1) ORDER BY position DESC, position ASC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.4ms)[0m   [0;1mINSERT INTO `report_lines` (`position`, `record_validity`, `created_at`, `comments`, `updated_at`, `uo`, `record_visibility`, `line_morphing`, `created_by`, `report_id`, `line_id`, `line_style`, `updated_by`, `parent_line_id`, `line_caption`, `updated_with`) VALUES(1, 1, '2010-06-14 22:11:50', '', '2010-06-14 22:11:50', '+', 1, NULL, '-', 1, '12', NULL, '-', NULL, 'This is line 1', '-')[0m
+  [4;35;1mSQL (74.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/reports/1
+Completed in 118ms (DB: 81) | 302 Found [http://localhost/reports/report_line/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-15 00:11:51) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (0.6ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReportLine Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+
+ActionView::TemplateError (undefined method `name' for #<ReportLine:0xb35c39c>) on line #102 of app/views/reports/show.html.erb:
+99:   <% @report.report_lines.each do |t| %>
+100:     <li id="report_line_<%= t.id -%>">
+101:       <span class="name">
+102:         <%= t.name -%>
+103:       </span>
+104:       <span class="handle">[handle]</span>
+105:     </li>
+
+    app/views/reports/show.html.erb:102
+    app/views/reports/show.html.erb:99
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    app/views/reports/show.html.erb:1
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/reports_controller.rb:35:in `show'
+    haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (105.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-15 00:14:11) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (0.1ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReportLine Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 246ms (View: 59, DB: 5) | 200 OK [http://localhost/reports/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#report_line (for 127.0.0.1 at 2010-06-15 00:14:46) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"reports", "report_line"=>{"position"=>"4", "comments"=>"Test", "line_id"=>"4", "line_caption"=>"This is line 4"}}
+  [4;36;1mReport Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+  [4;36;1mReportLine Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '4') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM `report_lines` WHERE (report_id = 1) ORDER BY position DESC, position ASC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.3ms)[0m   [0;1mINSERT INTO `report_lines` (`position`, `record_validity`, `created_at`, `comments`, `updated_at`, `uo`, `record_visibility`, `line_morphing`, `created_by`, `report_id`, `line_id`, `line_style`, `updated_by`, `parent_line_id`, `line_caption`, `updated_with`) VALUES(2, 1, '2010-06-14 22:14:46', 'Test', '2010-06-14 22:14:46', '+', 1, NULL, '-', 1, '4', NULL, '-', NULL, 'This is line 4', '-')[0m
+  [4;35;1mSQL (75.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/reports/1
+Completed in 289ms (DB: 81) | 302 Found [http://localhost/reports/report_line/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-15 00:14:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (0.6ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReportLine Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 78ms (View: 56, DB: 4) | 200 OK [http://localhost/reports/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#report_line (for 127.0.0.1 at 2010-06-15 00:15:13) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"reports", "report_line"=>{"position"=>"5", "comments"=>"test", "line_id"=>"34", "line_caption"=>"This is line 5"}}
+  [4;36;1mReport Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+  [4;36;1mReportLine Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '34') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.5ms)[0m   [0mSELECT * FROM `report_lines` WHERE (report_id = 1) ORDER BY position DESC, position ASC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.4ms)[0m   [0;1mINSERT INTO `report_lines` (`position`, `record_validity`, `created_at`, `comments`, `updated_at`, `uo`, `record_visibility`, `line_morphing`, `created_by`, `report_id`, `line_id`, `line_style`, `updated_by`, `parent_line_id`, `line_caption`, `updated_with`) VALUES(3, 1, '2010-06-14 22:15:13', 'test', '2010-06-14 22:15:13', '+', 1, NULL, '-', 1, '34', NULL, '-', NULL, 'This is line 5', '-')[0m
+  [4;35;1mSQL (62.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/reports/1
+Completed in 116ms (DB: 67) | 302 Found [http://localhost/reports/report_line/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-15 00:15:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReportLine Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 65ms (View: 45, DB: 5) | 200 OK [http://localhost/reports/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#report_line (for 127.0.0.1 at 2010-06-15 00:15:37) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"reports", "report_line"=>{"position"=>"9", "comments"=>"Test", "line_id"=>"7", "line_caption"=>"This is line 8"}}
+  [4;36;1mReport Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+  [4;36;1mReportLine Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.3ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '7') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT * FROM `report_lines` WHERE (report_id = 1) ORDER BY position DESC, position ASC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.3ms)[0m   [0;1mINSERT INTO `report_lines` (`position`, `record_validity`, `created_at`, `comments`, `updated_at`, `uo`, `record_visibility`, `line_morphing`, `created_by`, `report_id`, `line_id`, `line_style`, `updated_by`, `parent_line_id`, `line_caption`, `updated_with`) VALUES(4, 1, '2010-06-14 22:15:37', 'Test', '2010-06-14 22:15:37', '+', 1, NULL, '-', 1, '7', NULL, '-', NULL, 'This is line 8', '-')[0m
+  [4;35;1mSQL (65.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/reports/1
+Completed in 107ms (DB: 71) | 302 Found [http://localhost/reports/report_line/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-15 00:15:38) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;36;1mReport Columns (5.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (5.2ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (1.2ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReportLine Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 109ms (View: 74, DB: 13) | 200 OK [http://localhost/reports/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-15 00:15:50) [POST]
+  Parameters: {"action"=>"prioritize_report_lines", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"reports", "report_line"=>["1", "4", "2", "3"]}
+  [4;36;1mReport Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+  [4;36;1mReportLine Load (0.6ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;35;1mReportLine Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReportLine Load (1.1ms)[0m   [0mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '12' AND `report_lines`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.9ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '4' AND `report_lines`.id <> 2) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.3ms)[0m   [0mUPDATE `report_lines` SET `updated_at` = '2010-06-14 22:15:50', `position` = 3 WHERE `id` = 2[0m
+  [4;36;1mSQL (41.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '34' AND `report_lines`.id <> 3) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.3ms)[0m   [0mUPDATE `report_lines` SET `updated_at` = '2010-06-14 22:15:50', `position` = 4 WHERE `id` = 3[0m
+  [4;36;1mSQL (48.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '7' AND `report_lines`.id <> 4) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.8ms)[0m   [0mUPDATE `report_lines` SET `updated_at` = '2010-06-14 22:15:50', `position` = 2 WHERE `id` = 4[0m
+  [4;36;1mSQL (49.5ms)[0m   [0;1mCOMMIT[0m
+Completed in 226ms (View: 1, DB: 154) | 200 OK [http://localhost/reports/prioritize_report_lines]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-15 00:16:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Columns (5.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReportLine Load (0.5ms)[0m   [0mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReportLine Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 79ms (View: 60, DB: 10) | 200 OK [http://localhost/reports/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#prioritize_report_lines (for 127.0.0.1 at 2010-06-15 00:16:08) [POST]
+  Parameters: {"action"=>"prioritize_report_lines", "authenticity_token"=>"iRLjfdMSp2dZZRHdNRLSqYlhRr2NfwiXjzQ65CPqmlg=", "id"=>"1", "controller"=>"reports", "report_line"=>["3", "1", "4", "2"]}
+  [4;35;1mReport Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+  [4;35;1mReportLine Load (0.1ms)[0m   [0mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReportLine Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.4ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '12' AND `report_lines`.id <> 1) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.2ms)[0m   [0mUPDATE `report_lines` SET `updated_at` = '2010-06-14 22:16:08', `position` = 2 WHERE `id` = 1[0m
+  [4;36;1mSQL (51.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.7ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '7' AND `report_lines`.id <> 4) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.4ms)[0m   [0mUPDATE `report_lines` SET `updated_at` = '2010-06-14 22:16:08', `position` = 3 WHERE `id` = 4[0m
+  [4;36;1mSQL (56.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (0.7ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '4' AND `report_lines`.id <> 2) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.4ms)[0m   [0mUPDATE `report_lines` SET `updated_at` = '2010-06-14 22:16:08', `position` = 4 WHERE `id` = 2[0m
+  [4;36;1mSQL (91.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (1.1ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY '34' AND `report_lines`.id <> 3) LIMIT 1[0m
+  [4;35;1mReportLine Update (0.2ms)[0m   [0mUPDATE `report_lines` SET `updated_at` = '2010-06-14 22:16:08', `position` = 1 WHERE `id` = 3[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 308ms (View: 2, DB: 257) | 200 OK [http://localhost/reports/prioritize_report_lines]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-15 00:16:12) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"reports"}
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (2.6ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 1) ORDER BY position ASC[0m
+  [4;36;1mReportLine Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+Rendered shared/_menubar (2.3ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 237ms (View: 219, DB: 7) | 200 OK [http://localhost/reports/1]
