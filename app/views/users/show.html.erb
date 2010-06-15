@@ -1,3 +1,5 @@
+<% content_for :article1 do %>
+
 <p>
   <b>Login:</b>
   <%=h @user.login %>
@@ -35,3 +37,5 @@
 
 
 <%= link_to 'Edit', edit_account_path %>
+
+<% end %>

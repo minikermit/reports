@@ -1,4 +1,16 @@
-<% content_for :article2 do %>
+<% content_for :breadcrumb do %>
+
+<ul id="crumbs">
+ <li><a href="#">Homes</a></li>
+ <li><%= link_to  "Report categories" , report_categories_path %></li>
+ <li><%= link_to  "Reports" , reports_path %></li>
+ <li>You are looking at a specific report</li>
+</ul>
+<% end %>
+
+
+
+<% content_for :article1 do %>
 
 <h2 class="art-postheader">
   <%=h @report.name %>

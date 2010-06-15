@@ -1,4 +1,17 @@
-<% content_for :article2 do %>
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
+
+<ul id="crumbs">
+ <li><a href="#">Homes</a></li>
+ <li><%= link_to  "Report categories" , report_categories_path %></li>
+ <li><%= link_to  "Reports" , reports_path %></li>
+ <li>You are on the list of reports page</li>
+</ul>
+
+<% end %>
+
+
+<% content_for :article1 do %>
 
 <h2 class="art-postheader">
   Listing reports
@@ -48,7 +61,6 @@
             <p>
                 &#8220;This is a list of available reports.&#8221;
                 <br />
-                -Blockquote
             </p>
         </blockquote>
       <br />

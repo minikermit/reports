@@ -1,5 +1,16 @@
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
 
-<% content_for :article2 do %>
+  <ul id="crumbs">
+   <li><a href="#">Homes</a></li>
+   <li><%= link_to  "Report categories" , report_categories_path %></li>
+   <li><%= link_to  "Reports" , reports_path %></li>
+   <li>You are editing a report</li>
+  </ul>
+
+<% end %>
+
+<% content_for :article1 do %>
 
 <h2 class="art-postheader">
   Editing report
@@ -15,9 +26,9 @@
 
         <blockquote>
             <p>
-                &#8220;This stylesheet is going to help so freaking much.&#8221;
+                &#8220;This is where you can edit and modify your report.&#8221;
                 <br />
-                -Blockquote
+                You can change the name or the category it belongs to for example !
             </p>
         </blockquote>
       <br />
