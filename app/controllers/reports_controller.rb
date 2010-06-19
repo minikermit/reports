@@ -2,7 +2,7 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.xml
   def index
-    @reports = Report.all(:order => 'position')
+    @reports = Report.order
 
     respond_to do |format|
       format.html # index.html.erb

@@ -5,7 +5,7 @@ class AccountPlansController < ApplicationController
   # GET /account_plans
   # GET /account_plans.xml
   def index
-    @account_plans = AccountPlan.all(:order => 'account_id')
+    @account_plans = AccountPlan.order
 
     respond_to do |format|
       format.html # index.html.erb

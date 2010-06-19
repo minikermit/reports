@@ -7,16 +7,20 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :user_sessions
   map.root :controller => "user_sessions", :action => "new"
 
-  map.resources :report_lines
-  map.resources :account_plans
-  map.resources :account_plans, :collection => { :autocomplete_for_account_plan_account_id => :get}
-
+  map.resources :report_categories
+  map.resources :report_categories, :collection => { :prioritize_reports => :post }
 
   map.resources :reports
   map.resources :reports, :collection => { :prioritize_report_lines => :post }
+
+  map.resources :report_lines
+  map.resources :account_plans
+  map.resources :account_plans, :collection => { :autocomplete_for_account_plan_account_id => :get}
   
-  map.resources :report_categories
-  map.resources :report_categories, :collection => { :prioritize_reports => :post }
+  map.resources :menus
+  map.resources :projects
+  map.resources :tasklists
+  map.resources :comments
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -57,6 +61,7 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+
+   # map.connect ':controller/:action/:id'
+   # map.connect ':controller/:action/:id.:format'
 end

@@ -1,14 +1,21 @@
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
 <ul id="crumbs">
  <li><a href="#">Homes</a></li>
  <li><%= link_to  "Report categories" , report_categories_path %></li>
  <li>You are looking at one report category</li>
 </ul>
+<% end %>
 
-<br/>
+<!-- This is the list part -->
+<% content_for :article1 do %>
 
-  <h3>
+<h2 class="art-postheader">
   <%=h @report_category.name %>
-  </h3>
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
 
 <p>
   <span style="font-weight: bold;">
@@ -23,11 +30,9 @@
 
   <table>
       <tr>
-       <th  align='left'> reference </th>
-       <th align='center'> name </th>
-       <th> </th>
-       <th> </th>
-       <th> </th>
+       <th  align='center'> reference </th>
+       <th align='left'> name </th>
+       <th align = 'center'> position </th>
        <th align='right'> created on </th>
        <th  align='center'> Comments </th>
        <th> </th>
@@ -38,9 +43,7 @@
     <tr>
      <td><%= link_to report.reference, report %></td>
      <td><%= report.name %> </td>
-     <td> </td>
-     <td> </td>
-     <td> </td>
+     <td align='center'><%= report.position %> </td>
      <td><%= report.created_at.strftime("%e %B, %Y") %><td>
      <td><%= report.comments %> </td>
 
@@ -50,12 +53,22 @@
   <% end %>
   </table>
 
+      <br />
+     <br />
 
-<hr />
+
+  <hr />
+
+  <blockquote>
+      <p>
+          &#8220;You can create a new report for this category directly below.&#8221;
+          <br />
+          Push the button when you are ready to launch the missile on planet mars
+      </p>
+  </blockquote>
+
   
 
-  <br />
-  <br />
 
   <%= form_tag :action => "report", :id => @report_category %>
      <%= label "reference", "reference" %><br />
@@ -73,12 +86,36 @@
   </form>
 
 
-<hr />
+      <br />
+
+      <hr />
 
 
   <br />
   <br />
 
+    <!-- /article-content -->
+</div>
+<% end %>
+
+
+<% content_for :article2 do %>
+
+  <h2 class="art-postheader">
+    <%=h @report_category.name %>
+  </h2>
+
+  <div class="art-postcontent">
+      <!-- article-content -->
+
+
+  <blockquote>
+      <p>
+          &#8220;You can sort the reports within a category below (use the handle).&#8221;
+          <br />
+          Press refresh to see the immediate effect of the reordering. This reordering is effective only for a given category.
+      </p>
+  </blockquote>
 
 
 <ul id="reports-list">
@@ -92,6 +129,10 @@
   <% end %>
 </ul>
 
+    <!-- /article-content -->
+</div>
+
+<% end %>
 
 <% content_for :myjavascript do %>
 

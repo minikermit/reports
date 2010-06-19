@@ -5,6 +5,8 @@ acts_as_tree
 has_many :structures
 has_many :report_lines, :through => :structures
 
+default_scope :order => "account_id ASC, position ASC"
+
 end
 
 

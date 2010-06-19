@@ -4,7 +4,7 @@ belongs_to :report_category
 has_many :report_lines
 
 acts_as_list    :scope => :report_category
-default_scope :order => "position ASC"
+default_scope :order => "report_category_id ASC, position ASC"
 
 validates_uniqueness_of :reference
 validates_uniqueness_of :name

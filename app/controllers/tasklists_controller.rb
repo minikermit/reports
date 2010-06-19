@@ -19,6 +19,8 @@ class TasklistsController < ApplicationController
   
   def new
     @tasklist = Tasklist.new
+    @projects = Project.find(:all)
+    @users = User.find(:all)
   end
   
   def create

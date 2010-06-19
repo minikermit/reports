@@ -14,11 +14,12 @@
   </p>
   <p>
     <%= f.label :project %><br />
-    <%= collection_select(:tasklist, :project_id, Project.find(:all), :id, :title, {:prompt => true} ) %>
+    <%= collection_select(:tasklist,:project_id, @projects , :id, :title, {:prompt => true} ) %>
+        
   </p>
   <p>
     <%= f.label :assigned_to %><br />
-    <%= collection_select(:tasklist, :user_id, User.find(:all), :id, :shortname, {:prompt => true}) %>
+    <%= collection_select(:tasklist, :user_id, @users, :id, :shortname, {:prompt => true}) %>
   </p>
   <p>
     <%= f.label :description %><br />

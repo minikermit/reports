@@ -5,3 +5,7 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+["Singapore","Switzerland","Luxembourg","Basel II","Greenbook","Management"].each do |title|
+   Project.create!(:title => title)
+end

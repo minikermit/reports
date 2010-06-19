@@ -9,6 +9,7 @@ validates_uniqueness_of :name
 validates_presence_of :name
 validates_associated :reports
 
+default_scope :order => "name ASC"
 
 end
 

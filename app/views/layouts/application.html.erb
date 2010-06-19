@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <title> Finance Application </title>
+    <title><%= h(yield(:title) || "Finance Application") %></title>
 
     <%= stylesheet_link_tag 'style','breadcrumb' %>
     <!--[if IE 6]><link rel="stylesheet" href="/stylesheets/style.ie6.css" type="text/css" media="screen" /><![endif]-->
