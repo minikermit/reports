@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="53cdd2aa-28b7-454f-9c55-184ed1007fdc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/_form.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/tasklists/._form.html.erb.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/new.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/new.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasklists/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/tasklists/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasklists/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/tasklists/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/new.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_menubar.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_menubar.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasklists/new.html.erb" afterPath="$PROJECT_DIR$/app/views/tasklists/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_categories/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/report_categories/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20100527205859_create_account_plans.rb" afterPath="$PROJECT_DIR$/db/migrate/20100527205859_create_account_plans.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/tasklists_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reports/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/reports/edit.html.erb" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="reports.iws" />
@@ -32,19 +45,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/reports/_form.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/tasklists/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="16" selection-start="633" selection-end="633" vertical-scroll-proportion="-12.954545">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_menubar.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_menubar.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="47" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.7922438">
+            <state line="22" column="48" selection-start="792" selection-end="792" vertical-scroll-proportion="0.9141274">
               <folding />
             </state>
           </provider>
@@ -63,22 +67,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/menus/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasklists/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasklists/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasklists/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/reports/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/report_categories/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/report_categories/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/report_lines/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tasklists/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/tasklists.html.erb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/views/projects/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/projects/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasklists/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/tasklists_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/tasklists/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/tasklists_helper.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20100527205859_create_account_plans.rb" />
         <option value="$PROJECT_DIR$/app/views/report_lines/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/report_categories/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reports/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_menubar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/tasklists/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -153,6 +157,28 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -172,7 +198,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
+              <option name="myItemId" value="tasklists" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,114 +571,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/tasklists/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/report_lines/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="643" selection-end="643" vertical-scroll-proportion="-7.5">
+        <state line="12" column="57" selection-start="374" selection-end="374" vertical-scroll-proportion="0.4787234">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasklists/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="-2.0454545">
+        <state line="0" column="67" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasklists/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="179" selection-end="179" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="330" selection-end="330" vertical-scroll-proportion="0.22613065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/structures_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/tasklist.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="27" column="6" selection-start="758" selection-end="758" vertical-scroll-proportion="1.0175879">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/tasklists.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20100527205859_create_account_plans.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-5.818182">
+        <state line="17" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="0.6407035">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/tasklists_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="636" selection-end="636" vertical-scroll-proportion="0.62663186">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tasklists_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/report_categories/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9" selection-start="540" selection-end="568" vertical-scroll-proportion="0.28894472">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasklists/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="53" selection-start="721" selection-end="721" vertical-scroll-proportion="0.8725762">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/report_line.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/report_lines_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="1" selection-start="832" selection-end="864" vertical-scroll-proportion="0.0">
+        <state line="10" column="81" selection-start="295" selection-end="295" vertical-scroll-proportion="0.39893618">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/report_lines/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="602" selection-end="602" vertical-scroll-proportion="0.085872576">
+        <state line="15" column="31" selection-start="323" selection-end="323" vertical-scroll-proportion="-10.227273">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/reports_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/report_categories/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.4522613">
+        <state line="10" column="61" selection-start="274" selection-end="274" vertical-scroll-proportion="0.39893618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/report_categories/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reports/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="633" selection-end="633" vertical-scroll-proportion="-12.954545">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_menubar.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="47" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.7922438">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasklists/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="67" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="82" selection-end="111" vertical-scroll-proportion="0.15957446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="60" selection-start="119" selection-end="119" vertical-scroll-proportion="0.19946809">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasklists/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="48" selection-start="792" selection-end="792" vertical-scroll-proportion="0.9141274">
           <folding />
         </state>
       </provider>

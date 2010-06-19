@@ -8,7 +8,7 @@
 
 <h1>Editing report category</h1>
 
-<%= render :partial => 'form' %>
+<%= render :partial => 'form' , :locals => { :report_category => @report_category } %>
 
 <%= link_to 'Show', @report_category %> |
 <%= link_to 'Back', report_categories_path %>

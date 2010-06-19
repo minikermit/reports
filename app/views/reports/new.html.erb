@@ -16,7 +16,7 @@
 
 <div class="art-postcontent">
     <!-- article-content -->
-  <%= render :partial => 'form' %>
+  <%= render :partial => 'form' , :locals => { :report => @report } %>
 
   <%= link_to 'Back', reports_path %>
 

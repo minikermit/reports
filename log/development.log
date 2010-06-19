@@ -23296,3 +23296,2273 @@ ActionView::TemplateError (No route matches {:action=>"comment", :id=>#<Tasklist
 Rendered rescues/_trace (150.6ms)
 Rendered rescues/_request_and_response (0.4ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#index (for 127.0.0.1 at 2010-06-19 23:02:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (10.4ms)[0m   [0mSELECT * FROM `tasklists` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/index
+  [4;36;1mProject Columns (6.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (9.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:02:59', `perishable_token` = 'i51rB1h6D8aoS1Aw1y_u', `last_request_at` = '2010-06-19 21:02:59' WHERE `id` = 1[0m
+  [4;35;1mSQL (132.7ms)[0m   [0mCOMMIT[0m
+Completed in 1619ms (View: 1364, DB: 166) | 200 OK [http://localhost/tasklists]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:03:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:03:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/dots.gif" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-19 23:03:11) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.9ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;36;1mProject Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (1.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mComment Load (5.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 2) [0m
+
+ActionView::TemplateError (No route matches {:action=>"comment", :id=>#<Tasklist id: 2, name: "Test 2", scope: "Basel II", genre: nil, project_id: 2, user_id: 1, description: "test", priority: nil, due_date: "2010-06-10", status: nil, created_at: "2010-06-19 20:39:35", updated_at: "2010-06-19 20:39:35">}) on line #54 of app/views/tasklists/show.html.erb:
+51:     <p class="fineprint"> Created by user test on <%=h comment.created_at.strftime("%e %B, %Y") %> </p>
+52:   <% end %>
+53: 
+54:   <%= form_tag :action => "comment", :id => @tasklist %>
+55:     <%= text_area "comment", "body", :size => "100x8" %><br />
+56:     <%= submit_tag "Comment" %>
+57:   </form>
+
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:212:in `form_tag'
+    app/views/tasklists/show.html.erb:54
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (409.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#new (for 127.0.0.1 at 2010-06-19 23:08:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/new
+  [4;35;1mProject Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Rendered tasklists/_form (41.6ms)
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.8ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:08:10', `perishable_token` = '1DX5_L_PpAd1IMGcXL7r', `last_request_at` = '2010-06-19 21:08:10' WHERE `id` = 1[0m
+  [4;35;1mSQL (108.0ms)[0m   [0mCOMMIT[0m
+Completed in 320ms (View: 89, DB: 113) | 200 OK [http://localhost/tasklists/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:08:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#create (for 127.0.0.1 at 2010-06-19 23:08:40) [POST]
+  Parameters: {"commit"=>"Submit", "tasklist"=>{"scope"=>"Basel II", "name"=>"test 7", "project_id"=>"1", "priority"=>"Low", "user_id"=>"1", "due_date"=>"06/11/2010", "genre"=>"Production", "description"=>"test", "status"=>"To start"}, "action"=>"create", "authenticity_token"=>"qppV/ixOJxP1VLOFb3MqeTXm0XIUyvIPpMlUIDKCy4E=", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mProject Load (2.9ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mTasklist Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTasklist Load (0.3ms)[0m   [0mSELECT `tasklists`.id FROM `tasklists` WHERE (`tasklists`.`name` = BINARY 'test 7') LIMIT 1[0m
+  [4;36;1mTasklist Create (0.9ms)[0m   [0;1mINSERT INTO `tasklists` (`name`, `scope`, `created_at`, `project_id`, `updated_at`, `priority`, `user_id`, `genre`, `due_date`, `description`, `status`) VALUES('test 7', 'Basel II', '2010-06-19 21:08:40', 1, '2010-06-19 21:08:40', 'Low', 1, 'Production', '2010-06-11', 'test', 'To start')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/tasklists/3
+Completed in 302ms (DB: 64) | 302 Found [http://localhost/tasklists]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-19 23:08:40) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (3.6ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;36;1mProject Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (10.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 3) [0m
+
+ActionView::TemplateError (No route matches {:action=>"comment", :id=>#<Tasklist id: 3, name: "test 7", scope: "Basel II", genre: "Production", project_id: 1, user_id: 1, description: "test", priority: "Low", due_date: "2010-06-11", status: "To start", created_at: "2010-06-19 21:08:40", updated_at: "2010-06-19 21:08:40">}) on line #54 of app/views/tasklists/show.html.erb:
+51:     <p class="fineprint"> Created by user test on <%=h comment.created_at.strftime("%e %B, %Y") %> </p>
+52:   <% end %>
+53: 
+54:   <%= form_tag :action => "comment", :id => @tasklist %>
+55:     <%= text_area "comment", "body", :size => "100x8" %><br />
+56:     <%= submit_tag "Comment" %>
+57:   </form>
+
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:212:in `form_tag'
+    app/views/tasklists/show.html.erb:54
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (134.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-19 23:09:44) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.1ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 3) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:09:44', `perishable_token` = 'WydUd_Zqdxg01QQMLF66', `last_request_at` = '2010-06-19 21:09:44' WHERE `id` = 1[0m
+  [4;35;1mSQL (91.8ms)[0m   [0mCOMMIT[0m
+Completed in 234ms (View: 113, DB: 99) | 200 OK [http://localhost/tasklists/3]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:09:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-19 23:09:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (70.2ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:09:59', `perishable_token` = 'IRsW8h-HKiH9BT5y3mYz', `last_request_at` = '2010-06-19 21:09:59' WHERE `id` = 1[0m
+  [4;35;1mSQL (43.7ms)[0m   [0mCOMMIT[0m
+Completed in 256ms (View: 162, DB: 49) | 200 OK [http://localhost/tasklists/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:09:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-19 23:11:12) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (3.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (69.3ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:11:13', `perishable_token` = 'TRajJ0SB4QN7QRb8B038', `last_request_at` = '2010-06-19 21:11:13' WHERE `id` = 1[0m
+  [4;35;1mSQL (56.0ms)[0m   [0mCOMMIT[0m
+Completed in 582ms (View: 133, DB: 72) | 200 OK [http://localhost/tasklists/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:11:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-19 23:11:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (27.6ms)
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:11:18', `perishable_token` = 'Rt9Xcb93pRdinPVwiv6P', `last_request_at` = '2010-06-19 21:11:18' WHERE `id` = 1[0m
+  [4;35;1mSQL (65.2ms)[0m   [0mCOMMIT[0m
+Completed in 196ms (View: 76, DB: 80) | 200 OK [http://localhost/tasklists/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:11:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#update (for 127.0.0.1 at 2010-06-19 23:11:29) [PUT]
+  Parameters: {"commit"=>"Submit", "tasklist"=>{"scope"=>"Basel II", "name"=>"test 7", "priority"=>"Medium", "user_id"=>"1", "due_date"=>"2010-06-11", "genre"=>"Production", "description"=>"test", "status"=>"In progress"}, "action"=>"update", "_method"=>"put", "authenticity_token"=>"qppV/ixOJxP1VLOFb3MqeTXm0XIUyvIPpMlUIDKCy4E=", "id"=>"3", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mTasklist Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.1ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTasklist Load (0.6ms)[0m   [0;1mSELECT `tasklists`.id FROM `tasklists` WHERE (`tasklists`.`name` = BINARY 'test 7' AND `tasklists`.id <> 3) LIMIT 1[0m
+  [4;35;1mTasklist Update (13.7ms)[0m   [0mUPDATE `tasklists` SET `updated_at` = '2010-06-19 21:11:29', `priority` = 'Medium', `status` = 'In progress' WHERE `id` = 3[0m
+  [4;36;1mSQL (64.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/tasklists/3
+Completed in 153ms (DB: 83) | 302 Found [http://localhost/tasklists/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-19 23:11:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.4ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (8.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 3) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:11:30', `perishable_token` = 'ZwBd9UU8XNI9UBkUbdUC', `last_request_at` = '2010-06-19 21:11:30' WHERE `id` = 1[0m
+  [4;35;1mSQL (65.6ms)[0m   [0mCOMMIT[0m
+Completed in 510ms (View: 380, DB: 89) | 200 OK [http://localhost/tasklists/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:11:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-19 23:12:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (1.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendered shared/_livefilter (5.4ms)
+Rendered shared/_menubar (2.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (11.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (12.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (2.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:12:09', `perishable_token` = 'QcjVuKt3EwurjgTh5KiA', `last_request_at` = '2010-06-19 21:12:09' WHERE `id` = 1[0m
+  [4;35;1mSQL (53.9ms)[0m   [0mCOMMIT[0m
+Rendered shared/_signon (559.7ms)
+Completed in 804ms (View: 694, DB: 85) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#index (for 127.0.0.1 at 2010-06-19 23:12:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.3ms)[0m   [0mSELECT * FROM `tasklists` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/index
+  [4;36;1mProject Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 21:12:15', `perishable_token` = 'S_pj-lY_CScHcVOkL8Qc', `last_request_at` = '2010-06-19 21:12:15' WHERE `id` = 1[0m
+  [4;35;1mSQL (53.9ms)[0m   [0mCOMMIT[0m
+Completed in 259ms (View: 169, DB: 64) | 200 OK [http://localhost/tasklists]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:12:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:12:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/dots.gif" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-19 23:12:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (1.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;36;1mProject Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 2) [0m
+  [4;35;1mUser Load (5.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 21:12:34', `perishable_token` = 'FZD7YPxxtz0jmiH4ZeUI', `last_request_at` = '2010-06-19 21:12:34' WHERE `id` = 1[0m
+  [4;36;1mSQL (59.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 238ms (View: 150, DB: 71) | 200 OK [http://localhost/tasklists/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:12:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-19 23:12:40) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"tasklists"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mTasklist Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.1ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (33.9ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 21:12:40', `perishable_token` = '6dGgBsCq_ZepIV1pB37J', `last_request_at` = '2010-06-19 21:12:40' WHERE `id` = 1[0m
+  [4;36;1mSQL (57.8ms)[0m   [0;1mCOMMIT[0m
+Completed in 168ms (View: 64, DB: 66) | 200 OK [http://localhost/tasklists/2/edit]
+  [4;35;1mSQL (4.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:12:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-19 23:59:07) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"tasklists"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mTasklist Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.1ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (55.9ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 21:59:08', `perishable_token` = 'xj5ZhneX03gmE3eP-JJN', `last_request_at` = '2010-06-19 21:59:08' WHERE `id` = 1[0m
+  [4;36;1mSQL (141.7ms)[0m   [0;1mCOMMIT[0m
+Completed in 625ms (View: 407, DB: 149) | 200 OK [http://localhost/tasklists/2/edit]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:59:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#update (for 127.0.0.1 at 2010-06-19 23:59:51) [PUT]
+  Parameters: {"commit"=>"Submit", "tasklist"=>{"scope"=>"Basel II", "name"=>"Test 2", "priority"=>"Medium", "user_id"=>"1", "due_date"=>"2010-06-10", "description"=>"test", "status"=>"In progress"}, "action"=>"update", "_method"=>"put", "authenticity_token"=>"qppV/ixOJxP1VLOFb3MqeTXm0XIUyvIPpMlUIDKCy4E=", "id"=>"2", "genre"=>"New Feature", "controller"=>"tasklists"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mProject Load (1.2ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mTasklist Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTasklist Load (0.5ms)[0m   [0mSELECT `tasklists`.id FROM `tasklists` WHERE (`tasklists`.`name` = BINARY 'Test 2' AND `tasklists`.id <> 2) LIMIT 1[0m
+  [4;36;1mTasklist Update (1.5ms)[0m   [0;1mUPDATE `tasklists` SET `updated_at` = '2010-06-19 21:59:52', `priority` = 'Medium', `status` = 'In progress' WHERE `id` = 2[0m
+  [4;35;1mSQL (181.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/tasklists/2
+Completed in 384ms (DB: 205) | 302 Found [http://localhost/tasklists/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-19 23:59:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.4ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;36;1mProject Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 2) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 21:59:52', `perishable_token` = 'ftC6RT_CeeTIhVLoJTMQ', `last_request_at` = '2010-06-19 21:59:52' WHERE `id` = 1[0m
+  [4;36;1mSQL (60.9ms)[0m   [0;1mCOMMIT[0m
+Completed in 518ms (View: 420, DB: 68) | 200 OK [http://localhost/tasklists/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-19 23:59:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (10.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:00:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.2ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 2) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.8ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:00:31', `perishable_token` = '3zZKa0UBzMv6LT7PZd70', `last_request_at` = '2010-06-19 22:00:31' WHERE `id` = 1[0m
+  [4;35;1mSQL (105.3ms)[0m   [0mCOMMIT[0m
+Completed in 1118ms (View: 913, DB: 122) | 200 OK [http://localhost/tasklists/2]
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:00:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:00:37) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (42.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (4.8ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.4ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (108.1ms)
+  [4;36;1mUser Load (15.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:00:37', `perishable_token` = 'RNRCPr1mKOc7nVxdtG2W', `last_request_at` = '2010-06-19 22:00:37' WHERE `id` = 1[0m
+  [4;35;1mSQL (188.2ms)[0m   [0mCOMMIT[0m
+Completed in 551ms (View: 189, DB: 253) | 200 OK [http://localhost/tasklists/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:00:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:01:39) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (5.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.4ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (93.3ms)
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (2.9ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:01:39', `perishable_token` = 'UOT7NM6Yd4046ilUnlo7', `last_request_at` = '2010-06-19 22:01:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (101.3ms)[0m   [0mCOMMIT[0m
+Completed in 349ms (View: 153, DB: 120) | 200 OK [http://localhost/tasklists/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:01:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:02:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (19.7ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:02:11', `perishable_token` = 'zDTnrbnulY5mL24WFuFw', `last_request_at` = '2010-06-19 22:02:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (85.3ms)[0m   [0mCOMMIT[0m
+Completed in 236ms (View: 51, DB: 93) | 200 OK [http://localhost/tasklists/2/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:02:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:05:14) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (17.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (1.5ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (58.0ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:05:15', `perishable_token` = 'tSfQkpWA9oxhvKrAk5-n', `last_request_at` = '2010-06-19 22:05:15' WHERE `id` = 1[0m
+  [4;35;1mSQL (106.2ms)[0m   [0mCOMMIT[0m
+Completed in 1122ms (View: 126, DB: 128) | 200 OK [http://localhost/tasklists/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:05:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#update (for 127.0.0.1 at 2010-06-20 00:05:34) [PUT]
+  Parameters: {"commit"=>"Submit", "tasklist"=>{"scope"=>"Basel II", "name"=>"Test 2", "priority"=>"Medium", "user_id"=>"1", "due_date"=>"2010-06-10", "description"=>"test", "status"=>"Done"}, "action"=>"update", "_method"=>"put", "authenticity_token"=>"qppV/ixOJxP1VLOFb3MqeTXm0XIUyvIPpMlUIDKCy4E=", "id"=>"2", "genre"=>"Enhancements", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mTasklist Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.1ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mTasklist Load (2.9ms)[0m   [0;1mSELECT `tasklists`.id FROM `tasklists` WHERE (`tasklists`.`name` = BINARY 'Test 2' AND `tasklists`.id <> 2) LIMIT 1[0m
+  [4;35;1mTasklist Update (0.5ms)[0m   [0mUPDATE `tasklists` SET `updated_at` = '2010-06-19 22:05:34', `status` = 'Done' WHERE `id` = 2[0m
+  [4;36;1mSQL (40.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/tasklists/2
+Completed in 170ms (DB: 50) | 302 Found [http://localhost/tasklists/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:05:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.3ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 2) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:05:35', `perishable_token` = 'rVMkOeHExSgXKtu6w9Lv', `last_request_at` = '2010-06-19 22:05:35' WHERE `id` = 1[0m
+  [4;35;1mSQL (43.1ms)[0m   [0mCOMMIT[0m
+Completed in 188ms (View: 91, DB: 50) | 200 OK [http://localhost/tasklists/2]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:05:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:05:50) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (2.0ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (82.3ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.8ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:05:50', `perishable_token` = 'bzjriW-Rq1AgsT1hSRUl', `last_request_at` = '2010-06-19 22:05:50' WHERE `id` = 1[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mCOMMIT[0m
+Completed in 755ms (View: 150, DB: 61) | 200 OK [http://localhost/tasklists/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:05:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#update (for 127.0.0.1 at 2010-06-20 00:06:05) [PUT]
+  Parameters: {"commit"=>"Submit", "tasklist"=>{"scope"=>"Basel II", "name"=>"Test 2", "priority"=>"Medium", "user_id"=>"1", "due_date"=>"2010-06-10", "description"=>"test", "status"=>"In progress"}, "action"=>"update", "_method"=>"put", "authenticity_token"=>"qppV/ixOJxP1VLOFb3MqeTXm0XIUyvIPpMlUIDKCy4E=", "id"=>"2", "genre"=>"Production", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (5.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mProject Load (1.0ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mTasklist Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.8ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTasklist Load (1.1ms)[0m   [0;1mSELECT `tasklists`.id FROM `tasklists` WHERE (`tasklists`.`name` = BINARY 'Test 2' AND `tasklists`.id <> 2) LIMIT 1[0m
+  [4;35;1mTasklist Update (0.4ms)[0m   [0mUPDATE `tasklists` SET `updated_at` = '2010-06-19 22:06:05', `status` = 'In progress' WHERE `id` = 2[0m
+  [4;36;1mSQL (71.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/tasklists/2
+Completed in 208ms (DB: 86) | 302 Found [http://localhost/tasklists/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:06:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.3ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mUser Columns (5.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 2) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (3.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:06:06', `perishable_token` = 'O4sykNemEiO2Us7KQtVb', `last_request_at` = '2010-06-19 22:06:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (59.7ms)[0m   [0mCOMMIT[0m
+Completed in 182ms (View: 98, DB: 76) | 200 OK [http://localhost/tasklists/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:06:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:06:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (6.1ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (5.7ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 2) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;36;1mProject Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 2) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 22:06:50', `perishable_token` = 'ukNMniv6tRbk8cRdtHf5', `last_request_at` = '2010-06-19 22:06:50' WHERE `id` = 1[0m
+  [4;36;1mSQL (186.4ms)[0m   [0;1mCOMMIT[0m
+Completed in 1232ms (View: 963, DB: 205) | 200 OK [http://localhost/tasklists/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:06:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#index (for 127.0.0.1 at 2010-06-20 00:06:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (8.5ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.3ms)[0m   [0;1mSELECT * FROM `tasklists` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/index
+  [4;35;1mProject Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (4.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.7ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 22:06:55', `perishable_token` = '2MrYPO8wUcazgb9pwaRB', `last_request_at` = '2010-06-19 22:06:55' WHERE `id` = 1[0m
+  [4;36;1mSQL (62.8ms)[0m   [0;1mCOMMIT[0m
+Completed in 694ms (View: 573, DB: 85) | 200 OK [http://localhost/tasklists]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:06:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:06:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/dots.gif" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:07:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (7.5ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (1.6ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (1.3ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 3) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:07:02', `perishable_token` = 'ri2FNkP9eLzHDwhjpmV_', `last_request_at` = '2010-06-19 22:07:02' WHERE `id` = 1[0m
+  [4;35;1mSQL (48.1ms)[0m   [0mCOMMIT[0m
+Completed in 464ms (View: 364, DB: 63) | 200 OK [http://localhost/tasklists/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:07:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:07:05) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (19.7ms)
+  [4;36;1mUser Load (1.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:07:05', `perishable_token` = 'Uy8YdnzOTq4MlHJwgnsn', `last_request_at` = '2010-06-19 22:07:05' WHERE `id` = 1[0m
+  [4;35;1mSQL (40.2ms)[0m   [0mCOMMIT[0m
+Completed in 158ms (View: 71, DB: 48) | 200 OK [http://localhost/tasklists/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:07:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:07:58) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (41.9ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:07:58', `perishable_token` = 'TzVclBxHmKTLzrOEfVfe', `last_request_at` = '2010-06-19 22:07:58' WHERE `id` = 1[0m
+  [4;35;1mSQL (71.1ms)[0m   [0mCOMMIT[0m
+Completed in 195ms (View: 72, DB: 77) | 200 OK [http://localhost/tasklists/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:07:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#index (for 127.0.0.1 at 2010-06-20 00:09:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.2ms)[0m   [0mSELECT * FROM `tasklists` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/index
+  [4;36;1mProject Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:09:41', `perishable_token` = 'P2EgVHZlfwbI1Y-Qc0mX', `last_request_at` = '2010-06-19 22:09:41' WHERE `id` = 1[0m
+  [4;35;1mSQL (69.2ms)[0m   [0mCOMMIT[0m
+Completed in 670ms (View: 574, DB: 82) | 200 OK [http://localhost/tasklists]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:09:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:09:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/dots.gif" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:09:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.4ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;36;1mProject Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 22:09:53', `perishable_token` = 'lylYaxOr3-8fXwLwsVvK', `last_request_at` = '2010-06-19 22:09:53' WHERE `id` = 1[0m
+  [4;36;1mSQL (64.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 565ms (View: 462, DB: 70) | 200 OK [http://localhost/tasklists/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:09:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:09:57) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"tasklists"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mTasklist Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.1ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+ERROR: compiling _run_erb_app47views47tasklists47_form46html46erb_locals_form_object_tasklist RAISED compile error
+/var/www/finance/app/views/tasklists/_form.html.erb:14: syntax error, unexpected '<', expecting ']'
+...ns_for_tasklist_genre(params[<% h tasklist.genre ).to_s); @o...
+                              ^
+/var/www/finance/app/views/tasklists/_form.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ist_genre(params[<% h tasklist.genre ).to_s); @output_buffer...
+                              ^
+Function body:           def _run_erb_app47views47tasklists47_form46html46erb_locals_form_object_tasklist(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];tasklist = local_assigns[:tasklist];;@output_buffer = '';  __in_erb_template=true ;  form_for @tasklist do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( f.label :name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :scope ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :scope ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :genre ).to_s); @output_buffer.concat "<br />\n    <!--%= select_tag(\"tasklist[genre]\", options_for_select([\"Please select\",\"Production\",\"New Feature\",\"New Control\",\"Bug\",\"Nice to have\",\"New Specifications\",\"Enhancements\",\"Other\"], :disabled => \"Please select\")) %-->\n    "
+
+; @output_buffer.concat(( select_tag :genre , options_for_tasklist_genre(params[<% h tasklist.genre ).to_s); @output_buffer.concat "]) %>  \n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :project ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( collection_select(:tasklist,:project_id, @projects , :id, :title, {:prompt => true} ) ).to_s); @output_buffer.concat "\n        \n  </p>\n  <p>\n    "
+
+
+
+; @output_buffer.concat(( f.label :assigned_to ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( collection_select(:tasklist, :user_id, @users, :id, :shortname, {:prompt => true}) ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :description ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :description ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :due_date ).to_s); @output_buffer.concat "<br />\n    <!--%= f.date_select :due_date %-->\n    "
+
+; @output_buffer.concat(( f.text_field :due_date ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :priority ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( select_tag("tasklist[priority]", options_for_select(["Please select","Low","Medium","High","Urgent"], :disabled => "Please select")) ).to_s); @output_buffer.concat "  \n  </p>\n\n  <p>\n    "
+
+
+
+; @output_buffer.concat(( f.label :status ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( select_tag("tasklist[status]", options_for_select(["Please select","To start","In progress","Done","Discarded","Reopened","To review"], :disabled => "Please select")) ).to_s); @output_buffer.concat "\n  </p>\n<p>"
+
+; @output_buffer.concat(( f.submit "Submit" ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /var/www/finance/app/views/tasklists/_form.html.erb:48:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:267:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.12/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/www/finance/app/views/tasklists/edit.html.erb:1:in `_run_erb_app47views47tasklists47edit46html46erb'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:306:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.12/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.12/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.12/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/var/www/finance/script/server:3
+-e:1:in `load'
+-e:1
+
+ActionView::TemplateError (compile error
+/var/www/finance/app/views/tasklists/_form.html.erb:14: syntax error, unexpected '<', expecting ']'
+...ns_for_tasklist_genre(params[<% h tasklist.genre ).to_s); @o...
+                              ^
+/var/www/finance/app/views/tasklists/_form.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ist_genre(params[<% h tasklist.genre ).to_s); @output_buffer...
+                              ^) on line #14 of app/views/tasklists/_form.html.erb:
+11:   <p>
+12:     <%= f.label :genre %><br />
+13:     <!--%= select_tag("tasklist[genre]", options_for_select(["Please select","Production","New Feature","New Control","Bug","Nice to have","New Specifications","Enhancements","Other"], :disabled => "Please select")) %-->
+14:     <%= select_tag :genre , options_for_tasklist_genre(params[<% h tasklist.genre %>]) %>  
+15:   </p>
+16:   <p>
+17:     <%= f.label :project %><br />
+
+    app/views/tasklists/_form.html.erb:48:in `compile!'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/views/tasklists/edit.html.erb:1
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (636.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:10:51) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"tasklists"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mTasklist Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.4ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (36.8ms)
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 22:10:51', `perishable_token` = '4-M2FXjYLHELqUG5LIuV', `last_request_at` = '2010-06-19 22:10:51' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 250ms (View: 93, DB: 86) | 200 OK [http://localhost/tasklists/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:10:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:11:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.2ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (1.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 1) [0m
+  [4;36;1mUser Load (2.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (3.8ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:11:46', `perishable_token` = 'Uo7WqsRHFbYW212zzaw5', `last_request_at` = '2010-06-19 22:11:46' WHERE `id` = 1[0m
+  [4;35;1mSQL (70.4ms)[0m   [0mCOMMIT[0m
+Completed in 794ms (View: 156, DB: 86) | 200 OK [http://localhost/tasklists/1]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:11:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:11:50) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.8ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (52.8ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:11:51', `perishable_token` = 'Uc4Jlyiq4ytwjInYpqVU', `last_request_at` = '2010-06-19 22:11:51' WHERE `id` = 1[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mCOMMIT[0m
+Completed in 798ms (View: 117, DB: 59) | 200 OK [http://localhost/tasklists/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:11:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Sun Jun 20 00:13:12 +0200 2010
+  Status: 500 Internal Server Error
+  /var/www/finance/app/helpers/tasklists_helper.rb:4: syntax error, unexpected '>'
+...elected => "tasklist.genre" %>      )
+                              ^
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:224:in `depend_on'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:126:in `helper'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `helper'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:120:in `helper'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `helper'
+    /var/www/finance/app/controllers/application_controller.rb:5
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-3.0.12/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /var/www/finance/script/server:3
+    -e:1:in `load'
+    -e:1
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Sun Jun 20 00:13:17 +0200 2010
+  Status: 500 Internal Server Error
+  /var/www/finance/app/helpers/tasklists_helper.rb:4: syntax error, unexpected '>'
+...elected => "tasklist.genre" %>      )
+                              ^
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:224:in `depend_on'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:126:in `helper'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `helper'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:120:in `helper'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/helpers.rb:115:in `helper'
+    /var/www/finance/app/controllers/application_controller.rb:5
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:380:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:379:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/haml-3.0.12/rails/../lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /var/www/finance/script/server:3
+    -e:1:in `load'
+    -e:1
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:47:07) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (260.9ms)
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 22:47:07', `perishable_token` = '56GP1ur7xv-VpoSTvUq8', `last_request_at` = '2010-06-19 22:47:07' WHERE `id` = 1[0m
+  [4;35;1mSQL (132.3ms)[0m   [0mCOMMIT[0m
+Completed in 487ms (View: 318, DB: 138) | 200 OK [http://localhost/tasklists/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:47:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:50:48) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.4ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;36;1mProject Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 1) [0m
+Completed in 93ms (View: 59, DB: 5) | 200 OK [http://localhost/tasklists/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:50:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:50:56) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"tasklists"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mTasklist Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.2ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (36.8ms)
+Completed in 126ms (View: 75, DB: 3) | 200 OK [http://localhost/tasklists/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:50:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#index (for 127.0.0.1 at 2010-06-20 00:51:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.2ms)[0m   [0;1mSELECT * FROM `tasklists` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/index
+  [4;35;1mProject Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 109ms (View: 87, DB: 6) | 200 OK [http://localhost/tasklists]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:51:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:51:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/dots.gif" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-20 00:51:23) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.1ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 3) [0m
+Completed in 84ms (View: 66, DB: 5) | 200 OK [http://localhost/tasklists/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:51:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#edit (for 127.0.0.1 at 2010-06-20 00:51:30) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"tasklists"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+  [4;36;1mTasklist Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (0.1ms)[0m   [0mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 3) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/edit
+Rendered tasklists/_form (23.6ms)
+Completed in 256ms (View: 218, DB: 4) | 200 OK [http://localhost/tasklists/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-20 00:51:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-20 01:18:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mReportCategory Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendered shared/_livefilter (6.3ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 23:18:41', `perishable_token` = 'R3A4RDEkjbh-R_GpGZzw', `last_request_at` = '2010-06-19 23:18:41' WHERE `id` = 1[0m
+  [4;35;1mSQL (83.4ms)[0m   [0mCOMMIT[0m
+Rendered shared/_signon (126.5ms)
+Completed in 218ms (View: 114, DB: 89) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2010-06-20 01:18:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_lines"}
+  [4;36;1mReportLine Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+  [4;35;1mReportLine Load (0.2ms)[0m   [0mSELECT * FROM `report_lines` ORDER BY report_id ASC, position ASC[0m
+  [4;36;1mReport Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY report_category_id ASC, position ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 1) ORDER BY report_category_id ASC, position ASC[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY report_category_id ASC, position ASC[0m
+Rendered shared/_livefilter (1.5ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 23:18:47', `perishable_token` = '1tVql3v2jmeHohajIXrn', `last_request_at` = '2010-06-19 23:18:47' WHERE `id` = 1[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+Rendered shared/_signon (94.6ms)
+Completed in 179ms (View: 106, DB: 56) | 200 OK [http://localhost/report_lines]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-20 01:18:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"report_lines"}
+  [4;35;1mReportLine Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mReportLine Load (0.7ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY report_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY report_category_id ASC, position ASC[0m
+  [4;35;1mAccountPlan Load (0.5ms)[0m   [0mSELECT `account_plans`.* FROM `account_plans` INNER JOIN `structures` ON `account_plans`.id = `structures`.account_plan_id WHERE ((`structures`.report_line_id = 5)) ORDER BY account_id ASC, position ASC[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-19 23:18:50', `perishable_token` = 'NGFMWB2pZGpTlTvmlwK6', `last_request_at` = '2010-06-19 23:18:50' WHERE `id` = 1[0m
+  [4;36;1mSQL (48.9ms)[0m   [0;1mCOMMIT[0m
+Rendered shared/_signon (88.9ms)
+Completed in 397ms (View: 324, DB: 59) | 200 OK [http://localhost/report_lines/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#edit (for 127.0.0.1 at 2010-06-20 01:18:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"5", "controller"=>"report_lines"}
+  [4;35;1mReportLine Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mReportLine Load (0.1ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY report_id ASC, position ASC[0m
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/edit
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendered report_lines/_form (48.4ms)
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_defaultbreadcrumb (0.1ms)
+Rendered shared/_template1 (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (197.1ms)
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.1ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 23:18:53', `perishable_token` = 'UQ4RmcYfJRuLj7N2pYCq', `last_request_at` = '2010-06-19 23:18:53' WHERE `id` = 1[0m
+  [4;35;1mSQL (65.3ms)[0m   [0mCOMMIT[0m
+Rendered shared/_signon (140.9ms)
+Completed in 431ms (View: 336, DB: 73) | 200 OK [http://localhost/report_lines/5/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#update (for 127.0.0.1 at 2010-06-20 01:19:06) [PUT]
+  Parameters: {"commit"=>"Save", "action"=>"update", "_method"=>"put", "authenticity_token"=>"qppV/ixOJxP1VLOFb3MqeTXm0XIUyvIPpMlUIDKCy4E=", "id"=>"5", "controller"=>"report_lines", "report_line"=>{"record_validity"=>"1", "position"=>"1", "comments"=>"none", "record_visibility"=>"1", "line_morphing"=>"", "report_id"=>"3", "line_style"=>"", "line_id"=>"RPT63_765", "parent_line_id"=>"", "line_caption"=>"Reportline 63 title"}}
+  [4;36;1mReportLine Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mReportLine Load (2.9ms)[0m   [0mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY report_id ASC, position ASC[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReportLine Load (0.1ms)[0m   [0mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY 'RPT63_765' AND `report_lines`.id <> 5) LIMIT 1[0m
+  [4;36;1mReportLine Update (3.6ms)[0m   [0;1mUPDATE `report_lines` SET `updated_at` = '2010-06-19 23:19:06', `report_id` = 3, `parent_line_id` = '', `line_style` = '', `line_morphing` = '' WHERE `id` = 5[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/report_lines/5
+Completed in 121ms (DB: 61) | 302 Found [http://localhost/report_lines/5]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-20 01:19:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"report_lines"}
+  [4;36;1mReportLine Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mReportLine Load (0.6ms)[0m   [0mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY report_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.4ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 3) ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mAccountPlan Load (0.1ms)[0m   [0;1mSELECT `account_plans`.* FROM `account_plans` INNER JOIN `structures` ON `account_plans`.id = `structures`.account_plan_id WHERE ((`structures`.report_line_id = 5)) ORDER BY account_id ASC, position ASC[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '2aaa4ecc28f64e735c22dbe60d840cd26b19b19cd877ab78a6e9cc16e711f60c063e23900cd7f0f396a0a611eec5558b5485fc024ea8241906df394fb737cf32') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-19 23:19:06', `perishable_token` = 'un_uPfIZKvZml206wyKQ', `last_request_at` = '2010-06-19 23:19:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (58.2ms)[0m   [0mCOMMIT[0m
+Rendered shared/_signon (97.8ms)
+Completed in 395ms (View: 313, DB: 71) | 200 OK [http://localhost/report_lines/5]

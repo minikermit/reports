@@ -10,6 +10,6 @@
 
 <h1>New report_line</h1>
 
-<%= render :partial => 'form' %>
+<%= render :partial => 'form' , :locals => { :report_line => @report_line } %>
 
 <%= link_to 'Back', report_lines_path %>

@@ -3,7 +3,7 @@
 
 <h1>Edit My Account</h1>
 
-<%= render :partial => "form", :object => @user %>
+<%= render :partial => "form", :locals => { :user => @user } %>
 
 
 <br /><%= link_to "My Profile", user_path %>

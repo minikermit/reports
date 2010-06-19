@@ -1,4 +1,4 @@
-<% form_for @tasklist do |f| %>
+<% form_for tasklist do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :name %><br />
@@ -10,7 +10,8 @@
   </p>
   <p>
     <%= f.label :genre %><br />
-    <%= select_tag("tasklist[genre]", options_for_select(["Please select","Production","New Feature","New Control","Bug","Nice to have","New Specifications","Enhancements","Other"], :disabled => "Please select")) %>  
+    <!--%= select_tag("tasklist[genre]", options_for_select(["Please select","Production","New Feature","New Control","Bug","Nice to have","New Specifications","Enhancements","Other"], :disabled => "Please select")) %-->
+    <%= select_tag :genre , options_for_tasklist_genre(params[:genre]) %>
   </p>
   <p>
     <%= f.label :project %><br />
@@ -32,12 +33,14 @@
   </p>
   <p>
     <%= f.label :priority %><br />
-    <%= select_tag("tasklist[priority]", options_for_select(["Please select","Low","Medium","High","Urgent"], :disabled => "Please select")) %>  
+    <!--%= select_tag("tasklist[priority]", options_for_select(["Please select","Low","Medium","High","Urgent"], :disabled => "Please select")) %-->
+    <%= select_tag :priority , options_for_tasklist_priority(params[:priority]) %>
   </p>
 
   <p>
     <%= f.label :status %><br />
-    <%= select_tag("tasklist[status]", options_for_select(["Please select","To start","In progress","Done","Discarded","Reopened","To review"], :disabled => "Please select")) %>
+    <!--%= select_tag("tasklist[status]", options_for_select(["Please select","To start","In progress","Done","Discarded","Reopened","To review"], :disabled => "Please select")) %-->
+    <%= select_tag :status , options_for_tasklist_status(params[:status]) %>
   </p>
 <p><%= f.submit "Submit" %></p>
 <% end %>
