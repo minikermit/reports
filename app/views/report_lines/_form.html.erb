@@ -31,7 +31,8 @@
   </p>
   <p>
       <%= f.label :report_id %><br />
-      <%= select("report_line", "report_id", Report.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
+      <!--%= select("report_line", "report_id", Report.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %-->
+      <%= collection_select(:report_line, :report_id, @reports, :id, :name, {:prompt => true}) %>
   </p>
   <p  class="input.title">
     <span> <%= f.label :Record_Validity %></span>

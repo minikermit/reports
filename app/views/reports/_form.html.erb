@@ -11,8 +11,9 @@
   </p>
   <p>
     <%= f.label :report_category_id %><br />
-    <%= select("report", "report_category_id", ReportCategory.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
+    <!--%= select("report", "report_category_id", ReportCategory.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %-->
     <!--%= f.text_field :report_category_id %-->
+    <%= collection_select(:report, :report_category_id, @report_categories, :id, :name, {:prompt => true}) %>        
   </p>
   <p>
     <%= f.label :comments %><br />
