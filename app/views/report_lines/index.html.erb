@@ -1,4 +1,5 @@
 <!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
 
 <ul id="crumbs">
  <li><a href="#">Homes</a></li>
@@ -8,18 +9,26 @@
  <li>You are on the list of report lines page</li>
 </ul>
 
+<% end %>
+
 <br/>
 
-
 <!-- This is the list part -->
+<% content_for :article1 do %>
+
+<h2 class="art-postheader">
+  Listing report lines
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
+
+<br/>
 
 <div id="page_wrapper">
 		<div id="table_wrapper">
-          <h3>Listing report lines</h3>
-
-          <!-- This is the live filter input field part -->
-
-          <input class="filter" name="livefilter" type="text" value="" />
+                    <!-- This is the live filter input field part -->
+                    <input class="filter" name="livefilter" type="text" value="" />
 
 
 
@@ -55,12 +64,23 @@
 
 <%= link_to 'New report_line', new_report_line_path %>
 
+        </div>
+     </div>
+
+            <blockquote>
+                <p>
+                    &#8220;This is a list of available report lines.&#8221;
+                    <br />
+                </p>
+            </blockquote>
+          <br />
+
+        <!-- /article-content -->
     </div>
-</div>
 
 
 <!-- This is the javascript part -->
 
 <%= render :partial => "shared/livefilter" %>
 
-
+<% end %>

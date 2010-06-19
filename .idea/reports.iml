@@ -54,6 +54,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="mislav-will_paginate" version="2.2.3" bound="LATEST_IN_BRANCH" url="http://gems.github.com" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="mysql" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="config/database.yml" />
@@ -120,6 +126,8 @@
     <orderEntry type="library" name="[gem] acts_as_list (v0.1.2, /usr/local/lib/ruby/gems/1.8/gems/acts_as_list-0.1.2)" level="application" />
     <orderEntry type="library" name="[gem] mail (v2.2.3, /usr/local/lib/ruby/gems/1.8/gems/mail-2.2.3)" level="application" />
     <orderEntry type="library" name="[gem] acts_as_tree (v0.1.1, /usr/local/lib/ruby/gems/1.8/gems/acts_as_tree-0.1.1)" level="application" />
+    <orderEntry type="library" name="[gem] rails-footnotes (v3.6.6, /usr/local/lib/ruby/gems/1.8/gems/rails-footnotes-3.6.6)" level="application" />
+    <orderEntry type="library" name="[gem] mislav-will_paginate (v2.2.3, /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3)" level="application" />
   </component>
 </module>
 
