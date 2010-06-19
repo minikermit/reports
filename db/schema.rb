@@ -9,13 +9,42 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100609232205) do
+ActiveRecord::Schema.define(:version => 20100621211250) do
+
+  create_table "TABLE 9", :id => false, :force => true do |t|
+    t.string "COL 1", :limit => 98
+  end
 
   create_table "account_plans", :force => true do |t|
     t.string   "account_id"
     t.string   "name"
     t.string   "comments",   :default => "-"
     t.integer  "position",   :default => 1
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", :force => true do |t|
+    t.text     "body"
+    t.integer  "tasklist_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "menus", :force => true do |t|
+    t.integer  "parent_id"
+    t.string   "name"
+    t.text     "description"
+    t.string   "htmllink"
+    t.string   "target"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "projects", :force => true do |t|
+    t.string   "title"
+    t.text     "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -94,6 +123,20 @@ ActiveRecord::Schema.define(:version => 20100609232205) do
 
   add_index "structures", ["account_plan_id"], :name => "index_structures_on_account_plan_id"
   add_index "structures", ["report_line_id"], :name => "index_structures_on_report_line_id"
+
+  create_table "tasklists", :force => true do |t|
+    t.string   "name"
+    t.string   "scope"
+    t.string   "genre"
+    t.integer  "project_id"
+    t.integer  "user_id"
+    t.text     "description"
+    t.string   "priority"
+    t.date     "due_date"
+    t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

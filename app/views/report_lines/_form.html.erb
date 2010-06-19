@@ -31,7 +31,6 @@
   </p>
   <p>
       <%= f.label :report_id %><br />
-      <!--%= f.text_field :report_id %-->
       <%= select("report_line", "report_id", Report.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'}) %>
   </p>
   <p  class="input.title">

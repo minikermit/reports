@@ -1,0 +1,42 @@
+<% form_for @tasklist do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :scope %><br />
+    <%= f.text_field :scope %>
+  </p>
+  <p>
+    <%= f.label :genre %><br />
+    <%= select_tag("tasklist[genre]", options_for_select(["Please select","Production","New Feature","New Control","Bug","Nice to have","New Specifications","Enhancements","Other"], :disabled => "Please select")) %>  
+  </p>
+  <p>
+    <%= f.label :project %><br />
+    <%= collection_select(:tasklist, :project_id, Project.find(:all), :id, :title, {:prompt => true} ) %>
+  </p>
+  <p>
+    <%= f.label :assigned_to %><br />
+    <%= collection_select(:tasklist, :user_id, User.find(:all), :id, :shortname, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :due_date %><br />
+    <!--%= f.date_select :due_date %-->
+    <%= f.text_field :due_date %>
+  </p>
+  <p>
+    <%= f.label :priority %><br />
+    <%= select_tag("tasklist[priority]", options_for_select(["Please select","Low","Medium","High","Urgent"], :disabled => "Please select")) %>  
+  </p>
+
+  <p>
+    <%= f.label :status %><br />
+    <%= select_tag("tasklist[status]", options_for_select(["Please select","To start","In progress","Done","Discarded","Reopened","To review"], :disabled => "Please select")) %>
+  </p>
+<p><%= f.submit "Submit" %></p>
+<% end %>

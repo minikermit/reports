@@ -74,7 +74,7 @@
       <requirement>
         <dependency name="rails_best_practices" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gemcutter.org&quot;" />
       </requirement>
-      <source from="config/environment.rb" />
+      <source from="config/environments/development.rb" />
     </requirement>
     <requirement>
       <requirement>

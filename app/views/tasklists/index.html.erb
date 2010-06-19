@@ -1,0 +1,128 @@
+<% title "Tasks" %>
+
+<div id="selectnews">
+ <div id="selection">
+  <% form_for @search do |f| %>
+
+    <h2>Choose your search criteria</h2>
+        <!--
+            Setting all the checkbox names to "source[] helps us build the array on submit"
+            We're also adding the RSS feed url to the checkbox value so we can save it in the array values
+        -->
+  <ul>
+    <li> <%= f.label :priority_equals, "Priority " %>  <%= f.label :status_equals," &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status " %> <%= f.label :project_id_equals," &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project " %></li>
+    <li> <%= f.select :priority_equals, (["","Low","Medium","High","Urgent"]) %>
+         <%= f.select :status_equals, (["","To start","In progress","Done","Discarded","Reopened","To review"]), :class=> 'flexselect' %>   
+         <%= f.select :project_id_equals, (["","1","2","3","4","5","6"]) %></li>
+    <li> <%= f.label :name_like, "Name " %> </li>
+    <li> <%= f.text_field :name_like, :class => 'text' %></li>
+    <li> <%= f.label :scope_like, "Scope " %> </li>
+    <li> <%= f.text_field :scope_like, :class => 'text' %></li>
+    <li> <%= f.label :genre_like, "Genre " %> </li>
+    <li> <%= f.text_field :genre_like, :class => 'text' %></li>
+    <li> <%= f.label :user_id_equals, "Assigned to user" %> </li>
+    <li> <%= f.text_field :user_id_equals, :class => 'text' %></li>
+    <li>    <select class="flexselect">
+                 <option value="1">George Washington</option>
+                 <option value="2">John Adams</option>
+                  <option value="3">Thomas Jefferson</option>
+                  <option value="3">Vincent Jacquel</option>
+                  <option value="3">Arthur Reipold</option>
+                  <option value="3">Rafael Ruiz</option>
+                  <option value="3">Pascal Juillerat</option>
+                  <option value="3">Sylvain Lonni</option>
+                  <option value="3">Denise Stephanus</option>
+
+            </select>
+    </li>
+  </ul>
+
+  <!-- Setting the submit name to "btn" -->
+  <%= f.submit "Search" %>
+  <% end %>
+   </div>
+</div><!--/#selectnews-->
+
+<p id="getform"><a href="#selection">Search</a></p>
+
+<div id = "tasklist">
+
+<p>Sort by  <%= order @search, :by => :name %> | <%= order @search, :by => :due_date %> | <%= order @search, :by => :priority %> | <%= order @search, :by => :status %> | <%= order @search, :by => :user_id %> | <%= order @search, :by => :scope %> | <%= order @search, :by => :genre %></p>
+
+<br />
+
+<table summary="List of all tasks" width=98% >
+
+  <caption>Tasks</caption>
+
+  <thead>
+
+  <tr align=left>
+    <th>Name</th>
+    <th> </th>
+    <th>Scope</th>
+    <th>Genre</th>
+    <th>Project</th>
+    <th><%= image_tag("icons/user_suit.png") %> User</th>
+    <th><%= image_tag("icons/calendar.png") %> Due Date</th>
+    <th>Status</th>
+    <th>Priority</th>
+    <th><%= image_tag("icons/calendar.png") %> Creation Date</th>
+
+
+  </tr>
+  </thead>
+
+  <!--tfoot>
+    <tr> This is the footer </tr>
+  </tfoot-->  
+
+  <tbody>
+  <% for tasklist in @tasklists %>
+    <tr>
+      <td><%=h tasklist.name %></td>
+      <td><%= link_to image_tag("icons/add.png"), tasklist %></td>
+      <td><%=h tasklist.scope %></td>
+      <td><%=h tasklist.genre %></td>  
+      <td><%=h tasklist.project.title %></td>
+      <td><%=h tasklist.user.shortname %></td>
+      <td><%=h tasklist.due_date.strftime(" %d/%m/%Y ") %></td>
+      <td><%=h tasklist.status %></td>
+      <td>
+
+       <% case tasklist.priority
+            when "Low" %>
+                           <%= image_tag("icons/flag_green.png") %>
+       <% when "Medium" %>
+                           <%= image_tag("icons/flag_orange.png") %>
+        <% when "High" %>
+                           <%= image_tag("icons/flag_purple.png") %>
+        <% when "Urgent" %>
+                           <%= image_tag("icons/exclamation.png") %>
+        <% else %>
+            <%=h "-" %>
+        <% end %>    
+      <%=h tasklist.priority %>
+      </td>
+      <td><%=h tasklist.created_at.strftime(" %d/%m/%Y ") %></td>
+
+
+    </tr>
+  <% end %>
+  </tbody>
+
+</table>
+
+<br />
+ 
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @tasklists %>
+  </div>
+    <%= will_paginate @tasklists, :container => false %>
+</div>
+
+<p><%= link_to "New Task", new_tasklist_path %></p>
+
+
+</div><!--/#tasklist-->

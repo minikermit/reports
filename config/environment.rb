@@ -17,7 +17,6 @@ Rails::Initializer.run do |config|
   # Specify gems that this application depends on and have them installed with rake gems:install
   config.gem 'authlogic', :source => "http://gemcutter.org"
   config.gem 'searchlogic', :source => "http://gemcutter.org"
-  config.gem 'rails_best_practices', :source => "http://gemcutter.org"
   config.gem 'simple_autocomplete'
   config.gem "annotate"
   config.gem "ancestry"
@@ -26,6 +25,7 @@ Rails::Initializer.run do |config|
   config.gem "haml"
   config.gem "acts_as_list"
   config.gem "acts_as_tree"
+
 
   # config.gem "bj"                                                   
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"

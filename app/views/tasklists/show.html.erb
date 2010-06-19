@@ -1,0 +1,61 @@
+<% title "Task" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @tasklist.name %>
+</p>
+<p>
+  <strong>Scope:</strong>
+  <%=h @tasklist.scope %>
+</p>
+<p>
+  <strong>Type:</strong>
+  <%=h @tasklist.genre %>
+</p>
+<p>
+  <strong>Project:</strong>
+  <%=h @tasklist.project.title %>
+</p>
+<p>
+  <strong>Assigned To:</strong>
+  <%=h @tasklist.user.shortname %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @tasklist.description %>
+</p>
+<p>
+  <strong>Due Date:</strong>
+  <%=h @tasklist.due_date %>
+</p>
+<p>
+ <strong>Priority:</strong>
+ <%=h  @tasklist.priority %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%=h @tasklist.status %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_tasklist_path(@tasklist) %> |
+  <%= link_to "Destroy", @tasklist, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", tasklists_path %>
+</p>
+
+   <hr />
+
+<h4>Comments</h4>
+
+  <% for comment in @tasklist.comments %>
+    <p class="commenttext"> <%= comment.body %> </p>
+    <p class="fineprint"> Created by user test on <%=h comment.created_at.strftime("%e %B, %Y") %> </p>
+  <% end %>
+
+  <%= form_tag :action => "comment", :id => @tasklist %>
+    <%= text_area "comment", "body", :size => "100x8" %><br />
+    <%= submit_tag "Comment" %>
+  </form>
+
+

@@ -1,0 +1,25 @@
+<% title "Menus" %>
+
+<table>
+  <tr>
+    <th>Parent</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Htmllink</th>
+    <th>Target</th>
+  </tr>
+  <% for menu in @menus %>
+    <tr>
+      <td><%=h menu.parent_id %></td>
+      <td><%=h menu.name %></td>
+      <td><%=h menu.description %></td>
+      <td><%=h menu.htmllink %></td>
+      <td><%=h menu.target %></td>
+      <td><%= link_to "Show", menu %></td>
+      <td><%= link_to "Edit", edit_menu_path(menu) %></td>
+      <td><%= link_to "Destroy", menu, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Menu", new_menu_path %></p>

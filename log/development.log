@@ -20012,3 +20012,256 @@ Rendered shared/_template2 (29.0ms)
   [4;36;1mUser Columns (36.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
 Rendered shared/_signon (880.0ms)
 Completed in 3030ms (View: 1813, DB: 1079) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#new (for 127.0.0.1 at 2010-06-19 16:48:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"reports"}
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/new
+  [4;36;1mReportCategory Load (25.8ms)[0m   [0;1mSELECT * FROM `report_categories` [0m
+  [4;35;1mReportCategory Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+Rendered reports/_form (76.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (37.9ms)
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (17.6ms)
+Completed in 313ms (View: 273, DB: 30) | 200 OK [http://localhost/reports/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#create (for 127.0.0.1 at 2010-06-19 16:49:02) [POST]
+  Parameters: {"report"=>{"record_validity"=>"1", "position"=>"1", "name"=>"This is report 63", "reference"=>"63", "comments"=>"none", "record_visibility"=>"1", "report_category_id"=>"1"}, "commit"=>"Save", "action"=>"create", "authenticity_token"=>"qppV/ixOJxP1VLOFb3MqeTXm0XIUyvIPpMlUIDKCy4E=", "controller"=>"reports"}
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReport Load (63.3ms)[0m   [0mSELECT `reports`.id FROM `reports` WHERE (`reports`.`reference` = BINARY '63') LIMIT 1[0m
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT `reports`.id FROM `reports` WHERE (`reports`.`name` = BINARY 'This is report 63') LIMIT 1[0m
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;35;1mReport Load (41.3ms)[0m   [0mSELECT * FROM `reports` WHERE (report_category_id = 1) ORDER BY position DESC, position ASC LIMIT 1[0m
+  [4;36;1mReport Create (57.0ms)[0m   [0;1mINSERT INTO `reports` (`reference`, `name`, `position`, `record_validity`, `created_at`, `comments`, `updated_at`, `record_visibility`, `created_by`, `updated_by`, `report_category_id`, `updated_with`) VALUES('63', 'This is report 63', 3, 1, '2010-06-19 14:49:02', 'none', '2010-06-19 14:49:02', 1, '-', '-', 1, '-')[0m
+  [4;35;1mSQL (60.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/reports/4
+Completed in 319ms (DB: 225) | 302 Found [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-19 16:49:02) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.3ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (40.3ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 4) ORDER BY position ASC[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (22.8ms)
+Completed in 314ms (View: 259, DB: 45) | 200 OK [http://localhost/reports/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#report_line (for 127.0.0.1 at 2010-06-19 16:50:00) [POST]
+  Parameters: {"commit"=>"Add a new line to this report", "action"=>"report_line", "authenticity_token"=>"qppV/ixOJxP1VLOFb3MqeTXm0XIUyvIPpMlUIDKCy4E=", "id"=>"4", "controller"=>"reports", "report_line"=>{"position"=>"1", "comments"=>"none", "line_id"=>"RPT63_765", "line_caption"=>"Reportline 63 title"}}
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY position ASC[0m
+  [4;36;1mReportLine Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_lines`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReportLine Load (1.7ms)[0m   [0;1mSELECT `report_lines`.id FROM `report_lines` WHERE (`report_lines`.`line_id` = BINARY 'RPT63_765') LIMIT 1[0m
+  [4;35;1mReportLine Load (0.4ms)[0m   [0mSELECT * FROM `report_lines` WHERE (report_id = 4) ORDER BY position DESC, position ASC LIMIT 1[0m
+  [4;36;1mReportLine Create (0.4ms)[0m   [0;1mINSERT INTO `report_lines` (`position`, `record_validity`, `created_at`, `comments`, `updated_at`, `uo`, `record_visibility`, `line_morphing`, `created_by`, `report_id`, `line_id`, `line_style`, `updated_by`, `parent_line_id`, `line_caption`, `updated_with`) VALUES(1, 1, '2010-06-19 14:50:00', 'none', '2010-06-19 14:50:00', '+', 1, NULL, '-', 4, 'RPT63_765', NULL, '-', NULL, 'Reportline 63 title', '-')[0m
+  [4;35;1mSQL (58.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/reports/4
+Completed in 258ms (DB: 65) | 302 Found [http://localhost/reports/report_line/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#show (for 127.0.0.1 at 2010-06-19 16:50:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering reports/show
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) [0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.report_id = 4) ORDER BY position ASC[0m
+  [4;35;1mReportLine Columns (18.4ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (38.2ms)
+Completed in 136ms (View: 103, DB: 23) | 200 OK [http://localhost/reports/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-19 16:50:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"report_lines"}
+  [4;35;1mReportLine Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mReportLine Load (0.5ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY position ASC[0m
+  [4;35;1mAccountPlan Load (53.0ms)[0m   [0mSELECT `account_plans`.* FROM `account_plans` INNER JOIN `structures` ON `account_plans`.id = `structures`.account_plan_id WHERE ((`structures`.report_line_id = 5)) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_defaultbreadcrumb (22.7ms)
+Rendered shared/_template1 (19.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.2ms)
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (22.5ms)
+Completed in 269ms (View: 194, DB: 62) | 200 OK [http://localhost/report_lines/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-19 16:57:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"report_lines"}
+  [4;35;1mReportLine Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mReportLine Load (0.1ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.4ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY position ASC[0m
+  [4;35;1mAccountPlan Load (0.2ms)[0m   [0mSELECT `account_plans`.* FROM `account_plans` INNER JOIN `structures` ON `account_plans`.id = `structures`.account_plan_id WHERE ((`structures`.report_line_id = 5)) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (11.8ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (96.8ms)
+Completed in 304ms (View: 267, DB: 7) | 200 OK [http://localhost/report_lines/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-19 16:58:20) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"report_lines"}
+  [4;35;1mReportLine Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mReportLine Load (0.1ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY position ASC[0m
+  [4;35;1mAccountPlan Load (1.4ms)[0m   [0mSELECT `account_plans`.* FROM `account_plans` INNER JOIN `structures` ON `account_plans`.id = `structures`.account_plan_id WHERE ((`structures`.report_line_id = 5)) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (349.5ms)
+Completed in 504ms (View: 467, DB: 8) | 200 OK [http://localhost/report_lines/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-19 16:59:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"report_lines"}
+  [4;35;1mReportLine Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mReportLine Load (3.7ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY position ASC[0m
+  [4;35;1mAccountPlan Load (0.3ms)[0m   [0mSELECT `account_plans`.* FROM `account_plans` INNER JOIN `structures` ON `account_plans`.id = `structures`.account_plan_id WHERE ((`structures`.report_line_id = 5)) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (4.2ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (41.8ms)
+Completed in 514ms (View: 481, DB: 11) | 200 OK [http://localhost/report_lines/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportLinesController#show (for 127.0.0.1 at 2010-06-19 17:02:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"report_lines"}
+  [4;35;1mReportLine Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mReportLine Load (0.8ms)[0m   [0;1mSELECT * FROM `report_lines` WHERE (`report_lines`.`id` = 5) ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/show
+  [4;35;1mReport Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `reports`[0m
+  [4;36;1mReport Load (0.1ms)[0m   [0;1mSELECT * FROM `reports` WHERE (`reports`.`id` = 4) ORDER BY position ASC[0m
+  [4;35;1mAccountPlan Load (0.1ms)[0m   [0mSELECT `account_plans`.* FROM `account_plans` INNER JOIN `structures` ON `account_plans`.id = `structures`.account_plan_id WHERE ((`structures`.report_line_id = 5)) [0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (41.1ms)
+Completed in 526ms (View: 155, DB: 6) | 200 OK [http://localhost/report_lines/5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (127.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (19.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateReportCategories (20100527205455)
+Migrating to CreateReports (20100527205623)
+Migrating to CreateAccountPlans (20100527205859)
+Migrating to CreateReportLines (20100527210731)
+Migrating to CreateStructures (20100527213814)
+Migrating to AddIndexReports (20100605205623)
+Migrating to AddIndexReportLines (20100605205624)
+Migrating to AddIndexStructures (20100605205625)
+Migrating to CreateSessions (20100609045554)
+Migrating to CreateUsers (20100609211921)
+Migrating to AddExtraFieldsUser (20100609232205)
+Migrating to CreateTasklists (20100620110913)
+  [4;36;1mSQL (279.4ms)[0m   [0;1mCREATE TABLE `tasklists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `scope` varchar(255), `genre` varchar(255), `project_id` int(11), `user_id` int(11), `description` text, `priority` varchar(255), `due_date` date, `status` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (55.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100620110913')[0m
+Migrating to CreateComments (20100621060217)
+  [4;36;1mSQL (216.9ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` text, `tasklist_id` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (54.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100621060217')[0m
+Migrating to CreateProjects (20100621140105)
+  [4;36;1mSQL (208.9ms)[0m   [0;1mCREATE TABLE `projects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `comments` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (66.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100621140105')[0m
+Migrating to CreateMenus (20100621211250)
+  [4;36;1mSQL (220.4ms)[0m   [0;1mCREATE TABLE `menus` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `parent_id` int(11), `name` varchar(255), `description` text, `htmllink` varchar(255), `target` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (66.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100621211250')[0m
+  [4;36;1mSQL (28.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `TABLE 9`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `TABLE 9`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `TABLE 9`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `account_plans`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `account_plans`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `account_plans`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (24.4ms)[0m   [0;1mSHOW FIELDS FROM `menus`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `menus`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `menus`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `projects`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `projects`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `report_categories`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `report_categories`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `report_lines`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `report_lines`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `report_lines`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `reports`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `reports`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `structures`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `structures`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `structures`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `tasklists`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `tasklists`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m

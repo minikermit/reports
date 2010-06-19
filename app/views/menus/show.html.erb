@@ -1,0 +1,24 @@
+<% title @menu.name, false %>
+
+
+<% unless @menu.children.empty? %>
+<ul id="submenu" >
+ <% for menu in @menu.children %>
+ <li> <%= link_to h(menu.name), menu %> </li>
+ <% end %>
+</ul>
+<% end %>
+
+<div>
+	<% for menu in @menu.ancestors.reverse %>
+        <%= link_to h(menu.name), menu %> &gt;
+	<% end %>
+</div>
+
+<%= simple_format(@menu.description) %>
+
+<p>
+  <%= link_to "Edit", edit_menu_path(@menu) %> |
+  <%= link_to "Destroy", @menu, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", menus_path %>
+</p>

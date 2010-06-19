@@ -3,7 +3,7 @@ class ReportLinesController < ApplicationController
   # GET /report_lines
   # GET /report_lines.xml
   def index
-    @report_lines = ReportLine.all(:order => 'position')
+    @report_lines = ReportLine.all( :order => 'position')
 
     respond_to do |format|
       format.html # index.html.erb
