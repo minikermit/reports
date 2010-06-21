@@ -1,13 +1,39 @@
-<ul id="crumbs">
- <li><a href="#">Homes</a></li>
- <li><%= link_to  "Report categories" , report_categories_path %></li>
- <li>You are creating a new report category</li>
-</ul>
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
 
-<br/>
+    <ul id="crumbs">
+     <li><a href="/">Homes</a></li>
+     <li><%= link_to  "Report categories" , report_categories_path %></li>
+     <li>You are creating a new report category</li>
+    </ul>
 
-<h1>New report_category</h1>
+<% end %>
 
-<%= render :partial => 'form' , :locals => { :report_category => @report_category } %>
+<% content_for :article1 do %>
 
-<%= link_to 'Back', report_categories_path %>
+<h2 class="art-postheader">
+  New report_category
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
+  <%= render :partial => 'form' , :locals => { :report_category => @report_category } %>
+
+  <%= link_to 'Show', @report_category %> |
+  <%= link_to 'Back', report_categories_path %>
+
+
+        <blockquote>
+            <p>
+                &#8220;This is where you can create a new report category.&#8221;
+                <br />
+                -
+            </p>
+        </blockquote>
+      <br />
+
+    <!-- /article-content -->
+</div>
+
+
+<% end %>
