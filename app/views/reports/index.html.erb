@@ -72,7 +72,15 @@
 <% end %>
 
 <!-- This is the javascript part -->
-<%= render :partial => "shared/livefilter" %>
+<!--%= render :partial => "shared/livefilter" %-->
+
+    <%= javascript_include_tag 'JqueryLiveFilter/jquery.liveFilter', :cache => true %>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('table.live_filter').liveFilter('basic');
+		});
+	</script>
 
 <% content_for :side do %>  <p>A simple page</p> <% end %>
 
