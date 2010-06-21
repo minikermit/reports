@@ -25986,3 +25986,241 @@ Rendered shared/_template2 (3.9ms)
   [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
 Rendered shared/_signon (62.4ms)
 Completed in 164ms (View: 133, DB: 4) | 200 OK [http://localhost/report_categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-21 17:40:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `report_categories` ORDER BY name ASC[0m
+Rendered shared/_livefilter (0.9ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (192.6ms)
+Completed in 274ms (View: 252, DB: 4) | 200 OK [http://localhost/report_categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-21 17:52:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Load (0.6ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.3ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (29.4ms)
+Completed in 247ms (View: 232, DB: 5) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-21 17:54:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.6ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendered shared/_livefilter (7.0ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (31.4ms)
+Completed in 276ms (View: 252, DB: 5) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-21 17:54:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mReportCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (44.9ms)
+Completed in 276ms (View: 86, DB: 9) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-21 17:57:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Load (1.0ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendered shared/_livefilter (1.2ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (32.4ms)
+Completed in 102ms (View: 80, DB: 6) | 200 OK [http://localhost/reports]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2010-06-21 17:59:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"report_categories"}
+  [4;36;1mReportCategory Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+  [4;35;1mReportCategory Load (1.1ms)[0m   [0mSELECT * FROM `report_categories` ORDER BY name ASC[0m
+Rendered shared/_livefilter (0.9ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (30.1ms)
+Completed in 83ms (View: 70, DB: 4) | 200 OK [http://localhost/report_categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#index (for 127.0.0.1 at 2010-06-21 18:02:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.4ms)[0m   [0;1mSELECT * FROM `tasklists` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/index
+  [4;35;1mProject Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 325ms (View: 304, DB: 6) | 200 OK [http://localhost/tasklists]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 18:02:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 18:02:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/dots.gif" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#show (for 127.0.0.1 at 2010-06-21 18:03:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (0.3ms)[0m   [0;1mSELECT * FROM `tasklists` WHERE (`tasklists`.`id` = 1) [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/show
+  [4;35;1mProject Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.tasklist_id = 1) [0m
+Completed in 90ms (View: 75, DB: 4) | 200 OK [http://localhost/tasklists/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-21 18:03:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-21 18:03:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+  [4;36;1mReportCategory Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `report_categories`[0m
+  [4;35;1mReportCategory Load (0.1ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendered shared/_livefilter (1.0ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (31.7ms)
+Completed in 92ms (View: 72, DB: 9) | 200 OK [http://localhost/reports]

@@ -1,16 +1,40 @@
-<ul id="crumbs">
- <li><a href="#">Homes</a></li>
- <li><%= link_to  "Report categories" , report_categories_path %></li>
- <li><%= link_to  "Reports" , reports_path %></li>
- <li><%= link_to  "Report lines" , report_lines_path %></li>
- <li>You are editing a specific report line</li>
-</ul>
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
 
-<br/>
+    <ul id="crumbs">
+     <li><a href="/">Homes</a></li>
+     <li><%= link_to  "Report categories" , report_categories_path %></li>
+     <li><%= link_to  "Reports" , reports_path %></li>
+     <li><%= link_to  "Report lines" , report_lines_path %></li>
+     <li>You are editing a specific report line</li>
+    </ul>
 
-<h1>Editing report_line</h1>
+<% end %>
 
-<%= render :partial => 'form' , :locals => { :report_line => @report_line } %>
+<% content_for :article1 do %>
 
-<%= link_to 'Show', @report_line %> |
-<%= link_to 'Back', report_lines_path %>
+<h2 class="art-postheader">
+  Editing report line
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
+  <%= render :partial => 'form' , :locals => { :report_line => @report_line } %>
+
+  <%= link_to 'Show', @report_line %> |
+  <%= link_to 'Back', report_lines_path %>
+
+        <blockquote>
+            <p>
+                &#8220;This is where you can edit and modify your report line.&#8221;
+                <br />
+                You can change the name or the report it belongs to for example !
+            </p>
+        </blockquote>
+      <br />
+
+    <!-- /article-content -->
+</div>
+
+
+<% end %>

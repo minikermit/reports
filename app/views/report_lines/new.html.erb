@@ -1,15 +1,39 @@
-<ul id="crumbs">
- <li><a href="#">Homes</a></li>
- <li><%= link_to  "Report categories" , report_categories_path %></li>
- <li><%= link_to  "Reports" , reports_path %></li>
- <li><%= link_to  "Report lines" , report_lines_path %></li>
- <li>You are creating a new report line</li>
-</ul>
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
 
-<br/>
+    <ul id="crumbs">
+     <li><a href="/">Homes</a></li>
+     <li><%= link_to  "Report categories" , report_categories_path %></li>
+     <li><%= link_to  "Reports" , reports_path %></li>
+     <li><%= link_to  "Report lines" , report_lines_path %></li>
+     <li>You are creating a new report line</li>
+    </ul>
 
-<h1>New report_line</h1>
+<% end %>
 
+<% content_for :article1 do %>
+
+<h2 class="art-postheader">
+  New report line
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
 <%= render :partial => 'form' , :locals => { :report_line => @report_line } %>
 
 <%= link_to 'Back', report_lines_path %>
+
+        <blockquote>
+            <p>
+                &#8220;This is where you can create your report line.&#8221;
+                <br />
+                ask Oliver if you have more questions ;-)
+            </p>
+        </blockquote>
+      <br />
+
+    <!-- /article-content -->
+</div>
+
+
+<% end %>
