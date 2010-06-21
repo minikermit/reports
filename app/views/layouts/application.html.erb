@@ -7,8 +7,7 @@
 
     <!--[if IE 6]><link rel="stylesheet" href="/stylesheets/style.ie6.css" type="text/css" media="screen" /><![endif]-->
     <!--[if IE 7]><link rel="stylesheet" href="/stylesheets/style.ie7.css" type="text/css" media="screen" /><![endif]-->
-    <%= stylesheet_link_tag 'style','breadcrumb','livefilter' %>
-    <%= javascript_include_tag 'script' %>  
+    <%= stylesheet_link_tag 'style','breadcrumb' %>
 
 </head>
 <body>
@@ -226,11 +225,14 @@
     <%= yield %>
 
 <!-- This is the javascript part -->
- <%= javascript_tag "var AUTH_TOKEN =  #{form_authenticity_token.inspect};" if protect_against_forgery? %>
  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js",:cache => true %>
  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js",:cache => true %>
  <%= javascript_include_tag 'application' %>
- <%= yield :myjavascript %>
+ <%= javascript_tag "var AUTH_TOKEN =  #{form_authenticity_token.inspect};" if protect_against_forgery? %>
+ <%= javascript_include_tag 'script' %>
+ <%= yield(:myjavascript) || render(:partial => '/shared/livefilter') %>
+
+ <!--%= yield :myjavascript %-->
 
 </body>
 </html>

@@ -20,33 +20,37 @@
 <div class="art-postcontent">
     <!-- article-content -->
 
-<div id="page_wrapper">
-		<div id="table_wrapper">
-          <!-- This is the live filter input field part -->
+  <div id="page_wrapper">
+      <div id="table_wrapper">
+        <!-- This is the live filter input field part -->
           <input class="filter" name="livefilter" type="text" value="" />
 
 <br/>          
 
 <table class="live_filter">
-  <tr>
-    <th>Reference</th>
-    <th>Name</th>
-    <th>Comments</th>
-    <th>Order</th>
-    <th>Report category</th>
-  </tr>
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Name</th>
+      <th>Comments</th>
+      <th>Order</th>
+      <th>Report category</th>
+    </tr>
+  </thead>
 
-<% @reports.each do |report| %>
-  <tr>
-    <td><%= link_to report.reference, report %></td>    
-    <td><%=h report.name %></td>
-    <td><%=h report.comments %></td>
-    <td><%=h report.position %></td>
-    <td><%=h report.report_category.name %></td>
-    <td><%= link_to 'Edit', edit_report_path(report) %></td>
-    <td><%= link_to 'Destroy', report, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <tbody>
+    <% @reports.each do |report| %>
+    <tr>
+      <td><%= link_to report.reference, report %></td>
+      <td><%=h report.name %></td>
+      <td><%=h report.comments %></td>
+      <td><%=h report.position %></td>
+      <td><%=h report.report_category.name %></td>
+      <td><%= link_to 'Edit', edit_report_path(report) %></td>
+      <td><%= link_to 'Destroy', report, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+    <% end %>
+  </tbody>
 </table>
 
 <br />
@@ -72,15 +76,9 @@
 <% end %>
 
 <!-- This is the javascript part -->
-<!--%= render :partial => "shared/livefilter" %-->
+<%= render :partial => "shared/livefilter" %>
 
-    <%= javascript_include_tag 'JqueryLiveFilter/jquery.liveFilter', :cache => true %>
 
-    <script type="text/javascript">
-		$(document).ready(function() {
-			$('table.live_filter').liveFilter('basic');
-		});
-	</script>
 
 <% content_for :side do %>  <p>A simple page</p> <% end %>
 
