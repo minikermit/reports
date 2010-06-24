@@ -27,6 +27,10 @@
 <br/>
 <br/>
 
+
+<p>Sort by  <%= order @search, :by => :name %> | <%= order @search, :by => :comments %> | <%= order @search, :by => :created_at %></p>
+
+
 <table class="live_filter">
   <tr>
     <th>Name</th>
@@ -44,6 +48,14 @@
 </table>
 
 <br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @report_categories %>
+  </div>
+    <%= will_paginate @report_categories, :container => false %>
+</div>
+
 
 <%= link_to 'New report_category', new_report_category_path %>
 

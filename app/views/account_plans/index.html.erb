@@ -1,19 +1,26 @@
 <!-- This is the breadcrumb part -->
-
-<ul id="crumbs">
- <li><a href="#">Homes</a></li>
- <li><%= link_to  "Account Plan" , account_plans_path %></li>
- <li>You are on the list of accounts page</li>
-</ul>
-
+<% content_for :breadcrumb do %>
+    <ul id="crumbs">
+      <li><a href="/">Homes</a></li>
+      <li><%= link_to  "Account Plan" , account_plans_path %></li>
+      <li>You are on the list of accounts page</li>
+     </ul>
 <br/>
-
+<% end %>
 
 <!-- This is the list part -->
 
+<% content_for :article1 do %>
+
+<h2 class="art-postheader">
+  Listing account plan
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
+
 <div id="page_wrapper">
 		<div id="table_wrapper">
-          <h1>Listing account plan</h1>
 
           <!-- This is the live filter input field part -->
 
@@ -44,14 +51,36 @@
 
 <br />
 
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @account_plans %>
+  </div>
+    <%= will_paginate @account_plans, :container => false %>
+</div>
+
+<br />
+
 <%= link_to 'New account_plan', new_account_plan_path %>
 
-    </div>
+        </div>
+     </div>
 
- </div>
+           <blockquote>
+               <p>
+                   &#8220;This is a list of available accounts.&#8221;
+                   <br />
+               </p>
+           </blockquote>
+         <br />
+
+       <!-- /article-content -->
+   </div>
 
 
-<!-- This is the javascript part -->
 
-<%= render :partial => "shared/livefilter" %>
+<% end %>
 
+   <% content_for :side do %>  <p>Account plan submenu</p> <% end %>
+
+   <!-- This is the javascript part -->
+   <%= render :partial => "shared/livefilter" %>

@@ -5,15 +5,14 @@ class AccountPlansController < ApplicationController
   # GET /account_plans
   # GET /account_plans.xml
   def index
-    @account_plans = AccountPlan.order
+    @search = AccountPlan.search(params[:search])
+    @account_plans = @search.all.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @account_plans }
     end
   end
-
-
 
 
   # GET /account_plans/1

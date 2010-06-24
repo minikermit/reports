@@ -1,14 +1,16 @@
 class ReportsController < ApplicationController
   # GET /reports
-  # GET /reports.xml
+  # GET /reports.xml 
   def index
-    @reports = Report.order
+    @search = Report.order.search(params[:search])
+    @reports = @search.all.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @reports }
     end
   end
+
 
   def report_line
     Report.find(params[:id]).report_lines.create(params[:report_line])

@@ -34,6 +34,8 @@
 
 <br/>
 
+<p>Sort by  <%= order @search, :by => :name %> | <%= order @search, :by => :comments %> | <%= order @search, :by => :line_id %></p>
+                    
 <table class="live_filter">
   <tr>
     <th>Line id</th>
@@ -59,6 +61,15 @@
   </tr>
 <% end %>
 </table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @report_lines %>
+  </div>
+    <%= will_paginate @report_lines, :container => false %>
+</div>
 
 <br />
 

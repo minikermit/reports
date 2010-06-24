@@ -3,13 +3,15 @@ class ReportLinesController < ApplicationController
   # GET /report_lines
   # GET /report_lines.xml
   def index
-    @report_lines = ReportLine.order
+    @search = ReportLine.search(params[:search])
+    @report_lines = @search.all.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @report_lines }
     end
   end
+
 
   def structure
     ReportLine.find(params[:id]).structures.create(params[:structure])

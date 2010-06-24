@@ -27,6 +27,9 @@
 
 <br/>          
 
+<p>Sort by  <%= order @search, :by => :reference %> | <%= order @search, :by => :name %> | <%= order @search, :by => :position %></p>
+
+
 <table class="live_filter">
   <thead>
     <tr>
@@ -55,6 +58,15 @@
 
 <br />
 
+        <div class="digg_pagination">
+          <div class="page_info">
+            <%= page_entries_info @reports %>
+          </div>
+            <%= will_paginate @reports, :container => false %>
+        </div>
+
+<br />
+        
 <%= link_to 'New report', new_report_path %>
 
 

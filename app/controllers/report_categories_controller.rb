@@ -2,8 +2,9 @@ class ReportCategoriesController < ApplicationController
   # GET /report_categories
   # GET /report_categories.xml
   def index
-    @report_categories = ReportCategory.order
-
+    @search = ReportCategory.search(params[:search])
+    @report_categories = @search.all.paginate(:page => params[:page])
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @report_categories }
