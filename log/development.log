@@ -30042,3 +30042,178 @@ NameError (uninitialized constant Mime::PDF):
 Rendered rescues/_trace (236.2ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-06-28 22:53:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+Rendered shared/_livefilter (2.2ms)
+Rendered shared/_menubar (5.9ms)
+Rendered shared/_template2 (2.8ms)
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (25.7ms)
+Completed in 138ms (View: 114, DB: 3) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-28 22:53:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.2ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY report_category_id ASC, position ASC[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (11.3ms)
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (23.2ms)
+Completed in 259ms (View: 242, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show to pdf (for 127.0.0.1 at 2010-06-28 22:53:41) [GET]
+  Parameters: {"format"=>"pdf", "action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (2.3ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Completed in 16ms (View: 1, DB: 4) | 406 Not Acceptable [http://localhost/report_categories/1.pdf]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show to pdf (for 127.0.0.1 at 2010-06-28 22:59:29) [GET]
+  Parameters: {"format"=>"pdf", "action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Completed in 23ms (View: 1, DB: 2) | 406 Not Acceptable [http://localhost/report_categories/1.pdf]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show (for 127.0.0.1 at 2010-06-28 22:59:36) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Rendering template within layouts/application
+Rendering report_categories/show
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` WHERE (`reports`.report_category_id = 1) ORDER BY report_category_id ASC, position ASC[0m
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_sidebar (1.7ms)
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (23.9ms)
+Completed in 74ms (View: 61, DB: 3) | 200 OK [http://localhost/report_categories/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportCategoriesController#show to pdf (for 127.0.0.1 at 2010-06-28 22:59:53) [GET]
+  Parameters: {"format"=>"pdf", "action"=>"show", "id"=>"1", "controller"=>"report_categories"}
+  [4;35;1mReportCategory Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mReportCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `report_categories` WHERE (`report_categories`.`id` = 1) ORDER BY name ASC[0m
+Completed in 23ms (View: 1, DB: 2) | 406 Not Acceptable [http://localhost/report_categories/1.pdf]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-06-28 23:06:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"account_plans"}
+  [4;35;1mAccountPlan Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `account_plans`[0m
+  [4;36;1mAccountPlan Load (0.1ms)[0m   [0;1mSELECT * FROM `account_plans` ORDER BY account_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering account_plans/index
+Rendered shared/_livefilter (0.9ms)
+Rendered shared/_menubar (0.3ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (40.2ms)
+Completed in 98ms (View: 68, DB: 5) | 200 OK [http://localhost/account_plans]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AccountPlansController#show (for 127.0.0.1 at 2010-06-28 23:06:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"account_plans"}
+  [4;36;1mAccountPlan Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `account_plans`[0m
+  [4;35;1mAccountPlan Load (0.3ms)[0m   [0mSELECT * FROM `account_plans` WHERE (`account_plans`.`id` = 1) ORDER BY account_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering account_plans/show
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (189.0ms)
+Rendered shared/_livefilter (1.2ms)
+Completed in 228ms (View: 209, DB: 4) | 200 OK [http://localhost/account_plans/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AccountPlansController#edit (for 127.0.0.1 at 2010-06-28 23:06:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"account_plans"}
+  [4;35;1mAccountPlan Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `account_plans`[0m
+  [4;36;1mAccountPlan Load (0.1ms)[0m   [0;1mSELECT * FROM `account_plans` WHERE (`account_plans`.`id` = 1) ORDER BY account_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering account_plans/edit
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_defaultbreadcrumb (16.6ms)
+Rendered shared/_template1 (25.1ms)
+Rendered shared/_template2 (0.2ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (22.4ms)
+Rendered shared/_livefilter (1.1ms)
+Completed in 152ms (View: 133, DB: 4) | 200 OK [http://localhost/account_plans/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-06-28 23:07:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"account_plans"}
+  [4;36;1mAccountPlan Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `account_plans`[0m
+  [4;35;1mAccountPlan Load (0.1ms)[0m   [0mSELECT * FROM `account_plans` ORDER BY account_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering account_plans/index
+Rendered shared/_livefilter (1.0ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (33.8ms)
+Completed in 74ms (View: 57, DB: 5) | 200 OK [http://localhost/account_plans]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AccountPlansController#new (for 127.0.0.1 at 2010-06-28 23:07:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"account_plans"}
+  [4;35;1mAccountPlan Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `account_plans`[0m
+Rendering template within layouts/application
+Rendering account_plans/new
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (176.3ms)
+Rendered shared/_livefilter (1.0ms)
+Completed in 237ms (View: 216, DB: 4) | 200 OK [http://localhost/account_plans/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AccountPlansController#new (for 127.0.0.1 at 2010-06-28 23:08:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"account_plans"}
+  [4;35;1mAccountPlan Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `account_plans`[0m
+Rendering template within layouts/application
+Rendering account_plans/new
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (22.9ms)
+Rendered shared/_livefilter (1.4ms)
+Completed in 87ms (View: 70, DB: 3) | 200 OK [http://localhost/account_plans/new]
