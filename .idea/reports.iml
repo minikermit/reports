@@ -66,6 +66,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="pdfkit" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="config/boot.rb" />
@@ -119,14 +125,15 @@
     <orderEntry type="library" name="[gem] annotate (v2.4.0, /usr/local/lib/ruby/gems/1.8/gems/annotate-2.4.0)" level="application" />
     <orderEntry type="library" name="[gem] treetop (v1.4.8, /usr/local/lib/ruby/gems/1.8/gems/treetop-1.4.8)" level="application" />
     <orderEntry type="library" name="[gem] simple_autocomplete (v0.3.5, /usr/local/lib/ruby/gems/1.8/gems/simple_autocomplete-0.3.5)" level="application" />
-    <orderEntry type="library" name="[gem] ancestry (v1.2.0, /usr/local/lib/ruby/gems/1.8/gems/ancestry-1.2.0)" level="application" />
     <orderEntry type="library" name="[gem] mime-types (v1.16, /home/owner/.gem/ruby/1.8/gems/mime-types-1.16)" level="application" />
     <orderEntry type="library" name="[gem] mysql (v2.8.1, /usr/local/lib/ruby/gems/1.8/gems/mysql-2.8.1)" level="application" />
-    <orderEntry type="library" name="[gem] haml (v3.0.12, /usr/local/lib/ruby/gems/1.8/gems/haml-3.0.12)" level="application" />
     <orderEntry type="library" name="[gem] acts_as_list (v0.1.2, /usr/local/lib/ruby/gems/1.8/gems/acts_as_list-0.1.2)" level="application" />
-    <orderEntry type="library" name="[gem] mail (v2.2.3, /usr/local/lib/ruby/gems/1.8/gems/mail-2.2.3)" level="application" />
     <orderEntry type="library" name="[gem] acts_as_tree (v0.1.1, /usr/local/lib/ruby/gems/1.8/gems/acts_as_tree-0.1.1)" level="application" />
     <orderEntry type="library" name="[gem] mislav-will_paginate (v2.3.11, /usr/local/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.3.11)" level="application" />
+    <orderEntry type="library" name="[gem] pdfkit (v0.3.3, /usr/local/lib/ruby/gems/1.8/gems/pdfkit-0.3.3)" level="application" />
+    <orderEntry type="library" name="[gem] haml (v3.0.13, /usr/local/lib/ruby/gems/1.8/gems/haml-3.0.13)" level="application" />
+    <orderEntry type="library" name="[gem] mail (v2.2.5, /usr/local/lib/ruby/gems/1.8/gems/mail-2.2.5)" level="application" />
+    <orderEntry type="library" name="[gem] ancestry (v1.2.0, /usr/local/lib/ruby/gems/1.8/gems/ancestry-1.2.0)" level="application" />
   </component>
 </module>
 

@@ -25,6 +25,8 @@ Rails::Initializer.run do |config|
   config.gem "haml"
   config.gem "acts_as_list"
   config.gem "acts_as_tree"
+  config.gem "pdfkit"
+  
 
 
   # config.gem "bj"                                                   
@@ -52,6 +54,6 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 
  require 'pdfkit'
- config.middleware.use PDFKit::Middleware
+ config.middleware.use "PDFKit::Middleware", :print_media_type => true
     
 end

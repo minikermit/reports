@@ -30,7 +30,9 @@
 
 <table class="live_filter">
   <tr>
+    <th>Account type</th>
     <th>Account</th>
+    <th>Shortname</th>
     <th>Name</th>
     <th>Comments</th>
     <th>Order</th>
@@ -38,7 +40,9 @@
 
 <% @account_plans.each do |account_plan| %>
   <tr>
+    <td><%=h account_plan.account_type_id %></td>
     <td><%=h account_plan.account_id %></td>
+    <td><%=h account_plan.shortname %></td>
     <td><%=h account_plan.name %></td>
     <td><%=h account_plan.comments %></td>
     <td><%=h account_plan.position %></td>

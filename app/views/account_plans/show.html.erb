@@ -1,6 +1,34 @@
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
+    <ul id="crumbs">
+     <li><a href="/">Homes</a></li>
+     <li><%= link_to  "Account plans" , account_plans_path %></li>
+     <li>You are viewing a specific account in the general ledger</li>
+    </ul>
+<% end %>
+
+<% content_for :article1 do %>
+
+<h2 class="art-postheader">
+  Showing account plan
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
+
 <p>
-  <b>Account:</b>
+  <b>Account type:</b>
+  <%=h @account_plan.account_type_id %>
+</p>
+
+<p>
+  <b>Account id:</b>
   <%=h @account_plan.account_id %>
+</p>
+
+<p>
+  <b>Shortname:</b>
+  <%=h @account_plan.shortname %>
 </p>
 
 <p>
@@ -14,10 +42,30 @@
 </p>
 
 <p>
+  <b>Account parent id:</b>
+  <%=h @account_plan.account_parent_id %>
+</p>
+
+<p>
   <b>Order:</b>
   <%=h @account_plan.position %>
 </p>
 
-
 <%= link_to 'Edit', edit_account_plan_path(@account_plan) %> |
 <%= link_to 'Back', account_plans_path %>
+
+        <blockquote>
+            <p>
+                &#8220;This stylesheet is going to help so freaking much.&#8221;
+                <br />
+                -Blockquote
+            </p>
+        </blockquote>
+      <br />
+
+    <!-- /article-content -->
+</div>
+
+
+<% end %>
+

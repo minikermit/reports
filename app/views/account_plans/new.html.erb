@@ -1,28 +1,72 @@
-<h1>New account_plan</h1>
-
-<% form_for(@account_plan) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :account_id %><br />
-    <!--%= f.text_field :account_id %--!>
-    <%= f.text_field :auto_account_plan_account_id, :class => 'autocomplete', 'data-autocomplete-url'=>autocomplete_for_account_plan_account_id_path %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :comments %><br />
-    <%= f.text_field :comments, "rows" => 3, "cols" => 35  %>
-  </p>
-  <p>
-    <%= f.label :position %><br />
-    <%= f.text_field :position %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
+    <ul id="crumbs">
+     <li><a href="/">Homes</a></li>
+     <li><%= link_to  "Account plans" , account_plans_path %></li>
+     <li>You are creating a new account in the general ledger</li>
+    </ul>
 <% end %>
 
-<%= link_to 'Back', account_plans_path %>
+<% content_for :article1 do %>
+
+<h2 class="art-postheader">
+  New account_plan
+</h2>
+
+<<div class="art-postcontent">
+    <!-- article-content -->
+  <!--%= render :partial => 'form' , :locals => { :account_plan => @account_plan } %-->
+
+  <% form_for(@account_plan) do |f| %>
+    <%= f.error_messages %>
+
+    <p>
+      <%= f.label :account_type_id %><br />
+      <%= f.text_field :account_type_id %>
+    </p>
+    <p>
+      <%= f.label :account_id %><br />
+      <%= f.text_field :account_id %>
+    </p>
+    <p>
+      <%= f.label :shortname %><br />
+      <%= f.text_field :shortname %>
+    </p>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :account_parent_id %><br />
+      <%= f.text_field :account_parent_id %>
+    </p>
+    <p>
+      <%= f.label :comments %><br />
+      <%= f.text_field :comments, "rows" => 3, "cols" => 35  %>
+    </p>
+    <p>
+      <%= f.label :position %><br />
+      <%= f.text_field :position %>
+    </p>
+    <p>
+      <%= f.submit 'Create' %>
+    </p>
+  <% end %>
+
+  <%= link_to 'Back', account_plans_path %>
+
+
+        <blockquote>
+            <p>
+                &#8220;This stylesheet is going to help so freaking much.&#8221;
+                <br />
+                -Blockquote
+            </p>
+        </blockquote>
+      <br />
+
+    <!-- /article-content -->
+</div>
+
+
+<% end %>

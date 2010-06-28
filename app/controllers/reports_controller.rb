@@ -7,7 +7,7 @@ class ReportsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @reports }
+      format.xml  { render :xml => @reports }        
     end
   end
 
