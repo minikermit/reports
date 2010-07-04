@@ -30466,3 +30466,20 @@ Rendered shared/_sidebar (0.1ms)
 Rendered shared/_signon (71.1ms)
 Rendered shared/_livefilter (1.1ms)
 Completed in 298ms (View: 261, DB: 23) | 200 OK [http://localhost/account_plans/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AccountPlansController#edit (for 127.0.0.1 at 2010-07-04 10:44:28) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"account_plans"}
+  [4;35;1mAccountPlan Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `account_plans`[0m
+  [4;36;1mAccountPlan Load (1.2ms)[0m   [0;1mSELECT * FROM `account_plans` WHERE (`account_plans`.`id` = 1) ORDER BY account_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering account_plans/edit
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (37.5ms)
+Rendered shared/_livefilter (1.8ms)
+Completed in 158ms (View: 132, DB: 4) | 200 OK [http://localhost/account_plans/1/edit]
