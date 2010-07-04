@@ -7,6 +7,8 @@ has_many :report_lines, :through => :structures
 
 default_scope :order => "account_id ASC, position ASC"
 
+# autocomplete_for :account_plan, :account_id , :limit => 15, :order => 'created_at DESC'
+
 end
 
 

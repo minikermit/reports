@@ -1,4 +1,23 @@
-<h1>Editing account_plan</h1>
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
+
+    <ul id="crumbs">
+      <li><a href="/">Homes</a></li>
+      <li><%= link_to  "Account Plan" , account_plans_path %></li>
+      <li>You are editing an account</li>
+     </ul>
+<br/>
+
+<% end %>
+
+<% content_for :article1 do %>
+
+<h2 class="art-postheader">
+  Editing account plan
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
 
 <% form_for(@account_plan) do |f| %>
   <%= f.error_messages %>
@@ -26,3 +45,18 @@
 
 <%= link_to 'Show', @account_plan %> |
 <%= link_to 'Back', account_plans_path %>
+
+        <blockquote>
+            <p>
+                &#8220;This is where you can edit and modify your account plan.&#8221;
+                <br />
+                You can change the name for example !
+            </p>
+        </blockquote>
+      <br />
+
+    <!-- /article-content -->
+</div>
+
+
+<% end %>
