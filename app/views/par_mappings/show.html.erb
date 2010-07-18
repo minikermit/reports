@@ -1,0 +1,56 @@
+<p>
+  <b>Group:</b> <%=h @par_mapping.Group_Identifier %> 
+</p>
+<p>
+  <b>Entity:</b> <%=h @par_mapping.Entity_Identifier %>
+</p>
+<p>
+  <b>Parameter:</b>
+  <%=h @par_mapping.Information_Mapped %>
+</p>
+<br />
+<p>
+  <b>Source code:</b>
+  <%=h @par_mapping.Source_code %>
+</p>
+<p>
+  <b>Dimension code:</b>
+  <%=h @par_mapping.Dimension_Code %>
+  <b>Description:</b>
+  <%=h @par_mapping.Dimension_description_1 %>
+</p>
+<p>
+  <b>Group 1:</b>
+  <%=h @par_mapping.Group_1 %>
+  <b>Description:</b>
+  <%=h @par_mapping.Group_description_1 %>
+</p>
+<p>
+  <b>Group 2:</b>
+  <%=h @par_mapping.Group_2 %>
+  <b>Description:</b>
+  <%=h @par_mapping.Group_description_2 %>
+</p>
+<p>
+  <b>Group 3:</b>
+  <%=h @par_mapping.Group_3 %>
+  <b>Description:</b>
+  <%=h @par_mapping.Group_description_3 %>
+</p>
+<br />
+<p>
+  <b>Validity:</b>
+  <%=h @par_mapping.Record_Validity %>
+  <b>Blocked:</b>
+  <%=h @par_mapping.Do_Not_Update %>
+</p>
+<br />
+<p>
+  <b>Created on:</b> <%=h @par_mapping.created_at %> <b>by:</b> <%=h @par_mapping.created_by %><br /> <b>Using:</b> <%=h @par_mapping.created_with %> <br />
+  <b>Updated on:</b> <%=h @par_mapping.updated_at %> <b>by:</b> <%=h @par_mapping.updated_by %> <b>with:</b> <%=h @par_mapping.updated_with %>
+</p>
+<br />
+<br />
+<%= link_to 'Edit', edit_par_mapping_path(@par_mapping) %> |
+<%= link_to 'Back', par_mappings_path %>
+

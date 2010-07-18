@@ -1,0 +1,15 @@
+<p>
+  <b>Name:</b>
+  <%=h @source.Source_Name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @source.Source_Description %>
+</p>
+<p>
+  <b>Frequency:</b>
+  <%=h @source.Source_Frequency %>
+</p>
+<%= link_to 'Edit', edit_source_path(@source) %> |
+<%= link_to 'Back', sources_path %>

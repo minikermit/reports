@@ -1,0 +1,58 @@
+<h1>New parameter</h1>
+
+<% form_for(@par_mapping) do |f| %>
+  <%= f.error_messages %>
+  
+  <p>
+    <%= f.label :Group %>
+    <%= f.text_field :Group_Identifier %>
+  </p>
+  <p>
+    <%= f.label :Entity %>
+    <%= f.text_field :Entity_Identifier %>
+  </p>
+  
+  <p>
+    <%= f.label :Parameter %>
+    <%= f.text_field :Information_Mapped %>
+  </p>
+  <p>
+    <%= f.label :Source %>
+    <%= f.text_field :Source_code %>
+  </p>
+  <p>
+    <%= f.label :Dimension %> <%= f.label :DimensionDescription %><br />
+    <%= f.text_field :Dimension_Code %> <%= f.text_field :Dimension_description_1 %>
+  </p>
+  
+  <p>
+    <%= f.label :Group1 %>
+    <%= f.text_field :Group_1 %><br />
+    <%= f.label :Description1 %>
+    <%= f.text_field :Group_description_1 %>
+  </p>
+  
+  <p>
+    <%= f.label :Group2 %>
+    <%= f.text_field :Group_2 %><br />
+    <%= f.label :Description2 %>
+    <%= f.text_field :Group_description_2 %>
+  </p>
+
+  <p>
+    <%= f.label :Group3 %>
+    <%= f.text_field :Group_3 %><br />
+    <%= f.label :Description3 %>
+    <%= f.text_field :Group_description_3 %>
+  </p>
+
+  </p>
+  
+  
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', par_mappings_path %>
+

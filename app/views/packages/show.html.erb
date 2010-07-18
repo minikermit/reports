@@ -1,0 +1,11 @@
+<p>
+  <b>Name:</b>
+  <%=h @package.Source_Package_Name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @package.Source_Package_Description %>
+</p>
+<%= link_to 'Edit', edit_package_path(@package) %> |
+<%= link_to 'Back', packages_path %>

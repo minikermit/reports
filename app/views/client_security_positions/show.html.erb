@@ -1,0 +1,37 @@
+<p>
+  <b>Date:</b>
+  <%=h 1 
+  # date_to_string(@client_security_position.DownloadDate) 
+  %>
+</p>
+<p>
+  <b>Client:</b>
+  <%=h @client_security_position.Client_Identifier %>
+</p>
+<p>
+  <b>Security:</b>
+  <%=h @client_security_position.Security_Identifier %> -
+  <%=h @client_security_position.Security_Suffix %>
+</p>
+<p>
+  <b>Qty:</b>
+  <%=h @client_security_position.Security_Net_Quantity %>
+</p>
+<p>
+  <b>Price:</b>
+  <%=h number_to_currency(@client_security_position.Security_Price) %>
+</p>
+<p>
+  <b>Currency:</b>
+  <%=h @client_security_position.Security_Currency %>
+</p>
+<p>
+  <b>CCY:</b>
+  <%=h @client_security_position.Security_Amount %>
+</p>
+<p>
+  <b>LCY:</b>
+  <%=h @client_security_position.Security_Local_Currency_Amount %>
+</p>
+<%= link_to 'Edit', edit_client_security_position_path(@client_security_position) %> |
+<%= link_to 'Back', client_security_positions_path %>

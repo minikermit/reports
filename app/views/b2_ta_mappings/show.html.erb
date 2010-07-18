@@ -1,0 +1,51 @@
+<p>
+  <b>Id:</b>
+  <%=h @b2_ta_mappings.id %>
+</p>
+<p>
+  <b>Group:</b> <%=h @b2_ta_mappings.group_id %> 
+</p>
+<p>
+  <b>Entity:</b> <%=h @b2_ta_mappings.entity_id %>
+</p>
+<p>
+  <b>Parameter:</b>
+  <%=h @b2_ta_mappings.information_mapped %>
+</p>
+<br />
+<p>
+  <b>Source code:</b>
+  <%=h @b2_ta_mappings.source_code %>
+  <b>Description:</b>
+  <%=h @b2_ta_mappings.description %>
+</p>
+
+<p>
+  <b>Dimension code:</b>
+  <%=h @b2_ta_mappings.dimension_code %>
+  <b>Description:</b>
+  <%=h @b2_ta_mappings.dimension_description %>
+</p>
+
+<p>
+  <b>Destination code:</b>
+  <%=h @b2_ta_mappings.destination_code %>
+  <b>Description:</b>
+  <%=h @b2_ta_mappings.destination_description %>
+</p>
+
+<br />
+<p>
+  <b>Validity:</b>
+  <%=h @b2_ta_mappings.record_validity %>
+</p>
+<br />
+<p>
+  <b>Created on:</b> <%=h @b2_ta_mappings.created_at %> <b>by:</b> <%=h @b2_ta_mappings.created_by %><br /> <b>Using:</b> <%=h @b2_ta_mappings.created_using %> <br />
+  <b>Updated on:</b> <%=h @b2_ta_mappings.updated_at %> <b>by:</b> <%=h @b2_ta_mappings.updated_by %> <b>with:</b> <%=h @b2_ta_mappings.updated_using %>
+</p>
+<br />
+<br />
+
+<%= link_to 'Edit', edit_b2_ta_mapping_path(@b2_ta_mappings) %> |
+<%= link_to 'Back', b2_ta_mapping_path %>

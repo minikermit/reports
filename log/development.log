@@ -30483,3 +30483,219 @@ Rendered shared/_sidebar (0.1ms)
 Rendered shared/_signon (37.5ms)
 Rendered shared/_livefilter (1.8ms)
 Completed in 158ms (View: 132, DB: 4) | 200 OK [http://localhost/account_plans/1/edit]
+  [4;36;1mSQL (161.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (64.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-07-08 23:30:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (484.1ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (246.4ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+Rendered shared/_livefilter (18.6ms)
+Rendered shared/_menubar (12.3ms)
+Rendered shared/_template2 (21.5ms)
+  [4;36;1mUser Columns (42.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (131.4ms)
+Completed in 1324ms (View: 486, DB: 1000) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#index (for 127.0.0.1 at 2010-07-08 23:30:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasklists"}
+  [4;35;1mTasklist Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mTasklist Load (45.6ms)[0m   [0;1mSELECT * FROM `tasklists` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 316ms (View: 230, DB: 49) | 200 OK [http://localhost/tasklists]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-08 23:30:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  pdfkit (0.3.3) lib/pdfkit/middleware.rb:14:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-08 23:30:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/dots.gif" with {:method=>:get}):
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  pdfkit (0.3.3) lib/pdfkit/middleware.rb:14:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (100.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (195.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (342.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateReportCategories (20100527205455)
+Migrating to CreateReports (20100527205623)
+Migrating to CreateAccountPlans (20100527205859)
+Migrating to CreateReportLines (20100527210731)
+Migrating to CreateStructures (20100527213814)
+Migrating to AddIndexReports (20100605205623)
+Migrating to AddIndexReportLines (20100605205624)
+Migrating to AddIndexStructures (20100605205625)
+Migrating to CreateSessions (20100609045554)
+Migrating to CreateUsers (20100609211921)
+Migrating to AddExtraFieldsUser (20100609232205)
+Migrating to CreateTasklists (20100620110913)
+Migrating to CreateComments (20100621060217)
+Migrating to CreateProjects (20100621140105)
+Migrating to CreateMenus (20100621211250)
+Migrating to AddIndexComments (20100622123456)
+Migrating to AddIndexTasklists (20100622123457)
+Migrating to CreateB2TaMappings (20100702172443)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateReportCategories (20100527205455)
+Migrating to CreateReports (20100527205623)
+Migrating to CreateAccountPlans (20100527205859)
+Migrating to CreateReportLines (20100527210731)
+Migrating to CreateStructures (20100527213814)
+Migrating to AddIndexReports (20100605205623)
+Migrating to AddIndexReportLines (20100605205624)
+Migrating to AddIndexStructures (20100605205625)
+Migrating to CreateSessions (20100609045554)
+Migrating to CreateUsers (20100609211921)
+Migrating to AddExtraFieldsUser (20100609232205)
+Migrating to CreateTasklists (20100620110913)
+Migrating to CreateComments (20100621060217)
+Migrating to CreateProjects (20100621140105)
+Migrating to CreateMenus (20100621211250)
+Migrating to AddIndexComments (20100622123456)
+Migrating to AddIndexTasklists (20100622123457)
+Migrating to CreateB2TaMappings (20100702172443)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-07-18 23:55:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (178.8ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.7ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+Rendered shared/_livefilter (14.8ms)
+Rendered shared/_menubar (13.3ms)
+Rendered shared/_template2 (22.6ms)
+  [4;36;1mUser Columns (38.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (117.8ms)
+Completed in 822ms (View: 544, DB: 218) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DimDatesController#index (for 127.0.0.1 at 2010-07-18 23:55:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"dim_dates"}
+  [4;35;1mDimDate Load (0.0ms)[0m   [0mMysql::Error: Table 'finance_development.DIM_Date' doesn't exist: SELECT * FROM `DIM_Date` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'finance_development.DIM_Date' doesn't exist: SELECT * FROM `DIM_Date` ):
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract_adapter.rb:221:in `log'
+  activerecord (2.3.8) lib/active_record/connection_adapters/mysql_adapter.rb:323:in `execute'
+  activerecord (2.3.8) lib/active_record/connection_adapters/mysql_adapter.rb:638:in `select'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:81:in `cache_sql'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+  activerecord (2.3.8) lib/active_record/base.rb:664:in `find_by_sql'
+  activerecord (2.3.8) lib/active_record/base.rb:1578:in `find_every'
+  activerecord (2.3.8) lib/active_record/base.rb:618:in `find'
+  app/controllers/dim_dates_controller.rb:5:in `index'
+  actionpack (2.3.8) lib/action_controller/base.rb:1331:in `send'
+  actionpack (2.3.8) lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+  actionpack (2.3.8) lib/action_controller/filters.rb:617:in `call_filters'
+  actionpack (2.3.8) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  actionpack (2.3.8) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  activesupport (2.3.8) lib/active_support/core_ext/benchmark.rb:17:in `ms'
+  /usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+  activesupport (2.3.8) lib/active_support/core_ext/benchmark.rb:17:in `ms'
+  actionpack (2.3.8) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.8) lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  actionpack (2.3.8) lib/action_controller/flash.rb:151:in `perform_action'
+  actionpack (2.3.8) lib/action_controller/base.rb:532:in `send'
+  actionpack (2.3.8) lib/action_controller/base.rb:532:in `process_without_filters'
+  actionpack (2.3.8) lib/action_controller/filters.rb:606:in `process'
+  actionpack (2.3.8) lib/action_controller/base.rb:391:in `process'
+  actionpack (2.3.8) lib/action_controller/base.rb:386:in `call'
+  actionpack (2.3.8) lib/action_controller/routing/route_set.rb:438:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:87:in `dispatch'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:121:in `_call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:28:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  pdfkit (0.4.0) lib/pdfkit/middleware.rb:14:in `call'
+  actionpack (2.3.8) lib/action_controller/string_coercion.rb:25:in `call'
+  rack (1.1.0) lib/rack/head.rb:9:in `call'
+  rack (1.1.0) lib/rack/methodoverride.rb:24:in `call'
+  actionpack (2.3.8) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.8) lib/action_controller/session/cookie_store.rb:99:in `call'
+  actionpack (2.3.8) lib/action_controller/failsafe.rb:26:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `synchronize'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:114:in `call'
+  actionpack (2.3.8) lib/action_controller/reloader.rb:34:in `run'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:108:in `call'
+  rails (2.3.8) lib/rails/rack/static.rb:31:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:47:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `each'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `call'
+  rails (2.3.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.1.0) lib/rack/content_length.rb:13:in `call'
+  rack (1.1.0) lib/rack/handler/webrick.rb:48:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.1.0) lib/rack/handler/webrick.rb:14:in `run'
+  rails (2.3.8) lib/commands/server.rb:111
+  /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+  /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+  script/server:3
+
+Rendered rescues/_trace (62.3ms)
+Rendered rescues/_request_and_response (2.8ms)
+Rendering rescues/layout (internal_server_error)

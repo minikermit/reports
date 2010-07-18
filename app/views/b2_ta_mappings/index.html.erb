@@ -1,0 +1,67 @@
+<h1>Listing B2 TA Mappings </h1>
+
+<% form_tag request.path, :method => 'get' do %>
+	<% content_tag :label do %>
+	 Search Term:
+	 <%= text_field_tag :search, params[:search] %>
+	<% end %>
+<% end %>
+
+
+<table>
+  <tr>
+    <th>Entity</th>
+  	<th>Parameter</th>
+  	<th>Source code</th>
+  	<th>Description</th>
+  	<th>Dimension code</th>
+  	<th>Description</th>
+  	<th>Destination code</th>
+  	<th>Description</th>  	
+  </tr>
+
+<% for b2_ta_mapping in @b2_ta_mappings %>
+  <tr>
+    <td><%=h b2_ta_mapping.entity_id %></td>
+  	<td><%=h b2_ta_mapping.information_mapped %></td>
+  	<td><%=h b2_ta_mapping.source_code %></td>
+    <td><%=h b2_ta_mapping.description %></td>
+    <td><%=h b2_ta_mapping.dimension_code %></td>
+	<td><%=h b2_ta_mapping.dimension_description %></td>
+    <td><%=h b2_ta_mapping.destination_code %></td>
+    <td><%=h b2_ta_mapping.destination_description %></td>
+    <td><%= link_to 'Show', b2_ta_mapping %></td>
+    <td><%= link_to 'Edit', edit_b2_ta_mapping_path(b2_ta_mapping) %></td>
+    <td><%= link_to 'Destroy', b2_ta_mapping, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @b2_ta_mappings %>
+  </div-->
+    <%= will_paginate @b2_ta_mappings, :container => false %>
+</div>
+
+<br />
+
+<%= link_to 'New b2_ta_mapping', new_b2_ta_mapping_path %>
+
+<%= link_to 'Countries',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Country" %>
+<%= link_to 'Currencies',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Currency"  %>
+<%= link_to 'OTC',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "OTC"  %>
+<%= link_to 'OECD Country',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "OECDCountry"  %>
+<%= link_to 'EEA Country',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "EEACountry"  %>
+<%= link_to 'Bank ID',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Bank_Id"  %>
+<%= link_to 'Loan Book',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "LoanBook"  %>
+<%= link_to 'Provisions',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Provisions"  %>
+<%= link_to 'Cash Loan Book',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "CashLoanBook"  %>
+<%= link_to 'HO GL Code',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "HOGLCode"  %>
+<%= link_to 'Limit',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Limit"  %>
+<%= link_to 'Security Book Type',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "SecurityBookType"  %>
+<%= link_to 'Mortgage Purpose',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "MortgagePurpose"  %>
+<%= link_to 'Transaction Markings',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "TransactionMarkings"  %>
+<%= link_to 'Segment',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "SegmentLookup"  %>
+<%= link_to 'Count Segment',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Count_Segment"  %>
+<%= link_to 'Count Segment Det',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Count_Segment_Det"  %>

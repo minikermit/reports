@@ -1,0 +1,32 @@
+<h1>Listing timebands</h1>
+
+<table>
+  <tr>
+  	<th>Days</th>
+  	<th>Timeband 1</th>
+  	<th>Order</th>
+  	<th>Timeband 2</th>
+  	<th>Timeband 3</th>
+  	<th>Timeband 4</th>
+  	<th>Timeband 5</th>
+  </tr>
+
+<% for timeband in @timebands %>
+  <tr>
+  	<td><%=h timeband.Number_of_Days %></td>
+    <td><%=h timeband.TimeBand1 %></td>
+    <td><%=h timeband.TimeBand1_Order %></td>
+    <td><%=h timeband.TimeBand2 %></td>
+    <td><%=h timeband.TimeBand3 %></td>
+    <td><%=h timeband.TimeBand4 %></td>
+    <td><%=h timeband.TimeBand5 %></td>
+    <td><%= link_to 'Show', timeband %></td>
+    <td><%= link_to 'Edit', edit_timeband_path(timeband) %></td>
+    <td><%= link_to 'Destroy', timeband, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New timeband', new_timeband_path %>

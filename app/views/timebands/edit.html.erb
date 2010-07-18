@@ -1,0 +1,12 @@
+<h1>Editing timeband</h1>
+
+<% form_for(@timeband) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @timeband %> |
+<%= link_to 'Back', timebands_path %>

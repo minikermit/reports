@@ -1,0 +1,50 @@
+<h1>Listing client_security_positions</h1>
+
+<table>
+  <tr>
+	<th>Date</th>
+    <th>Client</th>
+    <th>Portfolio</th>
+    <th>Security ID</th>
+    <th>Suffix</th>
+    <th>Currency</th>
+    <th>Qty</th>
+    <th>Price</th>
+    <th>CCY</th>
+    <th>LCY</th>
+  </tr>
+
+<% for client_security_position in @client_security_positions %>
+  <tr>
+  	<td><%=h client_security_position.Load_Date %></td>
+  	<td><%=h client_security_position.Client_Identifier %></td>
+    <td><%=h client_security_position.Portfolio_Identifier %></td>
+    <td><%=h client_security_position.Security_Identifier %></td>
+    <td><%=h client_security_position.Security_Suffix %></td>
+    <td><%=h client_security_position.Security_Currency %></td>
+    <td><%=h client_security_position.Security_Net_Quantity %></td>
+    <td><%=h client_security_position.Security_Price %></td>
+    <td><%=h client_security_position.Security_Amount %></td>
+    <td><%=h client_security_position.Security_Local_Currency_Amount %></td>    
+    <td><%= link_to 'Show', client_security_position %></td>
+    <td><%= link_to 'Edit', edit_client_security_position_path(client_security_position) %></td>
+    <td><%= link_to 'Destroy', client_security_position, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @client_security_positions %>
+  </div>
+    <%= will_paginate @client_security_positions, :container => false %>
+</div>
+
+
+<br />
+
+<%= link_to 'New client_security_position', new_client_security_position_path %>
+
+
+
+

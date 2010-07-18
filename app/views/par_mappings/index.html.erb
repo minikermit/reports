@@ -1,0 +1,62 @@
+<h1>Listing parameters</h1>
+
+<% form_tag request.path, :method => 'get' do %>
+	<% content_tag :label do %>
+	 Search Term:
+	 <%= text_field_tag :search, params[:search] %>
+	<% end %>
+<% end %>
+
+
+<table>
+  <tr>
+  	<th>Entity</th>
+  	<th>Parameter</th>
+  	<th>Source code</th>
+  	<th>Description</th>
+  	<th>Dimension code</th>
+  	<th>Description</th>
+  	<th>Destination code</th>
+  	<th>Description</th>  	
+  	<th>Column 8</th>  	
+  	<th>Column 9</th>  	
+  	<th>Column 10</th>  	
+  </tr>
+
+<% for par_mapping in @par_mappings %>
+  <tr>
+  	<td><%=h par_mapping.Entity_Identifier %></td>
+  	<td><%=h par_mapping.Information_Mapped %></td>
+  	<td><%=h par_mapping.Source_code %></td>
+    <td><%=h par_mapping.Dimension_Code %></td>
+    <td><%=h par_mapping.Dimension_description_1 %></td>
+	<td><%=h par_mapping.Group_1 %></td>
+    <td><%=h par_mapping.Group_description_1 %></td>
+    <td><%=h par_mapping.Group_2 %></td>
+    <td><%=h par_mapping.Group_description_2 %></td>
+    <td><%=h par_mapping.Group_3 %></td>
+    <td><%=h par_mapping.Group_description_3 %></td>
+    <td><%= link_to 'Show', par_mapping %></td>
+    <td><%= link_to 'Edit', edit_par_mapping_path(par_mapping) %></td>
+    <td><%= link_to 'Destroy', par_mapping, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @par_mappings %>
+  </div-->
+    <%= will_paginate @par_mappings, :container => false %>
+</div>
+
+<br />
+
+<%= link_to 'New par_mapping', new_par_mapping_path %>
+
+<%= link_to 'Contracts',  :controller => "par_mappings" ,:action => "index" ,:search=> "Contracts" %>
+
+
+
+
+

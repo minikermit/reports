@@ -22,6 +22,19 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :tasklists , :has_many => [ :comments ]
   map.resources :comments
 
+  map.resources :par_mappings
+  map.resources :currencies
+  map.resources :products
+  map.resources :product_categories
+  map.resources :position_types
+  map.resources :dim_dates
+  map.resources :client_security_positions
+  map.resources :packages
+  map.resources :timebands
+  map.resources :sources
+  map.resources :scenarios
+  map.resources :b2_ta_mappings
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

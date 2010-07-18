@@ -1,0 +1,12 @@
+<h1>Editing client_security_position</h1>
+
+<% form_for(@client_security_position) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @client_security_position %> |
+<%= link_to 'Back', client_security_positions_path %>

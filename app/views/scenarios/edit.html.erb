@@ -1,0 +1,19 @@
+<h1>Editing scenario</h1>
+
+<% form_for(@scenario) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :Code %><br />
+    <%= f.text_field :Category_Code %>
+  </p>
+  <p>
+    <%= f.label :Name %><br />
+    <%= f.text_field :Category_Name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @scenario %> |
+<%= link_to 'Back', scenarios_path %>

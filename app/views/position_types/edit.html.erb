@@ -1,0 +1,12 @@
+<h1>Editing position_type</h1>
+
+<% form_for(@position_type) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @position_type %> |
+<%= link_to 'Back', position_types_path %>
