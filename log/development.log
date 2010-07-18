@@ -30884,3 +30884,108 @@ Errno::EPIPE (Broken pipe):
 Rendered rescues/_trace (352.5ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2010-07-19 01:03:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"reports"}
+  [4;36;1mReport Columns (4.7ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mReport Load (0.1ms)[0m   [0mSELECT * FROM `reports` ORDER BY report_category_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+Rendered shared/_livefilter (2.4ms)
+Rendered shared/_menubar (4.6ms)
+Rendered shared/_template2 (18.9ms)
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered shared/_signon (72.6ms)
+Completed in 733ms (View: 687, DB: 7) | 200 OK [http://localhost/reports]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-07-19 01:07:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_defaultbreadcrumb (12.6ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (24.3ms)
+Rendered shared/_signon (0.3ms)
+Rendered shared/_livefilter (5.2ms)
+Completed in 152ms (View: 104, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-07-19 01:07:17) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"1", "password"=>"[FILTERED]", "login"=>"vincent"}, "action"=>"create", "authenticity_token"=>"JiwMrpxW8xFkdGjYDthxDEzavlhIOGA+3XLi4Nz/Z2o=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (355.9ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'vincent') LIMIT 1[0m
+  [4;36;1mSQL (14.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (114.7ms)[0m   [0mUPDATE `users` SET `failed_login_count` = 1, `updated_at` = '2010-07-18 23:07:19', `perishable_token` = 'tIKtYF1bBZ2DP9p92CKZ' WHERE `id` = 1[0m
+  [4;36;1mSQL (154.7ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered shared/_menubar (0.2ms)
+Rendered shared/_defaultbreadcrumb (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Rendered shared/_signon (0.3ms)
+Rendered shared/_livefilter (1.1ms)
+Completed in 1366ms (View: 20, DB: 642) | 200 OK [http://localhost/user_sessions]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-07-19 01:07:33) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"1", "password"=>"[FILTERED]", "login"=>"vincent"}, "action"=>"create", "authenticity_token"=>"JiwMrpxW8xFkdGjYDthxDEzavlhIOGA+3XLi4Nz/Z2o=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'vincent') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (2.8ms)[0m   [0;1mUPDATE `users` SET `failed_login_count` = 0, `updated_at` = '2010-07-18 23:07:33', `perishable_token` = 'a85U_Aj-kXGCt_HdCjF3', `last_login_at` = '2010-06-26 16:12:46', `last_login_ip` = '127.0.0.1', `current_login_at` = '2010-07-18 23:07:33', `login_count` = 2, `last_request_at` = '2010-07-18 23:07:33' WHERE `id` = 1[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 183ms (DB: 57) | 302 Found [http://localhost/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-07-19 01:07:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-07-18 23:07:33', `perishable_token` = 'ZU66GoK8Bc8ae4THKsqe', `last_request_at` = '2010-07-18 23:07:33' WHERE `id` = 1[0m
+  [4;36;1mSQL (54.3ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_defaultbreadcrumb (0.1ms)
+Rendered shared/_template2 (0.1ms)
+Rendered shared/_sidebar (0.1ms)
+Rendered shared/_signon (2.2ms)
+Rendered shared/_livefilter (5.1ms)
+Completed in 517ms (View: 84, DB: 57) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AccountPlansController#index (for 127.0.0.1 at 2010-07-19 01:08:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"account_plans"}
+  [4;35;1mAccountPlan Columns (55.7ms)[0m   [0mSHOW FIELDS FROM `account_plans`[0m
+  [4;36;1mAccountPlan Load (2.0ms)[0m   [0;1mSELECT * FROM `account_plans` ORDER BY account_id ASC, position ASC[0m
+Rendering template within layouts/application
+Rendering account_plans/index
+Rendered shared/_livefilter (1.1ms)
+Rendered shared/_menubar (0.1ms)
+Rendered shared/_template2 (0.1ms)
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (4.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-07-18 23:08:47', `perishable_token` = 'ZCOIKSXwEAgKrLgJdBaF', `last_request_at` = '2010-07-18 23:08:47' WHERE `id` = 1[0m
+  [4;35;1mSQL (59.1ms)[0m   [0mCOMMIT[0m
+Rendered shared/_signon (501.3ms)
+Completed in 658ms (View: 511, DB: 123) | 200 OK [http://localhost/account_plans]
