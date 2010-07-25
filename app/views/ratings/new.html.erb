@@ -1,0 +1,107 @@
+<h1>New rating</h1>
+
+<% form_for(@rating) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :Group_id %><br />
+    <%= f.text_field :Group_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Source_id %><br />
+    <%= f.text_field :Source_id %>
+  </p>
+  <p>
+    <%= f.label :DownloadDate %><br />
+    <%= f.datetime_select :DownloadDate %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.datetime_select :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.label :Record_Creator %><br />
+    <%= f.text_field :Record_Creator %>
+  </p>
+  <p>
+    <%= f.label :Record_Application %><br />
+    <%= f.text_field :Record_Application %>
+  </p>
+  <p>
+    <%= f.label :Value_Month %><br />
+    <%= f.text_field :Value_Month %>
+  </p>
+  <p>
+    <%= f.label :Value_Date %><br />
+    <%= f.text_field :Value_Date %>
+  </p>
+  <p>
+    <%= f.label :Executing_Date %><br />
+    <%= f.text_field :Executing_Date %>
+  </p>
+  <p>
+    <%= f.label :Type_of_record %><br />
+    <%= f.text_field :Type_of_record %>
+  </p>
+  <p>
+    <%= f.label :Bank_id %><br />
+    <%= f.text_field :Bank_id %>
+  </p>
+  <p>
+    <%= f.label :Branch_id %><br />
+    <%= f.text_field :Branch_id %>
+  </p>
+  <p>
+    <%= f.label :Count_CIF %><br />
+    <%= f.text_field :Count_CIF %>
+  </p>
+  <p>
+    <%= f.label :Count_Rating_int_cat %><br />
+    <%= f.text_field :Count_Rating_int_cat %>
+  </p>
+  <p>
+    <%= f.label :Count_Rating_ext %><br />
+    <%= f.text_field :Count_Rating_ext %>
+  </p>
+  <p>
+    <%= f.label :Count_Rating_Agency_ext_Code %><br />
+    <%= f.text_field :Count_Rating_Agency_ext_Code %>
+  </p>
+  <p>
+    <%= f.label :Count_Rating_Agency_ext %><br />
+    <%= f.text_field :Count_Rating_Agency_ext %>
+  </p>
+  <p>
+    <%= f.label :Count_Rating_DE_ext %><br />
+    <%= f.text_field :Count_Rating_DE_ext %>
+  </p>
+  <p>
+    <%= f.label :Count_Rating_Dept_ext %><br />
+    <%= f.text_field :Count_Rating_Dept_ext %>
+  </p>
+  <p>
+    <%= f.label :Count_Rating_Term_ext %><br />
+    <%= f.text_field :Count_Rating_Term_ext %>
+  </p>
+  <p>
+    <%= f.label :Count_Rating_LHA_ext %><br />
+    <%= f.text_field :Count_Rating_LHA_ext %>
+  </p>
+  <p>
+    <%= f.label :Count_Ref_Date %><br />
+    <%= f.datetime_select :Count_Ref_Date %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', ratings_path %>

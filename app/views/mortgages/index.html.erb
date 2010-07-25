@@ -1,0 +1,142 @@
+<h1>Listing mortgages</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Group</th>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Downloaddate</th>
+    <th>Record creation date</th>
+    <th>Record creator</th>
+    <th>Record application</th>
+    <th>Value month</th>
+    <th>Value date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Trans nr</th>
+    <th>Collateral nr</th>
+    <th>Account</th>
+    <th>Count cif</th>
+    <th>Limit nr</th>
+    <th>Trans code</th>
+    <th>Trans text</th>
+    <th>Trans mortg ltv int</th>
+    <th>Orig loan amt</th>
+    <th>Asset val</th>
+    <th>Trans nom</th>
+    <th>Trans curr</th>
+    <th>Trans local currency</th>
+    <th>Trans local nom</th>
+    <th>Trans fx</th>
+    <th>Trans nis</th>
+    <th>Trans start</th>
+    <th>Trans end</th>
+    <th>Trans tenure</th>
+    <th>Tansas tenure st</th>
+    <th>Trans pastdue</th>
+    <th>Trans pastdue date</th>
+    <th>Trans ref date</th>
+    <th>Gen ledger shekel item code</th>
+    <th>Gen ledger item code</th>
+    <th>Gen ledger item type</th>
+    <th>Total exposure</th>
+    <th>Total exposure nis</th>
+    <th>Dlnqnt princpl</th>
+    <th>Dlnqnt interest amt</th>
+    <th>Dlnqnt linked amt</th>
+    <th>Dlnqnt linked interest amt</th>
+    <th>Dlnqnt accrued interest</th>
+    <th>Linked princpl diff amt</th>
+    <th>Linked interest diff amt</th>
+    <th>Other amt</th>
+    <th>Executing bank id</th>
+    <th>Trans segment code</th>
+    <th>Trans segment det</th>
+    <th>Trans sub segment code</th>
+    <th>Trans sub segment det</th>
+    <th>Trans markings past due code</th>
+    <th>Trans markings past due det</th>
+    <th>Trans markings other code</th>
+    <th>Trans markings other det</th>
+    <th>Mortgage purpose det</th>
+    <th>Mortgage purpose code</th>
+    <th>Executing branch id</th>
+  </tr>
+
+<% @mortgages.each do |mortgage| %>
+  <tr>
+    <td><%=h mortgage.id %></td>
+    <td><%=h mortgage.Group_id %></td>
+    <td><%=h mortgage.Entity_id %></td>
+    <td><%=h mortgage.Source_id %></td>
+    <td><%=h mortgage.DownloadDate %></td>
+    <td><%=h mortgage.Record_Creation_Date %></td>
+    <td><%=h mortgage.Record_Creator %></td>
+    <td><%=h mortgage.Record_Application %></td>
+    <td><%=h mortgage.Value_Month %></td>
+    <td><%=h mortgage.Value_Date %></td>
+    <td><%=h mortgage.Executing_Date %></td>
+    <td><%=h mortgage.Type_of_record %></td>
+    <td><%=h mortgage.Bank_id %></td>
+    <td><%=h mortgage.Branch_id %></td>
+    <td><%=h mortgage.Trans_Nr %></td>
+    <td><%=h mortgage.Collateral_Nr %></td>
+    <td><%=h mortgage.Account_id %></td>
+    <td><%=h mortgage.Count_CIF %></td>
+    <td><%=h mortgage.Limit_nr %></td>
+    <td><%=h mortgage.Trans_Code %></td>
+    <td><%=h mortgage.Trans_Text %></td>
+    <td><%=h mortgage.Trans_Mortg_LTV_Int %></td>
+    <td><%=h mortgage.Orig_Loan_Amt %></td>
+    <td><%=h mortgage.Asset_Val %></td>
+    <td><%=h mortgage.Trans_Nom %></td>
+    <td><%=h mortgage.Trans_Curr %></td>
+    <td><%=h mortgage.Trans_Local_Currency %></td>
+    <td><%=h mortgage.Trans_Local_Nom %></td>
+    <td><%=h mortgage.Trans_Fx %></td>
+    <td><%=h mortgage.Trans_NIS %></td>
+    <td><%=h mortgage.Trans_Start %></td>
+    <td><%=h mortgage.Trans_End %></td>
+    <td><%=h mortgage.Trans_Tenure %></td>
+    <td><%=h mortgage.Tansas_Tenure_ST %></td>
+    <td><%=h mortgage.Trans_Pastdue %></td>
+    <td><%=h mortgage.Trans_Pastdue_Date %></td>
+    <td><%=h mortgage.Trans_Ref_Date %></td>
+    <td><%=h mortgage.Gen_Ledger_Shekel_Item_Code %></td>
+    <td><%=h mortgage.Gen_Ledger_Item_Code %></td>
+    <td><%=h mortgage.Gen_Ledger_Item_Type %></td>
+    <td><%=h mortgage.Total_Exposure %></td>
+    <td><%=h mortgage.Total_Exposure_NIS %></td>
+    <td><%=h mortgage.Dlnqnt_Princpl %></td>
+    <td><%=h mortgage.Dlnqnt_Interest_Amt %></td>
+    <td><%=h mortgage.Dlnqnt_Linked_Amt %></td>
+    <td><%=h mortgage.Dlnqnt_Linked_Interest_Amt %></td>
+    <td><%=h mortgage.Dlnqnt_Accrued_Interest %></td>
+    <td><%=h mortgage.Linked_Princpl_Diff_Amt %></td>
+    <td><%=h mortgage.Linked_Interest_Diff_Amt %></td>
+    <td><%=h mortgage.Other_Amt %></td>
+    <td><%=h mortgage.Executing_Bank_Id %></td>
+    <td><%=h mortgage.Trans_Segment_Code %></td>
+    <td><%=h mortgage.Trans_Segment_Det %></td>
+    <td><%=h mortgage.Trans_Sub_Segment_code %></td>
+    <td><%=h mortgage.Trans_Sub_Segment_Det %></td>
+    <td><%=h mortgage.Trans_Markings_Past_Due_code %></td>
+    <td><%=h mortgage.Trans_Markings_Past_Due_Det %></td>
+    <td><%=h mortgage.Trans_Markings_Other_code %></td>
+    <td><%=h mortgage.Trans_Markings_Other_Det %></td>
+    <td><%=h mortgage.Mortgage_Purpose_Det %></td>
+    <td><%=h mortgage.Mortgage_Purpose_Code %></td>
+    <td><%=h mortgage.Executing_Branch_Id %></td>
+    <td><%= link_to 'Show', mortgage %></td>
+    <td><%= link_to 'Edit', edit_mortgage_path(mortgage) %></td>
+    <td><%= link_to 'Destroy', mortgage, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New mortgage', new_mortgage_path %>

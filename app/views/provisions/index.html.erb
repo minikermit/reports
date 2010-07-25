@@ -1,0 +1,125 @@
+<span class="myapptitle">Listing Provisions</span>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Group</th>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Downloaddate</th>
+    <th>Record creation date</th>
+    <th>Record creator</th>
+    <th>Record application</th>
+    <th>Value month</th>
+    <th>Value date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Trans nr</th>
+    <th>Count cif</th>
+    <th>Prov amount</th>
+    <th>Prov amount local</th>
+    <th>Prov amt pincpl</th>
+    <th>Prov amt pincpl local</th>
+    <th>Prov amt interest</th>
+    <th>Prov amt interest local</th>
+    <th>Prov curr</th>
+    <th>Prov local currency</th>
+    <th>Prov fx</th>
+    <th>Prov amount nis</th>
+    <th>Prov amount gross</th>
+    <th>Prov collateral</th>
+    <th>Prov amount net</th>
+    <th>Prov date first</th>
+    <th>Prov date last</th>
+    <th>Prov pastdue</th>
+    <th>Prov pastdue date</th>
+    <th>Prov bad debt</th>
+    <th>Prov doubtful debt</th>
+    <th>Prov debt restr</th>
+    <th>Prov debt restr wi</th>
+    <th>Prov special terms</th>
+    <th>Prov debt arrears</th>
+    <th>Prov debt temp arr</th>
+    <th>Prov debt not acc inc</th>
+    <th>Prov debt und spec sup</th>
+    <th>Prov problem debt</th>
+    <th>Prov ref date</th>
+    <th>Prov account</th>
+    <th>Prov sng</th>
+    <th>Prov sng local</th>
+    <th>Prov sng nis</th>
+    <th>Executing bank id</th>
+    <th>Executing branch id</th>
+  </tr>
+
+<% @provisions.each do |provision| %>
+  <tr>
+    <td><%=h provision.id %></td>
+    <td><%=h provision.Group_id %></td>
+    <td><%=h provision.Entity_id %></td>
+    <td><%=h provision.Source_id %></td>
+    <td><%=h provision.DownloadDate %></td>
+    <td><%=h provision.Record_Creation_Date %></td>
+    <td><%=h provision.Record_Creator %></td>
+    <td><%=h provision.Record_Application %></td>
+    <td><%=h provision.Value_Month %></td>
+    <td><%=h provision.Value_Date %></td>
+    <td><%=h provision.Executing_Date %></td>
+    <td><%=h provision.Type_of_record %></td>
+    <td><%=h provision.Bank_id %></td>
+    <td><%=h provision.Branch_id %></td>
+    <td><%=h provision.Trans_nr %></td>
+    <td><%=h provision.Count_CIF %></td>
+    <td><%=h provision.Prov_Amount %></td>
+    <td><%=h provision.Prov_Amount_Local %></td>
+    <td><%=h provision.Prov_Amt_Pincpl %></td>
+    <td><%=h provision.Prov_Amt_Pincpl_Local %></td>
+    <td><%=h provision.Prov_Amt_Interest %></td>
+    <td><%=h provision.Prov_Amt_Interest_Local %></td>
+    <td><%=h provision.Prov_Curr %></td>
+    <td><%=h provision.Prov_Local_Currency %></td>
+    <td><%=h provision.Prov_FX %></td>
+    <td><%=h provision.Prov_Amount_NIS %></td>
+    <td><%=h provision.Prov_Amount_Gross %></td>
+    <td><%=h provision.Prov_Collateral %></td>
+    <td><%=h provision.Prov_Amount_Net %></td>
+    <td><%=h provision.Prov_Date_First %></td>
+    <td><%=h provision.Prov_Date_Last %></td>
+    <td><%=h provision.Prov_Pastdue %></td>
+    <td><%=h provision.Prov_Pastdue_Date %></td>
+    <td><%=h provision.Prov_Bad_Debt %></td>
+    <td><%=h provision.Prov_Doubtful_Debt %></td>
+    <td><%=h provision.Prov_Debt_Restr %></td>
+    <td><%=h provision.Prov_Debt_Restr_WI %></td>
+    <td><%=h provision.Prov_Special_Terms %></td>
+    <td><%=h provision.Prov_Debt_Arrears %></td>
+    <td><%=h provision.Prov_Debt_Temp_Arr %></td>
+    <td><%=h provision.Prov_Debt_Not_Acc_Inc %></td>
+    <td><%=h provision.Prov_Debt_Und_Spec_Sup %></td>
+    <td><%=h provision.Prov_Problem_Debt %></td>
+    <td><%=h provision.Prov_Ref_Date %></td>
+    <td><%=h provision.Prov_Account_id %></td>
+    <td><%=h provision.Prov_SNG %></td>
+    <td><%=h provision.Prov_SNG_Local %></td>
+    <td><%=h provision.Prov_SNG_NIS %></td>
+    <td><%=h provision.Executing_Bank_Id %></td>
+    <td><%=h provision.Executing_Branch_Id %></td>
+    <td><%= link_to 'Show', provision %></td>
+    <td><%= link_to 'Edit', edit_provision_path(provision) %></td>
+    <td><%= link_to 'Destroy', provision, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @provisions %>
+  </div-->
+    <%= will_paginate @provisions, :container => false %>
+</div>
+
+<%= link_to 'New provision', new_provision_path %>

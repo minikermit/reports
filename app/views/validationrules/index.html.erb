@@ -1,0 +1,106 @@
+<a href="#" onclick="AppearEffect('show_search')" class ='a'>		
+	<span class="ss_sprite ss_add">
+		 		<img src="/images/iconmini/search-icon-blue.gif" />
+	 </span>	
+</a><br />	
+
+  
+<div id="show_search" style="display:none"; >
+   <div class="column span-10 append-12 prepend-2 last">
+	<fieldset  class="span-8">
+		<legend>Search</legend> 
+	<% form_for @search do |f| %>  
+ 
+      <div class="column span-2">
+        <%= f.label :ErrorKind_like, "Rule" %>  
+      </div>
+      <div class="column span-8 last">
+        <%= f.text_field :ErrorKind_like , :class => 'text' %>
+      </div>
+      <div class="column span-2">
+         <%= f.label :rule_type_like, "Type" %> 
+      </div>
+      <div class="column span-8 last">
+      	 <select name="search[rule_type_like]">
+    		<option value="" selected="selected">Please select</option>
+      	 	<option value="ERR">Mapping Error</option>
+    		<option value="LOG">Logic Error</option>
+    		<option value="COM">Comparison Value</option>
+    		<option value="VAL">Validation Error</option>
+  		 </select> 
+      	<!--%= f.text_field :rule_scope_like , :class => 'text' %-->
+      </div>
+
+	  <div class="column span-2">
+         <%= f.label :rule_scope_equals, "Scope" %> 
+      </div>
+  
+      <div class="column span-8 last">
+		<select name="search[rule_scope_equals]">
+    		<option value="" selected="selected">Please select</option>
+			<option value="Limit">Limit</option>
+    		<option value="Counterparty">Counterparty</option>
+    		<option value="LoanBook">Loan Book</option>
+    		<option value="OTC">OTC Derivatives</option>
+    		<option value="Nostro">Nostro</option>
+    		<option value="Provisions">Provisions</option>
+  		</select>
+        <!--%= f.text_field :OutputFile_equals , :class => 'text' %--> 
+      </div>
+
+      <div class="column span-6 prepend-2 last">
+        <%= f.submit "Apply filters" %> 
+      </div>
+    <% end %> 
+	</fieldset>
+  </div>
+</div>
+
+<span class="myapptitle">Listing validation rules</span>
+
+<table id="rounded-corner" summary="Validations rules for Basel II" >
+  <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company">Scope</th>
+            <th scope="col" class="rounded-q1">Type</th>
+            <th scope="col" class="rounded-q2">Identification</th>
+            <th scope="col" class="rounded-q2">Description</th>
+            <th scope="col" class="rounded-q2"></th>
+            <th scope="col" class="rounded-q4"></th>
+        </tr>
+    </thead>
+    <tfoot>
+    	<tr>
+        	<td colspan="5" class="rounded-foot-left"><em>Use the pagination below to see more records if needed</em></td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+        </tr>
+    </tfoot>
+     <tbody>
+     	
+
+
+<% @validationrules.each do |validationrule| %>
+  <tr>
+    <td><%=h validationrule.rule_scope %></td>
+    <td><%=h validationrule.rule_type %></td>  
+    <td><%=h validationrule.ErrorKind %></td>
+    <td><%=h validationrule.rule_description %></td>
+    <td><%= link_to image_tag("icons/add.png") , :controller => 'validationrules' ,:action => "show", :id => validationrule.id  %></td>
+    <td><%= link_to image_tag("icons/application_edit.png") , edit_validationrule_path(validationrule) %></td>
+  </tr>
+<% end %>
+	</tbody>
+</table>
+
+<br />
+
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @validationrules %>
+  </div-->
+    <%= will_paginate @validationrules, :container => false %>
+</div>
+
+
+<%= link_to 'Add a validation rule', new_validationrule_path, :align => 'right' %>

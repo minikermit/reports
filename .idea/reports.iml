@@ -42,6 +42,13 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="cucumber" version="0.4.3" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+      <source from="config/environments/cucumber.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="haml" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="config/environment.rb" />
@@ -72,6 +79,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="pickle" version="0.1.21" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="config/boot.rb" />
@@ -81,6 +94,20 @@
         <dependency name="rails_best_practices" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gemcutter.org&quot;" />
       </requirement>
       <source from="config/environments/development.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec" version="1.2.9" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+      <source from="config/environments/cucumber.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec-rails" version="1.2.9" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+      <source from="config/environments/cucumber.rb" />
     </requirement>
     <requirement>
       <requirement>
@@ -99,6 +126,19 @@
         <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="config/database.yml" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="thoughtbot-factory_girl" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gems.github.com&quot;" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="webrat" version="0.5.3" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+      <source from="config/environments/cucumber.rb" />
     </requirement>
   </component>
   <component name="NewModuleRootManager">

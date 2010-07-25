@@ -1,0 +1,77 @@
+<h1>Editing validation</h1>
+
+<% form_for(@validation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :Original_id %><br />
+    <%= f.text_field :Original_id %>
+  </p>
+  <p>
+    <%= f.label :LoadDate %><br />
+    <%= f.text_field :LoadDate %>
+  </p>
+  <p>
+    <%= f.label :Source_id %><br />
+    <%= f.text_field :Source_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Client_id %><br />
+    <%= f.text_field :Client_id %>
+  </p>
+  <p>
+    <%= f.label :Key_id %><br />
+    <%= f.text_field :Key_id %>
+  </p>
+  <p>
+    <%= f.label :OutputFile %><br />
+    <%= f.text_field :OutputFile %>
+  </p>
+  <p>
+    <%= f.label :OutputField %><br />
+    <%= f.text_field :OutputField %>
+  </p>
+  <p>
+    <%= f.label :Source %><br />
+    <%= f.text_field :Source %>
+  </p>
+  <p>
+    <%= f.label :Destination %><br />
+    <%= f.text_field :Destination %>
+  </p>
+  <p>
+    <%= f.label :ErrorType %><br />
+    <%= f.text_field :ErrorType %>
+  </p>
+  <p>
+    <%= f.label :ErrorKind %><br />
+    <!--%= collection_select(:validation, :validationrule_id, @validationrules, :id, :ErrorKind, {:prompt => true}) %-->
+    <%= f.collection_select :validationrule_id, Validationrule.all, :id, :ErrorKind %>
+  </p>
+  <p>
+    <%= f.label :Recommendation %><br />
+    <%= f.text_area :Recommendation , :size => "50x2" %>
+  </p>
+  <p>
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </p>
+  <p>
+    <%= f.label :updated_at %><br />
+    <%= f.datetime_select :updated_at %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @validation %> |
+<%= link_to 'Back', validations_path %>

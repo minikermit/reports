@@ -1,0 +1,209 @@
+<span class="myapptitle">Listing derivatives</span>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Group</th>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Downloaddate</th>
+    <th>Record creation date</th>
+    <th>Record creator</th>
+    <th>Record application</th>
+    <th>Value month</th>
+    <th>Value date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Trans nr</th>
+    <th>Count cif</th>
+    <th>Limit nr</th>
+    <th>Trans code</th>
+    <th>Trans text</th>
+    <th>Trans ls</th>
+    <th>Trans nostro</th>
+    <th>Trans nostro tb</th>
+    <th>Trans underl id int</th>
+    <th>Trans underl id ext</th>
+    <th>Trans underl id ind</th>
+    <th>Trans underl id bsk</th>
+    <th>Trans underl id text</th>
+    <th>Trans underl categ</th>
+    <th>Trans underl def</th>
+    <th>Trans underl cif</th>
+    <th>Trans underl name</th>
+    <th>Trans underl domicile</th>
+    <th>Trans underl start</th>
+    <th>Trans underl end</th>
+    <th>Trans underl tenure</th>
+    <th>Trans underl nom</th>
+    <th>Trans underl unit</th>
+    <th>Trans underl value con</th>
+    <th>Trans underl nom calc</th>
+    <th>Trans underl curr</th>
+    <th>Trans underl local curr</th>
+    <th>Trans underl local nom</th>
+    <th>Trans underl fx</th>
+    <th>Trans underl nis</th>
+    <th>Trans value mar</th>
+    <th>Trans value mod</th>
+    <th>Trans curr</th>
+    <th>Trans local curr</th>
+    <th>Trans value local mar</th>
+    <th>Trans value local mod</th>
+    <th>Trans fx</th>
+    <th>Trans nis</th>
+    <th>Trans addon b1</th>
+    <th>Trans addon am b1</th>
+    <th>Trans addon b2</th>
+    <th>Trans addon am b2</th>
+    <th>Trans start</th>
+    <th>Trans end</th>
+    <th>Trans tenure</th>
+    <th>Trans tenure st</th>
+    <th>Trans start spec</th>
+    <th>Trans end spec</th>
+    <th>Trans tenure spec</th>
+    <th>Trans tenure spec st</th>
+    <th>Trans ref date</th>
+    <th>Account id</th>
+    <th>Gen ledger item code</th>
+    <th>Gen ledger item type</th>
+    <th>Gen shekel item code</th>
+    <th>Linkage base type code</th>
+    <th>Bal sheet major code</th>
+    <th>Sec bal sheet item code</th>
+    <th>Major yield category</th>
+    <th>Sec yield category</th>
+    <th>Responsibility code</th>
+    <th>Detail type code</th>
+    <th>Sec linkage base code</th>
+    <th>Gl item type code</th>
+    <th>Bal sheet position code</th>
+    <th>Purch sell type code</th>
+    <th>Contract status type code</th>
+    <th>Trans tenure left</th>
+    <th>Executing bank id</th>
+    <th>Trans segment code</th>
+    <th>Trans segment det</th>
+    <th>Trans sub segment code</th>
+    <th>Trans sub segment det</th>
+    <th>Trans marking past due code</th>
+    <th>Trans marking past due det</th>
+    <th>Trans markings other code</th>
+    <th>Trans markings other det</th>
+    <th>Executing branch id</th>
+  </tr>
+
+<% @derivatives.each do |derivative| %>
+  <tr>
+    <td><%=h derivative.id %></td>
+    <td><%=h derivative.Group_id %></td>
+    <td><%=h derivative.Entity_id %></td>
+    <td><%=h derivative.Source_id %></td>
+    <td><%=h derivative.DownloadDate %></td>
+    <td><%=h derivative.Record_Creation_Date %></td>
+    <td><%=h derivative.Record_Creator %></td>
+    <td><%=h derivative.Record_Application %></td>
+    <td><%=h derivative.Value_Month %></td>
+    <td><%=h derivative.Value_Date %></td>
+    <td><%=h derivative.Executing_Date %></td>
+    <td><%=h derivative.Type_of_record %></td>
+    <td><%=h derivative.Bank_id %></td>
+    <td><%=h derivative.Branch_id %></td>
+    <td><%=h derivative.Trans_nr %></td>
+    <td><%=h derivative.Count_CIF %></td>
+    <td><%=h derivative.Limit_nr %></td>
+    <td><%=h derivative.Trans_Code %></td>
+    <td><%=h derivative.Trans_Text %></td>
+    <td><%=h derivative.Trans_LS %></td>
+    <td><%=h derivative.Trans_Nostro %></td>
+    <td><%=h derivative.Trans_Nostro_TB %></td>
+    <td><%=h derivative.Trans_Underl_ID_int %></td>
+    <td><%=h derivative.Trans_Underl_ID_ext %></td>
+    <td><%=h derivative.Trans_Underl_ID_Ind %></td>
+    <td><%=h derivative.Trans_Underl_ID_Bsk %></td>
+    <td><%=h derivative.Trans_Underl_ID_Text %></td>
+    <td><%=h derivative.Trans_Underl_Categ %></td>
+    <td><%=h derivative.Trans_Underl_Def %></td>
+    <td><%=h derivative.Trans_Underl_CIF %></td>
+    <td><%=h derivative.Trans_Underl_Name %></td>
+    <td><%=h derivative.Trans_Underl_Domicile %></td>
+    <td><%=h derivative.Trans_Underl_Start %></td>
+    <td><%=h derivative.Trans_Underl_End %></td>
+    <td><%=h derivative.Trans_Underl_Tenure %></td>
+    <td><%=h derivative.Trans_Underl_Nom %></td>
+    <td><%=h derivative.Trans_Underl_Unit %></td>
+    <td><%=h derivative.Trans_Underl_Value_Con %></td>
+    <td><%=h derivative.Trans_Underl_Nom_Calc %></td>
+    <td><%=h derivative.Trans_Underl_Curr %></td>
+    <td><%=h derivative.Trans_Underl_Local_Curr %></td>
+    <td><%=h derivative.Trans_Underl_Local_Nom %></td>
+    <td><%=h derivative.Trans_Underl_FX %></td>
+    <td><%=h derivative.Trans_Underl_NIS %></td>
+    <td><%=h derivative.Trans_Value_Mar %></td>
+    <td><%=h derivative.Trans_Value_Mod %></td>
+    <td><%=h derivative.Trans_Curr %></td>
+    <td><%=h derivative.Trans_Local_Curr %></td>
+    <td><%=h derivative.Trans_Value_Local_Mar %></td>
+    <td><%=h derivative.Trans_Value_Local_Mod %></td>
+    <td><%=h derivative.Trans_FX %></td>
+    <td><%=h derivative.Trans_NIS %></td>
+    <td><%=h derivative.Trans_Addon_B1 %></td>
+    <td><%=h derivative.Trans_Addon_Am_B1 %></td>
+    <td><%=h derivative.Trans_Addon_B2 %></td>
+    <td><%=h derivative.Trans_Addon_Am_B2 %></td>
+    <td><%=h derivative.Trans_Start %></td>
+    <td><%=h derivative.Trans_End %></td>
+    <td><%=h derivative.Trans_Tenure %></td>
+    <td><%=h derivative.Trans_Tenure_ST %></td>
+    <td><%=h derivative.Trans_Start_Spec %></td>
+    <td><%=h derivative.Trans_End_Spec %></td>
+    <td><%=h derivative.Trans_Tenure_Spec %></td>
+    <td><%=h derivative.Trans_Tenure_Spec_ST %></td>
+    <td><%=h derivative.Trans_Ref_Date %></td>
+    <td><%=h derivative.Account_ID %></td>
+    <td><%=h derivative.Gen_Ledger_Item_Code %></td>
+    <td><%=h derivative.Gen_Ledger_Item_Type %></td>
+    <td><%=h derivative.Gen_Shekel_Item_Code %></td>
+    <td><%=h derivative.Linkage_Base_Type_Code %></td>
+    <td><%=h derivative.Bal_Sheet_Major_Code %></td>
+    <td><%=h derivative.Sec_Bal_Sheet_Item_Code %></td>
+    <td><%=h derivative.Major_Yield_Category %></td>
+    <td><%=h derivative.Sec_Yield_Category %></td>
+    <td><%=h derivative.Responsibility_Code %></td>
+    <td><%=h derivative.Detail_Type_Code %></td>
+    <td><%=h derivative.Sec_Linkage_Base_Code %></td>
+    <td><%=h derivative.GL_Item_Type_Code %></td>
+    <td><%=h derivative.Bal_Sheet_Position_Code %></td>
+    <td><%=h derivative.Purch_Sell_Type_Code %></td>
+    <td><%=h derivative.Contract_Status_Type_Code %></td>
+    <td><%=h derivative.Trans_Tenure_Left %></td>
+    <td><%=h derivative.Executing_Bank_Id %></td>
+    <td><%=h derivative.Trans_Segment_Code %></td>
+    <td><%=h derivative.Trans_Segment_Det %></td>
+    <td><%=h derivative.Trans_Sub_Segment_code %></td>
+    <td><%=h derivative.Trans_Sub_Segment_Det %></td>
+    <td><%=h derivative.Trans_Marking_Past_Due_code %></td>
+    <td><%=h derivative.Trans_Marking_Past_Due_Det %></td>
+    <td><%=h derivative.Trans_Markings_Other_code %></td>
+    <td><%=h derivative.Trans_Markings_Other_Det %></td>
+    <td><%=h derivative.Executing_Branch_Id %></td>
+    <td><%= link_to 'Show', derivative %></td>
+    <td><%= link_to 'Edit', edit_derivative_path(derivative) %></td>
+    <td><%= link_to 'Destroy', derivative, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @derivatives %>
+  </div-->
+    <%= will_paginate @derivatives, :container => false %>
+</div>
+
+<%= link_to 'New derivative', new_derivative_path %>

@@ -1,0 +1,660 @@
+<h1>Editing fdbcli</h1>
+
+<% form_for(@fdbcli) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :CLRACI %><br />
+    <%= f.text_field :CLRACI %>
+  </p>
+  <p>
+    <%= f.label :CLETAT %><br />
+    <%= f.text_field :CLETAT %>
+  </p>
+  <p>
+    <%= f.label :CLDTOU %><br />
+    <%= f.text_field :CLDTOU %>
+  </p>
+  <p>
+    <%= f.label :CLDTMU %><br />
+    <%= f.text_field :CLDTMU %>
+  </p>
+  <p>
+    <%= f.label :CLDTAN %><br />
+    <%= f.text_field :CLDTAN %>
+  </p>
+  <p>
+    <%= f.label :CLNBRM %><br />
+    <%= f.text_field :CLNBRM %>
+  </p>
+  <p>
+    <%= f.label :CLOPRN %><br />
+    <%= f.text_field :CLOPRN %>
+  </p>
+  <p>
+    <%= f.label :CLGRPE %><br />
+    <%= f.text_field :CLGRPE %>
+  </p>
+  <p>
+    <%= f.label :CLAGNT %><br />
+    <%= f.text_field :CLAGNT %>
+  </p>
+  <p>
+    <%= f.label :CLCENT %><br />
+    <%= f.text_field :CLCENT %>
+  </p>
+  <p>
+    <%= f.label :CLGERA %><br />
+    <%= f.text_field :CLGERA %>
+  </p>
+  <p>
+    <%= f.label :CLETCV %><br />
+    <%= f.text_field :CLETCV %>
+  </p>
+  <p>
+    <%= f.label :CLNOM %><br />
+    <%= f.text_field :CLNOM %>
+  </p>
+  <p>
+    <%= f.label :CLPRNM %><br />
+    <%= f.text_field :CLPRNM %>
+  </p>
+  <p>
+    <%= f.label :CLORIG %><br />
+    <%= f.text_field :CLORIG %>
+  </p>
+  <p>
+    <%= f.label :CLTYPE %><br />
+    <%= f.text_field :CLTYPE %>
+  </p>
+  <p>
+    <%= f.label :CLNOMC %><br />
+    <%= f.text_field :CLNOMC %>
+  </p>
+  <p>
+    <%= f.label :CLDTNA %><br />
+    <%= f.text_field :CLDTNA %>
+  </p>
+  <p>
+    <%= f.label :CLDTDC %><br />
+    <%= f.text_field :CLDTDC %>
+  </p>
+  <p>
+    <%= f.label :CLSRCD %><br />
+    <%= f.text_field :CLSRCD %>
+  </p>
+  <p>
+    <%= f.label :CLLNGE %><br />
+    <%= f.text_field :CLLNGE %>
+  </p>
+  <p>
+    <%= f.label :CLCDEX %><br />
+    <%= f.text_field :CLCDEX %>
+  </p>
+  <p>
+    <%= f.label :CLDESI %><br />
+    <%= f.text_field :CLDESI %>
+  </p>
+  <p>
+    <%= f.label :CLAD01 %><br />
+    <%= f.text_field :CLAD01 %>
+  </p>
+  <p>
+    <%= f.label :CLAD02 %><br />
+    <%= f.text_field :CLAD02 %>
+  </p>
+  <p>
+    <%= f.label :CLAD03 %><br />
+    <%= f.text_field :CLAD03 %>
+  </p>
+  <p>
+    <%= f.label :CLAD04 %><br />
+    <%= f.text_field :CLAD04 %>
+  </p>
+  <p>
+    <%= f.label :CLAD05 %><br />
+    <%= f.text_field :CLAD05 %>
+  </p>
+  <p>
+    <%= f.label :CLAD06 %><br />
+    <%= f.text_field :CLAD06 %>
+  </p>
+  <p>
+    <%= f.label :CLDOMI %><br />
+    <%= f.text_field :CLDOMI %>
+  </p>
+  <p>
+    <%= f.label :CLREGI %><br />
+    <%= f.text_field :CLREGI %>
+  </p>
+  <p>
+    <%= f.label :CLNATI %><br />
+    <%= f.text_field :CLNATI %>
+  </p>
+  <p>
+    <%= f.label :CLACTI %><br />
+    <%= f.text_field :CLACTI %>
+  </p>
+  <p>
+    <%= f.label :CLSECT %><br />
+    <%= f.text_field :CLSECT %>
+  </p>
+  <p>
+    <%= f.label :CLRGMA %><br />
+    <%= f.text_field :CLRGMA %>
+  </p>
+  <p>
+    <%= f.label :CLSYMP %><br />
+    <%= f.text_field :CLSYMP %>
+  </p>
+  <p>
+    <%= f.label :CLMONE %><br />
+    <%= f.text_field :CLMONE %>
+  </p>
+  <p>
+    <%= f.label :CLMONP %><br />
+    <%= f.text_field :CLMONP %>
+  </p>
+  <p>
+    <%= f.label :CLTLPH %><br />
+    <%= f.text_field :CLTLPH %>
+  </p>
+  <p>
+    <%= f.label :CLTLEX %><br />
+    <%= f.text_field :CLTLEX %>
+  </p>
+  <p>
+    <%= f.label :CLTLFX %><br />
+    <%= f.text_field :CLTLFX %>
+  </p>
+  <p>
+    <%= f.label :CLSWFT %><br />
+    <%= f.text_field :CLSWFT %>
+  </p>
+  <p>
+    <%= f.label :CLSIC %><br />
+    <%= f.text_field :CLSIC %>
+  </p>
+  <p>
+    <%= f.label :CLAUTR %><br />
+    <%= f.text_field :CLAUTR %>
+  </p>
+  <p>
+    <%= f.label :CLGIRO %><br />
+    <%= f.text_field :CLGIRO %>
+  </p>
+  <p>
+    <%= f.label :CLPROF %><br />
+    <%= f.text_field :CLPROF %>
+  </p>
+  <p>
+    <%= f.label :CLGEST %><br />
+    <%= f.text_field :CLGEST %>
+  </p>
+  <p>
+    <%= f.label :CLOBJE %><br />
+    <%= f.text_field :CLOBJE %>
+  </p>
+  <p>
+    <%= f.label :CLGRPG %><br />
+    <%= f.text_field :CLGRPG %>
+  </p>
+  <p>
+    <%= f.label :CLGER2 %><br />
+    <%= f.text_field :CLGER2 %>
+  </p>
+  <p>
+    <%= f.label :CLGER3 %><br />
+    <%= f.text_field :CLGER3 %>
+  </p>
+  <p>
+    <%= f.label :CLNATU %><br />
+    <%= f.text_field :CLNATU %>
+  </p>
+  <p>
+    <%= f.label :CLSCTE %><br />
+    <%= f.text_field :CLSCTE %>
+  </p>
+  <p>
+    <%= f.label :CLNACP %><br />
+    <%= f.text_field :CLNACP %>
+  </p>
+  <p>
+    <%= f.label :CLDOMR %><br />
+    <%= f.text_field :CLDOMR %>
+  </p>
+  <p>
+    <%= f.label :CLSEGM %><br />
+    <%= f.text_field :CLSEGM %>
+  </p>
+  <p>
+    <%= f.label :CLPOTN %><br />
+    <%= f.text_field :CLPOTN %>
+  </p>
+  <p>
+    <%= f.label :CLCTVA %><br />
+    <%= f.text_field :CLCTVA %>
+  </p>
+  <p>
+    <%= f.label :CLCPIN %><br />
+    <%= f.text_field :CLCPIN %>
+  </p>
+  <p>
+    <%= f.label :CLCPRI %><br />
+    <%= f.text_field :CLCPRI %>
+  </p>
+  <p>
+    <%= f.label :CLCRIN %><br />
+    <%= f.text_field :CLCRIN %>
+  </p>
+  <p>
+    <%= f.label :CLCPDN %><br />
+    <%= f.text_field :CLCPDN %>
+  </p>
+  <p>
+    <%= f.label :CLFILL %><br />
+    <%= f.text_field :CLFILL %>
+  </p>
+  <p>
+    <%= f.label :CLFRES %><br />
+    <%= f.text_field :CLFRES %>
+  </p>
+  <p>
+    <%= f.label :CLTYES %><br />
+    <%= f.text_field :CLTYES %>
+  </p>
+  <p>
+    <%= f.label :CLFRFI %><br />
+    <%= f.text_field :CLFRFI %>
+  </p>
+  <p>
+    <%= f.label :CLTYFI %><br />
+    <%= f.text_field :CLTYFI %>
+  </p>
+  <p>
+    <%= f.label :CLFR03 %><br />
+    <%= f.text_field :CLFR03 %>
+  </p>
+  <p>
+    <%= f.label :CLTY03 %><br />
+    <%= f.text_field :CLTY03 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ11 %><br />
+    <%= f.text_field :CLSQ11 %>
+  </p>
+  <p>
+    <%= f.label :CLEX11 %><br />
+    <%= f.text_field :CLEX11 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ12 %><br />
+    <%= f.text_field :CLSQ12 %>
+  </p>
+  <p>
+    <%= f.label :CLEX12 %><br />
+    <%= f.text_field :CLEX12 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ13 %><br />
+    <%= f.text_field :CLSQ13 %>
+  </p>
+  <p>
+    <%= f.label :CLEX13 %><br />
+    <%= f.text_field :CLEX13 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ14 %><br />
+    <%= f.text_field :CLSQ14 %>
+  </p>
+  <p>
+    <%= f.label :CLEX14 %><br />
+    <%= f.text_field :CLEX14 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ15 %><br />
+    <%= f.text_field :CLSQ15 %>
+  </p>
+  <p>
+    <%= f.label :CLEX15 %><br />
+    <%= f.text_field :CLEX15 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ21 %><br />
+    <%= f.text_field :CLSQ21 %>
+  </p>
+  <p>
+    <%= f.label :CLEX21 %><br />
+    <%= f.text_field :CLEX21 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ22 %><br />
+    <%= f.text_field :CLSQ22 %>
+  </p>
+  <p>
+    <%= f.label :CLEX22 %><br />
+    <%= f.text_field :CLEX22 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ23 %><br />
+    <%= f.text_field :CLSQ23 %>
+  </p>
+  <p>
+    <%= f.label :CLEX23 %><br />
+    <%= f.text_field :CLEX23 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ24 %><br />
+    <%= f.text_field :CLSQ24 %>
+  </p>
+  <p>
+    <%= f.label :CLEX24 %><br />
+    <%= f.text_field :CLEX24 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ25 %><br />
+    <%= f.text_field :CLSQ25 %>
+  </p>
+  <p>
+    <%= f.label :CLEX25 %><br />
+    <%= f.text_field :CLEX25 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ31 %><br />
+    <%= f.text_field :CLSQ31 %>
+  </p>
+  <p>
+    <%= f.label :CLEX31 %><br />
+    <%= f.text_field :CLEX31 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ32 %><br />
+    <%= f.text_field :CLSQ32 %>
+  </p>
+  <p>
+    <%= f.label :CLEX32 %><br />
+    <%= f.text_field :CLEX32 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ33 %><br />
+    <%= f.text_field :CLSQ33 %>
+  </p>
+  <p>
+    <%= f.label :CLEX33 %><br />
+    <%= f.text_field :CLEX33 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ34 %><br />
+    <%= f.text_field :CLSQ34 %>
+  </p>
+  <p>
+    <%= f.label :CLEX34 %><br />
+    <%= f.text_field :CLEX34 %>
+  </p>
+  <p>
+    <%= f.label :CLSQ35 %><br />
+    <%= f.text_field :CLSQ35 %>
+  </p>
+  <p>
+    <%= f.label :CLEX35 %><br />
+    <%= f.text_field :CLEX35 %>
+  </p>
+  <p>
+    <%= f.label :CLJU01 %><br />
+    <%= f.text_field :CLJU01 %>
+  </p>
+  <p>
+    <%= f.label :CLJU02 %><br />
+    <%= f.text_field :CLJU02 %>
+  </p>
+  <p>
+    <%= f.label :CLJU03 %><br />
+    <%= f.text_field :CLJU03 %>
+  </p>
+  <p>
+    <%= f.label :CLJU04 %><br />
+    <%= f.text_field :CLJU04 %>
+  </p>
+  <p>
+    <%= f.label :CLJU05 %><br />
+    <%= f.text_field :CLJU05 %>
+  </p>
+  <p>
+    <%= f.label :CLJU06 %><br />
+    <%= f.text_field :CLJU06 %>
+  </p>
+  <p>
+    <%= f.label :CLJU07 %><br />
+    <%= f.text_field :CLJU07 %>
+  </p>
+  <p>
+    <%= f.label :CLJU08 %><br />
+    <%= f.text_field :CLJU08 %>
+  </p>
+  <p>
+    <%= f.label :CLJU09 %><br />
+    <%= f.text_field :CLJU09 %>
+  </p>
+  <p>
+    <%= f.label :CLJU10 %><br />
+    <%= f.text_field :CLJU10 %>
+  </p>
+  <p>
+    <%= f.label :CLJU11 %><br />
+    <%= f.text_field :CLJU11 %>
+  </p>
+  <p>
+    <%= f.label :CLJU12 %><br />
+    <%= f.text_field :CLJU12 %>
+  </p>
+  <p>
+    <%= f.label :CLJU13 %><br />
+    <%= f.text_field :CLJU13 %>
+  </p>
+  <p>
+    <%= f.label :CLJU14 %><br />
+    <%= f.text_field :CLJU14 %>
+  </p>
+  <p>
+    <%= f.label :CLJU15 %><br />
+    <%= f.text_field :CLJU15 %>
+  </p>
+  <p>
+    <%= f.label :CLDS01 %><br />
+    <%= f.text_field :CLDS01 %>
+  </p>
+  <p>
+    <%= f.label :CLDR01 %><br />
+    <%= f.text_field :CLDR01 %>
+  </p>
+  <p>
+    <%= f.label :CLDS02 %><br />
+    <%= f.text_field :CLDS02 %>
+  </p>
+  <p>
+    <%= f.label :CLDR02 %><br />
+    <%= f.text_field :CLDR02 %>
+  </p>
+  <p>
+    <%= f.label :CLDS03 %><br />
+    <%= f.text_field :CLDS03 %>
+  </p>
+  <p>
+    <%= f.label :CLDR03 %><br />
+    <%= f.text_field :CLDR03 %>
+  </p>
+  <p>
+    <%= f.label :CLDS04 %><br />
+    <%= f.text_field :CLDS04 %>
+  </p>
+  <p>
+    <%= f.label :CLDR04 %><br />
+    <%= f.text_field :CLDR04 %>
+  </p>
+  <p>
+    <%= f.label :CLDS05 %><br />
+    <%= f.text_field :CLDS05 %>
+  </p>
+  <p>
+    <%= f.label :CLDR05 %><br />
+    <%= f.text_field :CLDR05 %>
+  </p>
+  <p>
+    <%= f.label :CLDS06 %><br />
+    <%= f.text_field :CLDS06 %>
+  </p>
+  <p>
+    <%= f.label :CLDR06 %><br />
+    <%= f.text_field :CLDR06 %>
+  </p>
+  <p>
+    <%= f.label :CLDS07 %><br />
+    <%= f.text_field :CLDS07 %>
+  </p>
+  <p>
+    <%= f.label :CLDR07 %><br />
+    <%= f.text_field :CLDR07 %>
+  </p>
+  <p>
+    <%= f.label :CLDS08 %><br />
+    <%= f.text_field :CLDS08 %>
+  </p>
+  <p>
+    <%= f.label :CLDR08 %><br />
+    <%= f.text_field :CLDR08 %>
+  </p>
+  <p>
+    <%= f.label :CLDS09 %><br />
+    <%= f.text_field :CLDS09 %>
+  </p>
+  <p>
+    <%= f.label :CLDR09 %><br />
+    <%= f.text_field :CLDR09 %>
+  </p>
+  <p>
+    <%= f.label :CLDS10 %><br />
+    <%= f.text_field :CLDS10 %>
+  </p>
+  <p>
+    <%= f.label :CLDR10 %><br />
+    <%= f.text_field :CLDR10 %>
+  </p>
+  <p>
+    <%= f.label :CLDS11 %><br />
+    <%= f.text_field :CLDS11 %>
+  </p>
+  <p>
+    <%= f.label :CLDR11 %><br />
+    <%= f.text_field :CLDR11 %>
+  </p>
+  <p>
+    <%= f.label :CLDS12 %><br />
+    <%= f.text_field :CLDS12 %>
+  </p>
+  <p>
+    <%= f.label :CLDR12 %><br />
+    <%= f.text_field :CLDR12 %>
+  </p>
+  <p>
+    <%= f.label :CLDS13 %><br />
+    <%= f.text_field :CLDS13 %>
+  </p>
+  <p>
+    <%= f.label :CLDR13 %><br />
+    <%= f.text_field :CLDR13 %>
+  </p>
+  <p>
+    <%= f.label :CLDS14 %><br />
+    <%= f.text_field :CLDS14 %>
+  </p>
+  <p>
+    <%= f.label :CLDR14 %><br />
+    <%= f.text_field :CLDR14 %>
+  </p>
+  <p>
+    <%= f.label :CLDS15 %><br />
+    <%= f.text_field :CLDS15 %>
+  </p>
+  <p>
+    <%= f.label :CLDR15 %><br />
+    <%= f.text_field :CLDR15 %>
+  </p>
+  <p>
+    <%= f.label :CLFI02 %><br />
+    <%= f.text_field :CLFI02 %>
+  </p>
+  <p>
+    <%= f.label :CLRFAR %><br />
+    <%= f.text_field :CLRFAR %>
+  </p>
+  <p>
+    <%= f.label :CLRFAN %><br />
+    <%= f.text_field :CLRFAN %>
+  </p>
+  <p>
+    <%= f.label :CLRMDU %><br />
+    <%= f.text_field :CLRMDU %>
+  </p>
+  <p>
+    <%= f.label :CLRMAU %><br />
+    <%= f.text_field :CLRMAU %>
+  </p>
+  <p>
+    <%= f.label :CLRMAR %><br />
+    <%= f.text_field :CLRMAR %>
+  </p>
+  <p>
+    <%= f.label :CLRMAN %><br />
+    <%= f.text_field :CLRMAN %>
+  </p>
+  <p>
+    <%= f.label :CLTENT %><br />
+    <%= f.text_field :CLTENT %>
+  </p>
+  <p>
+    <%= f.label :CLAFIL %><br />
+    <%= f.text_field :CLAFIL %>
+  </p>
+  <p>
+    <%= f.label :CLDORM %><br />
+    <%= f.text_field :CLDORM %>
+  </p>
+  <p>
+    <%= f.label :CLDSPM %><br />
+    <%= f.text_field :CLDSPM %>
+  </p>
+  <p>
+    <%= f.label :CLFI03 %><br />
+    <%= f.text_field :CLFI03 %>
+  </p>
+  <p>
+    <%= f.label :fimis_status %><br />
+    <%= f.text_field :fimis_status %>
+  </p>
+  <p>
+    <%= f.label :Group_Identifier %><br />
+    <%= f.text_field :Group_Identifier %>
+  </p>
+  <p>
+    <%= f.label :Entity_Identifier %><br />
+    <%= f.text_field :Entity_Identifier %>
+  </p>
+  <p>
+    <%= f.label :Source_Identifier %><br />
+    <%= f.text_field :Source_Identifier %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.datetime_select :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.label :Source_Package %><br />
+    <%= f.text_field :Source_Package %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @fdbcli %> |
+<%= link_to 'Back', fdbclis_path %>

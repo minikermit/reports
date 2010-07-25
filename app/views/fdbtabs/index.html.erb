@@ -1,0 +1,118 @@
+<ul id="crumbs">
+ <li><%= link_to  "Home" , homes_path %></li>
+ <li><a href="#">Olympic tables</a></li>
+ <li>You are on the list of nomenclature page</li>
+</ul>
+
+<a href="#" onclick="AppearEffect('show_search')" class ='a'>		
+	<span class="ss_sprite ss_add">
+		 		<img src="/images/iconmini/search-icon-blue.gif" />
+	 </span>	
+</a>
+
+<p>Sort by <%= order @search, :by => :TBID %> | <%= order @search, :by => :TBCODE %> | <%= order @search, :by => :TBDES1 %></p>  
+
+<br />
+
+<div id="show_search" style="display:none"; >
+  <div class="column span-10 append-12 prepend-1 last">
+    <fieldset  class="span-8">
+    	<legend>Search</legend>
+		<% form_for @search do |f| %>  
+ 
+      <div class="column span-2">
+        <%= f.label :TBID_equals, "Table" %>  
+      </div>
+      <div class="column span-8 last">   	      		
+      	        <!--%= f.text_field :LoadDate_like , :class => 'text' %-->
+    	<select name="search[TBID_equals]">
+		    <option value="" selected="selected">[Select a file]</option>
+    		<option value="040">Currencies</option>
+    		<option value="020">Countries</option>
+    		<option value="035">Account Plan</option>
+    		<option value="034">General Ledger</option>
+    		<option value="030">Account Type</option>
+    		<option value="600">Security Type</option>
+    		<option value="031">Account Nature</option>
+    		<option value="013">Activity Sector</option>
+    		<option value="604">Security Sector</option>
+    		<option value="009">Client Nature</option>
+    		<option value="005">Client Type</option>
+  		</select>
+      </div>
+ 
+      <div class="column span-2">
+         <%= f.label :TBCODE_equals, "Code" %> 
+      </div>
+  
+      <div class="input.span-2  last">
+      	 <%= f.text_field :TBCODE_equals , :class => 'text' %>    
+      </div>
+
+      <div class="column span-2">
+         <%= f.label :TBDES1_like, "Description" %> 
+      </div>
+      <div class="input.span-2 last">
+      	 <%= f.text_field :TBDES1_like , :class => 'text' %>
+      </div>
+
+
+      
+
+      <div class="column span-8 prepend-2 last">
+        <%= f.submit "Apply filters" %> 
+      </div>
+    <% end %> 
+	</fieldset>
+  </div>
+</div>
+
+
+
+<span class="myapptitle">Listing Olympic Nomenclature</span>
+
+
+<table id="rounded-corner" summary="Nomenclature table from Olympic" >
+  <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company">Table</th>
+            <th scope="col" class="rounded-q1">Code</th>
+            <th scope="col" class="rounded-q2">Description</th>
+            <th scope="col" class="rounded-q2"></th>
+            <th scope="col" class="rounded-q4"></th>
+        </tr>
+    </thead>
+    <tfoot>
+    	<tr>
+        	<td colspan="4" class="rounded-foot-left"><em>Use the pagination below to see more records if needed</em></td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+        </tr>
+    </tfoot>
+     <tbody>
+     	
+
+
+<% @fdbtabs.each do |fdbtab| %>
+  <tr>
+    <td><%=h fdbtab.TBID %></td>
+    <td><%=h fdbtab.TBCODE %></td>
+    <td><%=h fdbtab.TBDES1 %></td>
+    <td><%= link_to image_tag("icons/add.png") , :controller => 'fdbtabs' ,:action => "show", :id => fdbtab.id  %></td>
+    <td><%= link_to image_tag("icons/application_edit.png") , edit_fdbtab_path(fdbtab)  %></td>
+  </tr>
+<% end %>
+	</tbody>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @fdbtabs %>
+  </div-->
+    <%= will_paginate @fdbtabs, :container => false %>
+</div>
+
+
+<!--%= link_to 'New fdbtab', new_fdbtab_path %-->
+<a href="/fdbtabs.csv">Export to excel</a>

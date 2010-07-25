@@ -1,0 +1,235 @@
+<h1>New mortgagescollateral</h1>
+
+<% form_for(@mortgagescollateral) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :Group_id %><br />
+    <%= f.text_field :Group_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Source_id %><br />
+    <%= f.text_field :Source_id %>
+  </p>
+  <p>
+    <%= f.label :DownloadDate %><br />
+    <%= f.datetime_select :DownloadDate %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.datetime_select :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.label :Record_Creator %><br />
+    <%= f.text_field :Record_Creator %>
+  </p>
+  <p>
+    <%= f.label :Record_Application %><br />
+    <%= f.text_field :Record_Application %>
+  </p>
+  <p>
+    <%= f.label :Value_Month %><br />
+    <%= f.text_field :Value_Month %>
+  </p>
+  <p>
+    <%= f.label :Value_Date %><br />
+    <%= f.text_field :Value_Date %>
+  </p>
+  <p>
+    <%= f.label :Executing_Date %><br />
+    <%= f.text_field :Executing_Date %>
+  </p>
+  <p>
+    <%= f.label :Type_of_record %><br />
+    <%= f.text_field :Type_of_record %>
+  </p>
+  <p>
+    <%= f.label :Bank_id %><br />
+    <%= f.text_field :Bank_id %>
+  </p>
+  <p>
+    <%= f.label :Branch_id %><br />
+    <%= f.text_field :Branch_id %>
+  </p>
+  <p>
+    <%= f.label :Callat_mortg_Nr %><br />
+    <%= f.text_field :Callat_mortg_Nr %>
+  </p>
+  <p>
+    <%= f.label :Limit_nr %><br />
+    <%= f.text_field :Limit_nr %>
+  </p>
+  <p>
+    <%= f.label :Count_Nr %><br />
+    <%= f.text_field :Count_Nr %>
+  </p>
+  <p>
+    <%= f.label :Collateral_Nr %><br />
+    <%= f.text_field :Collateral_Nr %>
+  </p>
+  <p>
+    <%= f.label :Callat_mortg_Nom %><br />
+    <%= f.text_field :Callat_mortg_Nom %>
+  </p>
+  <p>
+    <%= f.label :Callat_mortg_Curr %><br />
+    <%= f.text_field :Callat_mortg_Curr %>
+  </p>
+  <p>
+    <%= f.label :Callat_mortg_Local_Currency %><br />
+    <%= f.text_field :Callat_mortg_Local_Currency %>
+  </p>
+  <p>
+    <%= f.label :Callat_mortg_Local_Nom %><br />
+    <%= f.text_field :Callat_mortg_Local_Nom %>
+  </p>
+  <p>
+    <%= f.label :Callat_mortg_FX %><br />
+    <%= f.text_field :Callat_mortg_FX %>
+  </p>
+  <p>
+    <%= f.label :Callat_mortg_NIS %><br />
+    <%= f.text_field :Callat_mortg_NIS %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Local %><br />
+    <%= f.text_field :Collat_Mortg_Local %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_NIS %><br />
+    <%= f.text_field :Collat_Mortg_NIS %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_3rd_Indic %><br />
+    <%= f.text_field :Collat_Mortg_3rd_Indic %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_3rd_Amt %><br />
+    <%= f.text_field :Collat_Mortg_3rd_Amt %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_3rd_Rank %><br />
+    <%= f.text_field :Collat_Mortg_3rd_Rank %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Prop %><br />
+    <%= f.text_field :Collat_Mortg_Prop %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Prop_Occ %><br />
+    <%= f.text_field :Collat_Mortg_Prop_Occ %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Enforc %><br />
+    <%= f.text_field :Collat_Mortg_Enforc %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Owner %><br />
+    <%= f.text_field :Collat_Mortg_Owner %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Own_CIF %><br />
+    <%= f.text_field :Collat_Mortg_Own_CIF %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_LTV_Int %><br />
+    <%= f.text_field :Collat_Mortg_LTV_Int %>
+  </p>
+  <p>
+    <%= f.label :Callat_Mortg_Prop_Val_Orig %><br />
+    <%= f.text_field :Callat_Mortg_Prop_Val_Orig %>
+  </p>
+  <p>
+    <%= f.label :Callat_Mortg_Prop_Curr %><br />
+    <%= f.text_field :Callat_Mortg_Prop_Curr %>
+  </p>
+  <p>
+    <%= f.label :Callat_Mortg_Prop_Val_local %><br />
+    <%= f.text_field :Callat_Mortg_Prop_Val_local %>
+  </p>
+  <p>
+    <%= f.label :Callat_Mortg_Prop_FX %><br />
+    <%= f.text_field :Callat_Mortg_Prop_FX %>
+  </p>
+  <p>
+    <%= f.label :Callat_Mortg_Prop_Val_NIS %><br />
+    <%= f.text_field :Callat_Mortg_Prop_Val_NIS %>
+  </p>
+  <p>
+    <%= f.label :Callat_Mortg_Prop_Dat %><br />
+    <%= f.datetime_select :Callat_Mortg_Prop_Dat %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Landreg %><br />
+    <%= f.text_field :Collat_Mortg_Landreg %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Warn %><br />
+    <%= f.text_field :Collat_Mortg_Warn %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Rights %><br />
+    <%= f.text_field :Collat_Mortg_Rights %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Other %><br />
+    <%= f.text_field :Collat_Mortg_Other %>
+  </p>
+  <p>
+    <%= f.label :Collat_Mortg_Ref_Date %><br />
+    <%= f.datetime_select :Collat_Mortg_Ref_Date %>
+  </p>
+  <p>
+    <%= f.label :Insurance_Comp_Nr %><br />
+    <%= f.text_field :Insurance_Comp_Nr %>
+  </p>
+  <p>
+    <%= f.label :Insurance_Type_Code %><br />
+    <%= f.text_field :Insurance_Type_Code %>
+  </p>
+  <p>
+    <%= f.label :Insurance_Enforc %><br />
+    <%= f.text_field :Insurance_Enforc %>
+  </p>
+  <p>
+    <%= f.label :Insurance_Amount_Local %><br />
+    <%= f.text_field :Insurance_Amount_Local %>
+  </p>
+  <p>
+    <%= f.label :Insurance_Amount_NIS %><br />
+    <%= f.text_field :Insurance_Amount_NIS %>
+  </p>
+  <p>
+    <%= f.label :Insurance_Start %><br />
+    <%= f.datetime_select :Insurance_Start %>
+  </p>
+  <p>
+    <%= f.label :Insurance_End %><br />
+    <%= f.datetime_select :Insurance_End %>
+  </p>
+  <p>
+    <%= f.label :Executing_Bank_Id %><br />
+    <%= f.text_field :Executing_Bank_Id %>
+  </p>
+  <p>
+    <%= f.label :Second_Lien_Ind %><br />
+    <%= f.text_field :Second_Lien_Ind %>
+  </p>
+  <p>
+    <%= f.label :Executing_Branch_Id %><br />
+    <%= f.text_field :Executing_Branch_Id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', mortgagescollaterals_path %>

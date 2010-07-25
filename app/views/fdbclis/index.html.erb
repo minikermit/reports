@@ -1,0 +1,90 @@
+<ul id="crumbs">
+ <li><%= link_to  "Home" , homes_path %></li>
+ <li><a href="#">Olympic tables</a></li>
+ <li>You are on the list of clients page</li>
+</ul>
+
+<a href="#" onclick="AppearEffect('show_search')" class ='a'>		
+	<span class="ss_sprite ss_add">
+		 		<img src="/images/iconmini/search-icon-blue.gif" />
+	 </span>	
+</a>
+
+<p>Sort by <%= order @search, :by => :CLRACI %> | <%= order @search, :by => :CLNOMC %> | <%= order @search, :by => :CLGERA %></p>  
+
+<br />
+
+<div id="show_search" style="display:none"; >
+  <div class="column span-10 append-12 prepend-1 last">
+    <fieldset  class="span-8">
+    	<legend>Search</legend>
+		<% form_for @search do |f| %>  
+ 
+      <div class="column span-2">
+        <%= f.label :CLRACI_like, "Client Identification" %>  
+      </div>
+      <div class="column span-8 last">   	      		
+      	        <!--%= f.text_field :LoadDate_like , :class => 'text' %-->
+      	 <%= f.text_field :CLRACI_like , :class => 'text' %>
+      </div>
+ 
+      <div class="column span-2">
+         <%= f.label :CLNOMC_like, "Client Name" %> 
+      </div>
+  
+      <div class="column span-8 last">
+      	 <%= f.text_field :CLNOMC_like , :class => 'text' %>    
+      </div>
+
+      <div class="column span-8 prepend-2 last">
+        <%= f.submit "Apply filters" %> 
+      </div>
+    <% end %> 
+	</fieldset>
+  </div>
+</div>
+
+<span class="myapptitle">Listing Olympic Clients</span>
+
+<table id="rounded-corner" summary="Nomenclature table from Olympic" >
+  <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company">Identification</th>
+            <th scope="col" class="rounded-q1">Name</th>
+            <th scope="col" class="rounded-q2">Relationship Manager</th>
+            <th scope="col" class="rounded-q2"></th>
+            <th scope="col" class="rounded-q4"></th>
+        </tr>
+    </thead>
+    <tfoot>
+    	<tr>
+        	<td colspan="4" class="rounded-foot-left"><em>Use the pagination below to see more records if needed</em></td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+        </tr>
+    </tfoot>
+     <tbody>
+     	
+
+
+<% @fdbclis.each do |fdbcli| %>
+  <tr>
+    <td><%=h fdbcli.CLRACI %></td>
+    <td><%=h fdbcli.CLNOMC %></td>
+    <td><%=h fdbcli.CLGERA %></td>
+    <td><%= link_to image_tag("icons/add.png") , :controller => 'fdbclis' ,:action => "show", :id => fdbcli.id  %></td>
+    <td><%= link_to image_tag("icons/application_edit.png") , edit_fdbcli_path(fdbcli)  %></td>
+  </tr>
+<% end %>
+	</tbody>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @fdbclis %>
+  </div-->
+    <%= will_paginate @fdbclis, :container => false %>
+</div>
+
+<!--%= link_to 'New fdbcli', new_fdbcli_path %-->

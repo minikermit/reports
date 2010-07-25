@@ -1,0 +1,41 @@
+<Div class = 'container'>
+
+<fieldset class= 'fieldset'>
+	
+	<legend class= 'legend'>Details on <%=h @validationrule.ErrorKind %> : <%=h @validationrule.rule_description %> </legend>
+	
+<p class = 'body' >
+   <b>Rule type:</b>
+  <%=h @validationrule.rule_type %>
+</p>
+<p class = 'body'>
+   <b>Scope:</b>
+  <%=h @validationrule.rule_scope %>
+</p>
+
+<div id="show_hint" class = "success" style="display:true"; >
+	
+	  <a href="#" onclick="$('show_hint').hide(); return false;" class ='a'>Close</a><br /><br />
+       <p class='span-24'><%=h @validationrule.rule_hint %></p>
+</div>
+ 
+
+  <a href="#" onclick="AppearEffect('show_hint')" class ='a'>Show Hint</a><br />
+   <!-- href="#" onclick="$('show_sql').appear(); return false;" class ='a'><img src="/images/assets/code-bookmark.png" alt="Code" align="left"/></a-->
+ <a href="/images/sql/Rule102.png" rel="lightbox" title="Rule 102"><img src="/images/assets/code-bookmark.png" alt="Code" align="left"/></a>
+
+<a href="/SyntaxHighlighter/Rule108.html" target="_blank" title="Rule 108"><img src="/images/assets/code-bookmark.png" alt="Code" align="left"/></a>
+<br />
+
+<div id="show_sql" class = "success" style="display:none"; >
+	
+	  <a href="#" onclick="$('show_sql').hide(); return false;" class ='a'>Close</a><br /><br />
+	  <p class='span-10'> <%=h @validationrule.rule_sql_query %> </p>
+</div>
+
+</fieldset>
+
+<%= link_to 'Edit', edit_validationrule_path(@validationrule) %> |
+<%= link_to 'Back', validationrules_path %>
+
+</Div>

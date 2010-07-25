@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :roles
+
 
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
@@ -33,7 +35,30 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :timebands
   map.resources :sources
   map.resources :scenarios
+
+  map.resources :validationrules
+  map.resources :validations
+
   map.resources :b2_ta_mappings
+  map.resources :mortgagescollaterals
+  map.resources :mortgages
+  map.resources :derivatives
+  map.resources :ratings
+  map.resources :loanbooks
+  map.resources :counterparties
+  map.resources :limits
+  map.resources :nostros
+  map.resources :provisions
+
+  map.resources :scrambles
+  map.resources :commands
+
+  map.resources :homes
+  map.resources :portals
+
+  map.resources :fdbtabs
+  map.resources :fdbclis
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 

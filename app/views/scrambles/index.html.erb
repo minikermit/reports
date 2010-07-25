@@ -1,0 +1,23 @@
+<span class="myapptitle">Scrambled counterparty identification</span>
+
+<table>
+  <tr>
+    <th>Counteparty id</th>
+    <th>Scrambled Identification</th>
+    <th>Entity</th>
+ 	<th> </th>   
+ </tr>
+
+<% @scrambles.each do |scramble| %>
+  <tr>
+    <td><%=h scramble.ClearID %></td>
+    <td><%=h scramble.EncryptedID4 %></td>
+    <td><%=h scramble.entity_id %></td>
+    <td><%= link_to 'Show', scramble %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New scramble', new_scramble_path %>

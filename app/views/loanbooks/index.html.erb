@@ -1,0 +1,178 @@
+<span class="myapptitle">Listing Loan Book</span>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Value date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Trans nr</th>
+    <th>Count cif</th>
+    <th>Legacy system code</th>
+    <th>Oncall ind</th>
+    <th>Legacy acc subtype code</th>
+    <th>Account</th>
+    <th>Limit nr</th>
+    <th>Trans code</th>
+    <th>Trans text</th>
+    <th>Trans balance sheet</th>
+    <th>Trans repo</th>
+    <th>Trans nom</th>
+    <th>Trans cur</th>
+    <th>Trans local currency</th>
+    <th>Trans local nom</th>
+    <th>Trans fx</th>
+    <th>Trans nis</th>
+    <th>Trans ccf b1</th>
+    <th>Trans ccf b2</th>
+    <th>Trans credit equiv b1</th>
+    <th>Trans credit equiv b2</th>
+    <th>Trans start</th>
+    <th>Trans end</th>
+    <th>Trans tenure</th>
+    <th>Trans tenure st</th>
+    <th>Trans pastdue</th>
+    <th>Trans pastdue date</th>
+    <th>Trans ref date</th>
+    <th>Gen ledger shekel item code</th>
+    <th>Gen ledger item code</th>
+    <th>Gen ledger item type</th>
+    <th>Dlnqnt princpl</th>
+    <th>Dlnqnt interest amt</th>
+    <th>Dlnqnt linked amt</th>
+    <th>Dlnqnt linked interest amt</th>
+    <th>Accrued interest amt</th>
+    <th>Trans pastdue amount</th>
+    <th>Total exposure</th>
+    <th>Total exposure nis</th>
+    <th>Prov amount</th>
+    <th>Trans tenure left</th>
+    <th>Interest account</th>
+    <th>Linked princpl account</th>
+    <th>Linked interest account</th>
+    <th>Dlnqnt linked account</th>
+    <th>Linked princpl diff amt</th>
+    <th>Linked interest diff amt</th>
+    <th>Linkage base type code</th>
+    <th>Bal sheet major item code</th>
+    <th>Sec bal sheet item code</th>
+    <th>Major yield category</th>
+    <th>Sec yield category</th>
+    <th>Instrument responsibility code</th>
+    <th>Detail type code</th>
+    <th>Sec linkage base type code</th>
+    <th>Gi item type code</th>
+    <th>Balance sheet position code</th>
+    <th>Other amt</th>
+    <th>Executing bank id</th>
+    <th>Trans segment code</th>
+    <th>Trans segment det</th>
+    <th>Trans sub segment code</th>
+    <th>Trans sub segment det</th>
+    <th>Trans marking past due code</th>
+    <th>Trans marking past due det</th>
+    <th>Trans markings other code</th>
+    <th>Trans markings other det</th>
+    <th>Executing branch id</th>
+  </tr>
+
+<% @loanbooks.each do |loanbook| %>
+  <tr>
+    <td><%=h loanbook.id %></td>
+    <td><%=h loanbook.Entity_id %></td>
+    <td><%=h loanbook.Source_id %></td>
+    <td><%=h loanbook.Value_Date %></td>
+    <td><%=h loanbook.Executing_Date %></td>
+    <td><%=h loanbook.Type_of_record %></td>
+    <td><%=h loanbook.Bank_id %></td>
+    <td><%=h loanbook.Branch_id %></td>
+    <td><%=h loanbook.Trans_nr %></td>
+    <td><%=h loanbook.Count_CIF %></td>
+    <td><%=h loanbook.Legacy_System_Code %></td>
+    <td><%=h loanbook.OnCall_Ind %></td>
+    <td><%=h loanbook.Legacy_Acc_Subtype_Code %></td>
+    <td><%=h loanbook.Account_id %></td>
+    <td><%=h loanbook.Limit_Nr %></td>
+    <td><%=h loanbook.Trans_Code %></td>
+    <td><%=h loanbook.Trans_Text %></td>
+    <td><%=h loanbook.Trans_Balance_Sheet %></td>
+    <td><%=h loanbook.Trans_Repo %></td>
+    <td><%=h loanbook.Trans_Nom %></td>
+    <td><%=h loanbook.Trans_Cur %></td>
+    <td><%=h loanbook.Trans_Local_Currency %></td>
+    <td><%=h loanbook.Trans_Local_Nom %></td>
+    <td><%=h loanbook.Trans_FX %></td>
+    <td><%=h loanbook.Trans_NIS %></td>
+    <td><%=h loanbook.Trans_CCF_B1 %></td>
+    <td><%=h loanbook.Trans_CCF_B2 %></td>
+    <td><%=h loanbook.Trans_Credit_Equiv_B1 %></td>
+    <td><%=h loanbook.Trans_Credit_Equiv_B2 %></td>
+    <td><%=h loanbook.Trans_Start %></td>
+    <td><%=h loanbook.Trans_End %></td>
+    <td><%=h loanbook.Trans_Tenure %></td>
+    <td><%=h loanbook.Trans_Tenure_ST %></td>
+    <td><%=h loanbook.Trans_Pastdue %></td>
+    <td><%=h loanbook.Trans_Pastdue_date %></td>
+    <td><%=h loanbook.Trans_Ref_date %></td>
+    <td><%=h loanbook.Gen_Ledger_Shekel_Item_Code %></td>
+    <td><%=h loanbook.Gen_Ledger_Item_Code %></td>
+    <td><%=h loanbook.Gen_Ledger_Item_Type %></td>
+    <td><%=h loanbook.Dlnqnt_Princpl %></td>
+    <td><%=h loanbook.Dlnqnt_Interest_Amt %></td>
+    <td><%=h loanbook.Dlnqnt_Linked_Amt %></td>
+    <td><%=h loanbook.Dlnqnt_Linked_Interest_Amt %></td>
+    <td><%=h loanbook.Accrued_Interest_Amt %></td>
+    <td><%=h loanbook.Trans_Pastdue_amount %></td>
+    <td><%=h loanbook.Total_Exposure %></td>
+    <td><%=h loanbook.Total_Exposure_NIS %></td>
+    <td><%=h loanbook.Prov_Amount %></td>
+    <td><%=h loanbook.Trans_Tenure_Left %></td>
+    <td><%=h loanbook.Interest_Account_id %></td>
+    <td><%=h loanbook.Linked_Princpl_Account_id %></td>
+    <td><%=h loanbook.Linked_Interest_Account_id %></td>
+    <td><%=h loanbook.Dlnqnt_Linked_Account_id %></td>
+    <td><%=h loanbook.Linked_Princpl_Diff_Amt %></td>
+    <td><%=h loanbook.Linked_Interest_Diff_Amt %></td>
+    <td><%=h loanbook.Linkage_Base_Type_Code %></td>
+    <td><%=h loanbook.Bal_Sheet_Major_Item_Code %></td>
+    <td><%=h loanbook.Sec_Bal_Sheet_Item_Code %></td>
+    <td><%=h loanbook.Major_Yield_Category %></td>
+    <td><%=h loanbook.Sec_Yield_Category %></td>
+    <td><%=h loanbook.Instrument_Responsibility_Code %></td>
+    <td><%=h loanbook.Detail_Type_Code %></td>
+    <td><%=h loanbook.Sec_Linkage_Base_Type_Code %></td>
+    <td><%=h loanbook.GI_Item_Type_Code %></td>
+    <td><%=h loanbook.Balance_Sheet_Position_Code %></td>
+    <td><%=h loanbook.Other_Amt %></td>
+    <td><%=h loanbook.Executing_Bank_Id %></td>
+    <td><%=h loanbook.Trans_Segment_Code %></td>
+    <td><%=h loanbook.Trans_Segment_Det %></td>
+    <td><%=h loanbook.Trans_Sub_Segment_code %></td>
+    <td><%=h loanbook.Trans_Sub_Segment_Det %></td>
+    <td><%=h loanbook.Trans_Marking_Past_Due_Code %></td>
+    <td><%=h loanbook.Trans_Marking_Past_Due_Det %></td>
+    <td><%=h loanbook.Trans_Markings_Other_code %></td>
+    <td><%=h loanbook.Trans_Markings_Other_Det %></td>
+    <td><%=h loanbook.Executing_Branch_Id %></td>
+    <td><%= link_to 'Show', loanbook %></td>
+    <td><%= link_to 'Edit', edit_loanbook_path(loanbook) %></td>
+    <td><%= link_to 'Destroy', loanbook, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @loanbooks %>
+  </div-->
+    <%= will_paginate @loanbooks, :container => false %>
+</div>
+
+
+<%= link_to 'New loanbook', new_loanbook_path %>

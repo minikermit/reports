@@ -1,0 +1,259 @@
+<h1>New mortgage</h1>
+
+<% form_for(@mortgage) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :Group_id %><br />
+    <%= f.text_field :Group_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Source_id %><br />
+    <%= f.text_field :Source_id %>
+  </p>
+  <p>
+    <%= f.label :DownloadDate %><br />
+    <%= f.datetime_select :DownloadDate %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.datetime_select :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.label :Record_Creator %><br />
+    <%= f.text_field :Record_Creator %>
+  </p>
+  <p>
+    <%= f.label :Record_Application %><br />
+    <%= f.text_field :Record_Application %>
+  </p>
+  <p>
+    <%= f.label :Value_Month %><br />
+    <%= f.text_field :Value_Month %>
+  </p>
+  <p>
+    <%= f.label :Value_Date %><br />
+    <%= f.text_field :Value_Date %>
+  </p>
+  <p>
+    <%= f.label :Executing_Date %><br />
+    <%= f.text_field :Executing_Date %>
+  </p>
+  <p>
+    <%= f.label :Type_of_record %><br />
+    <%= f.text_field :Type_of_record %>
+  </p>
+  <p>
+    <%= f.label :Bank_id %><br />
+    <%= f.text_field :Bank_id %>
+  </p>
+  <p>
+    <%= f.label :Branch_id %><br />
+    <%= f.text_field :Branch_id %>
+  </p>
+  <p>
+    <%= f.label :Trans_Nr %><br />
+    <%= f.text_field :Trans_Nr %>
+  </p>
+  <p>
+    <%= f.label :Collateral_Nr %><br />
+    <%= f.text_field :Collateral_Nr %>
+  </p>
+  <p>
+    <%= f.label :Account_id %><br />
+    <%= f.text_field :Account_id %>
+  </p>
+  <p>
+    <%= f.label :Count_CIF %><br />
+    <%= f.text_field :Count_CIF %>
+  </p>
+  <p>
+    <%= f.label :Limit_nr %><br />
+    <%= f.text_field :Limit_nr %>
+  </p>
+  <p>
+    <%= f.label :Trans_Code %><br />
+    <%= f.text_field :Trans_Code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Text %><br />
+    <%= f.text_field :Trans_Text %>
+  </p>
+  <p>
+    <%= f.label :Trans_Mortg_LTV_Int %><br />
+    <%= f.text_field :Trans_Mortg_LTV_Int %>
+  </p>
+  <p>
+    <%= f.label :Orig_Loan_Amt %><br />
+    <%= f.text_field :Orig_Loan_Amt %>
+  </p>
+  <p>
+    <%= f.label :Asset_Val %><br />
+    <%= f.text_field :Asset_Val %>
+  </p>
+  <p>
+    <%= f.label :Trans_Nom %><br />
+    <%= f.text_field :Trans_Nom %>
+  </p>
+  <p>
+    <%= f.label :Trans_Curr %><br />
+    <%= f.text_field :Trans_Curr %>
+  </p>
+  <p>
+    <%= f.label :Trans_Local_Currency %><br />
+    <%= f.text_field :Trans_Local_Currency %>
+  </p>
+  <p>
+    <%= f.label :Trans_Local_Nom %><br />
+    <%= f.text_field :Trans_Local_Nom %>
+  </p>
+  <p>
+    <%= f.label :Trans_Fx %><br />
+    <%= f.text_field :Trans_Fx %>
+  </p>
+  <p>
+    <%= f.label :Trans_NIS %><br />
+    <%= f.text_field :Trans_NIS %>
+  </p>
+  <p>
+    <%= f.label :Trans_Start %><br />
+    <%= f.datetime_select :Trans_Start %>
+  </p>
+  <p>
+    <%= f.label :Trans_End %><br />
+    <%= f.datetime_select :Trans_End %>
+  </p>
+  <p>
+    <%= f.label :Trans_Tenure %><br />
+    <%= f.text_field :Trans_Tenure %>
+  </p>
+  <p>
+    <%= f.label :Tansas_Tenure_ST %><br />
+    <%= f.text_field :Tansas_Tenure_ST %>
+  </p>
+  <p>
+    <%= f.label :Trans_Pastdue %><br />
+    <%= f.text_field :Trans_Pastdue %>
+  </p>
+  <p>
+    <%= f.label :Trans_Pastdue_Date %><br />
+    <%= f.datetime_select :Trans_Pastdue_Date %>
+  </p>
+  <p>
+    <%= f.label :Trans_Ref_Date %><br />
+    <%= f.datetime_select :Trans_Ref_Date %>
+  </p>
+  <p>
+    <%= f.label :Gen_Ledger_Shekel_Item_Code %><br />
+    <%= f.text_field :Gen_Ledger_Shekel_Item_Code %>
+  </p>
+  <p>
+    <%= f.label :Gen_Ledger_Item_Code %><br />
+    <%= f.text_field :Gen_Ledger_Item_Code %>
+  </p>
+  <p>
+    <%= f.label :Gen_Ledger_Item_Type %><br />
+    <%= f.text_field :Gen_Ledger_Item_Type %>
+  </p>
+  <p>
+    <%= f.label :Total_Exposure %><br />
+    <%= f.text_field :Total_Exposure %>
+  </p>
+  <p>
+    <%= f.label :Total_Exposure_NIS %><br />
+    <%= f.text_field :Total_Exposure_NIS %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Princpl %><br />
+    <%= f.text_field :Dlnqnt_Princpl %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Interest_Amt %><br />
+    <%= f.text_field :Dlnqnt_Interest_Amt %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Linked_Amt %><br />
+    <%= f.text_field :Dlnqnt_Linked_Amt %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Linked_Interest_Amt %><br />
+    <%= f.text_field :Dlnqnt_Linked_Interest_Amt %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Accrued_Interest %><br />
+    <%= f.text_field :Dlnqnt_Accrued_Interest %>
+  </p>
+  <p>
+    <%= f.label :Linked_Princpl_Diff_Amt %><br />
+    <%= f.text_field :Linked_Princpl_Diff_Amt %>
+  </p>
+  <p>
+    <%= f.label :Linked_Interest_Diff_Amt %><br />
+    <%= f.text_field :Linked_Interest_Diff_Amt %>
+  </p>
+  <p>
+    <%= f.label :Other_Amt %><br />
+    <%= f.text_field :Other_Amt %>
+  </p>
+  <p>
+    <%= f.label :Executing_Bank_Id %><br />
+    <%= f.text_field :Executing_Bank_Id %>
+  </p>
+  <p>
+    <%= f.label :Trans_Segment_Code %><br />
+    <%= f.text_field :Trans_Segment_Code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Segment_Det %><br />
+    <%= f.text_field :Trans_Segment_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Sub_Segment_code %><br />
+    <%= f.text_field :Trans_Sub_Segment_code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Sub_Segment_Det %><br />
+    <%= f.text_field :Trans_Sub_Segment_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Markings_Past_Due_code %><br />
+    <%= f.text_field :Trans_Markings_Past_Due_code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Markings_Past_Due_Det %><br />
+    <%= f.text_field :Trans_Markings_Past_Due_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Markings_Other_code %><br />
+    <%= f.text_field :Trans_Markings_Other_code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Markings_Other_Det %><br />
+    <%= f.text_field :Trans_Markings_Other_Det %>
+  </p>
+  <p>
+    <%= f.label :Mortgage_Purpose_Det %><br />
+    <%= f.text_field :Mortgage_Purpose_Det %>
+  </p>
+  <p>
+    <%= f.label :Mortgage_Purpose_Code %><br />
+    <%= f.text_field :Mortgage_Purpose_Code %>
+  </p>
+  <p>
+    <%= f.label :Executing_Branch_Id %><br />
+    <%= f.text_field :Executing_Branch_Id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', mortgages_path %>

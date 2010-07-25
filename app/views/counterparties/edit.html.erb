@@ -1,0 +1,180 @@
+<h3>Editing counterparty</h3>
+
+<% form_for(@counterparty) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :Group_id %><br />
+    <%= f.text_field :Group_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Source_id %><br />
+    <%= f.text_field :Source_id %>
+  </p>
+  <p>
+    <%= f.label :DownloadDate %><br />
+    <%= f.datetime_select :DownloadDate %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.datetime_select :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.label :Record_Creator %><br />
+    <%= f.text_field :Record_Creator %>
+  </p>
+  <p>
+    <%= f.label :Record_Application %><br />
+    <%= f.text_field :Record_Application %>
+  </p>
+  <p>
+    <%= f.label :Value_Month %><br />
+    <%= f.text_field :Value_Month %>
+  </p>
+  <p>
+    <%= f.label :Value_Date %><br />
+    <%= f.text_field :Value_Date %>
+  </p>
+  <p>
+    <%= f.label :Executing_Date %><br />
+    <%= f.text_field :Executing_Date %>
+  </p>
+  <p>
+    <%= f.label :Type_of_record %><br />
+    <%= f.text_field :Type_of_record %>
+  </p>
+  <p>
+    <%= f.label :Bank_id %><br />
+    <%= f.text_field :Bank_id %>
+  </p>
+  <p>
+    <%= f.label :Branch_id %><br />
+    <%= f.text_field :Branch_id %>
+  </p>
+  <p>
+    <%= f.label :Count_CIF %><br />
+    <%= f.text_field :Count_CIF %>
+  </p>
+  <p>
+    <%= f.label :Count_Group %><br />
+    <%= f.text_field :Count_Group %>
+  </p>
+  <p>
+    <%= f.label :Count_Group_Code %><br />
+    <%= f.text_field :Count_Group_Code %>
+  </p>
+  <p>
+    <%= f.label :Count_Name %><br />
+    <%= f.text_field :Count_Name %>
+  </p>
+  <p>
+    <%= f.label :Count_Segment_BH %><br />
+    <%= f.text_field :Count_Segment_BH %>
+  </p>
+  <p>
+    <%= f.label :Count_Segment_Det %><br />
+    <%= f.text_field :Count_Segment_Det %>
+  </p>
+  <p>
+    <%= f.label :Count_Segment %><br />
+    <%= f.text_field :Count_Segment %>
+  </p>
+  <p>
+    <%= f.label :Count_Legal %><br />
+    <%= f.text_field :Count_Legal %>
+  </p>
+  <p>
+    <%= f.label :Count_Domicile %><br />
+    <%= f.text_field :Count_Domicile %>
+  </p>
+  <p>
+    <%= f.label :Count_Risk %><br />
+    <%= f.text_field :Count_Risk %>
+  </p>
+  <p>
+    <%= f.label :Count_Org_BH %><br />
+    <%= f.text_field :Count_Org_BH %>
+  </p>
+  <p>
+    <%= f.label :Count_Domicile_Dom %><br />
+    <%= f.text_field :Count_Domicile_Dom %>
+  </p>
+  <p>
+    <%= f.label :Count_Domicile_OECD %><br />
+    <%= f.text_field :Count_Domicile_OECD %>
+  </p>
+  <p>
+    <%= f.label :Count_Domicile_EEA %><br />
+    <%= f.text_field :Count_Domicile_EEA %>
+  </p>
+  <p>
+    <%= f.label :Count_Exp_Tot %><br />
+    <%= f.text_field :Count_Exp_Tot %>
+  </p>
+  <p>
+    <%= f.label :Count_Prov %><br />
+    <%= f.text_field :Count_Prov %>
+  </p>
+  <p>
+    <%= f.label :Count_Ref_Date %><br />
+    <%= f.text_field :Count_Ref_Date %>
+  </p>
+  <p>
+    <%= f.label :Swift_Address %><br />
+    <%= f.text_field :Swift_Address %>
+  </p>
+  <p>
+    <%= f.label :Swift_Address_Branch %><br />
+    <%= f.text_field :Swift_Address_Branch %>
+  </p>
+  <p>
+    <%= f.label :Establish_Date %><br />
+    <%= f.text_field :Establish_Date %>
+  </p>
+  <p>
+    <%= f.label :Global_Cif %><br />
+    <%= f.text_field :Global_Cif %>
+  </p>
+  <p>
+    <%= f.label :Count_Segment_Code %><br />
+    <%= f.text_field :Count_Segment_Code %>
+  </p>
+  <p>
+    <%= f.label :Count_Sub_Segment_Code %><br />
+    <%= f.text_field :Count_Sub_Segment_Code %>
+  </p>
+  <p>
+    <%= f.label :Count_Sub_Segment_Det %><br />
+    <%= f.text_field :Count_Sub_Segment_Det %>
+  </p>
+  <p>
+    <%= f.label :Count_Income_Total_Local %><br />
+    <%= f.text_field :Count_Income_Total_Local %>
+  </p>
+  <p>
+    <%= f.label :Count_Income_Total_NIS %><br />
+    <%= f.text_field :Count_Income_Total_NIS %>
+  </p>
+  <p>
+    <%= f.label :Count_Code %><br />
+    <%= f.text_field :Count_Code %>
+  </p>
+  <p>
+    <%= f.label :Domicile_Branch_Code %><br />
+    <%= f.text_field :Domicile_Branch_Code %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @counterparty %> |
+<%= link_to 'Back', counterparties_path %>

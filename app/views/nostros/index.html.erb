@@ -1,0 +1,138 @@
+<span class="myapptitle">Listing Nostro</span>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Trans nr</th>
+    <th>Trans code</th>
+    <th>Trans text</th>
+    <th>Trans tb</th>
+    <th>Trans id int</th>
+    <th>Trans id ext</th>
+    <th>Trans id text</th>
+    <th>Trans id bsk</th>
+    <th>Trans cif</th>
+    <th>Trans name</th>
+    <th>Trans domicile</th>
+    <th>Trans nom</th>
+    <th>Trans local nom</th>
+    <th>Trans unit</th>
+    <th>Trans value</th>
+    <th>Trans nom calc</th>
+    <th>Trans cur</th>
+    <th>Trans local currency</th>
+    <th>Trans fx</th>
+    <th>Trans nis</th>
+    <th>Trans start</th>
+    <th>Trans end</th>
+    <th>Trans tenure</th>
+    <th>Trans pastdue</th>
+    <th>Trans pastdue date</th>
+    <th>Trans ref date</th>
+    <th>Count rating ext 1</th>
+    <th>Count rating agency ext 1</th>
+    <th>Count rating de ext 1</th>
+    <th>Count rating dept ext 1</th>
+    <th>Count rating term ext 1</th>
+    <th>Count rating lha ext 1</th>
+    <th>Account</th>
+    <th>Gen ledger shekel item code</th>
+    <th>Gen ledger item code</th>
+    <th>Gen ledger item type</th>
+    <th>Gen ledger activity type</th>
+    <th>Legacy system code</th>
+    <th>Executing bank id</th>
+    <th>Trans segment code</th>
+    <th>Trans segment det</th>
+    <th>Trans sub segment code</th>
+    <th>Trans sub segment det</th>
+    <th>Trans marking past due code</th>
+    <th>Trans marking past due det</th>
+    <th>Trans marking other code</th>
+    <th>Trans markings other det</th>
+    <th>Executing branch id</th>
+  </tr>
+
+<% @nostros.each do |nostro| %>
+  <tr>
+    <td><%=h nostro.id %></td>
+    <td><%=h nostro.Entity_id %></td>
+    <td><%=h nostro.Source_id %></td>
+    <td><%=h nostro.Value_Date %></td>
+    <td><%=h nostro.Executing_Date %></td>
+    <td><%=h nostro.Type_of_record %></td>
+    <td><%=h nostro.Bank_id %></td>
+    <td><%=h nostro.Branch_id %></td>
+    <td><%=h nostro.Trans_nr %></td>
+    <td><%=h nostro.Trans_Code %></td>
+    <td><%=h nostro.Trans_Text %></td>
+    <td><%=h nostro.Trans_TB %></td>
+    <td><%=h nostro.Trans_ID_int %></td>
+    <td><%=h nostro.Trans_ID_ext %></td>
+    <td><%=h nostro.Trans_ID_Text %></td>
+    <td><%=h nostro.Trans_ID_Bsk %></td>
+    <td><%=h nostro.Trans_CIF %></td>
+    <td><%=h nostro.Trans_Name %></td>
+    <td><%=h nostro.Trans_Domicile %></td>
+    <td><%=h nostro.Trans_Nom %></td>
+    <td><%=h nostro.Trans_Local_Nom %></td>
+    <td><%=h nostro.Trans_Unit %></td>
+    <td><%=h nostro.Trans_Value %></td>
+    <td><%=h nostro.Trans_Nom_Calc %></td>
+    <td><%=h nostro.Trans_Cur %></td>
+    <td><%=h nostro.Trans_Local_Currency %></td>
+    <td><%=h nostro.Trans_FX %></td>
+    <td><%=h nostro.Trans_NIS %></td>
+    <td><%=h nostro.Trans_Start %></td>
+    <td><%=h nostro.Trans_End %></td>
+    <td><%=h nostro.Trans_Tenure %></td>
+    <td><%=h nostro.Trans_Pastdue %></td>
+    <td><%=h nostro.Trans_Pastdue_date %></td>
+    <td><%=h nostro.Trans_Ref_date %></td>
+    <td><%=h nostro.Count_Rating_ext_1 %></td>
+    <td><%=h nostro.Count_Rating_Agency_ext_1 %></td>
+    <td><%=h nostro.Count_Rating_DE_ext_1 %></td>
+    <td><%=h nostro.Count_Rating_Dept_ext_1 %></td>
+    <td><%=h nostro.Count_Rating_Term_ext_1 %></td>
+    <td><%=h nostro.Count_Rating_LHA_ext_1 %></td>
+    <td><%=h nostro.Account_id %></td>
+    <td><%=h nostro.Gen_Ledger_Shekel_Item_Code %></td>
+    <td><%=h nostro.Gen_Ledger_Item_Code %></td>
+    <td><%=h nostro.Gen_Ledger_Item_Type %></td>
+    <td><%=h nostro.Gen_Ledger_Activity_Type %></td>
+    <td><%=h nostro.Legacy_System_Code %></td>
+    <td><%=h nostro.Executing_Bank_Id %></td>
+    <td><%=h nostro.Trans_Segment_Code %></td>
+    <td><%=h nostro.Trans_Segment_Det %></td>
+    <td><%=h nostro.Trans_Sub_Segment_code %></td>
+    <td><%=h nostro.Trans_Sub_Segment_Det %></td>
+    <td><%=h nostro.Trans_Marking_Past_Due_code %></td>
+    <td><%=h nostro.Trans_Marking_Past_Due_Det %></td>
+    <td><%=h nostro.Trans_Marking_Other_code %></td>
+    <td><%=h nostro.Trans_Markings_Other_Det %></td>
+    <td><%=h nostro.Executing_Branch_Id %></td>
+    <td><%= link_to 'Show', nostro %></td>
+    <td><%= link_to 'Edit', edit_nostro_path(nostro) %></td>
+    <td><%= link_to 'Destroy', nostro, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @nostros %>
+  </div-->
+    <%= will_paginate @nostros, :container => false %>
+</div>
+
+
+<%= link_to 'New nostro', new_nostro_path %>

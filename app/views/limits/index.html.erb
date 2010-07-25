@@ -1,0 +1,110 @@
+<span class="myapptitle">Listing Limits</span>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Value date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Limit nr</th>
+    <th>Legacy acc subtype code</th>
+    <th>Account</th>
+    <th>Count cif</th>
+    <th>Limit code</th>
+    <th>Limit labeling</th>
+    <th>Limit nom</th>
+    <th>Limit curr</th>
+    <th>Limit local currency</th>
+    <th>Limit local amount</th>
+    <th>Limit fx</th>
+    <th>Limit nis</th>
+    <th>Limit start</th>
+    <th>Limit end</th>
+    <th>Limit tenure</th>
+    <th>Limit comm</th>
+    <th>Limit comm resign</th>
+    <th>Limit ref date</th>
+    <th>Used credit limit amt</th>
+    <th>Used credit limit amt local</th>
+    <th>Used credit limit amt nis</th>
+    <th>Unused credit limit amt</th>
+    <th>Unused credit limit amt nis</th>
+    <th>Unused credit limit amt local</th>
+    <th>Executing bank id</th>
+    <th>Trans segment code</th>
+    <th>Trans segment det</th>
+    <th>Trans sub segment code</th>
+    <th>Trans sub segment det</th>
+    <th>Trans marking past due code</th>
+    <th>Trans marking past due det</th>
+    <th>Trans markings other code</th>
+    <th>Trans markings other det</th>
+    <th>Executing branch id</th>
+  </tr>
+
+<% @limits.each do |limit| %>
+  <tr>
+    <td><%=h limit.id %></td>
+    <td><%=h limit.Entity_id %></td>
+    <td><%=h limit.Source_id %></td>
+    <td><%=h limit.Value_Date %></td>
+    <td><%=h limit.Executing_Date %></td>
+    <td><%=h limit.Type_of_record %></td>
+    <td><%=h limit.Bank_id %></td>
+    <td><%=h limit.Branch_id %></td>
+    <td><%=h limit.Limit_nr %></td>
+    <td><%=h limit.Legacy_Acc_Subtype_Code %></td>
+    <td><%=h limit.Account_id %></td>
+    <td><%=h limit.Count_CIF %></td>
+    <td><%=h limit.Limit_code %></td>
+    <td><%=h limit.Limit_Labeling %></td>
+    <td><%=h limit.Limit_Nom %></td>
+    <td><%=h limit.Limit_Curr %></td>
+    <td><%=h limit.Limit_Local_Currency %></td>
+    <td><%=h limit.Limit_Local_Amount %></td>
+    <td><%=h limit.Limit_FX %></td>
+    <td><%=h limit.Limit_NIS %></td>
+    <td><%=h limit.Limit_Start %></td>
+    <td><%=h limit.Limit_End %></td>
+    <td><%=h limit.Limit_Tenure %></td>
+    <td><%=h limit.Limit_Comm %></td>
+    <td><%=h limit.Limit_Comm_Resign %></td>
+    <td><%=h limit.Limit_Ref_Date %></td>
+    <td><%=h limit.Used_Credit_Limit_Amt %></td>
+    <td><%=h limit.Used_Credit_Limit_Amt_Local %></td>
+    <td><%=h limit.Used_Credit_Limit_Amt_NIS %></td>
+    <td><%=h limit.UnUsed_Credit_Limit_Amt %></td>
+    <td><%=h limit.UnUsed_Credit_Limit_Amt_NIS %></td>
+    <td><%=h limit.UnUsed_Credit_Limit_Amt_Local %></td>
+    <td><%=h limit.Executing_Bank_Id %></td>
+    <td><%=h limit.Trans_Segment_Code %></td>
+    <td><%=h limit.Trans_Segment_Det %></td>
+    <td><%=h limit.Trans_Sub_Segment_code %></td>
+    <td><%=h limit.Trans_Sub_Segment_Det %></td>
+    <td><%=h limit.Trans_Marking_Past_Due_Code %></td>
+    <td><%=h limit.Trans_Marking_Past_Due_Det %></td>
+    <td><%=h limit.Trans_Markings_Other_code %></td>
+    <td><%=h limit.Trans_Markings_Other_Det %></td>
+    <td><%=h limit.Executing_Branch_Id %></td>
+    <td><%= link_to 'Show', limit %></td>
+    <td><%= link_to 'Edit', edit_limit_path(limit) %></td>
+    <td><%= link_to 'Destroy', limit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @limits %>
+  </div-->
+    <%= will_paginate @limits, :container => false %>
+</div>
+
+
+<%= link_to 'New limit', new_limit_path %>

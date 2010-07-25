@@ -1,0 +1,66 @@
+<h1>Listing ratings</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Group</th>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Downloaddate</th>
+    <th>Record creation date</th>
+    <th>Record creator</th>
+    <th>Record application</th>
+    <th>Value month</th>
+    <th>Value date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Count cif</th>
+    <th>Count rating int cat</th>
+    <th>Count rating ext</th>
+    <th>Count rating agency ext code</th>
+    <th>Count rating agency ext</th>
+    <th>Count rating de ext</th>
+    <th>Count rating dept ext</th>
+    <th>Count rating term ext</th>
+    <th>Count rating lha ext</th>
+    <th>Count ref date</th>
+  </tr>
+
+<% @ratings.each do |rating| %>
+  <tr>
+    <td><%=h rating.id %></td>
+    <td><%=h rating.Group_id %></td>
+    <td><%=h rating.Entity_id %></td>
+    <td><%=h rating.Source_id %></td>
+    <td><%=h rating.DownloadDate %></td>
+    <td><%=h rating.Record_Creation_Date %></td>
+    <td><%=h rating.Record_Creator %></td>
+    <td><%=h rating.Record_Application %></td>
+    <td><%=h rating.Value_Month %></td>
+    <td><%=h rating.Value_Date %></td>
+    <td><%=h rating.Executing_Date %></td>
+    <td><%=h rating.Type_of_record %></td>
+    <td><%=h rating.Bank_id %></td>
+    <td><%=h rating.Branch_id %></td>
+    <td><%=h rating.Count_CIF %></td>
+    <td><%=h rating.Count_Rating_int_cat %></td>
+    <td><%=h rating.Count_Rating_ext %></td>
+    <td><%=h rating.Count_Rating_Agency_ext_Code %></td>
+    <td><%=h rating.Count_Rating_Agency_ext %></td>
+    <td><%=h rating.Count_Rating_DE_ext %></td>
+    <td><%=h rating.Count_Rating_Dept_ext %></td>
+    <td><%=h rating.Count_Rating_Term_ext %></td>
+    <td><%=h rating.Count_Rating_LHA_ext %></td>
+    <td><%=h rating.Count_Ref_Date %></td>
+    <td><%= link_to 'Show', rating %></td>
+    <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
+    <td><%= link_to 'Destroy', rating, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New rating', new_rating_path %>

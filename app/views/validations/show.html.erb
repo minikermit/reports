@@ -1,0 +1,97 @@
+<Div id = 'show'>
+
+<fieldset id="validation rule">
+ <legend> Validation <%=h @validation.validationrule.ErrorKind %> </legend>
+
+<p>
+  <b>Client:</b>
+  <%=h @validation.Client_id %>
+</p>
+
+<p>
+  <b>Key:</b>
+  <%=h @validation.Key_id %>
+</p>
+
+<p>
+  <b> Outputfile:</b>
+  <%=h @validation.OutputFile %>
+</p>
+
+<p>
+  <b>Outputfield:</b>
+  <%=h @validation.OutputField %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%=h @validation.Source %>
+</p>
+
+<p>
+  <b>Destination:</b>
+  <%=h @validation.Destination %>
+</p>
+
+<p>
+  <b>Errortype:</b>
+  <%=h @validation.ErrorType %>
+</p>
+
+<p>
+  <b>Recommendation:</b>
+  <%=h @validation.Recommendation %>
+</p>
+
+</fieldset>
+
+
+<fieldset id="dataset information">
+ <legend> Dataset information </legend>
+<p>
+  <b>Date:</b>
+  <%=h @validation.LoadDate %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%=h @validation.Source_id %>
+</p>
+
+<p>
+  <b>Entity:</b>
+  <%=h @validation.Entity_id %>
+</p>
+</fieldset>
+
+<fieldset id="audit">
+ <legend> Audit information </legend>
+
+<p>
+  <b>Id:</b>
+  <%=h @validation.id %>
+</p>
+
+<p>
+  <b>Original:</b>
+  <%=h @validation.Original_id %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @validation.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @validation.updated_at %>
+</p>
+
+</fieldset>
+
+<%= link_to 'Edit original record', edit_counterparty_path(@validation.Original_id) %> |
+<%= link_to 'Show rule details', { :controller => "validationrules", :id => @validation.validationrule_id, :action => "show" }, :popup => ['Help', 'width=800,height=400'] %> |
+<%= link_to 'Edit validation error', edit_validation_path(@validation) %> |
+<%= link_to 'Back', validations_path %>
+
+</DIV>

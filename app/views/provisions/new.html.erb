@@ -1,0 +1,211 @@
+<h1>New provision</h1>
+
+<% form_for(@provision) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :Group_id %><br />
+    <%= f.text_field :Group_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Source_id %><br />
+    <%= f.text_field :Source_id %>
+  </p>
+  <p>
+    <%= f.label :DownloadDate %><br />
+    <%= f.datetime_select :DownloadDate %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.datetime_select :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.label :Record_Creator %><br />
+    <%= f.text_field :Record_Creator %>
+  </p>
+  <p>
+    <%= f.label :Record_Application %><br />
+    <%= f.text_field :Record_Application %>
+  </p>
+  <p>
+    <%= f.label :Value_Month %><br />
+    <%= f.text_field :Value_Month %>
+  </p>
+  <p>
+    <%= f.label :Value_Date %><br />
+    <%= f.text_field :Value_Date %>
+  </p>
+  <p>
+    <%= f.label :Executing_Date %><br />
+    <%= f.text_field :Executing_Date %>
+  </p>
+  <p>
+    <%= f.label :Type_of_record %><br />
+    <%= f.text_field :Type_of_record %>
+  </p>
+  <p>
+    <%= f.label :Bank_id %><br />
+    <%= f.text_field :Bank_id %>
+  </p>
+  <p>
+    <%= f.label :Branch_id %><br />
+    <%= f.text_field :Branch_id %>
+  </p>
+  <p>
+    <%= f.label :Trans_nr %><br />
+    <%= f.text_field :Trans_nr %>
+  </p>
+  <p>
+    <%= f.label :Count_CIF %><br />
+    <%= f.text_field :Count_CIF %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amount %><br />
+    <%= f.text_field :Prov_Amount %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amount_Local %><br />
+    <%= f.text_field :Prov_Amount_Local %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amt_Pincpl %><br />
+    <%= f.text_field :Prov_Amt_Pincpl %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amt_Pincpl_Local %><br />
+    <%= f.text_field :Prov_Amt_Pincpl_Local %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amt_Interest %><br />
+    <%= f.text_field :Prov_Amt_Interest %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amt_Interest_Local %><br />
+    <%= f.text_field :Prov_Amt_Interest_Local %>
+  </p>
+  <p>
+    <%= f.label :Prov_Curr %><br />
+    <%= f.text_field :Prov_Curr %>
+  </p>
+  <p>
+    <%= f.label :Prov_Local_Currency %><br />
+    <%= f.text_field :Prov_Local_Currency %>
+  </p>
+  <p>
+    <%= f.label :Prov_FX %><br />
+    <%= f.text_field :Prov_FX %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amount_NIS %><br />
+    <%= f.text_field :Prov_Amount_NIS %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amount_Gross %><br />
+    <%= f.text_field :Prov_Amount_Gross %>
+  </p>
+  <p>
+    <%= f.label :Prov_Collateral %><br />
+    <%= f.text_field :Prov_Collateral %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amount_Net %><br />
+    <%= f.text_field :Prov_Amount_Net %>
+  </p>
+  <p>
+    <%= f.label :Prov_Date_First %><br />
+    <%= f.text_field :Prov_Date_First %>
+  </p>
+  <p>
+    <%= f.label :Prov_Date_Last %><br />
+    <%= f.text_field :Prov_Date_Last %>
+  </p>
+  <p>
+    <%= f.label :Prov_Pastdue %><br />
+    <%= f.text_field :Prov_Pastdue %>
+  </p>
+  <p>
+    <%= f.label :Prov_Pastdue_Date %><br />
+    <%= f.text_field :Prov_Pastdue_Date %>
+  </p>
+  <p>
+    <%= f.label :Prov_Bad_Debt %><br />
+    <%= f.text_field :Prov_Bad_Debt %>
+  </p>
+  <p>
+    <%= f.label :Prov_Doubtful_Debt %><br />
+    <%= f.text_field :Prov_Doubtful_Debt %>
+  </p>
+  <p>
+    <%= f.label :Prov_Debt_Restr %><br />
+    <%= f.text_field :Prov_Debt_Restr %>
+  </p>
+  <p>
+    <%= f.label :Prov_Debt_Restr_WI %><br />
+    <%= f.text_field :Prov_Debt_Restr_WI %>
+  </p>
+  <p>
+    <%= f.label :Prov_Special_Terms %><br />
+    <%= f.text_field :Prov_Special_Terms %>
+  </p>
+  <p>
+    <%= f.label :Prov_Debt_Arrears %><br />
+    <%= f.text_field :Prov_Debt_Arrears %>
+  </p>
+  <p>
+    <%= f.label :Prov_Debt_Temp_Arr %><br />
+    <%= f.text_field :Prov_Debt_Temp_Arr %>
+  </p>
+  <p>
+    <%= f.label :Prov_Debt_Not_Acc_Inc %><br />
+    <%= f.text_field :Prov_Debt_Not_Acc_Inc %>
+  </p>
+  <p>
+    <%= f.label :Prov_Debt_Und_Spec_Sup %><br />
+    <%= f.text_field :Prov_Debt_Und_Spec_Sup %>
+  </p>
+  <p>
+    <%= f.label :Prov_Problem_Debt %><br />
+    <%= f.text_field :Prov_Problem_Debt %>
+  </p>
+  <p>
+    <%= f.label :Prov_Ref_Date %><br />
+    <%= f.text_field :Prov_Ref_Date %>
+  </p>
+  <p>
+    <%= f.label :Prov_Account_id %><br />
+    <%= f.text_field :Prov_Account_id %>
+  </p>
+  <p>
+    <%= f.label :Prov_SNG %><br />
+    <%= f.text_field :Prov_SNG %>
+  </p>
+  <p>
+    <%= f.label :Prov_SNG_Local %><br />
+    <%= f.text_field :Prov_SNG_Local %>
+  </p>
+  <p>
+    <%= f.label :Prov_SNG_NIS %><br />
+    <%= f.text_field :Prov_SNG_NIS %>
+  </p>
+  <p>
+    <%= f.label :Executing_Bank_Id %><br />
+    <%= f.text_field :Executing_Bank_Id %>
+  </p>
+  <p>
+    <%= f.label :Executing_Branch_Id %><br />
+    <%= f.text_field :Executing_Branch_Id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', provisions_path %>

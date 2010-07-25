@@ -1,0 +1,339 @@
+<h1>New loanbook</h1>
+
+<% form_for(@loanbook) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :Group_id %><br />
+    <%= f.text_field :Group_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Source_id %><br />
+    <%= f.text_field :Source_id %>
+  </p>
+  <p>
+    <%= f.label :DownloadDate %><br />
+    <%= f.datetime_select :DownloadDate %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.datetime_select :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.label :Record_Creator %><br />
+    <%= f.text_field :Record_Creator %>
+  </p>
+  <p>
+    <%= f.label :Record_Application %><br />
+    <%= f.text_field :Record_Application %>
+  </p>
+  <p>
+    <%= f.label :Value_Month %><br />
+    <%= f.text_field :Value_Month %>
+  </p>
+  <p>
+    <%= f.label :Value_Date %><br />
+    <%= f.text_field :Value_Date %>
+  </p>
+  <p>
+    <%= f.label :Executing_Date %><br />
+    <%= f.text_field :Executing_Date %>
+  </p>
+  <p>
+    <%= f.label :Type_of_record %><br />
+    <%= f.text_field :Type_of_record %>
+  </p>
+  <p>
+    <%= f.label :Bank_id %><br />
+    <%= f.text_field :Bank_id %>
+  </p>
+  <p>
+    <%= f.label :Branch_id %><br />
+    <%= f.text_field :Branch_id %>
+  </p>
+  <p>
+    <%= f.label :Trans_nr %><br />
+    <%= f.text_field :Trans_nr %>
+  </p>
+  <p>
+    <%= f.label :Count_CIF %><br />
+    <%= f.text_field :Count_CIF %>
+  </p>
+  <p>
+    <%= f.label :Legacy_System_Code %><br />
+    <%= f.text_field :Legacy_System_Code %>
+  </p>
+  <p>
+    <%= f.label :OnCall_Ind %><br />
+    <%= f.text_field :OnCall_Ind %>
+  </p>
+  <p>
+    <%= f.label :Legacy_Acc_Subtype_Code %><br />
+    <%= f.text_field :Legacy_Acc_Subtype_Code %>
+  </p>
+  <p>
+    <%= f.label :Account_id %><br />
+    <%= f.text_field :Account_id %>
+  </p>
+  <p>
+    <%= f.label :Limit_Nr %><br />
+    <%= f.text_field :Limit_Nr %>
+  </p>
+  <p>
+    <%= f.label :Trans_Code %><br />
+    <%= f.text_field :Trans_Code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Text %><br />
+    <%= f.text_field :Trans_Text %>
+  </p>
+  <p>
+    <%= f.label :Trans_Balance_Sheet %><br />
+    <%= f.text_field :Trans_Balance_Sheet %>
+  </p>
+  <p>
+    <%= f.label :Trans_Repo %><br />
+    <%= f.text_field :Trans_Repo %>
+  </p>
+  <p>
+    <%= f.label :Trans_Nom %><br />
+    <%= f.text_field :Trans_Nom %>
+  </p>
+  <p>
+    <%= f.label :Trans_Cur %><br />
+    <%= f.text_field :Trans_Cur %>
+  </p>
+  <p>
+    <%= f.label :Trans_Local_Currency %><br />
+    <%= f.text_field :Trans_Local_Currency %>
+  </p>
+  <p>
+    <%= f.label :Trans_Local_Nom %><br />
+    <%= f.text_field :Trans_Local_Nom %>
+  </p>
+  <p>
+    <%= f.label :Trans_FX %><br />
+    <%= f.text_field :Trans_FX %>
+  </p>
+  <p>
+    <%= f.label :Trans_NIS %><br />
+    <%= f.text_field :Trans_NIS %>
+  </p>
+  <p>
+    <%= f.label :Trans_CCF_B1 %><br />
+    <%= f.text_field :Trans_CCF_B1 %>
+  </p>
+  <p>
+    <%= f.label :Trans_CCF_B2 %><br />
+    <%= f.text_field :Trans_CCF_B2 %>
+  </p>
+  <p>
+    <%= f.label :Trans_Credit_Equiv_B1 %><br />
+    <%= f.text_field :Trans_Credit_Equiv_B1 %>
+  </p>
+  <p>
+    <%= f.label :Trans_Credit_Equiv_B2 %><br />
+    <%= f.text_field :Trans_Credit_Equiv_B2 %>
+  </p>
+  <p>
+    <%= f.label :Trans_Start %><br />
+    <%= f.text_field :Trans_Start %>
+  </p>
+  <p>
+    <%= f.label :Trans_End %><br />
+    <%= f.text_field :Trans_End %>
+  </p>
+  <p>
+    <%= f.label :Trans_Tenure %><br />
+    <%= f.text_field :Trans_Tenure %>
+  </p>
+  <p>
+    <%= f.label :Trans_Tenure_ST %><br />
+    <%= f.text_field :Trans_Tenure_ST %>
+  </p>
+  <p>
+    <%= f.label :Trans_Pastdue %><br />
+    <%= f.text_field :Trans_Pastdue %>
+  </p>
+  <p>
+    <%= f.label :Trans_Pastdue_date %><br />
+    <%= f.text_field :Trans_Pastdue_date %>
+  </p>
+  <p>
+    <%= f.label :Trans_Ref_date %><br />
+    <%= f.text_field :Trans_Ref_date %>
+  </p>
+  <p>
+    <%= f.label :Gen_Ledger_Shekel_Item_Code %><br />
+    <%= f.text_field :Gen_Ledger_Shekel_Item_Code %>
+  </p>
+  <p>
+    <%= f.label :Gen_Ledger_Item_Code %><br />
+    <%= f.text_field :Gen_Ledger_Item_Code %>
+  </p>
+  <p>
+    <%= f.label :Gen_Ledger_Item_Type %><br />
+    <%= f.text_field :Gen_Ledger_Item_Type %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Princpl %><br />
+    <%= f.text_field :Dlnqnt_Princpl %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Interest_Amt %><br />
+    <%= f.text_field :Dlnqnt_Interest_Amt %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Linked_Amt %><br />
+    <%= f.text_field :Dlnqnt_Linked_Amt %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Linked_Interest_Amt %><br />
+    <%= f.text_field :Dlnqnt_Linked_Interest_Amt %>
+  </p>
+  <p>
+    <%= f.label :Accrued_Interest_Amt %><br />
+    <%= f.text_field :Accrued_Interest_Amt %>
+  </p>
+  <p>
+    <%= f.label :Trans_Pastdue_amount %><br />
+    <%= f.text_field :Trans_Pastdue_amount %>
+  </p>
+  <p>
+    <%= f.label :Total_Exposure %><br />
+    <%= f.text_field :Total_Exposure %>
+  </p>
+  <p>
+    <%= f.label :Total_Exposure_NIS %><br />
+    <%= f.text_field :Total_Exposure_NIS %>
+  </p>
+  <p>
+    <%= f.label :Prov_Amount %><br />
+    <%= f.text_field :Prov_Amount %>
+  </p>
+  <p>
+    <%= f.label :Trans_Tenure_Left %><br />
+    <%= f.text_field :Trans_Tenure_Left %>
+  </p>
+  <p>
+    <%= f.label :Interest_Account_id %><br />
+    <%= f.text_field :Interest_Account_id %>
+  </p>
+  <p>
+    <%= f.label :Linked_Princpl_Account_id %><br />
+    <%= f.text_field :Linked_Princpl_Account_id %>
+  </p>
+  <p>
+    <%= f.label :Linked_Interest_Account_id %><br />
+    <%= f.text_field :Linked_Interest_Account_id %>
+  </p>
+  <p>
+    <%= f.label :Dlnqnt_Linked_Account_id %><br />
+    <%= f.text_field :Dlnqnt_Linked_Account_id %>
+  </p>
+  <p>
+    <%= f.label :Linked_Princpl_Diff_Amt %><br />
+    <%= f.text_field :Linked_Princpl_Diff_Amt %>
+  </p>
+  <p>
+    <%= f.label :Linked_Interest_Diff_Amt %><br />
+    <%= f.text_field :Linked_Interest_Diff_Amt %>
+  </p>
+  <p>
+    <%= f.label :Linkage_Base_Type_Code %><br />
+    <%= f.text_field :Linkage_Base_Type_Code %>
+  </p>
+  <p>
+    <%= f.label :Bal_Sheet_Major_Item_Code %><br />
+    <%= f.text_field :Bal_Sheet_Major_Item_Code %>
+  </p>
+  <p>
+    <%= f.label :Sec_Bal_Sheet_Item_Code %><br />
+    <%= f.text_field :Sec_Bal_Sheet_Item_Code %>
+  </p>
+  <p>
+    <%= f.label :Major_Yield_Category %><br />
+    <%= f.text_field :Major_Yield_Category %>
+  </p>
+  <p>
+    <%= f.label :Sec_Yield_Category %><br />
+    <%= f.text_field :Sec_Yield_Category %>
+  </p>
+  <p>
+    <%= f.label :Instrument_Responsibility_Code %><br />
+    <%= f.text_field :Instrument_Responsibility_Code %>
+  </p>
+  <p>
+    <%= f.label :Detail_Type_Code %><br />
+    <%= f.text_field :Detail_Type_Code %>
+  </p>
+  <p>
+    <%= f.label :Sec_Linkage_Base_Type_Code %><br />
+    <%= f.text_field :Sec_Linkage_Base_Type_Code %>
+  </p>
+  <p>
+    <%= f.label :GI_Item_Type_Code %><br />
+    <%= f.text_field :GI_Item_Type_Code %>
+  </p>
+  <p>
+    <%= f.label :Balance_Sheet_Position_Code %><br />
+    <%= f.text_field :Balance_Sheet_Position_Code %>
+  </p>
+  <p>
+    <%= f.label :Other_Amt %><br />
+    <%= f.text_field :Other_Amt %>
+  </p>
+  <p>
+    <%= f.label :Executing_Bank_Id %><br />
+    <%= f.text_field :Executing_Bank_Id %>
+  </p>
+  <p>
+    <%= f.label :Trans_Segment_Code %><br />
+    <%= f.text_field :Trans_Segment_Code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Segment_Det %><br />
+    <%= f.text_field :Trans_Segment_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Sub_Segment_code %><br />
+    <%= f.text_field :Trans_Sub_Segment_code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Sub_Segment_Det %><br />
+    <%= f.text_field :Trans_Sub_Segment_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Marking_Past_Due_Code %><br />
+    <%= f.text_field :Trans_Marking_Past_Due_Code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Marking_Past_Due_Det %><br />
+    <%= f.text_field :Trans_Marking_Past_Due_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Markings_Other_code %><br />
+    <%= f.text_field :Trans_Markings_Other_code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Markings_Other_Det %><br />
+    <%= f.text_field :Trans_Markings_Other_Det %>
+  </p>
+  <p>
+    <%= f.label :Executing_Branch_Id %><br />
+    <%= f.text_field :Executing_Branch_Id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', loanbooks_path %>

@@ -1,0 +1,18 @@
+<% form_for(@source) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :Name %><br />
+    <%= f.text_field :Source_Name %>
+  </p>
+  <p>
+    <%= f.label :Description %><br />
+    <%= f.text_field :Source_Description %>
+  </p>
+  <p>
+    <%= f.label :Frequency %><br />
+    <%= f.text_field :Source_Frequency %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>

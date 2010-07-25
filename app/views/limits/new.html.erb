@@ -1,0 +1,203 @@
+<h1>New limit</h1>
+
+<% form_for(@limit) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :Group_id %><br />
+    <%= f.text_field :Group_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Source_id %><br />
+    <%= f.text_field :Source_id %>
+  </p>
+  <p>
+    <%= f.label :DownloadDate %><br />
+    <%= f.datetime_select :DownloadDate %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.datetime_select :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.label :Record_Creator %><br />
+    <%= f.text_field :Record_Creator %>
+  </p>
+  <p>
+    <%= f.label :Record_Application %><br />
+    <%= f.text_field :Record_Application %>
+  </p>
+  <p>
+    <%= f.label :Value_Month %><br />
+    <%= f.text_field :Value_Month %>
+  </p>
+  <p>
+    <%= f.label :Value_Date %><br />
+    <%= f.text_field :Value_Date %>
+  </p>
+  <p>
+    <%= f.label :Executing_Date %><br />
+    <%= f.text_field :Executing_Date %>
+  </p>
+  <p>
+    <%= f.label :Type_of_record %><br />
+    <%= f.text_field :Type_of_record %>
+  </p>
+  <p>
+    <%= f.label :Bank_id %><br />
+    <%= f.text_field :Bank_id %>
+  </p>
+  <p>
+    <%= f.label :Branch_id %><br />
+    <%= f.text_field :Branch_id %>
+  </p>
+  <p>
+    <%= f.label :Limit_nr %><br />
+    <%= f.text_field :Limit_nr %>
+  </p>
+  <p>
+    <%= f.label :Legacy_Acc_Subtype_Code %><br />
+    <%= f.text_field :Legacy_Acc_Subtype_Code %>
+  </p>
+  <p>
+    <%= f.label :Account_id %><br />
+    <%= f.text_field :Account_id %>
+  </p>
+  <p>
+    <%= f.label :Count_CIF %><br />
+    <%= f.text_field :Count_CIF %>
+  </p>
+  <p>
+    <%= f.label :Limit_code %><br />
+    <%= f.text_field :Limit_code %>
+  </p>
+  <p>
+    <%= f.label :Limit_Labeling %><br />
+    <%= f.text_field :Limit_Labeling %>
+  </p>
+  <p>
+    <%= f.label :Limit_Nom %><br />
+    <%= f.text_field :Limit_Nom %>
+  </p>
+  <p>
+    <%= f.label :Limit_Curr %><br />
+    <%= f.text_field :Limit_Curr %>
+  </p>
+  <p>
+    <%= f.label :Limit_Local_Currency %><br />
+    <%= f.text_field :Limit_Local_Currency %>
+  </p>
+  <p>
+    <%= f.label :Limit_Local_Amount %><br />
+    <%= f.text_field :Limit_Local_Amount %>
+  </p>
+  <p>
+    <%= f.label :Limit_FX %><br />
+    <%= f.text_field :Limit_FX %>
+  </p>
+  <p>
+    <%= f.label :Limit_NIS %><br />
+    <%= f.text_field :Limit_NIS %>
+  </p>
+  <p>
+    <%= f.label :Limit_Start %><br />
+    <%= f.text_field :Limit_Start %>
+  </p>
+  <p>
+    <%= f.label :Limit_End %><br />
+    <%= f.text_field :Limit_End %>
+  </p>
+  <p>
+    <%= f.label :Limit_Tenure %><br />
+    <%= f.text_field :Limit_Tenure %>
+  </p>
+  <p>
+    <%= f.label :Limit_Comm %><br />
+    <%= f.text_field :Limit_Comm %>
+  </p>
+  <p>
+    <%= f.label :Limit_Comm_Resign %><br />
+    <%= f.text_field :Limit_Comm_Resign %>
+  </p>
+  <p>
+    <%= f.label :Limit_Ref_Date %><br />
+    <%= f.text_field :Limit_Ref_Date %>
+  </p>
+  <p>
+    <%= f.label :Used_Credit_Limit_Amt %><br />
+    <%= f.text_field :Used_Credit_Limit_Amt %>
+  </p>
+  <p>
+    <%= f.label :Used_Credit_Limit_Amt_Local %><br />
+    <%= f.text_field :Used_Credit_Limit_Amt_Local %>
+  </p>
+  <p>
+    <%= f.label :Used_Credit_Limit_Amt_NIS %><br />
+    <%= f.text_field :Used_Credit_Limit_Amt_NIS %>
+  </p>
+  <p>
+    <%= f.label :UnUsed_Credit_Limit_Amt %><br />
+    <%= f.text_field :UnUsed_Credit_Limit_Amt %>
+  </p>
+  <p>
+    <%= f.label :UnUsed_Credit_Limit_Amt_NIS %><br />
+    <%= f.text_field :UnUsed_Credit_Limit_Amt_NIS %>
+  </p>
+  <p>
+    <%= f.label :UnUsed_Credit_Limit_Amt_Local %><br />
+    <%= f.text_field :UnUsed_Credit_Limit_Amt_Local %>
+  </p>
+  <p>
+    <%= f.label :Executing_Bank_Id %><br />
+    <%= f.text_field :Executing_Bank_Id %>
+  </p>
+  <p>
+    <%= f.label :Trans_Segment_Code %><br />
+    <%= f.text_field :Trans_Segment_Code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Segment_Det %><br />
+    <%= f.text_field :Trans_Segment_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Sub_Segment_code %><br />
+    <%= f.text_field :Trans_Sub_Segment_code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Sub_Segment_Det %><br />
+    <%= f.text_field :Trans_Sub_Segment_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Marking_Past_Due_Code %><br />
+    <%= f.text_field :Trans_Marking_Past_Due_Code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Marking_Past_Due_Det %><br />
+    <%= f.text_field :Trans_Marking_Past_Due_Det %>
+  </p>
+  <p>
+    <%= f.label :Trans_Markings_Other_code %><br />
+    <%= f.text_field :Trans_Markings_Other_code %>
+  </p>
+  <p>
+    <%= f.label :Trans_Markings_Other_Det %><br />
+    <%= f.text_field :Trans_Markings_Other_Det %>
+  </p>
+  <p>
+    <%= f.label :Executing_Branch_Id %><br />
+    <%= f.text_field :Executing_Branch_Id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', limits_path %>

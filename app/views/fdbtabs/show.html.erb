@@ -1,0 +1,39 @@
+<Div id = 'show'>
+
+<fieldset id="Nomenclature">
+ <legend> Nomenclature </legend>
+
+<p>
+  <b>Table:</b>
+  <%=h @fdbtab.TBID %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @fdbtab.TBCODE %>
+</p>
+
+<p>
+  <b> Description 1:</b>
+  <%=h @fdbtab.TBDES1 %>
+</p>
+
+<p>
+  <b> Description 2:</b>
+  <%=h @fdbtab.TBDES2 %>
+</p>
+
+<p>
+  <b> Description 3:</b>
+  <%=h @fdbtab.TBDES3 %>
+</p>
+
+<p>
+  <b> Description 4:</b>
+  <%=h @fdbtab.TBDES4 %>
+</p>
+
+</fieldset>
+
+<%= link_to 'Edit', edit_fdbtab_path(@fdbtab) %> |
+<%= link_to 'Back', fdbtabs_path %>

@@ -1,0 +1,130 @@
+<h1>Listing mortgagescollaterals</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Group</th>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Downloaddate</th>
+    <th>Record creation date</th>
+    <th>Record creator</th>
+    <th>Record application</th>
+    <th>Value month</th>
+    <th>Value date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Callat mortg nr</th>
+    <th>Limit nr</th>
+    <th>Count nr</th>
+    <th>Collateral nr</th>
+    <th>Callat mortg nom</th>
+    <th>Callat mortg curr</th>
+    <th>Callat mortg local currency</th>
+    <th>Callat mortg local nom</th>
+    <th>Callat mortg fx</th>
+    <th>Callat mortg nis</th>
+    <th>Collat mortg local</th>
+    <th>Collat mortg nis</th>
+    <th>Collat mortg 3rd indic</th>
+    <th>Collat mortg 3rd amt</th>
+    <th>Collat mortg 3rd rank</th>
+    <th>Collat mortg prop</th>
+    <th>Collat mortg prop occ</th>
+    <th>Collat mortg enforc</th>
+    <th>Collat mortg owner</th>
+    <th>Collat mortg own cif</th>
+    <th>Collat mortg ltv int</th>
+    <th>Callat mortg prop val orig</th>
+    <th>Callat mortg prop curr</th>
+    <th>Callat mortg prop val local</th>
+    <th>Callat mortg prop fx</th>
+    <th>Callat mortg prop val nis</th>
+    <th>Callat mortg prop dat</th>
+    <th>Collat mortg landreg</th>
+    <th>Collat mortg warn</th>
+    <th>Collat mortg rights</th>
+    <th>Collat mortg other</th>
+    <th>Collat mortg ref date</th>
+    <th>Insurance comp nr</th>
+    <th>Insurance type code</th>
+    <th>Insurance enforc</th>
+    <th>Insurance amount local</th>
+    <th>Insurance amount nis</th>
+    <th>Insurance start</th>
+    <th>Insurance end</th>
+    <th>Executing bank id</th>
+    <th>Second lien ind</th>
+    <th>Executing branch id</th>
+  </tr>
+
+<% @mortgagescollaterals.each do |mortgagescollateral| %>
+  <tr>
+    <td><%=h mortgagescollateral.id %></td>
+    <td><%=h mortgagescollateral.Group_id %></td>
+    <td><%=h mortgagescollateral.Entity_id %></td>
+    <td><%=h mortgagescollateral.Source_id %></td>
+    <td><%=h mortgagescollateral.DownloadDate %></td>
+    <td><%=h mortgagescollateral.Record_Creation_Date %></td>
+    <td><%=h mortgagescollateral.Record_Creator %></td>
+    <td><%=h mortgagescollateral.Record_Application %></td>
+    <td><%=h mortgagescollateral.Value_Month %></td>
+    <td><%=h mortgagescollateral.Value_Date %></td>
+    <td><%=h mortgagescollateral.Executing_Date %></td>
+    <td><%=h mortgagescollateral.Type_of_record %></td>
+    <td><%=h mortgagescollateral.Bank_id %></td>
+    <td><%=h mortgagescollateral.Branch_id %></td>
+    <td><%=h mortgagescollateral.Callat_mortg_Nr %></td>
+    <td><%=h mortgagescollateral.Limit_nr %></td>
+    <td><%=h mortgagescollateral.Count_Nr %></td>
+    <td><%=h mortgagescollateral.Collateral_Nr %></td>
+    <td><%=h mortgagescollateral.Callat_mortg_Nom %></td>
+    <td><%=h mortgagescollateral.Callat_mortg_Curr %></td>
+    <td><%=h mortgagescollateral.Callat_mortg_Local_Currency %></td>
+    <td><%=h mortgagescollateral.Callat_mortg_Local_Nom %></td>
+    <td><%=h mortgagescollateral.Callat_mortg_FX %></td>
+    <td><%=h mortgagescollateral.Callat_mortg_NIS %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Local %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_NIS %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_3rd_Indic %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_3rd_Amt %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_3rd_Rank %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Prop %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Prop_Occ %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Enforc %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Owner %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Own_CIF %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_LTV_Int %></td>
+    <td><%=h mortgagescollateral.Callat_Mortg_Prop_Val_Orig %></td>
+    <td><%=h mortgagescollateral.Callat_Mortg_Prop_Curr %></td>
+    <td><%=h mortgagescollateral.Callat_Mortg_Prop_Val_local %></td>
+    <td><%=h mortgagescollateral.Callat_Mortg_Prop_FX %></td>
+    <td><%=h mortgagescollateral.Callat_Mortg_Prop_Val_NIS %></td>
+    <td><%=h mortgagescollateral.Callat_Mortg_Prop_Dat %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Landreg %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Warn %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Rights %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Other %></td>
+    <td><%=h mortgagescollateral.Collat_Mortg_Ref_Date %></td>
+    <td><%=h mortgagescollateral.Insurance_Comp_Nr %></td>
+    <td><%=h mortgagescollateral.Insurance_Type_Code %></td>
+    <td><%=h mortgagescollateral.Insurance_Enforc %></td>
+    <td><%=h mortgagescollateral.Insurance_Amount_Local %></td>
+    <td><%=h mortgagescollateral.Insurance_Amount_NIS %></td>
+    <td><%=h mortgagescollateral.Insurance_Start %></td>
+    <td><%=h mortgagescollateral.Insurance_End %></td>
+    <td><%=h mortgagescollateral.Executing_Bank_Id %></td>
+    <td><%=h mortgagescollateral.Second_Lien_Ind %></td>
+    <td><%=h mortgagescollateral.Executing_Branch_Id %></td>
+    <td><%= link_to 'Show', mortgagescollateral %></td>
+    <td><%= link_to 'Edit', edit_mortgagescollateral_path(mortgagescollateral) %></td>
+    <td><%= link_to 'Destroy', mortgagescollateral, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New mortgagescollateral', new_mortgagescollateral_path %>

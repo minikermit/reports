@@ -1,0 +1,38 @@
+<span class="myapptitle">Listing counterparties</span>
+
+<table>
+  <tr>
+    <th>Value date</th>
+    <th>Count cif</th>
+    <th>Count group</th>
+    <th>Count name</th>
+    <th>Count segment det</th>
+    <th>Count sub segment det</th>
+  </tr>
+
+<% @counterparties.each do |counterparty| %>
+  <tr>
+    <td><%=h counterparty.Value_Date %></td>
+    <td><%=h counterparty.Count_CIF %></td>
+    <td><%=h counterparty.Count_Group %></td>
+    <td><%=h counterparty.Count_Name %></td>
+    <td><%=h counterparty.Count_Segment_Det %></td>
+    <td><%=h counterparty.Count_Sub_Segment_Det %></td>
+    <td><%= link_to 'Show', counterparty %></td>
+    <td><%= link_to 'Edit', edit_counterparty_path(counterparty) %></td>
+    <td><%= link_to 'Destroy', counterparty, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @counterparties %>
+  </div-->
+    <%= will_paginate @counterparties, :container => false %>
+</div>
+
+
+<%= link_to 'New counterparty', new_counterparty_path %>

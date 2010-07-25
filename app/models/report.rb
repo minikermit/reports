@@ -1,6 +1,6 @@
 class Report < ActiveRecord::Base
 
-belongs_to :report_category
+belongs_to :report_category, :foreign_key => "report_category_id"
 has_many :report_lines
 
 acts_as_list    :scope => :report_category
