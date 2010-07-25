@@ -1,0 +1,55 @@
+mainmenu
+	Home|/homes|_self
+	Reports|/reports|_self
+		Basel II|#|_self
+			Validations|/validations|
+				Report1|#|
+				Report2|#|
+				Report3|#|
+			Statistics|/validations/stats|
+		Greenbook|#|_self
+			Form 1|#|_self
+			Form 2|#|_self
+			Form 4|#|_self
+			Form 4a|#|_self
+			Form 8|#|_self
+			Form 10|#|_self
+			Form 12|#|_self
+			Form 14|#|_self
+			Form 15|#|_self
+			Form 16|#|_self
+			Form 17|#|_self
+			Form 18|#|_self
+			Form 19|#|_self
+			Form 20|#|_self
+			Form 21|#|_self
+			Form 22|#|_self
+			Form 35|#|_self
+		Management Reporting|#|_self
+	Accounts|#|_self
+		Account plan|/account_plans|_self
+		Accounts|#|_self
+		Hierarchy|#|_self
+		Triplet finder|#|_self
+		Account finder|#|_self
+	Positions|#|_self
+		B2 Counterparties|/counterparties|_self
+		B2 Limits|/limits|_self
+		B2 Loan Book|/loanbooks|_self
+		B2 Nostro|/nostros|_self
+		B2 Provisions|/provisions|_self
+		B2 OTC Derivatives|/derivatives|_self
+		Client securities|/client_security_positions|_self
+	Clients|#|_self
+	Settings|#|_self
+		Basel II|/b2_ta_mappings|_self
+		Fire|#|_self
+		Fimis|#|_self
+		Generic|/par_mappings|_self
+		Environment|/environmentvariables|_self
+	Validations|/validations|_self
+	Documentation|#|_self
+	Olympic tables|#|_self
+		Nomenclature|/fdbtabs|_self
+		Clients|/fdbclis|_self
+	Sitemap|/sitemap|_self

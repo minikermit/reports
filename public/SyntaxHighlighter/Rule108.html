@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Rule 108 (code)</title>
+	<script type="text/javascript" src="javascripts/shCore.js"></script>
+	<script type="text/javascript" src="javascripts/shBrushRuby.js"></script>
+	<script type="text/javascript" src="javascripts/shBrushSql.js"></script>
+	<link type="text/css" rel="stylesheet" href="stylesheets/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="stylesheets/shThemeRDark.css"/>
+	<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'javascripts/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+</head>
+
+<body >
+<h1>Rule 108 (code)</h1>
+<p>This is the code behind this validation rule.</p>
+
+<a href="javascript:top.window.close()">close</a>
+
+<pre class="brush: sql;">
+SELECT		T1.id,
+			T1.DownloadDate,
+			T1.Source_id,
+			T1.Entity_id,
+			T1.Count_CIF,
+			T1.Count_CIF,
+			'COUNTERPART',
+			'COUNT_CIF',
+			T1.Count_CIF,
+			ISNULL(T1.Count_CIF,'NULL'),
+			'LOGIC',
+			'RULE 108',
+			'The Count CIF is not unique for the period. See the rule definition to learn how to correct this',
+			Getdate(),
+			''
+			
+
+
+FROM (	SELECT	id,DownloadDate,Source_id,Entity_id,Count_CIF,Count_Group 
+		FROM	dbo.B2TA_XPORT_Counterparty
+		WHERE	Entity_id = @Entity_ID
+		AND		Source_id = @Source_ID
+		AND		DownloadDate = @DownloadDate) as T1
+
+INNER JOIN
+
+	(SELECT COUNT_CIF,Count(*) AS Number FROM dbo.B2TA_XPORT_Counterparty
+		WHERE	Entity_id = @Entity_ID
+		AND		Source_id = @Source_ID
+		AND		DownloadDate = @DownloadDate
+		GROUP BY Count_CIF HAVING COUNT(*) >= 2) AS T2
+
+ON T1.Count_CIF = T2.Count_CIF
+</pre>
+</html>
