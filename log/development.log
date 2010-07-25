@@ -30989,3 +30989,624 @@ Rendered shared/_template2 (0.1ms)
   [4;35;1mSQL (59.1ms)[0m   [0mCOMMIT[0m
 Rendered shared/_signon (501.3ms)
 Completed in 658ms (View: 511, DB: 123) | 200 OK [http://localhost/account_plans]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-07-19 01:43:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (5.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-07-18 23:43:45', `perishable_token` = '52FykI7CksMvbXr-fUzL', `last_request_at` = '2010-07-18 23:43:45' WHERE `id` = 1[0m
+  [4;36;1mSQL (83.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 338ms (DB: 90) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TasklistsController#index (for 127.0.0.1 at 2010-07-25 09:26:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasklists"}
+  [4;36;1mTasklist Columns (59.8ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mTasklist Load (7.5ms)[0m   [0mSELECT * FROM `tasklists` [0m
+Rendering template within layouts/tasklists
+Rendering tasklists/index
+  [4;36;1mUser Columns (31.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+  [4;36;1mUser Load (19.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-07-25 07:26:06', `perishable_token` = 'IqOAEnFzK1UPMKkzjw-q', `last_request_at` = '2010-07-25 07:26:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (76.5ms)[0m   [0mCOMMIT[0m
+Completed in 638ms (View: 389, DB: 196) | 200 OK [http://localhost/tasklists]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 09:26:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  actionpack (2.3.8) lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  actionpack (2.3.8) lib/action_controller/routing/route_set.rb:442:in `recognize'
+  actionpack (2.3.8) lib/action_controller/routing/route_set.rb:437:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:87:in `dispatch'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:121:in `_call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:130
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:28:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  actionpack (2.3.8) lib/action_controller/string_coercion.rb:25:in `call'
+  rack (1.1.0) lib/rack/head.rb:9:in `call'
+  rack (1.1.0) lib/rack/methodoverride.rb:24:in `call'
+  actionpack (2.3.8) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.8) lib/action_controller/session/cookie_store.rb:99:in `call'
+  actionpack (2.3.8) lib/action_controller/failsafe.rb:26:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `synchronize'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:114:in `call'
+  actionpack (2.3.8) lib/action_controller/reloader.rb:34:in `run'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:108:in `call'
+  rails (2.3.8) lib/rails/rack/static.rb:31:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:47:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `each'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `call'
+  rails (2.3.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.1.0) lib/rack/content_length.rb:13:in `call'
+  rack (1.1.0) lib/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.1.0) lib/rack/handler/webrick.rb:14:in `run'
+  rails (2.3.8) lib/commands/server.rb:111
+  /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+  /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+  script/server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 09:31:21) [GET]
+
+ActionController::RoutingError (No route matches "/t" with {:method=>:get}):
+  actionpack (2.3.8) lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  actionpack (2.3.8) lib/action_controller/routing/route_set.rb:442:in `recognize'
+  actionpack (2.3.8) lib/action_controller/routing/route_set.rb:437:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:87:in `dispatch'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:121:in `_call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:130
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:28:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  actionpack (2.3.8) lib/action_controller/string_coercion.rb:25:in `call'
+  rack (1.1.0) lib/rack/head.rb:9:in `call'
+  rack (1.1.0) lib/rack/methodoverride.rb:24:in `call'
+  actionpack (2.3.8) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.8) lib/action_controller/session/cookie_store.rb:99:in `call'
+  actionpack (2.3.8) lib/action_controller/failsafe.rb:26:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `synchronize'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:114:in `call'
+  actionpack (2.3.8) lib/action_controller/reloader.rb:34:in `run'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:108:in `call'
+  rails (2.3.8) lib/rails/rack/static.rb:31:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:47:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `each'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `call'
+  rails (2.3.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.1.0) lib/rack/content_length.rb:13:in `call'
+  rack (1.1.0) lib/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.1.0) lib/rack/handler/webrick.rb:14:in `run'
+  rails (2.3.8) lib/commands/server.rb:111
+  /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+  /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+  script/server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-07-25 09:31:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-07-25 07:31:24', `perishable_token` = 'iZlbySV83Xy-GnPJYio7', `last_request_at` = '2010-07-25 07:31:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 110ms (DB: 50) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-07-25 09:31:24) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-07-25 07:31:24', `perishable_token` = 'p4R0DPhnE1KGnnrTx88l', `last_request_at` = '2010-07-25 07:31:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (66.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered shared/_menubar (15.3ms)
+Rendered shared/_defaultbreadcrumb (20.1ms)
+Rendered shared/_template2 (18.3ms)
+Rendered shared/_sidebar (27.8ms)
+Rendered shared/_signon (30.1ms)
+Rendered shared/_livefilter (44.5ms)
+Completed in 553ms (View: 296, DB: 70) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SourcesController#index (for 127.0.0.1 at 2010-07-25 10:21:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"sources"}
+  [4;36;1mSource Load (0.0ms)[0m   [0;1mMysql::Error: Table 'finance_development.DIM_Source' doesn't exist: SELECT * FROM `DIM_Source` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'finance_development.DIM_Source' doesn't exist: SELECT * FROM `DIM_Source` ):
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract_adapter.rb:221:in `log'
+  activerecord (2.3.8) lib/active_record/connection_adapters/mysql_adapter.rb:323:in `execute'
+  activerecord (2.3.8) lib/active_record/connection_adapters/mysql_adapter.rb:638:in `select'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:81:in `cache_sql'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+  activerecord (2.3.8) lib/active_record/base.rb:664:in `find_by_sql'
+  activerecord (2.3.8) lib/active_record/base.rb:1578:in `find_every'
+  activerecord (2.3.8) lib/active_record/base.rb:618:in `find'
+  app/controllers/sources_controller.rb:5:in `index'
+  actionpack (2.3.8) lib/action_controller/base.rb:1331:in `send'
+  actionpack (2.3.8) lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+  actionpack (2.3.8) lib/action_controller/filters.rb:617:in `call_filters'
+  actionpack (2.3.8) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  actionpack (2.3.8) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  activesupport (2.3.8) lib/active_support/core_ext/benchmark.rb:17:in `ms'
+  /usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+  activesupport (2.3.8) lib/active_support/core_ext/benchmark.rb:17:in `ms'
+  actionpack (2.3.8) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.8) lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  actionpack (2.3.8) lib/action_controller/flash.rb:151:in `perform_action'
+  actionpack (2.3.8) lib/action_controller/base.rb:532:in `send'
+  actionpack (2.3.8) lib/action_controller/base.rb:532:in `process_without_filters'
+  actionpack (2.3.8) lib/action_controller/filters.rb:606:in `process'
+  actionpack (2.3.8) lib/action_controller/base.rb:391:in `process'
+  actionpack (2.3.8) lib/action_controller/base.rb:386:in `call'
+  actionpack (2.3.8) lib/action_controller/routing/route_set.rb:438:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:87:in `dispatch'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:121:in `_call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:130
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:28:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  actionpack (2.3.8) lib/action_controller/string_coercion.rb:25:in `call'
+  rack (1.1.0) lib/rack/head.rb:9:in `call'
+  rack (1.1.0) lib/rack/methodoverride.rb:24:in `call'
+  actionpack (2.3.8) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.8) lib/action_controller/session/cookie_store.rb:99:in `call'
+  actionpack (2.3.8) lib/action_controller/failsafe.rb:26:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `synchronize'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:114:in `call'
+  actionpack (2.3.8) lib/action_controller/reloader.rb:34:in `run'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:108:in `call'
+  rails (2.3.8) lib/rails/rack/static.rb:31:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:47:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `each'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `call'
+  rails (2.3.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.1.0) lib/rack/content_length.rb:13:in `call'
+  rack (1.1.0) lib/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.1.0) lib/rack/handler/webrick.rb:14:in `run'
+  rails (2.3.8) lib/commands/server.rb:111
+  /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+  /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+  script/server:3
+
+Rendered rescues/_trace (144.9ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 11:49:47) [GET]
+
+ActionController::RoutingError (No route matches "/admin-data" with {:method=>:get}):
+  actionpack (2.3.8) lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  actionpack (2.3.8) lib/action_controller/routing/route_set.rb:442:in `recognize'
+  actionpack (2.3.8) lib/action_controller/routing/route_set.rb:437:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:87:in `dispatch'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:121:in `_call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:130
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.8) lib/active_record/query_cache.rb:28:in `call'
+  activerecord (2.3.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  actionpack (2.3.8) lib/action_controller/string_coercion.rb:25:in `call'
+  rack (1.1.0) lib/rack/head.rb:9:in `call'
+  rack (1.1.0) lib/rack/methodoverride.rb:24:in `call'
+  actionpack (2.3.8) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.8) lib/action_controller/session/cookie_store.rb:99:in `call'
+  actionpack (2.3.8) lib/action_controller/failsafe.rb:26:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  rack (1.1.0) lib/rack/lock.rb:11:in `synchronize'
+  rack (1.1.0) lib/rack/lock.rb:11:in `call'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:114:in `call'
+  actionpack (2.3.8) lib/action_controller/reloader.rb:34:in `run'
+  actionpack (2.3.8) lib/action_controller/dispatcher.rb:108:in `call'
+  rails (2.3.8) lib/rails/rack/static.rb:31:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:47:in `call'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `each'
+  rack (1.1.0) lib/rack/urlmap.rb:41:in `call'
+  rails (2.3.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.1.0) lib/rack/content_length.rb:13:in `call'
+  rack (1.1.0) lib/rack/chunked.rb:15:in `call'
+  rack (1.1.0) lib/rack/handler/mongrel.rb:67:in `process'
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+  rack (1.1.0) lib/rack/handler/mongrel.rb:38:in `run'
+  rails (2.3.8) lib/commands/server.rb:111
+  /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+  /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+  script/server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::MainController#all_models (for 127.0.0.1 at 2010-07-25 11:49:57) [GET]
+  Parameters: {"action"=>"all_models", "controller"=>"admin_data/main"}
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (83.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/main/all_models
+Rendered admin_data/shared/_drop_down_klasses (1.6ms)
+Rendered admin_data/shared/_drop_down_klasses (0.6ms)
+Rendered admin_data/shared/_header (3.0ms)
+Rendered admin_data/shared/_powered_by (1.4ms)
+Completed in 933ms (View: 55, DB: 102) | 200 OK [http://localhost/admin_data]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:50:12) [GET]
+  Parameters: {"klass"=>"account_plan", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;35;1mAccountPlan Load (52.3ms)[0m   [0mSELECT * FROM `account_plans` ORDER BY account_plans.id desc, account_id ASC, position ASC LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;36;1mAccountPlan Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `account_plans`[0m
+  [4;35;1mSQL (61.2ms)[0m   [0mSELECT count(*) AS count_all FROM `account_plans` [0m
+Rendered admin_data/shared/_breadcrum (67.0ms)
+Rendered admin_data/shared/_secondary_navigation (6.9ms)
+Rendered admin_data/search/search/_sortby (1.4ms)
+Rendered admin_data/search/search/_search_form (15.2ms)
+Rendered admin_data/search/search/_title (1.7ms)
+Rendered admin_data/search/search/_listing (150.8ms)
+Rendered admin_data/search/_search_base (281.0ms)
+Rendered admin_data/shared/_drop_down_klasses (0.6ms)
+Rendered admin_data/shared/_header (2.0ms)
+Rendered admin_data/shared/_powered_by (0.7ms)
+Completed in 401ms (View: 247, DB: 116) | 200 OK [http://localhost/admin_data/quick_search/account_plan]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:50:18) [GET]
+  Parameters: {"klass"=>"comment", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;36;1mComment Load (48.8ms)[0m   [0;1mSELECT * FROM `comments` ORDER BY comments.id desc LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+Rendered admin_data/shared/_breadcrum (3.2ms)
+Rendered admin_data/shared/_secondary_navigation (3.2ms)
+Rendered admin_data/search/search/_sortby (0.3ms)
+Rendered admin_data/search/search/_search_form (9.8ms)
+Rendered admin_data/search/search/_title (0.3ms)
+Rendered admin_data/search/search/_listing (1.6ms)
+Rendered admin_data/search/_search_base (25.1ms)
+Rendered admin_data/shared/_drop_down_klasses (0.5ms)
+Rendered admin_data/shared/_header (1.6ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 111ms (View: 34, DB: 50) | 200 OK [http://localhost/admin_data/quick_search/comment]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:50:22) [GET]
+  Parameters: {"klass"=>"menu", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;35;1mMenu Load (46.1ms)[0m   [0mSELECT * FROM `menus` ORDER BY menus.id desc LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;36;1mMenu Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `menus`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `menus` [0m
+Rendered admin_data/shared/_breadcrum (14.2ms)
+Rendered admin_data/shared/_secondary_navigation (4.7ms)
+Rendered admin_data/search/search/_sortby (1.2ms)
+Rendered admin_data/search/search/_search_form (7.3ms)
+Rendered admin_data/search/search/_title (0.5ms)
+Rendered admin_data/search/search/_listing (2.2ms)
+Rendered admin_data/search/_search_base (37.8ms)
+Rendered admin_data/shared/_drop_down_klasses (0.5ms)
+Rendered admin_data/shared/_header (1.7ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 132ms (View: 46, DB: 49) | 200 OK [http://localhost/admin_data/quick_search/menu]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:50:25) [GET]
+  Parameters: {"klass"=>"project", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;36;1mProject Load (16.4ms)[0m   [0;1mSELECT * FROM `projects` ORDER BY projects.id desc LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;35;1mProject Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendered admin_data/shared/_breadcrum (3.6ms)
+Rendered admin_data/shared/_secondary_navigation (3.5ms)
+Rendered admin_data/search/search/_sortby (0.3ms)
+Rendered admin_data/search/search/_search_form (6.2ms)
+Rendered admin_data/search/search/_title (0.3ms)
+Rendered admin_data/search/search/_listing (15.6ms)
+Rendered admin_data/search/_search_base (35.0ms)
+Rendered admin_data/shared/_drop_down_klasses (0.8ms)
+Rendered admin_data/shared/_header (2.0ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 100ms (View: 45, DB: 18) | 200 OK [http://localhost/admin_data/quick_search/project]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::MainController#show (for 127.0.0.1 at 2010-07-25 11:50:33) [GET]
+  Parameters: {"klass"=>"project", "action"=>"show", "id"=>"1", "controller"=>"admin_data/main"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = '1') LIMIT 1[0m
+  [4;36;1mProject Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/main/show
+Rendered admin_data/shared/_breadcrum (0.9ms)
+Rendered admin_data/shared/_flash_message (2.5ms)
+Rendered admin_data/main/association/_belongs_to_info (1.4ms)
+Rendered admin_data/main/association/_has_one_info (1.3ms)
+  [4;35;1mTasklist Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `tasklists`[0m
+  [4;36;1mSQL (21.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tasklists` WHERE (`tasklists`.project_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tasklists` WHERE (`tasklists`.project_id = 1) [0m
+Rendered admin_data/main/association/_has_many_info (60.5ms)
+Rendered admin_data/main/association/_association_info (96.8ms)
+Rendered admin_data/main/misc/_modify_record (20.1ms)
+Rendered admin_data/shared/_drop_down_klasses (0.5ms)
+Rendered admin_data/shared/_header (1.7ms)
+Rendered admin_data/shared/_powered_by (0.4ms)
+Completed in 347ms (View: 291, DB: 25) | 200 OK [http://localhost/admin_data/klass/project/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:50:47) [GET]
+  Parameters: {"klass"=>"menu", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;36;1mMenu Load (0.1ms)[0m   [0;1mSELECT * FROM `menus` ORDER BY menus.id desc LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;35;1mMenu Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `menus`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `menus` [0m
+Rendered admin_data/shared/_breadcrum (3.9ms)
+Rendered admin_data/shared/_secondary_navigation (5.7ms)
+Rendered admin_data/search/search/_sortby (0.3ms)
+Rendered admin_data/search/search/_search_form (6.9ms)
+Rendered admin_data/search/search/_title (0.3ms)
+Rendered admin_data/search/search/_listing (1.6ms)
+Rendered admin_data/search/_search_base (160.6ms)
+Rendered admin_data/shared/_drop_down_klasses (0.6ms)
+Rendered admin_data/shared/_header (1.8ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 198ms (View: 173, DB: 1) | 200 OK [http://localhost/admin_data/quick_search/menu]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:50:54) [GET]
+  Parameters: {"klass"=>"report", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;35;1mReport Load (46.5ms)[0m   [0mSELECT * FROM `reports` ORDER BY reports.id desc, report_category_id ASC, position ASC LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;36;1mReport Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `reports`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `reports` [0m
+Rendered admin_data/shared/_breadcrum (4.5ms)
+Rendered admin_data/shared/_secondary_navigation (3.2ms)
+Rendered admin_data/search/search/_sortby (0.3ms)
+Rendered admin_data/search/search/_search_form (6.5ms)
+Rendered admin_data/search/search/_title (0.3ms)
+Rendered admin_data/search/search/_listing (1.5ms)
+Rendered admin_data/search/_search_base (19.9ms)
+Rendered admin_data/shared/_drop_down_klasses (0.6ms)
+Rendered admin_data/shared/_header (2.0ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 113ms (View: 31, DB: 48) | 200 OK [http://localhost/admin_data/quick_search/report]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:51:01) [GET]
+  Parameters: {"klass"=>"report_category", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;36;1mReportCategory Load (24.6ms)[0m   [0;1mSELECT * FROM `report_categories` ORDER BY report_categories.id desc, name ASC LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;35;1mReportCategory Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `report_categories`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `report_categories` [0m
+Rendered admin_data/shared/_breadcrum (9.1ms)
+Rendered admin_data/shared/_secondary_navigation (6.6ms)
+Rendered admin_data/search/search/_sortby (0.4ms)
+Rendered admin_data/search/search/_search_form (7.2ms)
+Rendered admin_data/search/search/_title (0.6ms)
+Rendered admin_data/search/search/_listing (6.9ms)
+Rendered admin_data/search/_search_base (43.2ms)
+Rendered admin_data/shared/_drop_down_klasses (0.7ms)
+Rendered admin_data/shared/_header (1.9ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 131ms (View: 52, DB: 27) | 200 OK [http://localhost/admin_data/quick_search/report_category]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:51:10) [GET]
+  Parameters: {"klass"=>"structure", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;35;1mStructure Load (22.9ms)[0m   [0mSELECT * FROM `structures` ORDER BY structures.id desc LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;36;1mStructure Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `structures`[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSELECT count(*) AS count_all FROM `structures` [0m
+Rendered admin_data/shared/_breadcrum (10.1ms)
+Rendered admin_data/shared/_secondary_navigation (6.9ms)
+Rendered admin_data/search/search/_sortby (0.3ms)
+Rendered admin_data/search/search/_search_form (11.0ms)
+Rendered admin_data/search/search/_title (0.3ms)
+Rendered admin_data/search/search/_listing (5.3ms)
+Rendered admin_data/search/_search_base (42.9ms)
+Rendered admin_data/shared/_drop_down_klasses (0.6ms)
+Rendered admin_data/shared/_header (1.7ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 135ms (View: 49, DB: 31) | 200 OK [http://localhost/admin_data/quick_search/structure]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::SearchController#quick_search (for 127.0.0.1 at 2010-07-25 11:51:18) [GET]
+  Parameters: {"klass"=>"user", "action"=>"quick_search", "controller"=>"admin_data/search"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` ORDER BY users.id desc LIMIT 0, 50[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/search/quick_search
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+Rendered admin_data/shared/_breadcrum (1.7ms)
+Rendered admin_data/shared/_secondary_navigation (9.6ms)
+Rendered admin_data/search/search/_sortby (0.5ms)
+Rendered admin_data/search/search/_search_form (7.5ms)
+Rendered admin_data/search/search/_title (0.8ms)
+Rendered admin_data/search/search/_listing (7.6ms)
+Rendered admin_data/search/_search_base (30.9ms)
+Rendered admin_data/shared/_drop_down_klasses (1.0ms)
+Rendered admin_data/shared/_header (2.1ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 213ms (View: 156, DB: 2) | 200 OK [http://localhost/admin_data/quick_search/user]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::MainController#show (for 127.0.0.1 at 2010-07-25 11:51:25) [GET]
+  Parameters: {"klass"=>"user", "action"=>"show", "id"=>"1", "controller"=>"admin_data/main"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/main/show
+Rendered admin_data/shared/_breadcrum (0.3ms)
+Rendered admin_data/shared/_flash_message (1.1ms)
+Rendered admin_data/main/association/_belongs_to_info (3.3ms)
+Rendered admin_data/main/association/_has_one_info (0.4ms)
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (25.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` WHERE (`comments`.user_id = 1) [0m
+  [4;36;1mTasklist Columns (5.2ms)[0m   [0;1mSHOW FIELDS FROM `tasklists`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `tasklists` WHERE (`tasklists`.user_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tasklists` WHERE (`tasklists`.user_id = 1) [0m
+Rendered admin_data/main/association/_has_many_info (193.2ms)
+Rendered admin_data/main/association/_association_info (199.1ms)
+Rendered admin_data/main/misc/_modify_record (16.5ms)
+Rendered admin_data/shared/_drop_down_klasses (0.6ms)
+Rendered admin_data/shared/_header (1.8ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 288ms (View: 200, DB: 35) | 200 OK [http://localhost/admin_data/klass/user/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminData::MigrationController#index (for 127.0.0.1 at 2010-07-25 11:51:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin_data/migration"}
+  [4;35;1mSQL (26.3ms)[0m   [0mselect * from schema_migrations[0m
+Rendering template within layouts/admin_data
+Rendering admin_data/migration/index
+Rendered admin_data/shared/_drop_down_klasses (0.5ms)
+Rendered admin_data/shared/_header (1.7ms)
+Rendered admin_data/shared/_powered_by (0.1ms)
+Completed in 70ms (View: 21, DB: 28) | 200 OK [http://localhost/admin_data/migration]
