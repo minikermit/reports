@@ -1,16 +1,35 @@
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
+
 <ul id="crumbs">
- <li><%= link_to  "Home" , homes_path %></li>
- <li><a href="#">Olympic tables</a></li>
- <li>You are on the list of nomenclature page</li>
+ <li><a href="#">Homes</a></li>
+  <li><a href="#">Olympic tables</a></li>
+  <li>You are on the list of nomenclature page</li>
 </ul>
+<% end %>
 
-<a href="#" onclick="AppearEffect('show_search')" class ='a'>		
-	<span class="ss_sprite ss_add">
-		 		<img src="/images/iconmini/search-icon-blue.gif" />
-	 </span>	
-</a>
+<% content_for :article1 do %>
 
-<p>Sort by <%= order @search, :by => :TBID %> | <%= order @search, :by => :TBCODE %> | <%= order @search, :by => :TBDES1 %></p>  
+<h2 class="art-postheader">
+  Listing Nomenclature items
+</h2>
+
+<div class="art-postcontent">
+    <!-- article-content -->
+
+  <div id="page_wrapper">
+      <div id="table_wrapper">
+
+<br/>
+
+        <a href="#" onclick="AppearEffect('show_search')" class ='a'>
+            <span class="ss_sprite ss_add">
+                         <img src="/images/iconmini/search-icon-blue.gif" />
+             </span>
+        </a>
+
+
+<p>Sort by <%= order @search, :by => :TBID %> | <%= order @search, :by => :TBCODE %> | <%= order @search, :by => :TBDES1 %></p>
 
 <br />
 
@@ -67,10 +86,7 @@
   </div>
 </div>
 
-
-
-<span class="myapptitle">Listing Olympic Nomenclature</span>
-
+</div>
 
 <table id="rounded-corner" summary="Nomenclature table from Olympic" >
   <thead>
@@ -109,10 +125,34 @@
 <div class="digg_pagination">
   <div class="page_info">
     <%= page_entries_info @fdbtabs %>
-  </div-->
+  </div>
     <%= will_paginate @fdbtabs, :container => false %>
 </div>
 
 
 <!--%= link_to 'New fdbtab', new_fdbtab_path %-->
 <a href="/fdbtabs.csv">Export to excel</a>
+
+</div>
+
+    <blockquote>
+        <p>
+            &#8220;This is a list of available reports.&#8221;
+            <br />
+        </p>
+    </blockquote>
+  <br />
+
+<!-- /article-content -->   
+
+</div>
+
+
+<% end %>
+
+<!-- This is the javascript part -->
+<%= render :partial => "shared/livefilter" %>
+
+
+
+<% content_for :side do %>  <p>A simple page</p> <% end %>

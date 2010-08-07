@@ -29,6 +29,22 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.datetime "updated_at"
   end
 
+  create_table "assignments", :id => false, :force => true do |t|
+    t.integer "role_id"
+    t.integer "user_id"
+  end
+
+  create_table "client_security_positions", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "commands", :force => true do |t|
+    t.string   "execute"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "comments", :force => true do |t|
     t.text     "body"
     t.integer  "tasklist_id"
@@ -39,6 +55,37 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
 
   add_index "comments", ["tasklist_id"], :name => "index_comments_on_tasklist_id"
   add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
+
+  create_table "currencies", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "dim_dates", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "fdbtabs", :force => true do |t|
+    t.string   "TBID",                 :limit => 3,  :null => false
+    t.string   "TBCODE",               :limit => 14, :null => false
+    t.string   "TBETAT",               :limit => 1,  :null => false
+    t.string   "TBDTOU",               :limit => 6,  :null => false
+    t.string   "TBDTMU",               :limit => 6,  :null => false
+    t.string   "TBOPRN",               :limit => 7,  :null => false
+    t.string   "TBDES1",               :limit => 35, :null => false
+    t.string   "TBDES2",               :limit => 35, :null => false
+    t.string   "TBDES3",               :limit => 35, :null => false
+    t.string   "TBDES4",               :limit => 35, :null => false
+    t.string   "TBCOMP",               :limit => 73, :null => false
+    t.integer  "TBNBRM"
+    t.string   "fimis_status",         :limit => 1
+    t.string   "Group_Identifier",     :limit => 50
+    t.string   "Entity_Identifier",    :limit => 50
+    t.string   "Source_Identifier",    :limit => 50
+    t.datetime "Record_Creation_Date"
+    t.string   "Source_Package",       :limit => 50
+  end
 
   create_table "menus", :force => true do |t|
     t.integer  "parent_id"
@@ -51,6 +98,42 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
   end
 
   add_index "menus", ["parent_id"], :name => "index_menus_on_parent_id"
+
+  create_table "packages", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "par_mappings", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "portals", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
+  end
+
+  create_table "position_types", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "product_categories", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "projects", :force => true do |t|
     t.string   "title"
@@ -113,6 +196,17 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
 
   add_index "reports", ["report_category_id"], :name => "index_reports_on_report_category_id"
 
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "scenarios", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
     t.text     "data"
@@ -122,6 +216,11 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "sources", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "structures", :force => true do |t|
     t.integer  "report_line_id"
@@ -151,6 +250,11 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
   add_index "tasklists", ["project_id"], :name => "index_tasklists_on_project_id"
   add_index "tasklists", ["user_id"], :name => "index_tasklists_on_user_id"
 
+  create_table "timebands", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "shortname"
@@ -170,6 +274,17 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.datetime "last_login_at"
     t.string   "current_login_ip"
     t.string   "last_login_ip"
+  end
+
+  create_table "validationrules", :force => true do |t|
+    t.string   "rule_identification", :limit => 20,   :null => false
+    t.string   "rule_description",    :limit => 200,  :null => false
+    t.string   "rule_scope",          :limit => 15,   :null => false
+    t.string   "rule_hint",           :limit => 500
+    t.string   "rule_sql_query",      :limit => 1000
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at"
+    t.string   "rule_type",           :limit => 20,   :null => false
   end
 
 end

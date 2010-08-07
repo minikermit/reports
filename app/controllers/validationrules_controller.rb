@@ -2,7 +2,7 @@ class ValidationrulesController < ApplicationController
   # GET /validationrules
   # GET /validationrules.xml
   
-   before_filter :login_required
+   # before_filter :login_required
   
   def index
     
