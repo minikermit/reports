@@ -149,31 +149,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="[gem] activesupport (v2.3.8, null)" level="application" />
-    <orderEntry type="library" name="[gem] actionpack (v2.3.8, null)" level="application" />
-    <orderEntry type="library" name="[gem] rake (v0.8.7, null)" level="application" />
-    <orderEntry type="library" name="[gem] actionmailer (v2.3.8, null)" level="application" />
-    <orderEntry type="library" name="[gem] rails (v2.3.8, null)" level="application" />
-    <orderEntry type="library" name="[gem] activerecord (v2.3.8, null)" level="application" />
-    <orderEntry type="library" name="[gem] activeresource (v2.3.8, null)" level="application" />
-    <orderEntry type="library" name="[gem] sqlite3-ruby (v1.2.5, null)" level="application" />
-    <orderEntry type="library" name="[gem] searchlogic (v2.4.19, null)" level="application" />
-    <orderEntry type="library" name="[gem] authlogic (v2.1.5, null)" level="application" />
-    <orderEntry type="library" name="[gem] ruby2ruby (v1.2.4, null)" level="application" />
-    <orderEntry type="library" name="[gem] rails_best_practices (v0.3.21, null)" level="application" />
-    <orderEntry type="library" name="[gem] ruby_parser (v2.0.4, null)" level="application" />
-    <orderEntry type="library" name="[gem] annotate (v2.4.0, null)" level="application" />
-    <orderEntry type="library" name="[gem] treetop (v1.4.8, null)" level="application" />
-    <orderEntry type="library" name="[gem] mime-types (v1.16, null)" level="application" />
-    <orderEntry type="library" name="[gem] mysql (v2.8.1, null)" level="application" />
-    <orderEntry type="library" name="[gem] acts_as_list (v0.1.2, null)" level="application" />
-    <orderEntry type="library" name="[gem] acts_as_tree (v0.1.1, null)" level="application" />
-    <orderEntry type="library" name="[gem] mislav-will_paginate (v2.3.11, null)" level="application" />
-    <orderEntry type="library" name="[gem] haml (v3.0.13, null)" level="application" />
-    <orderEntry type="library" name="[gem] mail (v2.2.5, null)" level="application" />
-    <orderEntry type="library" name="[gem] ancestry (v1.2.0, null)" level="application" />
-    <orderEntry type="library" name="[gem] pdfkit (v0.4.0, null)" level="application" />
-    <orderEntry type="library" name="[gem] simple_autocomplete (v0.3.6, null)" level="application" />
   </component>
 </module>
 
