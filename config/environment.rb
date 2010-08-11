@@ -55,5 +55,10 @@ Rails::Initializer.run do |config|
 
   #require 'pdfkit'
   #config.middleware.use PDFKit::Middleware, :print_media_type => true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_charset = "utf-8"
+  
     
 end
