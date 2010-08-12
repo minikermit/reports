@@ -50,3 +50,15 @@ jQuery(document).ready(function() {
 jQuery(document).ready(function() {
   $("#tabs").tabs();
 });
+
+// Jquery effects
+
+   function AppearEffect(element){
+       new Effect.toggle(element, 'Appear', {duration:2});
+   }
+   function BUDEffect(element){
+       new Effect.toggle(element,'Blind', {duration:2});
+   }
+   function SUDEffect(element){
+       new Effect.toggle(element,'Slide', {duration:2});
+   }

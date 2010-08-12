@@ -2,9 +2,338 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="53cdd2aa-28b7-454f-9c55-184ed1007fdc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fdbtabs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/fdbtabs/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fdbtabs/show.html.erb" afterPath="$PROJECT_DIR$/app/views/fdbtabs/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-music-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-music-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/web-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-icon-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout3-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-icon3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/sitemap-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-page-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/up-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/speaker-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/upload-page-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-cart-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-folder-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-page-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-item-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-user-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/master-card.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/web-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/music-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/printer-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/down-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-item-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/up-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/music-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-comment-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-music-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout3-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-contact-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-page-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-comment-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-icon4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-login-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-open-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/quicktime-movie-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-comment-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/text-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout2-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/printer-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-item-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-page-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout2-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/up-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-login-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/american-express.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/sitemap-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/omit-page-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/printer-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-open-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/sitemap-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/printer-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-comment-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-folder-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/omit-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/check-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/indesign-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/photoshop-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout3-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/left-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-item-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-comment-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/lock-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/speaker-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/down-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/folder-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/lock-page-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-regular.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-page-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-page-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-item-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-music-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-icon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-item-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/vote-user-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/illustrator-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-folder-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-user-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-bag-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/omit-page-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/left-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-folder-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/right-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/exe-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-login-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-group4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-user-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-user-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/lock-page-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/omit-page-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/vote-user-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/printer-pearl.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/printer-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-popular-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/vote-user-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/music-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/excel-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/vote-user-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/check-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/web-page-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-folder-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/down-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout2-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-folder-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-cart-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-popular-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-page-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/folder-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/.idea/iconmini.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-folder-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-bag-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/stats3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-icon2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-item-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-comment-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-item-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/mp3-music-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/right-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-open-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/right-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-comment-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/folder-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-open-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-user-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-comment-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-cart-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/right-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-user-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-comment-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/music-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-open-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-bag-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-item-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-user-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-user-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-favorite-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout2-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/vote-user-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-cart-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout2-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-comment-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/up-purple.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/speaker-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-bag-orange.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/popular.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/visa.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/sitemap-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-page-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/folder-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-icon-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/check-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/flash-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-bg-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/ms-word.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-cart-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/vote-user-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-favorite-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-group.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-page-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/music-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/upload-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-popular-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/left-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/restrict-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/window-media-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout3-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/left-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/left-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-group2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-item-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-page-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-folder-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/printer-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-cart-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-contact-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-icon-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/sitemap-pink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/upload-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-user-blue.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/sitemap-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/restrict-page-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-comment-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-comment-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/pdf.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/favorite.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/upload-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/upload-page-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/web-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/up-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/down-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-folder-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout2-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/upload-page-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-user-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-music-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/up-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-comment-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/speaker-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/omit-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-contact-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/left-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-comment-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/restrict-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/down-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-popular-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/lock-page-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/folder-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-folder-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-user-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/right-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-user-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-login-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/check-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-comment-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-contact-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-item-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-popular-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-icon-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-comment-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/printer-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-page-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/sitemap-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-icon-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/stats5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-comment-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout3-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-folder-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/download-music-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/restrict-page-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/lock-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-folder-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-comment-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/speaker-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-folder-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/restrict-page-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout2-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-folder-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/omit-page-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-open-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/search-icon-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-page-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/music-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/zip-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-login-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/dreamweaver-file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-folder-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-favorite-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-comment-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-page-grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-comment-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/stats4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-favorite-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-icon5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-folder-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-group3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-folder-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/user-login-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/shopping-cart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-folder-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/web-page-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/stats2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/stats1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/down-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-comment-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/speaker-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/restrict-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-favorite-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout3-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-open-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/remove-item-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/check-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-contact-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-open-regular.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-page-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/upload-page-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/right-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout3-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/lock-page-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-page-orange.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/checkout-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/home-icon6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/email-contact-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-page-yellow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/edit-comment-green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/folder-purple.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/delete-page-blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconmini/add-comment-green.gif" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="reports.iws" />
@@ -28,10 +357,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/fdbtabs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="9" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.33136094">
+            <state line="46" column="9" selection-start="1237" selection-end="1237" vertical-scroll-proportion="-10.787234">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../myapp/current/finapp/public/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="0" selection-end="435" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="17" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.48">
               <folding />
             </state>
           </provider>
@@ -47,7 +394,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20100803235732_create_validationrules.rb" />
         <option value="$PROJECT_DIR$/../myapp/current/finapp/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100803235733_create_assignments.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100803235734_create_fdbtabs.rb" />
@@ -59,10 +405,11 @@
         <option value="$PROJECT_DIR$/app/views/account_plans/live_search.html.erb" />
         <option value="$PROJECT_DIR$/app/views/account_plans/_list.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/account_plans_controller.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/account_plans/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/fdbtabs/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/fdbtabs/index.html.erb" />
+        <option value="$PROJECT_DIR$/../myapp/current/finapp/public/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -129,11 +476,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -147,29 +490,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fdbtabs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -182,7 +507,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myapp/current/finapp/db" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myapp/current/finapp/public/javascripts" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -558,11 +883,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/validationrules_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="118" selection-end="118" vertical-scroll-proportion="0.15306123" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_menubar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="0" selection-start="4808" selection-end="4808" vertical-scroll-proportion="0.7972973" />
@@ -616,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.76">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/account_plans_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="5" selection-start="2388" selection-end="2388" vertical-scroll-proportion="0.64">
@@ -653,7 +966,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fdbtabs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="9" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.33136094">
+        <state line="46" column="9" selection-start="1237" selection-end="1237" vertical-scroll-proportion="-10.787234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myapp/current/finapp/public/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="0" selection-end="435" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="17" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.48">
           <folding />
         </state>
       </provider>
