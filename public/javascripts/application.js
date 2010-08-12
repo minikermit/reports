@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
   $("select[class*=flexselect]").flexselect();
 });
 
-// Jquery : flexselect plugin
+// Jquery : tabs
 jQuery(document).ready(function() {
   $("#tabs").tabs();
 });
