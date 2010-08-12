@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="53cdd2aa-28b7-454f-9c55-184ed1007fdc" name="Default" comment="" />
+    <list default="true" readonly="true" id="53cdd2aa-28b7-454f-9c55-184ed1007fdc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fdbtabs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/fdbtabs/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fdbtabs/show.html.erb" afterPath="$PROJECT_DIR$/app/views/fdbtabs/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="reports.iws" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +27,17 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/fdbtabs/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="9" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.33136094">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -33,7 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/notifier.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100803235732_create_validationrules.rb" />
         <option value="$PROJECT_DIR$/../myapp/current/finapp/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100803235733_create_assignments.rb" />
@@ -42,13 +55,14 @@
         <option value="$PROJECT_DIR$/app/controllers/fdbtabs_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/fdbtab.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_menubar.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/fdbtabs/index.html.erb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/views/account_plans/live_search.html.erb" />
         <option value="$PROJECT_DIR$/app/views/account_plans/_list.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/account_plans_controller.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/account_plans/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/fdbtabs/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/fdbtabs/index.html.erb" />
       </list>
     </option>
   </component>
@@ -102,6 +116,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="finance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fdbtabs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -529,11 +583,6 @@
         <state line="14" column="2" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/fdbtabs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="1" selection-start="2492" selection-end="2497" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reports/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="0" selection-start="1749" selection-end="1767" vertical-scroll-proportion="-6.1363635" />
@@ -574,16 +623,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account_plans/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/account_plans_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="138" selection-start="858" selection-end="858" vertical-scroll-proportion="0.44378698">
+        <state line="86" column="5" selection-start="2388" selection-end="2388" vertical-scroll-proportion="0.64">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/account_plans_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/account_plans/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="5" selection-start="2388" selection-end="2388" vertical-scroll-proportion="0.64">
+        <state line="57" column="24" selection-start="0" selection-end="1272" vertical-scroll-proportion="-2.4042554">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account_plans/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="0" selection-end="273" vertical-scroll-proportion="-0.31914893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/fdbtabs/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="59" selection-start="233" selection-end="233" vertical-scroll-proportion="0.21246459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/fdbtabs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="9" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.33136094">
           <folding />
         </state>
       </provider>

@@ -1,39 +1,90 @@
-<Div id = 'show'>
+<!-- This is the breadcrumb part -->
+<% content_for :breadcrumb do %>
+    <ul id="crumbs">
+      <li><a href="/">Homes</a></li>
+      <li><a href="#">Olympic tables</a></li>
+      <li><%= link_to  "Nomenclature" , fdbtab_path %></li>    
+      <li>You are on looking at an element of nomenclature</li>
+     </ul>
+<br/>
+<% end %>
 
-<fieldset id="Nomenclature">
- <legend> Nomenclature </legend>
+<% content_for :article1 do %>
 
-<p>
-  <b>Table:</b>
-  <%=h @fdbtab.TBID %>
-</p>
+<h2 class="art-postheader">
+  Showing nomenclature
+</h2>
 
-<p>
-  <b>Code:</b>
-  <%=h @fdbtab.TBCODE %>
-</p>
+<div class="art-postcontent">
+    <!-- article-content -->
 
-<p>
-  <b> Description 1:</b>
-  <%=h @fdbtab.TBDES1 %>
-</p>
+  <fieldset id="Nomenclature">
+   <legend> Nomenclature </legend>
 
-<p>
-  <b> Description 2:</b>
-  <%=h @fdbtab.TBDES2 %>
-</p>
+  <p>
+    <b>Table:</b>
+    <%=h @fdbtab.TBID %>
+  </p>
 
-<p>
-  <b> Description 3:</b>
-  <%=h @fdbtab.TBDES3 %>
-</p>
+  <p>
+    <b>Code:</b>
+    <%=h @fdbtab.TBCODE %>
+  </p>
 
-<p>
-  <b> Description 4:</b>
-  <%=h @fdbtab.TBDES4 %>
-</p>
+  <p>
+    <b> Description 1:</b>
+    <%=h @fdbtab.TBDES1 %>
+  </p>
 
-</fieldset>
+  <p>
+    <b> Description 2:</b>
+    <%=h @fdbtab.TBDES2 %>
+  </p>
+
+  <p>
+    <b> Description 3:</b>
+    <%=h @fdbtab.TBDES3 %>
+  </p>
+
+  <p>
+    <b> Description 4:</b>
+    <%=h @fdbtab.TBDES4 %>
+  </p>
+
+  </fieldset>
 
 <%= link_to 'Edit', edit_fdbtab_path(@fdbtab) %> |
 <%= link_to 'Back', fdbtabs_path %>
+
+        <blockquote>
+            <p>
+                &#8220;This stylesheet is going to help so freaking much.&#8221;
+                <br />
+                -Blockquote
+            </p>
+        </blockquote>
+      <br />
+
+    <!-- /article-content -->
+</div>
+
+
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
