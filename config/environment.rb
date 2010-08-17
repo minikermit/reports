@@ -25,6 +25,10 @@ Rails::Initializer.run do |config|
   config.gem "haml"
   config.gem "acts_as_list"
   config.gem "acts_as_tree"
+  config.gem "fastercsv"
+  config.gem "comma"
+  
+  
   #	 config.gem "pdfkit"
   
 

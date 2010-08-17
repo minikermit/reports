@@ -1,16 +1,18 @@
 class Fdbtab < ActiveRecord::Base
 	# set_table_name "FIMIS_TA_SRC_OLY_0_Nomenclatures_FDBTAB"
-	
+
+#require 'comma'
+
 # ===============
 # = CSV support =
 # ===============
-# comma do # implicitly named :default
+  comma do |fdbtab| # implicitly named :default
+    fdbtab.id
+    fdbtab.TBID
+    fdbtab.TBCODE
+  end
 
-#TBID
-#TBCODE
-#TBDES1
 
-#end
 
 end
 
