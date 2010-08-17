@@ -51,9 +51,18 @@ jQuery(document).ready(function() {
   $("#tabs").tabs();
 });
 
-// Jquery effects
+// Jquery effects (slide tab in or out).
 
-   function AppearEffect(element){
+$('#clickme').click(function() {
+  $('#show_search').slideToggle('slow', function() {
+    // Animation complete.
+  });
+});
+
+
+
+
+/*   function AppearEffect(element){
        new Effect.toggle(element, 'Appear', {duration:2});
    }
    function BUDEffect(element){
@@ -61,4 +70,4 @@ jQuery(document).ready(function() {
    }
    function SUDEffect(element){
        new Effect.toggle(element,'Slide', {duration:2});
-   }
+   } */

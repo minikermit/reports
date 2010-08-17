@@ -22,13 +22,16 @@
 
 <br/>
 
-        <a href="#" onclick="AppearEffect('show_search')" class ='a'>
+
+
+    <div id="clickme">
+        <a href="#" class ='a'>
             <span class="ss_sprite ss_add">
                          <img src="/images/iconmini/search-icon-blue.gif" />
              </span>
         </a>
-
-
+    </div>
+        
 <p>Sort by <%= order @search, :by => :TBID %> | <%= order @search, :by => :TBCODE %> | <%= order @search, :by => :TBDES1 %></p>
 
 <br />
@@ -87,6 +90,9 @@
 </div>
 
 </div>
+
+<br />
+
 
 <table id="rounded-corner" summary="Nomenclature table from Olympic" >
   <thead>
