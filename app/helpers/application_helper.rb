@@ -19,4 +19,10 @@ module ApplicationHelper
 	#	content_for(:head) {stylesheet_link_tag(*args) }
 	#end  
 
+    def default_text(text)
+      onClickFunction = "field = event.target; if (field.value=='#{text}') {field.value = '';}else {return false}"
+      onBlurFunction = "field = event.target; if (field.value=='') {field.value = '#{text}';}else {return false}"
+          {:value => text, :onclick => onClickFunction, :onblur => onBlurFunction}
+    end
+
 end
