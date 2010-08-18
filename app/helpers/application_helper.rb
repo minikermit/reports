@@ -20,9 +20,9 @@ module ApplicationHelper
 	#end  
 
     def default_text(text)
-      onClickFunction = "field = event.target; if (field.value=='#{text}') {field.value = '';}else {return false}"
-      onBlurFunction = "field = event.target; if (field.value=='') {field.value = '#{text}';}else {return false}"
-          {:value => text, :onclick => onClickFunction, :onblur => onBlurFunction}
+      on_click_function = "field = event.target; if (field.value=='#{text}') {field.value = '';}else {return false}"
+      on_blur_function = "field = event.target; if (field.value=='') {field.value = '#{text}';}else {return false}"
+          {:value => text, :onclick => on_click_function, :onblur => on_blur_function}
     end
 
 end
