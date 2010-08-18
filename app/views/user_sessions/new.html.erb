@@ -5,7 +5,7 @@
     <% form_for @user_session, :url => user_sessions_path do |f| %>
       <%= f.error_messages %>
       <%= f.label :login %><br />
-      <!--%= text_field_tag 'login', @login , default_text("Login")%-->
+      <%= text_field_tag 'login2', default_text("Login")%>
       <%= f.text_field :login %><br />
       <br />
       <%= f.label :password %><br />
