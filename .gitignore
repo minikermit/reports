@@ -1,7 +1,10 @@
 **/*/log/*
 **/*/tmp/*
-*.sqlite3
+db/*.sqlite3
 .bundle
 rdoc/*
 config/database.yml
 .idea/*
+doc/*
+log/*
+
