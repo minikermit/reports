@@ -16,4 +16,12 @@
 #                  :content => "Welcome to my blog! I hope you enjoy it!",
 #                  :author => User.find_by_name("Chuck Wood"))
 
+
+#require ‘FasterCSV’
+
+#FasterCSV.foreach(”#{RAILS_ROOT}/db/seed/data.csv” , :headers=>true) do |row|
+#print “Created #{row}” if TargetSelector.create_if_notexist(Hash.new.replace row)
+#end
+
+
 end
