@@ -12,6 +12,10 @@ class User < ActiveRecord::Base
  validates_presence_of :name, :shortname , :email, :login
  validates_associated :tasklists
 
+ named_scope :limit, lambda { |limit| {:limit => limit}}
+ named_scope :search_for_name, lambda { |term| {:conditions => ['lower(name) LIKE ?', "%#{term.downcase}%"]}}
+  
+
 end
 
 

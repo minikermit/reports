@@ -20,7 +20,7 @@ Rails::Initializer.run do |config|
   # config.gem 'simple_autocomplete'
   config.gem "annotate"
   config.gem "ancestry"
-  config.gem "mislav-will_paginate", :lib => 'will_paginate', :source => 'http://gemcutter.org', :version => '~>  2.3.11'
+  config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'  
   config.gem "mail"
   config.gem "haml"
   config.gem "acts_as_list"

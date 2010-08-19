@@ -59,6 +59,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :fdbtabs
   map.resources :fdbclis
 
+  map.resources :autocomplete_searches, :only => [:index], :as => 'autocomplete'
 
   # The priority is based upon order of creation: first created -> highest priority.
 
