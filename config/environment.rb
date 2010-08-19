@@ -17,17 +17,19 @@ Rails::Initializer.run do |config|
   # Specify gems that this application depends on and have them installed with rake gems:install
   config.gem 'authlogic', :source => "http://gemcutter.org"
   config.gem 'searchlogic', :source => "http://gemcutter.org"
-  config.gem 'simple_autocomplete'
+  # config.gem 'simple_autocomplete'
   config.gem "annotate"
   config.gem "ancestry"
-  config.gem "mislav-will_paginate", :lib => 'will_paginate', :source => 'http://gems.github.com', :version => '~>  2.3.11'
+  config.gem "mislav-will_paginate", :lib => 'will_paginate', :source => 'http://gemcutter.org', :version => '~>  2.3.11'
   config.gem "mail"
   config.gem "haml"
   config.gem "acts_as_list"
   config.gem "acts_as_tree"
   config.gem "fastercsv"
   config.gem "comma"
-  
+
+  # config,gem "ruby-odbc"
+  #	config.gem "activerecord-sqlserver-adapter-2.3.8"      #only activate for production<
   
   #	 config.gem "pdfkit"
   
