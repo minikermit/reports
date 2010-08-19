@@ -27,6 +27,7 @@ class TasklistsController < ApplicationController
     @users = User.find(:all)
     @projects = Project.find(:all)
     @tasklist = Tasklist.new(params[:tasklist])
+    #Tasklist.user_id = current_user.id
     if @tasklist.save
       flash[:notice] = "Successfully created task."
       redirect_to @tasklist
@@ -44,6 +45,7 @@ class TasklistsController < ApplicationController
     @users = User.find(:all)
     @projects = Project.find(:all)
     @tasklist = Tasklist.find(params[:id])
+    #Tasklist.user_id = current_user.id
     if @tasklist.update_attributes(params[:tasklist])
       flash[:notice] = "Successfully updated task."
       redirect_to @tasklist
