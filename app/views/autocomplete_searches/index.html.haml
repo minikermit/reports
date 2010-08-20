@@ -1,0 +1,5 @@
+
+- data = []
+- @users.each do |p|
+  - data << {:label => "#{h(p.name)}", :value => "#{h(p.name)}" }
+= data.to_json

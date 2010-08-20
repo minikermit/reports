@@ -230,6 +230,7 @@
  <%= javascript_include_tag 'application' %>
  <%= javascript_tag "var AUTH_TOKEN =  #{form_authenticity_token.inspect};" if protect_against_forgery? %>
  <%= javascript_include_tag 'script' %>
+ <%= javascript_include_tag 'autocomplete' %>
  <%= yield(:myjavascript) || render(:partial => '/shared/livefilter') %>
 
  <!--%= yield :myjavascript %-->

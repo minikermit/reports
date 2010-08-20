@@ -1,6 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :roles
-
 
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
@@ -8,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resource :user_sessions
   map.root :controller => "user_sessions", :action => "new"
+  map.resources :roles
 
   map.resources :report_categories
   map.resources :report_categories, :collection => { :prioritize_reports => :post }
@@ -17,7 +16,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :report_lines
   map.resources :account_plans
-  map.resources :account_plans, :collection => { :autocomplete_for_account_plan_account_id => :get}
+ # map.resources :account_plans, :collection => { :autocomplete_for_account_plan_account_id => :get}
   
   map.resources :menus
   map.resources :projects
@@ -60,6 +59,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :fdbclis
 
   map.resources :autocomplete_searches, :only => [:index], :as => 'autocomplete'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
 

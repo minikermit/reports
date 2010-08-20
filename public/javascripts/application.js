@@ -4,7 +4,7 @@
 // and therefore properly respond to js requests (via respond_to block, for example)
 jQuery.ajaxSetup({
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
-})
+});
 
 jQuery(document).ready(function() {
 
@@ -60,6 +60,7 @@ $('#clickme').click(function() {
 });
 
 
+   
 
 
 /*   function AppearEffect(element){
