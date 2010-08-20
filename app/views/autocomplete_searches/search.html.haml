@@ -1,4 +1,4 @@
 - form_tag '/search', :method => 'get', :id => 'search_form', :class => 'search' do
     %p
-        = text_field_tag :term, params[:term], :class => "auto_search_complete"
-        = submit_tag "search", :name => nil, :class => 'button', :id => "search_btn"
+= text_field_tag :term, params[:term], :class => "auto_search_complete"
+= submit_tag "search", :name => nil, :class => 'button', :id => "search_btn"

@@ -226,11 +226,11 @@
 
 <!-- This is the javascript part -->
  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js",:cache => true %>
- <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js",:cache => true %>
+ <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js",:cache => true %>
  <%= javascript_include_tag 'application' %>
  <%= javascript_tag "var AUTH_TOKEN =  #{form_authenticity_token.inspect};" if protect_against_forgery? %>
  <%= javascript_include_tag 'script' %>
- <%= javascript_include_tag 'autocomplete' %>
+ <!--%= javascript_include_tag 'autocomplete' %-->
  <%= yield(:myjavascript) || render(:partial => '/shared/livefilter') %>
 
  <!--%= yield :myjavascript %-->

@@ -1,10 +1,10 @@
 class AutocompleteSearchesController < ApplicationController
-  def Index
+  def index
 
-    @users = User.limit(10).search_for_name(params[:term])
+    @users = User.limit(15).search_for_name(params[:term])
 
     respond_to do |format|
-      format.js   
+      format.js   { render :layout => false } 
     end
   end
 
