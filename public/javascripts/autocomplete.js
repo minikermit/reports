@@ -14,6 +14,6 @@
 });  */
    
 $(".auto_search_complete").autocomplete({
-    source: "autocomplete.js",
+    source: "/autocomplete.js",
     minLength: 3
 });
