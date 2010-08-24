@@ -20,7 +20,7 @@
   </p>
   <p>
     <%= f.label :assigned_to %><br />
-    <%= collection_select(:tasklist, :user_id, @users, :id, :shortname, {:prompt => true}) %>
+    <%= collection_select(:tasklist, :assigned_to, @users, :id, :shortname, {:prompt => true}) %>
   </p>
   <p>
     <%= f.label :description %><br />

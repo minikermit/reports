@@ -4,6 +4,7 @@ belongs_to :user
 belongs_to :role
 
 end
+
 # == Schema Information
 #
 # Table name: assignments

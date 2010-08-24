@@ -1,10 +1,13 @@
 **/*/log/*
 **/*/tmp/*
 db/*.sqlite3
+*.sqlite3
 .bundle
 rdoc/*
 config/database.yml
 .idea/*
 doc/*
 log/*
-
+config/deploy
+db/schema.rb
+config/initializers/action_mailer_settings.rb

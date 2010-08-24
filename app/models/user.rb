@@ -8,13 +8,23 @@ class User < ActiveRecord::Base
  
  has_many :tasklists, :dependent => :destroy
  has_many :comments
+ has_many :assignments
+ has_many :roles, :through => :assignments
  
  validates_presence_of :name, :shortname , :email, :login
  validates_associated :tasklists
+ validates_length_of :login, :within => 3..40
+ validates_uniqueness_of :login
 
  named_scope :limit, lambda { |limit| {:limit => limit}}
  named_scope :search_for_name, lambda { |term| {:conditions => ['lower(name) LIKE ?', "%#{term.downcase}%"]}}
-  
+
+ def role_symbols
+  roles.map do |role|
+    role.name.underscore.to_sym
+  end
+ end
+
 
 end
 

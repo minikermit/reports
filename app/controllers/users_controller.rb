@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   
   before_filter :require_no_user, :only => [:new, :create]
-  # before_filter :require_user, :only => [:show, :edit, :update]
+  before_filter :require_user, :only => [:show, :edit, :update]
 
   def new
     @user = User.new
@@ -29,6 +29,7 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
+    @roles = current_user.roles.find(:all)
   end
 
   def edit

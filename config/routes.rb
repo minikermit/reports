@@ -16,8 +16,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :report_lines
   map.resources :account_plans
- # map.resources :account_plans, :collection => { :autocomplete_for_account_plan_account_id => :get}
-  
+
   map.resources :menus
   map.resources :projects
   map.resources :tasklists , :has_many => [ :comments ]

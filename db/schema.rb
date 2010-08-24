@@ -245,6 +245,7 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "assigned_to"
   end
 
   add_index "tasklists", ["project_id"], :name => "index_tasklists_on_project_id"
