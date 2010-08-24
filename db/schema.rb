@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.integer "user_id"
   end
 
+  add_index "assignments", ["user_id", "role_id"], :name => "by_user_and_role", :unique => true
+
   create_table "client_security_positions", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"

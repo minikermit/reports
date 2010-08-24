@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
-    @roles = current_user.roles.find(:all)
+    # @roles = current_user.roles.find(:all)
   end
 
   def edit

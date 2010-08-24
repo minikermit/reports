@@ -61,11 +61,12 @@
     <th>Scope</th>
     <th>Genre</th>
     <th>Project</th>
-    <th><%= image_tag("icons/user_suit.png") %> User</th>
+    <th><%= image_tag("icons/user_suit.png") %> Assigned to</th>
     <th><%= image_tag("icons/calendar.png") %> Due Date</th>
     <th>Status</th>
     <th>Priority</th>
     <th><%= image_tag("icons/calendar.png") %> Creation Date</th>
+    <th><%= image_tag("icons/user_suit.png") %> User</th>
 
 
   </tr>
@@ -83,7 +84,7 @@
       <td><%=h tasklist.scope %></td>
       <td><%=h tasklist.genre %></td>  
       <td><%=h tasklist.project.title %></td>
-      <td><%=h tasklist.user.shortname %></td>
+      <td><%=h tasklist.assigned_to %></td>
       <td><%=h tasklist.due_date.strftime(" %d/%m/%Y ") %></td>
       <td><%=h tasklist.status %></td>
       <td>
@@ -103,7 +104,7 @@
       <%=h tasklist.priority %>
       </td>
       <td><%=h tasklist.created_at.strftime(" %d/%m/%Y ") %></td>
-
+      <td><%=h tasklist.user.shortname %></td>
 
     </tr>
   <% end %>

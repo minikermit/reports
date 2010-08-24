@@ -12,7 +12,7 @@ class Tasklist < ActiveRecord::Base
 
   named_scope :recent,    lambda { |*date| {:conditions => { :created_at => date.first || 1.month.ago } } }
   named_scope :before,    lambda{ |date| { :conditions => ['created_at > ?',  date] } }
-  named_scope :mytasks,   :conditions => ['tasklist.assigned_to = ?', current_user.id]
+ # named_scope :mytasks,   :conditions => ['tasklist.assigned_to = ?', current_user.id]
   named_scope :basel2,    :conditions => "tasklist.project.name = 'Basel II' "
   named_scope :unassigned,    :conditions => "assigned_to is null"
 
