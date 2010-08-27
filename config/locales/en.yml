@@ -3,3 +3,11 @@
 
 en:
   hello: "Hello world"
+
+  layout:
+    title: "Finance application"
+
+  fdbtabs:
+    index:
+      header: "Listing Nomenclature items"
+      sort:   "Sort by"

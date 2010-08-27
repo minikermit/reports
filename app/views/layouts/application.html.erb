@@ -3,11 +3,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <title><%= h(yield(:title) || "Finance Application") %></title>
+    <title><%= h(yield(:title) || I18n.t('layout.title')) %></title>
 
     <!--[if IE 6]><link rel="stylesheet" href="/stylesheets/style.ie6.css" type="text/css" media="screen" /><![endif]-->
     <!--[if IE 7]><link rel="stylesheet" href="/stylesheets/style.ie7.css" type="text/css" media="screen" /><![endif]-->
-    <%= stylesheet_link_tag 'style','breadcrumb','jquerytabs' %>
+    <%= stylesheet_link_tag 'style','breadcrumb','jquerytabs','custom' %>
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
 
@@ -38,6 +38,10 @@
                 </div>
                 <%= yield(:menu) || render(:partial => '/shared/menubar') %>
                 <%= yield(:breadcrumb) || render(:partial => '/shared/defaultbreadcrumb') %>
+
+
+                       
+
                 <div class="art-content-layout">
                     <div class="art-content-layout-row">
                         <div class="art-layout-cell art-content">

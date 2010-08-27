@@ -1,4 +1,13 @@
 <ul id="crumbs">
  <li><a href="/">Homes</a></li>
  <li>You are looking at a default breadcrumb for the homepage</li>
-</ul>
+
+
+                <% form_tag '', :method => 'GET', :class => 'locale' do %>
+                  <%= select_tag 'locale', options_for_select(LANGUAGES, I18n.locale),
+                                  :onchange => 'this.form.submit()' %>
+                  <!--%= submit_tag 'submit' %-->
+                  <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
+                <% end %>
+
+</ul>    

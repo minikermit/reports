@@ -11,7 +11,7 @@
 <% content_for :article1 do %>
 
 <h2 class="art-postheader">
-  Listing Nomenclature items
+  <%= I18n.t 'fdbtabs.index.header' %>
 </h2>
 
 <div class="art-postcontent">
@@ -32,7 +32,7 @@
         </a>
     </div>
         
-<p>Sort by <%= order @search, :by => :TBID %> | <%= order @search, :by => :TBCODE %> | <%= order @search, :by => :TBDES1 %></p>
+<p>  <%= I18n.t 'fdbtabs.index.sort' %> <%= order @search, :by => :TBID %> | <%= order @search, :by => :TBCODE %> | <%= order @search, :by => :TBDES1 %></p>
 
 <br />
 
