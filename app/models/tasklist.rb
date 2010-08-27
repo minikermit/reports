@@ -38,6 +38,16 @@ class Tasklist < ActiveRecord::Base
                        8 => 'To test'}
 
 
+  GENRE_NAMES = {      "1" => 'Production',
+                       "2" => 'New Feature',
+                       "3" => 'New Control',
+                       "4" => 'Bug',
+                       "5" => 'Nice to have',
+                       "6" => 'New Specifications',
+                       "7" => 'Enhancements',
+                       "8" => 'Other'}
+
+
   def priority_name
     PRIORITY_NAMES[self.priority]
   end
@@ -46,6 +56,11 @@ class Tasklist < ActiveRecord::Base
     STATUS_NAMES[self.status]
   end
 
+  def genre_name
+      GENRE_NAMES[self.genre]
+  end
+
+
   # moves hash to an array for select box
   def self.priority_name_options
     PRIORITY_NAMES.to_a.sort
@@ -53,6 +68,10 @@ class Tasklist < ActiveRecord::Base
 
   def self.status_name_options
     STATUS_NAMES.to_a.sort
+  end
+
+  def self.genre_name_options
+    GENRE_NAMES.to_a.sort
   end
 
 end

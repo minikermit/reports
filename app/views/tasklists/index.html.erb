@@ -8,16 +8,23 @@
             We're also adding the RSS feed url to the checkbox value so we can save it in the array values
         -->
   <ul>
-    <li> <%= f.label :priority_equals, "Priority " %>  <%= f.label :status_equals," &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status " %> <%= f.label :project_id_equals," &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project " %></li>
-    <li> <%= f.select :priority_equals, (["","Low","Medium","High","Urgent"]) %>
-         <%= f.select :status_equals, (["","To start","In progress","Done","Discarded","Reopened","To review"]), :class=> 'flexselect' %>   
-         <%= f.select :project_id_equals, (["","1","2","3","4","5","6"]) %></li>
+    <li> <%= f.label :priority_equals, "Priority " %>  <%= f.label :status_equals," &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status " %> <%= f.label :project_id_equals," &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project " %></li>
+    <li> <!--%= f.select :priority_equals, (["","Low","Medium","High","Urgent"]) %-->
+         <%= f.collection_select :priority_equals, Tasklist.priority_name_options, :first, :last, {:include_blank => 'All'},{:selected => 'All'}  %>
+         <!--%= f.select :status_equals, (["","To start","In progress","Done","Discarded","Reopened","To review"]), :class=> 'flexselect' %-->
+         <%= f.collection_select :status_equals, Tasklist.status_name_options, :first, :last,  {:include_blank => 'All'}, {:selected => 'All' } %>
+         <!--%= f.select :project_id_equals, ([1,2,3,4,5,6]) %></li-->
+         <%= f.collection_select :project_id_equals, Project.all, :id, :title,  {:include_blank => 'All'}, {:selected => 'All' } %>
+    </li>             
+
     <li> <%= f.label :name_like, "Name " %> </li>
     <li> <%= f.text_field :name_like, :class => 'text' %></li>
     <li> <%= f.label :scope_like, "Scope " %> </li>
     <li> <%= f.text_field :scope_like, :class => 'text' %></li>
-    <li> <%= f.label :genre_like, "Genre " %> </li>
-    <li> <%= f.text_field :genre_like, :class => 'text' %></li>
+    <li> <%= f.label :genre_equakls, "Genre " %> </li>
+    <li> <!--%= f.text_field :genre_like, :class => 'text' %></li-->
+         <%= f.collection_select :genre_equals, Tasklist.genre_name_options, :first, :last,  {:include_blank => 'All'}, {:selected => 'All' } %>
+    </li>
     <li> <%= f.label :user_id_equals, "Assigned to user" %> </li>
     <li> <%= f.text_field :user_id_equals, :class => 'text' %></li>
     <li> <%= f.label :unassigned, "Not assigned to anyone" %> </li>
@@ -84,11 +91,11 @@
       <td><%=h tasklist.name %></td>
       <td><%= link_to image_tag("icons/add.png"), tasklist %></td>
       <td><%=h tasklist.scope %></td>
-      <td><%=h tasklist.genre %></td>  
+      <td><%=h tasklist.genre_name %></td>  
       <td><%=h tasklist.project.title %></td>
       <td><%=h tasklist.assigned_to %></td>
       <td><%=h tasklist.due_date.strftime(" %d/%m/%Y ") %></td>
-      <td><%=h tasklist.status %></td>
+      <td><%=h tasklist.status_name %></td>
       <td>
 
        <% case tasklist.priority

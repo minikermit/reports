@@ -11,16 +11,19 @@
   <p>
     <%= f.label :genre %><br />
     <!--%= select_tag("tasklist[genre]", options_for_select(["Please select","Production","New Feature","New Control","Bug","Nice to have","New Specifications","Enhancements","Other"], :disabled => "Please select")) %-->
-    <%= select_tag :genre , options_for_tasklist_genre(params[:genre]) %>
+    <!--%= select_tag :genre , options_for_tasklist_genre(params[:genre]) %-->
+    <%= f.collection_select(:genre, Tasklist.genre_name_options, :first, :last) %>
   </p>
   <p>
     <%= f.label :project %><br />
-    <%= collection_select(:tasklist,:project_id, @projects , :id, :title, {:prompt => true} ) %>
-        
+    <%= f.collection_select(:project_id, Project.all, :id, :title,  {:prompt => true}) %>
+
   </p>
   <p>
     <%= f.label :assigned_to %><br />
-    <%= collection_select(:tasklist, :assigned_to, @users, :id, :shortname, {:prompt => true}) %>
+    <%= f.text_field :assigned_to %><br />
+
+    <!--%= collection_select(:assigned_to, User.all, :id, :shortname, {:prompt => true}) %-->
   </p>
   <p>
     <%= f.label :description %><br />
@@ -34,7 +37,7 @@
   <p>
     <%= f.label :priority %><br />
     <!--%= select_tag("tasklist[priority]", options_for_select(["Please select","Low","Medium","High","Urgent"], :disabled => "Please select")) %-->
-    <%= f.collection_select :priority, Tasklist.priority_name_options, :first, :last %>
+    <%= f.collection_select(:priority, Tasklist.priority_name_options, :first, :last) %>
     <!--%= select_tag("tasklist[priority]", options_for_select(["Please select","Low","Medium","High","Urgent"], :disabled => "Please select")) %-->
   </p>
 
@@ -42,7 +45,7 @@
     <%= f.label :status %><br />
     <!--%= select_tag("tasklist[status]", options_for_select(["Please select","To start","In progress","Done","Discarded","Reopened","To review"], :disabled => "Please select")) %-->
     <!--%= select_tag :status , options_for_tasklist_status(params[:status]) %-->
-    <%= f.collection_select :status, Tasklist.status_name_options, :first, :last %>
+    <%= f.collection_select(:status, Tasklist.status_name_options, :first, :last) %>
   </p>
 <p><%= f.submit "Submit" %></p>
 <% end %>

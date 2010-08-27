@@ -3,10 +3,11 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  protect_from_forgery :secret => '1a8a9d752ff7af3a9d8e5bbdfdaa3fd43cfe1e4d96fb04bacdaf42b3d997a090bd3cf4c08e6424b779e678a685ddb54efd5db31e2c33acaaa4ea50ced812b110'
+  # See ActionController::RequestForgeryProtection for details
 
   # Scrub sensitive parameters from your log
-  filter_parameter_logging :password
+  #filter_parameter_logging :password # see below in the authlogic part !
 
   # i18n
   before_filter :set_locale
