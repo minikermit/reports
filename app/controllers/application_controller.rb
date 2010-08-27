@@ -50,5 +50,12 @@ class ApplicationController < ActionController::Base
        redirect_to(session[:return_to] || default)
        session[:return_to] = nil
      end
+
+    # Fetch current user in model
+
+     def set_current_user
+        User.current = current_user
+     end
+
  end
 

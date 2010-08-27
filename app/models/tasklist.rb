@@ -10,15 +10,50 @@ class Tasklist < ActiveRecord::Base
 
   attr_accessible :name, :scope, :genre, :project_id, :description, :assigned_to, :due_date, :priority, :status, :user_id
 
-  named_scope :recent,    lambda { |*date| {:conditions => { :created_at => date.first || 1.month.ago } } }
-  named_scope :before,    lambda{ |date| { :conditions => ['created_at > ?',  date] } }
- # named_scope :mytasks,   :conditions => ['tasklist.assigned_to = ?', current_user.id]
-  named_scope :basel2,    :conditions => "tasklist.project.name = 'Basel II' "
+  named_scope :recent,    lambda { |date| {:conditions => ['created_at > ?', 1.month.ago ] } }
+  named_scope :before,    lambda{ |date| { :conditions => ['created_at < ?',  date] } }
+  named_scope :overdue,    lambda{ |date| { :conditions => ['due_date < ?',  Date.today.to_s] } }
+  named_scope :mytasks,   :conditions => ['tasklists.assigned_to = ?', User.current]
+  named_scope :mycreatedtasks,   :conditions => ['tasklists.user_id = ?', User.current]  
+  named_scope :basel2,    :conditions => "tasklists.project.name = 'Basel II' "
   named_scope :unassigned,    :conditions => "assigned_to is null"
-
   
   validates_presence_of :name, :scope, :due_date, :project_id, :assigned_to
   validates_uniqueness_of :name
+
+  # creates hash for nice names in view
+  PRIORITY_NAMES = { 1 => 'Very high',
+                     2 => 'High',
+                     3 => 'Medium',
+                     4 => 'Low',
+                     5 => 'Very Low'}
+
+  STATUS_NAMES = {     1 => 'To start',
+                       2 => 'To assign',
+                       3 => 'Work in progress',
+                       4 => 'Done',
+                       5 => 'Discarded',
+                       6 => 'Reopened',
+                       7 => 'To review',
+                       8 => 'To test'}
+
+
+  def priority_name
+    PRIORITY_NAMES[self.priority]
+  end
+
+  def status_name
+    STATUS_NAMES[self.status]
+  end
+
+  # moves hash to an array for select box
+  def self.priority_name_options
+    PRIORITY_NAMES.to_a.sort
+  end
+
+  def self.status_name_options
+    STATUS_NAMES.to_a.sort
+  end
 
 end
 

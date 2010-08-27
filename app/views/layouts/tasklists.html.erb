@@ -34,13 +34,13 @@
       <%- end -%>
 
         <ul id="navigation" class="navigation">
-            <li class="home"><a href="/tasklists?search[order]=descend_by_created_at&search[name_like]=&search[scope_like]=&search[priority_equals]=&search[status_does_not_equal]=Done&search[genre_like]=&commit=Search" title="Recent tasks"></a></li>
-            <li class="about"><a href="" title="Assigned to me"></a></li>
-            <li class="search"><a href="" title="Assigned by me"></a></li>
+            <li class="home"><a href="/tasklists?search[order]=ascend_by_due_date&search[recent]=1&commit=Search" title="Recent tasks"></a></li>
+            <li class="about"><a href="/tasklists?search[order]=ascend_by_due_date&search[mytasks]=1&commit=Search" title="Assigned to me"></a></li>
+            <li class="search"><a href="/tasklists??search[order]=ascend_by_due_date&search[mycreatedtasks]=1&commit=Search" title="Assigned by me"></a></li>
             <li class="photos"><a href="/tasklists?search[order]=ascend_by_due_date&search[name_like]=&search[scope_like]=&search[priority_equals]=&search[status_equals]=Done&search[genre_like]=&commit=Search" title="Closed tasks"></a></li>
             <li class="rssfeed"><a href="/tasklists?search[order]=ascend_by_due_date&search[name_like]=&search[scope_like]=&search[priority_equals]=&search[status_does_not_equal]=Done&search[genre_like]=&commit=Search" title="Open tasks"></a></li>
-            <li class="podcasts"><a href="" title="Overdue tasks"></a></li>
-            <li class="contact"><a href="" title="Help"></a></li>
+            <li class="podcasts"><a href="/tasklists?search[order]=ascend_by_due_date&search[unassigned]=1&commit=Search" title="Unassigned tasks"></a></li>
+            <li class="contact"><a href="/tasklists?search[order]=ascend_by_due_date&search[overdue]=1&commit=Search" title="Overdue tasks"></a></li>
         </ul>
 
 

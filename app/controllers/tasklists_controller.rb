@@ -1,6 +1,7 @@
 class TasklistsController < ApplicationController
 
   before_filter :require_user, :only => [:edit, :update]
+  before_filter :set_current_user
 
   def index
     @search = Tasklist.search(params[:search])

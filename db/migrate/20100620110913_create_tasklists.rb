@@ -7,9 +7,9 @@ class CreateTasklists < ActiveRecord::Migration
       t.integer :project_id
       t.integer :user_id 
       t.text :description
-      t.string :priority
+      t.integer :priority
       t.date :due_date
-      t.string :status
+      t.integer :status
       t.timestamps
     end
   end

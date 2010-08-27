@@ -20,6 +20,8 @@
     <li> <%= f.text_field :genre_like, :class => 'text' %></li>
     <li> <%= f.label :user_id_equals, "Assigned to user" %> </li>
     <li> <%= f.text_field :user_id_equals, :class => 'text' %></li>
+    <li> <%= f.label :unassigned, "Not assigned to anyone" %> </li>
+    <li> <%= f.check_box :unassigned %></li>
     <li>    <select class="flexselect">
                  <option value="1">George Washington</option>
                  <option value="2">John Adams</option>
@@ -90,18 +92,20 @@
       <td>
 
        <% case tasklist.priority
-            when "Low" %>
+          when 5 %>
                            <%= image_tag("icons/flag_green.png") %>
-       <% when "Medium" %>
+        <% when 4 %>
+                            <%= image_tag("icons/flag_orange.png") %>
+       <% when 3 %>
                            <%= image_tag("icons/flag_orange.png") %>
-        <% when "High" %>
+        <% when 2 %>
                            <%= image_tag("icons/flag_purple.png") %>
-        <% when "Urgent" %>
+        <% when 1 %>
                            <%= image_tag("icons/exclamation.png") %>
         <% else %>
             <%=h "-" %>
         <% end %>    
-      <%=h tasklist.priority %>
+      <%=h tasklist.priority_name %>
       </td>
       <td><%=h tasklist.created_at.strftime(" %d/%m/%Y ") %></td>
       <td><%=h tasklist.user.shortname %></td>
