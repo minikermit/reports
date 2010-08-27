@@ -32,8 +32,8 @@ Rails::Initializer.run do |config|
   #	config.gem "activerecord-sqlserver-adapter-2.3.8"      #only activate for production<
   
   #	 config.gem "pdfkit"
-  
 
+  config.action_controller.session_store = :active_record_store
 
   # config.gem "bj"                                                   
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
@@ -62,6 +62,7 @@ Rails::Initializer.run do |config|
   #require 'pdfkit'
   #config.middleware.use PDFKit::Middleware, :print_media_type => true
 
+  # Mailer
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default_charset = "utf-8"
