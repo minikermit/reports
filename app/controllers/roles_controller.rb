@@ -7,6 +7,9 @@ class RolesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @roles }
+      format.pdf do
+        render :pdf => "file_name"
+      end
     end
   end
 
@@ -18,6 +21,7 @@ class RolesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @role }
+
     end
   end
 

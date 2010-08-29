@@ -59,16 +59,23 @@ $('#clickme').click(function() {
   });
 });
 
-
-   
-
-
-/*   function AppearEffect(element){
-       new Effect.toggle(element, 'Appear', {duration:2});
-   }
-   function BUDEffect(element){
-       new Effect.toggle(element,'Blind', {duration:2});
-   }
-   function SUDEffect(element){
-       new Effect.toggle(element,'Slide', {duration:2});
-   } */
+// Jquery effects (slide in or out).
+$(document).ready(function() {
+	
+	// Expand Panel
+	$("#open").click(function(){
+		$("div#panel").slideDown("slow");
+	
+	});	
+	
+	// Collapse Panel
+	$("#close").click(function(){
+		$("div#panel").slideUp("slow");	
+	});		
+	
+	// Switch buttons from "Log In | Register" to "Close Panel" on click
+	$("#toggle a").click(function () {
+		$("#toggle a").toggle();
+	});		
+		
+});   
