@@ -5,7 +5,23 @@ class TasklistsController < ApplicationController
 
   def index
     @search = Tasklist.search(params[:search])
-    @tasklists = @search.all.paginate(:page => params[:page]) 
+    @tasklists = @search.all.paginate(:page => params[:page])
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @tasklists }
+      format.pdf do
+        @example_text = "some text"
+                  render :pdf => "tasklists",
+                         :template => 'tasklists/index.pdf.erb',
+                         :layout => 'pdf',
+                         :footer => {
+                            :center => "Center",
+                            :left => "Left",
+                            :right => "Right"
+                         }
+      end
+    end
   end
 
   def comment

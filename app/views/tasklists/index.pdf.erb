@@ -1,0 +1,53 @@
+
+   <p> Test for rendering PDF documents </p>
+   <div id="someid"><%=h @example_test %></div>
+
+  <h1>Listing tasks</h1>
+
+  <table summary="List of all tasks" width=98% >
+
+  <thead>
+
+  <tr align=left>
+    <th>Name</th>
+    <th> </th>
+    <th>Scope</th>
+    <th>Genre</th>
+    <th>Project</th>
+    <th>Assigned to</th>
+    <th>Due Date</th>
+    <th>Status</th>
+    <th>Priority</th>
+    <th>Creation Date</th>
+    <th>User</th>
+
+
+  </tr>
+  </thead>
+
+  <!--tfoot>
+    <tr> This is the footer </tr>
+  </tfoot-->
+
+  <tbody>
+  <% for tasklist in @tasklists %>
+    <tr>
+      <td><%=h tasklist.name %></td>
+      <td></td>
+      <td><%=h tasklist.scope %></td>
+      <td><%=h tasklist.genre_name %></td>
+      <td><%=h tasklist.project.title %></td>
+      <td><%=h tasklist.assigned_to %></td>
+      <td><%=h tasklist.due_date.strftime(" %d/%m/%Y ") %></td>
+      <td><%=h tasklist.status_name %></td>
+      <td><%=h tasklist.priority_name %></td>
+      <td><%=h tasklist.created_at.strftime(" %d/%m/%Y ") %></td>
+      <td><%=h tasklist.user.shortname %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+
+</table>
+
+<br />
