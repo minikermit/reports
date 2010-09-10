@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  identification: 1
+  counterparty: MyString
+  account: MyString
+  name: MyString
+  booked_on: 2010-09-09
+  period_from: 2010-09-09
+  period_to: 2010-09-09
+  valididity_in_months: 1
+  currency: MyString
+  amount: 
+  balance_sheet_accrual_account: MyString
+  profit_and_loss_accrual_account: MyString
+  type_id: 1
+  user_id: 1
+  updated_by: 1
+
+two:
+  identification: 1
+  counterparty: MyString
+  account: MyString
+  name: MyString
+  booked_on: 2010-09-09
+  period_from: 2010-09-09
+  period_to: 2010-09-09
+  valididity_in_months: 1
+  currency: MyString
+  amount: 
+  balance_sheet_accrual_account: MyString
+  profit_and_loss_accrual_account: MyString
+  type_id: 1
+  user_id: 1
+  updated_by: 1

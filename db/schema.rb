@@ -89,6 +89,25 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.string   "Source_Package",       :limit => 50
   end
 
+  create_table "invoices", :force => true do |t|
+    t.integer  "identification"
+    t.string   "counterparty"
+    t.string   "account"
+    t.string   "name"
+    t.date     "booked_on"
+    t.date     "period_from"
+    t.date     "period_to"
+    t.integer  "valididity_in_months"
+    t.string   "currency"
+    t.string   "balance_sheet_accrual_account"
+    t.string   "profit_and_loss_accrual_account"
+    t.integer  "type_id"
+    t.integer  "user_id"
+    t.integer  "updated_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "menus", :force => true do |t|
     t.integer  "parent_id"
     t.string   "name"
@@ -244,7 +263,7 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.text     "description"
     t.integer  "priority"
     t.date     "due_date"
-    t.integer   "status"
+    t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "assigned_to"

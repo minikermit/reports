@@ -1,0 +1,71 @@
+<h1>New invoice</h1>
+
+<% form_for(@invoice) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :identification %><br />
+    <%= f.text_field :identification %>
+  </p>
+  <p>
+    <%= f.label :counterparty %><br />
+    <%= f.text_field :counterparty %>
+  </p>
+  <p>
+    <%= f.label :account %><br />
+    <%= f.text_field :account %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :booked_on %><br />
+    <%= f.date_select :booked_on %>
+  </p>
+  <p>
+    <%= f.label :period_from %><br />
+    <%= f.date_select :period_from %>
+  </p>
+  <p>
+    <%= f.label :period_to %><br />
+    <%= f.date_select :period_to %>
+  </p>
+  <p>
+    <%= f.label :valididity_in_months %><br />
+    <%= f.text_field :valididity_in_months %>
+  </p>
+  <p>
+    <%= f.label :currency %><br />
+    <%= f.text_field :currency %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.label :balance_sheet_accrual_account %><br />
+    <%= f.text_field :balance_sheet_accrual_account %>
+  </p>
+  <p>
+    <%= f.label :profit_and_loss_accrual_account %><br />
+    <%= f.text_field :profit_and_loss_accrual_account %>
+  </p>
+  <p>
+    <%= f.label :type_id %><br />
+    <%= f.text_field :type_id %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :updated_by %><br />
+    <%= f.text_field :updated_by %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', invoices_path %>

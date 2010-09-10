@@ -1,0 +1,78 @@
+<p>
+  <b>Identification:</b>
+  <%=h @invoice.identification %>
+</p>
+
+<p>
+  <b>Counterparty:</b>
+  <%=h @invoice.counterparty %>
+</p>
+
+<p>
+  <b>Account:</b>
+  <%=h @invoice.account %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @invoice.name %>
+</p>
+
+<p>
+  <b>Booked on:</b>
+  <%=h @invoice.booked_on %>
+</p>
+
+<p>
+  <b>Period from:</b>
+  <%=h @invoice.period_from %>
+</p>
+
+<p>
+  <b>Period to:</b>
+  <%=h @invoice.period_to %>
+</p>
+
+<p>
+  <b>Valididity in months:</b>
+  <%=h @invoice.valididity_in_months %>
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%=h @invoice.currency %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%=h @invoice.amount %>
+</p>
+
+<p>
+  <b>Balance sheet accrual account:</b>
+  <%=h @invoice.balance_sheet_accrual_account %>
+</p>
+
+<p>
+  <b>Profit and loss accrual account:</b>
+  <%=h @invoice.profit_and_loss_accrual_account %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @invoice.type_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @invoice.user_id %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%=h @invoice.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_invoice_path(@invoice) %> |
+<%= link_to 'Back', invoices_path %>
