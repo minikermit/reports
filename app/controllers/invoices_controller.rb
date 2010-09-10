@@ -2,7 +2,7 @@ class InvoicesController < ApplicationController
   # GET /invoices
   # GET /invoices.xml
   def index
-    @invoices = Invoice.all
+    @invoices = Invoice.all(:order => :created_at)
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,0 +1,48 @@
+<p>
+  <b>Type:</b>
+  <%=h @accrual.type_name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <!--%=h @accrual.name %-->
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%=h @accrual.currency %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%=h @accrual.amount %>
+</p>
+
+<p>
+  <b>Event date:</b>
+  <%=h @accrual.event_date %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%=h @accrual.period_id %>
+</p>
+
+<p>
+  <b>Debit account:</b>
+  <%=h @accrual.debit_account %>
+</p>
+
+<p>
+  <b>Credit account:</b>
+  <%=h @accrual.credit_account %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <!--%=h @accrual.comments %-->
+</p>
+
+
+<%= link_to 'Edit', edit_accrual_path(@accrual) %> |
+<%= link_to 'Back', accruals_path %>

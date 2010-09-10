@@ -1,0 +1,42 @@
+<h1>Editing accrual</h1>
+
+<fieldset>
+
+  <legend>Editing accrual</legend>
+<% form_for(@accrual) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :type_id %><br />
+    <%= f.collection_select(:type_id, Accrual.type_id_name_options, :first, :last) %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <!--%= f.text_field :name %-->
+  </p>
+  <p>
+    <%= f.label :event_date %> / <%= f.label :period_id %><br />
+    <%= f.date_select :event_date %> /     <%= f.text_field :period_id , :size => 6%>
+  </p>
+  <p>
+    <%= f.label :currency %> / <%= f.label :amount %><br />
+    <%= f.text_field :currency, :size => 3 %>  <%= f.text_field :amount, :size => 12 %>
+  </p>
+  <p>
+    <%= f.label :accounts %><br />
+    DB <%= f.text_field :debit_account , :size => 20 %>  CR <%= f.text_field :credit_account , :size => 20 %>
+  </p>
+  <p>
+    <%= f.label :comments %><br />
+    <!--%= f.text_field :comments %-->
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Show', @accrual %> |
+<%= link_to 'Back', accruals_path %>
+
+</fieldset>

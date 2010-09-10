@@ -29,6 +29,18 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.datetime "updated_at"
   end
 
+  create_table "accruals", :force => true do |t|
+    t.integer  "type_id"
+    t.string   "currency"
+    t.integer  "amount",         :limit => 10, :precision => 10, :scale => 0
+    t.date     "event_date"
+    t.integer  "period_id"
+    t.string   "debit_account"
+    t.string   "credit_account"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "assignments", :id => false, :force => true do |t|
     t.integer "role_id"
     t.integer "user_id"
