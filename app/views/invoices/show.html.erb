@@ -1,62 +1,43 @@
-<p>
-  <b>Identification:</b>
-  <%=h @invoice.identification %>
-</p>
 
-<p>
-  <b>Counterparty:</b>
-  <%=h @invoice.counterparty %>
-</p>
+<div class="row">
+  <div class="column grid_2"><b>Identification & Name:</b></div>
+  <div class="column grid_6"><%=h @invoice.identification %> - <%=h @invoice.name %></div>
+</div>
 
-<p>
-  <b>Account:</b>
-  <%=h @invoice.account %>
-</p>
+<div class="row">
+  <div class="column grid_2"><b>Counterparty/Account:</b></div>
+  <div class="column grid_6"><%=h @invoice.counterparty %>/<%=h @invoice.account %></div>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%=h @invoice.name %>
-</p>
+<div class="row">
+  <div class="column grid_2"><b>Amount:</b></div>
+  <div class="column grid_6"><!--%=h @invoice.currency %--> <%=h number_to_currency(@invoice.amount) %></div>
+</div>
 
-<p>
-  <b>Booked on:</b>
-  <%=h @invoice.booked_on %>
-</p>
+<div class="row">
+  <div class="column grid_2"><b>Booked on:</b></div>
+  <div class="column grid_6"><%=h @invoice.booked_on %></div>
+</div>
 
-<p>
-  <b>Period from:</b>
-  <%=h @invoice.period_from %>
-</p>
+<div class="row">
+  <div class="column grid_2"><b>Period from/to:</b></div>
+  <div class="column grid_6"><%=h @invoice.period_from %> to <%=h @invoice.period_to %></div>
+</div>
 
-<p>
-  <b>Period to:</b>
-  <%=h @invoice.period_to %>
-</p>
+<div class="row">
+  <div class="column grid_2"><b>Validity in months:</b></div>
+  <div class="column grid_6"><%=h @invoice.validity_in_months %></div>
+</div>
 
-<p>
-  <b>Valididity in months:</b>
-  <%=h @invoice.valididity_in_months %>
-</p>
+<div class="row">
+  <div class="column grid_2">BS accrual account:</div>
+  <div class="column grid_6"><%=h @invoice.balance_sheet_accrual_account %> </div>
+</div>
 
-<p>
-  <b>Currency:</b>
-  <%=h @invoice.currency %>
-</p>
-
-<p>
-  <b>Amount:</b>
-  <%=h @invoice.amount %>
-</p>
-
-<p>
-  <b>Balance sheet accrual account:</b>
-  <%=h @invoice.balance_sheet_accrual_account %>
-</p>
-
-<p>
-  <b>Profit and loss accrual account:</b>
-  <%=h @invoice.profit_and_loss_accrual_account %>
-</p>
+<div class="row">
+  <div class="column grid_2">P&L accrual account:</div>
+  <div class="column grid_6"><%=h @invoice.profit_and_loss_accrual_account %> </div>
+</div>
 
 <p>
   <b>Type:</b>

@@ -28,9 +28,8 @@ Rails::Initializer.run do |config|
   config.gem "fastercsv"
   config.gem "comma"
 
-  # config,gem "ruby-odbc"
-  #	config.gem "activerecord-sqlserver-adapter-2.3.8"      #only activate for production<
-  
+  # config.gem "ruby-odbc"
+  # config.gem "activerecord-sqlserver-adapter", :version => '2.3.8'      #only activate for production<
   #	 config.gem "pdfkit"
 
   config.action_controller.session_store = :active_record_store

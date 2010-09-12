@@ -1,0 +1,25 @@
+                      <% for menu in @menus %>
+                        <li>
+                          <a href="<%=h menu.htmllink %>">
+
+                             <span class="l">
+
+                              </span>
+
+                              <span class="r">
+
+                               </span>
+
+                                <span class="t">
+                                <%=h menu.name %>
+                                </span></a>
+
+                            </li>
+                          <% end %>
+
+
+<% if menu.children.empty? %>
+    <span>no subcategories</span>
+  <% else %>
+    <ul><%= render :partial => 'menu', :collection => menu.children %></ul>
+  <% end %>

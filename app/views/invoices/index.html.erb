@@ -3,39 +3,19 @@
 <table>
   <tr>
     <th>Identification</th>
-    <th>Counterparty</th>
-    <th>Account</th>
     <th>Name</th>
-    <th>Booked on</th>
-    <th>Period from</th>
-    <th>Period to</th>
-    <th>Valididity in months</th>
-    <th>Currency</th>
+    <th>Counterparty/Account</th>
     <th>Amount</th>
-    <th>Balance sheet accrual account</th>
-    <th>Profit and loss accrual account</th>
-    <th>Type</th>
-    <th>User</th>
-    <th>Updated by</th>
+    <th>Booked on</th>
   </tr>
 
 <% @invoices.each do |invoice| %>
   <tr>
-    <td><%=h invoice.identification %></td>
-    <td><%=h invoice.counterparty %></td>
-    <td><%=h invoice.account %></td>
+    <td><%=h invoice.identification %></td> 
     <td><%=h invoice.name %></td>
+    <td><%=h invoice.counterparty %> / <%=h invoice.account %></td>
+    <td><%=h number_to_currency(invoice.amount) %></td>
     <td><%=h invoice.booked_on %></td>
-    <td><%=h invoice.period_from %></td>
-    <td><%=h invoice.period_to %></td>
-    <td><%=h invoice.valididity_in_months %></td>
-    <td><%=h invoice.currency %></td>
-    <td><%=h invoice.amount %></td>
-    <td><%=h invoice.balance_sheet_accrual_account %></td>
-    <td><%=h invoice.profit_and_loss_accrual_account %></td>
-    <td><%=h invoice.type_id %></td>
-    <td><%=h invoice.user_id %></td>
-    <td><%=h invoice.updated_by %></td>
     <td><%= link_to 'Show', invoice %></td>
     <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
     <td><%= link_to 'Destroy', invoice, :confirm => 'Are you sure?', :method => :delete %></td>

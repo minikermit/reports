@@ -1,8 +1,11 @@
 class Menu < ActiveRecord::Base
-  attr_accessible :parent_id, :name, :description, :htmllink, :target
 
   acts_as_tree
 
+  attr_accessible :parent_id, :name, :description, :htmllink, :target
+  has_many :custom_menus
+  has_many :users, :through => :custom_menus
+  
 end
 
 # == Schema Information

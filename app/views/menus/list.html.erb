@@ -1,0 +1,11 @@
+                <div class="art-nav">
+                	<div class="l"></div>
+                	<div class="r"></div>
+                	<ul class="art-menu">
+
+                     <%= render :partial => 'menu', :collection => Menu.find_all_by_parent_id(nil) %>
+
+                    </ul>
+                </div>
+
+                

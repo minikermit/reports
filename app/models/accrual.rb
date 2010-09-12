@@ -1,8 +1,11 @@
 class Accrual < ActiveRecord::Base
 
   validates_numericality_of :amount
-  validates_length_of :period_id, :is => 6
+  validates_format_of :debit_account, :credit_account,
+                      :with => /[0-9]{7}\/[0-9]{3}.[0-9]{3}.[0-9]{3}\z/,
+                      :message => '- You have to enter the account number in the correct Olympic format 1234567/123.123.123'
 
+  # validates_length_of :period_id, :is => 6
 
 
   # creates hash for nice names in view

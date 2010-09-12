@@ -31,12 +31,14 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
 
   create_table "accruals", :force => true do |t|
     t.integer  "type_id"
+    t.string   "name"
     t.string   "currency"
     t.integer  "amount",         :limit => 10, :precision => 10, :scale => 0
     t.date     "event_date"
     t.integer  "period_id"
     t.string   "debit_account"
     t.string   "credit_account"
+    t.text     "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -75,6 +77,11 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.datetime "updated_at"
   end
 
+  create_table "custom_menus", :id => false, :force => true do |t|
+    t.integer "menu_id"
+    t.integer "user_id"
+  end
+
   create_table "dim_dates", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -109,8 +116,9 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.date     "booked_on"
     t.date     "period_from"
     t.date     "period_to"
-    t.integer  "valididity_in_months"
+    t.integer  "validity_in_months"
     t.string   "currency"
+    t.integer  "amount",                          :limit => 10, :precision => 10, :scale => 0
     t.string   "balance_sheet_accrual_account"
     t.string   "profit_and_loss_accrual_account"
     t.integer  "type_id"

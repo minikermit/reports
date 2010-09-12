@@ -14,11 +14,10 @@
 <% @accruals.each do |accrual| %>
   <tr>     
     <td><%=h accrual.type_name %></td>
-    <td><!--%=h accrual.name %--></td>
+    <td><%=h accrual.name %></td>
     <td><%=h accrual.currency %></td>
     <td><%=h accrual.amount %></td>
     <td><%=h accrual.event_date %></td>
-    <td><%=h accrual.period_id %></td>
     <td><%=h accrual.debit_account %></td>
     <td><%=h accrual.credit_account %></td>
     <td><%= link_to 'Show', accrual %></td>

@@ -3,6 +3,8 @@ class Comment < ActiveRecord::Base
     belongs_to :tasklist
     belongs_to :user
 
+    default_value_for :user_id, User.current
+
 end
 
 

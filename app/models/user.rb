@@ -10,6 +10,8 @@ class User < ActiveRecord::Base
  has_many :comments
  has_many :assignments
  has_many :roles, :through => :assignments
+ has_many :custom_menus
+ has_many :menus, :through => :custom_menus
  
  validates_presence_of :name, :shortname , :email, :login
  validates_associated :tasklists

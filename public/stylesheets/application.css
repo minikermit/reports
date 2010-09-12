@@ -239,10 +239,54 @@ ul#navigation .contact a    {
 }
 
 /*
- * User nav
+ User nav
  ----------------------------------*/
 
 #user_nav {
     float: right;
     font-size: 8px;
 }
+
+/*
+ Comments
+ ----------------------------------*/
+
+.comments, .comments ul, #comments li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+.comments li{
+	margin:1.5em 0;
+	position:relative;
+	font-size:13px;
+	}
+.comments a{color:#5a7981;text-decoration:none;}
+.comments a:hover{color:#555;}
+.comments .meta{
+	padding-bottom:32px;
+	background:url(/images/avatars/bg_comments1.gif) no-repeat 0 100%;
+	}
+.comments .meta li{
+	margin:0;
+	display:inline;
+	font-size:12px;
+	color:#777;
+	position:static;
+	}
+.comments .meta .author{
+	font-size:14px;
+	font-weight:bold;
+	}
+.comments .meta img{
+	position:absolute;
+	left:28px;
+	top:68px;
+	z-index:100;
+	border:1px solid #bfd5da;
+	}
+.comments .body{
+	padding:10px 28px 20px 100px;
+	background:url(/images/avatars/bg_comments2.gif) no-repeat 0 100%;
+	min-height:58px;
+	}

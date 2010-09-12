@@ -46,14 +46,25 @@
 
 <h4>Comments</h4>
 
-  <% for comment in @tasklist.comments %>
-    <p class="commenttext"> <%= comment.body %> </p>
-    <p class="fineprint"> Created by user test on <%=h comment.created_at.strftime("%e %B, %Y") %> </p>
-  <% end %>
+     <ol class="comments">
+       <% for comment in @tasklist.comments %>
+    <!--p class="commenttext"--> <!--%= comment.body %> </p-->
+    <!--p class="fineprint"--> <!--Created by user test on --><!--%=h comment.created_at.strftime("%e %B, %Y") %--> <!--/p-->            -
+
+           <li>
+				<ul class="meta">
+					<li class="image"><img src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48" alt="Author's name" /></li>
+					<li class="author"><a href="/users/<%=h comment.user.id %>"><%=h comment.user.name %></a></li>
+					<li class="date">posted on <%=h comment.created_at.strftime("%e %B, %Y") %></li>
+
+				</ul>
+				<div class="body"> <%= comment.body %> </div>
+			</li>
+
+        <% end %>
+      </ol>
 
   <%= form_tag :action => "comment", :id => @tasklist %>
     <%= text_area "comment", "body", :size => "100x8" %><br />
     <%= submit_tag "Comment" %>
   </form>
-
-

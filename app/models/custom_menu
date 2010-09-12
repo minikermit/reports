@@ -1,0 +1,16 @@
+class CustomMenu < ActiveRecord::Base
+
+belongs_to :user
+belongs_to :menu
+
+validates_uniqueness_of :user_id, :scope => :menu_id
+
+end
+
+# == Schema Information
+#
+# Table name: custom_menus
+#
+#  menu_id :integer(4)
+#  user_id :integer(4)
+#
