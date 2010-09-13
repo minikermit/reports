@@ -21,6 +21,9 @@ class Tasklist < ActiveRecord::Base
   validates_presence_of :name, :scope, :due_date, :project_id, :assigned_to
   validates_uniqueness_of :name
 
+  default_value_for :user_id, User.current
+
+
   # creates hash for nice names in view
   PRIORITY_NAMES = { 1 => 'Very high',
                      2 => 'High',
