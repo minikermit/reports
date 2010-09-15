@@ -2,29 +2,60 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %>
-    <%= f.label :type_id %><br />
+    <label for="name">Name</label>
     <%= f.text_field :name %>
-    <%= f.collection_select(:type_id, Accrual.type_id_name_options, :first, :last) %>
   </p>
-  <p>
-    <%= f.label :event_date %> / <%= f.label :period_id %><br />
-    <%= f.date_select :event_date %> /     <%= f.text_field :period_id , :size => 6%>
-  </p>
-  <p>
-    <%= f.label :currency %> / <%= f.label :amount %><br />
-    <%= f.text_field :currency, :size => 3 %>  <%= f.text_field :amount, :size => 12 %>
-  </p>
-  <p>
-    <%= f.label :accounts %><br />
-    DB <%= f.text_field :debit_account , :size => 20 %>  CR <%= f.text_field :credit_account , :size => 20 %>
-  </p>
-  <p>
-    <%= f.label :comments %><br />
-    <%= f.text_area :comments, :size => '60x5' %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
+  <div class="clear"></div>
 
+  <p>
+    <label for="type_id">Type</label>
+    <%= f.collection_select(:type_id, Accrual.type_id_name_options, :first, :last, :class => 'select')  %>
+  </p>
+  <div class="clear"></div>
+
+  <p>
+    <label for="event_date">Event date</label>
+    <%= f.date_select :event_date %>
+  </p>
+  <div class="clear"></div>
+
+  <p>
+    <label for="period_id">Period</label>
+    <%= f.text_field :period_id , :size => 6 %>
+  </p>
+  <div class="clear"></div>
+    
+  <p>
+    <%= f.label :currency %>
+    <%= f.text_field :currency, :size => 3 %>
+  </p>
+  <div class="clear"></div>
+
+  <p>
+  <%= f.label :amount %>
+  <%= f.text_field :amount, :size => 12 %>
+  </p>
+  <div class="clear"></div>
+
+  <p>
+    <%= f.label :debit_account %>
+    <%= f.text_field :debit_account , :size => 20 %>
+    <%= f.label :credit_account %>
+    <%= f.text_field :credit_account , :size => 20 %>
+  </p>
+  <div class="clear"></div>
+
+  <p>
+    <%= f.label :comments %>
+    <%= f.text_area :comments, :size => '50x5' %>
+  </p>
+  <div class="clear"></div>
+
+  <br />
+  <br />
+
+  <input type="submit" style="margin: -20px 0 0 287px;" class="button" name="Update" value="Update"/>
+     
 <% end %>
+
+
