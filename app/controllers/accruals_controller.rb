@@ -1,4 +1,8 @@
 class AccrualsController < ApplicationController
+
+  layout :choose_layout
+
+
   # GET /accruals
   # GET /accruals.xml
   def index
@@ -80,4 +84,15 @@ class AccrualsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  private
+
+  def choose_layout
+    if [ 'new', 'edit' ].include? action_name
+      'accruals'
+    else
+      'tasklists'
+    end
+  end
+
 end
