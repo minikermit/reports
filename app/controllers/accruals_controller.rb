@@ -6,7 +6,8 @@ class AccrualsController < ApplicationController
   # GET /accruals
   # GET /accruals.xml
   def index
-    @accruals = Accrual.all(:order => :event_date)
+    @search = Accrual.search(params[:search])
+    @accruals = @search.all.paginate(:page => params[:page], :order => :event_date)
 
     respond_to do |format|
       format.html # index.html.erb

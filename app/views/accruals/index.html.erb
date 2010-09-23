@@ -1,32 +1,85 @@
-<h1>Listing accruals</h1>
+<div id="selectnews">
+ <div id="selection">
+  <% form_for @search do |f| %>
 
-<table>
-  <tr>
-    <th>Type</th>
-    <th>Name</th>
-    <th>Currency</th>
-    <th>Amount</th>
-    <th>Event date</th>
-    <th>Debit account</th>
-    <th>Credit account</th>
-  </tr>
+    <h2>Choose your search criteria</h2>
+        <!--
+            Setting all the checkbox names to "source[] helps us build the array on submit"
+            We're also adding the RSS feed url to the checkbox value so we can save it in the array values
+        -->
+  <ul>
+    <li> <%= f.collection_select :type_id_equals, Accrual.type_id_name_options, :first, :last,  {:include_blank => 'All'}, {:selected => 'All' } %>
+    </li>
+    <li> <%= f.label :name_like, "Name " %> </li>
+    <li> <%= f.text_field :name_like, :class => 'text' %></li>
+    <li> <%= f.label :debit_account_like, "Debit Account" %> </li>
+    <li> <%= f.text_field :debit_account_like, :class => 'text' %></li>
+    <li> <%= f.label :credit_account_like, "Credit Account" %> </li>
+    <li> <%= f.text_field :credit_account_like, :class => 'text' %></li>
+  </ul>
 
-<% @accruals.each do |accrual| %>
-  <tr>     
-    <td><%=h accrual.type_name %></td>
-    <td><%=h accrual.name %></td>
-    <td><%=h accrual.currency %></td>
-    <td><%=h accrual.amount %></td>
-    <td><%=h accrual.event_date %></td>
-    <td><%=h accrual.debit_account %></td>
-    <td><%=h accrual.credit_account %></td>
-    <td><%= link_to 'Show', accrual %></td>
-    <td><%= link_to 'Edit', edit_accrual_path(accrual) %></td>
-    <td><%= link_to 'Destroy', accrual, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <!-- Setting the submit name to "btn" -->
+  <%= f.submit "Search" %>
+  <% end %>
+   </div>
+</div><!--/#selectnews-->
+
+<p id="getform"><a href="#selection">Search</a></p>
+
+<div id = "Accruals">
+
+<p>Sort by  <%= order @search, :by => :name %> | <%= order @search, :by => :event_date %> | <%= order @search, :by => :currency %> </p>
+
+<br />
+
+<table summary="List of all accruals" width=98% >
+
+  <caption>Accruals</caption>
+
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Currency</th>
+      <th>Amount</th>
+      <th>Event date</th>
+      <th>Debit account</th>
+      <th>Credit account</th>
+    </tr>
+  </thead>
+
+  <!--tfoot>
+    <tr> This is the footer </tr>
+  </tfoot-->
+
+
+  <tbody>
+    <% @accruals.each do |accrual| %>
+    <tr>
+      <td><%=h accrual.type_name %></td>
+      <td><%=h accrual.name %></td>
+      <td><%=h accrual.currency %></td>
+      <td><%=h accrual.amount %></td>
+      <td><%=h accrual.event_date %></td>
+      <td><%=h accrual.debit_account %></td>
+      <td><%=h accrual.credit_account %></td>
+      <td><%= link_to 'Show', accrual %></td>
+      <td><%= link_to 'Edit', edit_accrual_path(accrual) %></td>
+      <td><%= link_to 'Destroy', accrual, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+    <% end %>
+  </tbody>
 </table>
 
 <br />
 
-<%= link_to 'New accrual', new_accrual_path %>
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @accruals %>
+  </div>
+    <%= will_paginate @accruals, :container => false %>
+</div>
+
+<p><%= link_to 'New accrual', new_accrual_path %></p>
+
+</div><!--/#accruals-->
