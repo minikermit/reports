@@ -1,13 +1,15 @@
 class InvoicesController < ApplicationController
 
 #TODO ADD Duplicate method (using clone)
+#TODO ADD Compute accruals method
+#TODO ADD Compute depreciation method
 
   # GET /invoices
   # GET /invoices.xml
   def index
 
     @search = Invoice.search(params[:search])
-    @invoices = @search.all.paginate(:page => params[:page], :order => :created_at)
+    @invoices = @search.all.paginate(:page => params[:page], :order => 'created_at desc')
 
     respond_to do |format|
       format.html # index.html.erb

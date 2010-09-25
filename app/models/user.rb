@@ -12,7 +12,8 @@ class User < ActiveRecord::Base
  has_many :roles, :through => :assignments
  has_many :custom_menus
  has_many :menus, :through => :custom_menus
- 
+ has_many :invoices
+
  validates_presence_of :name, :shortname , :email, :login
  validates_associated :tasklists
  validates_length_of :login, :within => 3..40
@@ -20,6 +21,9 @@ class User < ActiveRecord::Base
 
  named_scope :limit, lambda { |limit| {:limit => limit}}
  named_scope :search_for_name, lambda { |term| {:conditions => ['lower(name) LIKE ?', "%#{term.downcase}%"]}}
+
+ named_scope :autocomplete_name, lambda{ |name| {:include => :user, :conditions => ["users.name LIKE ?", "#{name}%"]} }
+
 
  def role_symbols
   roles.map do |role|
