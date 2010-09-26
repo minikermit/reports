@@ -2,15 +2,19 @@ class Invoice < ActiveRecord::Base
 
   belongs_to :user
 
+
+
+  validates_presence_of :name, :account, :counterparty, :amount, :booked_on, :currency
+  validates_uniqueness_of :identification  
   validates_numericality_of :amount
   validates_format_of :counterparty, :with => /[0-9]{7}\z/,
-                      :message => '- You have to enter the account number in the correct Olympic format 1234567 (7 digits)'
-
-                       
+                      :message => '- You have to enter the counterparty id in the correct Olympic format 1234567 (7 digits)'
   validates_format_of :balance_sheet_accrual_account, :profit_and_loss_accrual_account,
                       :with => /[0-9]{7}\/[0-9]{3}.[0-9]{3}.[0-9]{3}\z/,
                       :message => '- You have to enter the account number in the correct Olympic format 1234567/123.123.123'
-  
+
+  default_value_for :user_id, User.current
+
   # creates hash for nice names in view
   TYPE_NAMES = {     1 => 'Invoice to be accrued',
                      2 => 'Invoice to be depreciated',
