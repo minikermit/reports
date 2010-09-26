@@ -82,6 +82,20 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.integer "user_id"
   end
 
+  create_table "depreciations", :force => true do |t|
+    t.integer  "type_id"
+    t.string   "name"
+    t.string   "currency"
+    t.integer  "amount",         :limit => 10, :precision => 10, :scale => 0
+    t.date     "event_date"
+    t.integer  "period_id"
+    t.string   "debit_account"
+    t.string   "credit_account"
+    t.text     "comments"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "dim_dates", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
