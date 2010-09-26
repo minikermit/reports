@@ -1,0 +1,48 @@
+<p>
+  <b>Type:</b>
+  <%=h @depreciation.type_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @depreciation.name %>
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%=h @depreciation.currency %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%=h @depreciation.amount %>
+</p>
+
+<p>
+  <b>Event date:</b>
+  <%=h @depreciation.event_date %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%=h @depreciation.period_id %>
+</p>
+
+<p>
+  <b>Debit account:</b>
+  <%=h @depreciation.debit_account %>
+</p>
+
+<p>
+  <b>Credit account:</b>
+  <%=h @depreciation.credit_account %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%=h @depreciation.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_depreciation_path(@depreciation) %> |
+<%= link_to 'Back', depreciations_path %>

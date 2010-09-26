@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type_id: 1
+  name: MyString
+  currency: MyString
+  amount: 9.99
+  event_date: 2010-09-27
+  period_id: 1
+  debit_account: MyString
+  credit_account: MyString
+  comments: MyText
+
+two:
+  type_id: 1
+  name: MyString
+  currency: MyString
+  amount: 9.99
+  event_date: 2010-09-27
+  period_id: 1
+  debit_account: MyString
+  credit_account: MyString
+  comments: MyText

@@ -1,0 +1,36 @@
+<h1>Listing depreciations</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Name</th>
+    <th>Currency</th>
+    <th>Amount</th>
+    <th>Event date</th>
+    <th>Period</th>
+    <th>Debit account</th>
+    <th>Credit account</th>
+    <th>Comments</th>
+  </tr>
+
+<% @depreciations.each do |depreciation| %>
+  <tr>
+    <td><%=h depreciation.type_id %></td>
+    <td><%=h depreciation.name %></td>
+    <td><%=h depreciation.currency %></td>
+    <td><%=h depreciation.amount %></td>
+    <td><%=h depreciation.event_date %></td>
+    <td><%=h depreciation.period_id %></td>
+    <td><%=h depreciation.debit_account %></td>
+    <td><%=h depreciation.credit_account %></td>
+    <td><%=h depreciation.comments %></td>
+    <td><%= link_to 'Show', depreciation %></td>
+    <td><%= link_to 'Edit', edit_depreciation_path(depreciation) %></td>
+    <td><%= link_to 'Destroy', depreciation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New depreciation', new_depreciation_path %>
