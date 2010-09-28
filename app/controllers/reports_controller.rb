@@ -33,6 +33,9 @@ class ReportsController < ApplicationController
   # GET /reports/1.xml
   def show
     @report = Report.find(params[:id])
+    notice "Hooray! You did something good."
+    warning "Uhm, You're not allowed to do that yet."
+    error "Ooooops! Something went wrong."
 
     respond_to do |format|
       format.html # show.html.erb

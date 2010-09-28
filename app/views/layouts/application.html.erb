@@ -7,7 +7,7 @@
 
     <!--[if IE 6]><link rel="stylesheet" href="/stylesheets/style.ie6.css" type="text/css" media="screen" /><![endif]-->
     <!--[if IE 7]><link rel="stylesheet" href="/stylesheets/style.ie7.css" type="text/css" media="screen" /><![endif]-->
-    <%= stylesheet_link_tag 'style','breadcrumb','jquerytabs','custom' %>
+    <%= stylesheet_link_tag 'style','breadcrumb','jquerytabs','custom', 'flash' %>
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
 
@@ -225,6 +225,7 @@
         <p class="art-page-footer">Designed by Vincent Jacquel.</p>
     </div>
 
+    <%= display_flash_messages %>
     <p style="color: green"><%= notice %></p>
     <%= yield %>
 
