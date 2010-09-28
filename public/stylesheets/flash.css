@@ -17,7 +17,7 @@ p.error span {
 
 p.notice {
   background: url(../images/flash-notice-bg.jpg) repeat-x left top;
-  color: #41612f;
+  color: #41612f; 
 }
 p.notice span {
   background: url(../images/flash-check.png) no-repeat left top;

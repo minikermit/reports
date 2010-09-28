@@ -21,6 +21,9 @@ class ReportCategoriesController < ApplicationController
   # GET /report_categories/1.xml
   def show
     @report_category = ReportCategory.find(params[:id])
+    notice "Hooray! You did something good."
+    warning "Uhm, You're not allowed to do that yet."
+    error "Ooooops! Something went wrong."
 
     respond_to do |format|
       format.html # show.html.erb

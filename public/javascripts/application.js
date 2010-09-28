@@ -105,7 +105,7 @@ $(document).ready(function(){
 // jQuery flash messages
 
 $(document).ready(function() {
-  setTimeout(hideFlashes, 25000);
+  setTimeout(hideFlashes, 2500);
 });
 
 var hideFlashes = function() {
