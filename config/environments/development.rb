@@ -18,3 +18,4 @@ config.action_mailer.raise_delivery_errors = false
 
 #config.gem "rails-footnotes"
 config.gem 'rails_best_practices', :source => "http://gemcutter.org"
+#config.gem 'rails-erd', :source => "http://gemcutter.org"
