@@ -7,5 +7,6 @@ LANGUAGES = {
               'English GB' => 'en-GB',
               'Français' => 'fr',
               'Deutsch' => 'de',
-              'Mundart' => 'de-CH'
+              'Mundart' => 'de-CH',
+              'Klingon' => 'klingon'
             }
