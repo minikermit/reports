@@ -1,10 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :depreciations
-
-  map.resources :accruals
-
-  map.resources :invoices
-
 
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
@@ -65,7 +59,10 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :autocomplete_searches, :only => [:index], :as => 'autocomplete'
   # map.resources :users, :collection => {:load_user => :get, :autocomplete => :get}
-  
+
+  map.resources :invoices
+  map.resources :depreciations
+  map.resources :accruals
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -107,6 +104,6 @@ ActionController::Routing::Routes.draw do |map|
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
 
-   map.connect ':controller/:action/:id'
-   map.connect ':controller/:action/:id.:format'
+  # map.connect ':controller/:action/:id'
+  # map.connect ':controller/:action/:id.:format'
 end
