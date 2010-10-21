@@ -31,6 +31,7 @@ class InvoicesController < ApplicationController
   # GET /invoices/new
   # GET /invoices/new.xml
   def new
+    @users = User.find(:all)
     @invoice = Invoice.new
 
     respond_to do |format|
@@ -41,6 +42,7 @@ class InvoicesController < ApplicationController
 
   # GET /invoices/1/edit
   def edit
+    @users = User.find(:all)
     @invoice = Invoice.find(params[:id])
   end
 

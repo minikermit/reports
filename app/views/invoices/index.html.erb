@@ -42,13 +42,10 @@
       <th>Name</th>
       <th>Counterparty/Account</th>
       <th>Amount</th>
+      <th>Type</th>
       <th>Booked on</th>
     </tr>
   </thead>
-
-  <!--tfoot>
-    <tr> This is the footer </tr>
-  </tfoot-->
 
   <tbody>
   <% @invoices.each do |invoice| %>
@@ -57,6 +54,7 @@
     <td><%=h invoice.name %></td>
     <td><%=h invoice.counterparty %> / <%=h invoice.account %></td>
     <td><%=h number_to_currency(invoice.amount) %></td>
+    <td><%=h invoice.type_name %></td>    
     <td><%=h invoice.booked_on %></td>
     <td><%= link_to 'Show', invoice %></td>
     <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
@@ -64,6 +62,11 @@
   </tr>
   <% end %>
   </tbody>
+
+  <!--tfoot>
+    <tr> latest invoices </tr>
+  </tfoot-->
+
 </table>
 
 <br />
@@ -75,6 +78,6 @@
     <%= will_paginate @invoices, :container => false %>
 </div>
 
-<p><%= link_to 'New invoice', new_invoice_path %> | <%= link_to 'Compute accruals', new_invoice_path %></p>
+<p><%= link_to 'New invoice', new_invoice_path %> | <%= link_to 'Compute accruals', invoices_path %> | <%= link_to 'Compute depreciation', invoices_path %></p>
 
 </div><!--/#invoices-->    

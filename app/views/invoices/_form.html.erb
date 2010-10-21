@@ -2,6 +2,12 @@
   <%= f.error_messages %>
 
   <p>
+    <%= f.label :type_id %><br />
+    <%= f.collection_select(:type_id, Invoice.type_id_name_options, :first, :last, :class => 'select') %>
+  </p><br />  
+
+
+  <p>
     <%= f.label :identification %> - <%= f.label :name %><br />
     <%= f.text_field :identification, :size => '7' %> - <%= f.text_field :name, :size => '40' %>
   </p>
@@ -29,10 +35,6 @@
   <p>
     <%= f.label :balance_sheet_accrual_account %> & <%= f.label :profit_and_loss_accrual_account %><br />
     <%= f.text_field :balance_sheet_accrual_account, :size => '19' %> & <%= f.text_field :profit_and_loss_accrual_account, :size => '19' %>
-  </p>
-  <p>
-    <%= f.label :type_id %><br />
-    <%= f.text_field :type_id %>
   </p>
   <p>
     <%= f.label :user_id %><br />
