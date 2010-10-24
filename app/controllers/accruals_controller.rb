@@ -92,7 +92,7 @@ class AccrualsController < ApplicationController
     if [ 'new', 'edit' ].include? action_name
       'accruals'
     else
-      'tasklists'
+      'accruals'
     end
   end
 

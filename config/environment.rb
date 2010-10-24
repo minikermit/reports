@@ -27,6 +27,7 @@ Rails::Initializer.run do |config|
   config.gem "acts_as_tree"
   config.gem "fastercsv"
   config.gem "comma"
+  config.gem "tiny_mce"
 
   # config.gem "ruby-odbc"
   # config.gem "activerecord-sqlserver-adapter", :version => '2.3.8'      #only activate for production<

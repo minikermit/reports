@@ -1,5 +1,7 @@
 class InvoicesController < ApplicationController
 
+  layout :choose_layout
+
 #TODO ADD Duplicate method (using clone)
 #TODO ADD Compute accruals method
 #TODO ADD Compute depreciation method
@@ -89,4 +91,15 @@ class InvoicesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+
+  def choose_layout
+    if [ 'new', 'edit' ].include? action_name
+      'accruals'
+    else
+      'accruals'
+    end
+  end
+
 end

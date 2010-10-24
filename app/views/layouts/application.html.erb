@@ -229,8 +229,8 @@
     <%= yield %>
 
 <!-- This is the javascript part -->
- <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js",:cache => true %>
- <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js",:cache => true %>
+ <%= javascript_include_tag "jquery-1.4.3.min.js", :cache => true %>
+ <%= javascript_include_tag "jquery-ui-1.8.5.custom.min.js", :cache => true %>
  <%= javascript_include_tag 'application' %>
  <%= javascript_tag "var AUTH_TOKEN =  #{form_authenticity_token.inspect};" if protect_against_forgery? %>
  <%= javascript_include_tag 'script' %>

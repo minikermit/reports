@@ -9,11 +9,10 @@ class Accrual < ActiveRecord::Base
 
 
   # creates hash for nice names in view
-  TYPE_NAMES = { 1 => 'Accruals against invoice +',
-                     2 => 'Accruals against budget -',
-                     3 => 'Dissolution of accruals +',
-                     4 => 'Building of reserves -',
-                     5 => 'Other'}
+  TYPE_NAMES = { 1 => 'Activation of invoice -',
+                     2 => 'Depreciation of assets +',
+                     3 => 'Correction of depreciation',
+                     4 => 'Other'}
 
   def type_name
     TYPE_NAMES[self.type_id]

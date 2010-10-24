@@ -1,7 +1,43 @@
-<h1>Listing depreciations</h1>
+<div id="selectnews">
+ <div id="selection">
+  <% form_for @search do |f| %>
 
-<table>
-  <tr>
+    <h2>Choose your search criteria</h2>
+        <!--
+            Setting all the checkbox names to "source[] helps us build the array on submit"
+            We're also adding the RSS feed url to the checkbox value so we can save it in the array values
+        -->
+  <ul>
+    <li> <%= f.collection_select :type_id_equals, Depreciation.type_id_name_options, :first, :last,  {:include_blank => 'All'}, {:selected => 'All' } %>
+    </li>
+    <li> <%= f.label :name_like, "Name " %> </li>
+    <li> <%= f.text_field :name_like, :class => 'text' %></li>
+    <li> <%= f.label :debit_account_like, "Debit Account" %> </li>
+    <li> <%= f.text_field :debit_account_like, :class => 'text' %></li>
+    <li> <%= f.label :credit_account_like, "Credit Account" %> </li>
+    <li> <%= f.text_field :credit_account_like, :class => 'text' %></li>
+  </ul>
+
+  <!-- Setting the submit name to "btn" -->
+  <%= f.submit "Search" %>
+  <% end %>
+   </div>
+</div><!--/#selectnews-->
+
+<p id="getform"><a href="#selection">Search</a></p>
+
+<div id = "Depreciations">
+
+<p>Sort by  <%= order @search, :by => :name %> | <%= order @search, :by => :event_date %> | <%= order @search, :by => :currency %> </p>
+
+<br />
+
+<table summary="List of all depreciations" width=98% >
+
+  <caption>Depreciations</caption>
+
+  <thead>
+   <tr>
     <th>Type</th>
     <th>Name</th>
     <th>Currency</th>
@@ -11,10 +47,18 @@
     <th>Debit account</th>
     <th>Credit account</th>
     <th>Comments</th>
-  </tr>
+   </tr>
+  </thead>
 
-<% @depreciations.each do |depreciation| %>
-  <tr>
+  <!--tfoot>
+    <tr> This is the footer </tr>
+  </tfoot-->
+
+
+  <tbody>
+
+   <% @depreciations.each do |depreciation| %>
+   <tr>
     <td><%=h depreciation.type_id %></td>
     <td><%=h depreciation.name %></td>
     <td><%=h depreciation.currency %></td>
@@ -27,10 +71,20 @@
     <td><%= link_to 'Show', depreciation %></td>
     <td><%= link_to 'Edit', edit_depreciation_path(depreciation) %></td>
     <td><%= link_to 'Destroy', depreciation, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+   </tr>
+   <% end %>
+ </tbody>
 </table>
 
 <br />
 
-<%= link_to 'New depreciation', new_depreciation_path %>
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @depreciations %>
+  </div>
+    <%= will_paginate @depreciations, :container => false %>
+</div>
+
+<p><%= link_to 'New depreciation', new_depreciation_path %> | <%= link_to 'Invoices', invoices_path %> </p>
+
+</div><!--/#depreciations-->    

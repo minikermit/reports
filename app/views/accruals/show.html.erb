@@ -9,13 +9,8 @@
 </p>
 
 <p>
-  <b>Currency:</b>
-  <%=h @accrual.currency %>
-</p>
-
-<p>
   <b>Amount:</b>
-  <%=h @accrual.amount %>
+  <%=h @accrual.currency %> <%=h @accrual.amount %>
 </p>
 
 <p>
@@ -29,13 +24,8 @@
 </p>
 
 <p>
-  <b>Debit account:</b>
-  <%=h @accrual.debit_account %>
-</p>
-
-<p>
-  <b>Credit account:</b>
-  <%=h @accrual.credit_account %>
+  <b>Debit account:</b> <%=h @accrual.debit_account %> <span style="padding-left:20px">
+  <b>Credit account:</b> <%=h @accrual.credit_account %>
 </p>
 
 <p>

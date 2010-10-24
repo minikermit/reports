@@ -1,8 +1,12 @@
 class DepreciationsController < ApplicationController
+
+  layout :choose_layout
+
   # GET /depreciations
   # GET /depreciations.xml
   def index
-    @depreciations = Depreciation.all
+    @search = Depreciation.search(params[:search])
+    @depreciations = @search.all.paginate(:page => params[:page], :order => :event_date)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -80,4 +84,15 @@ class DepreciationsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  private
+
+  def choose_layout
+    if [ 'new', 'edit' ].include? action_name
+      'accruals'
+    else
+      'accruals'
+    end
+  end
+
 end
