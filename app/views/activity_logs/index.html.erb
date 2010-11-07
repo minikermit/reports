@@ -1,0 +1,32 @@
+<h1>Listing activity_logs</h1>
+
+<table>
+  <tr>
+    <th>Session</th>
+    <th>User</th>
+    <th>Browser</th>
+    <th>Ip address</th>
+    <th>Controller</th>
+    <th>Action</th>
+    <th>Request at</th>
+  </tr>
+
+<% @activity_logs.each do |activity_log| %>
+  <tr>
+    <td><%=h activity_log.session_id %></td>
+    <td><%=h activity_log.user_id %></td>
+    <td><%=h activity_log.browser %></td>
+    <td><%=h activity_log.ip_address %></td>
+    <td><%=h activity_log.controller %></td>
+    <td><%=h activity_log.action %></td>
+    <td><%=h activity_log.request_at %></td>
+    <td><%= link_to 'Show', activity_log %></td>
+    <td><%= link_to 'Edit', edit_activity_log_path(activity_log) %></td>
+    <td><%= link_to 'Destroy', activity_log, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New activity_log', new_activity_log_path %>

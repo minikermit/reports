@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  session_id: MyString
+  user_id: 1
+  browser: MyString
+  ip_address: MyString
+  controller: MyString
+  action: MyString
+  request_at: 2010-11-07 22:49:55
+
+two:
+  session_id: MyString
+  user_id: 1
+  browser: MyString
+  ip_address: MyString
+  controller: MyString
+  action: MyString
+  request_at: 2010-11-07 22:49:55

@@ -1,0 +1,38 @@
+<p>
+  <b>Session:</b>
+  <%=h @activity_log.session_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @activity_log.user_id %>
+</p>
+
+<p>
+  <b>Browser:</b>
+  <%=h @activity_log.browser %>
+</p>
+
+<p>
+  <b>Ip address:</b>
+  <%=h @activity_log.ip_address %>
+</p>
+
+<p>
+  <b>Controller:</b>
+  <%=h @activity_log.controller %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%=h @activity_log.action %>
+</p>
+
+<p>
+  <b>Request at:</b>
+  <%=h @activity_log.request_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_activity_log_path(@activity_log) %> |
+<%= link_to 'Back', activity_logs_path %>
