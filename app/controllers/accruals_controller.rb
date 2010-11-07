@@ -1,5 +1,7 @@
 class AccrualsController < ApplicationController
 
+  before_filter :add_log, :except => [:show, :index]
+
   layout :choose_layout
 
 

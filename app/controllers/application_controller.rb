@@ -13,9 +13,23 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   # Authlogic
-  helper :all
   helper_method :current_user_session, :current_user
   filter_parameter_logging :password, :password_confirmation
+
+  def add_log
+    #create new log
+    log = ActivityLog.new
+    # read data from request
+    log.session_id = request.session_options[ :id]
+    log.user_id = current_user.id
+    log.browser = request.env['HTTP_USER_AGENT']
+    log.ip_address = request.env['REMOTE_ADDR']
+    log.controller = controller_name
+    log.action = action_name
+    log.request_at = Time.now
+    # Save the log
+    log.save
+  end
 
    protected
      def set_locale

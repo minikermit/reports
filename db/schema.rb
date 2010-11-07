@@ -29,6 +29,9 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.datetime "updated_at"
   end
 
+  add_index "account_plans", ["account_type_id"], :name => "index_account_plans_on_account_type_id"
+  add_index "account_plans", ["parent_id"], :name => "index_account_plans_on_parent_id"
+
   create_table "accruals", :force => true do |t|
     t.integer  "type_id"
     t.string   "name"
@@ -39,6 +42,21 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.string   "debit_account"
     t.string   "credit_account"
     t.text     "comments"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "accruals", ["period_id"], :name => "index_accruals_on_period_id"
+  add_index "accruals", ["type_id"], :name => "index_accruals_on_type_id"
+
+  create_table "activity_logs", :force => true do |t|
+    t.string   "session_id"
+    t.integer  "user_id"
+    t.string   "browser"
+    t.string   "ip_address"
+    t.string   "controller"
+    t.string   "action"
+    t.datetime "request_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -82,6 +100,9 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.integer "user_id"
   end
 
+  add_index "custom_menus", ["menu_id"], :name => "index_custom_menus_on_menu_id"
+  add_index "custom_menus", ["user_id"], :name => "index_custom_menus_on_user_id"
+
   create_table "depreciations", :force => true do |t|
     t.integer  "type_id"
     t.string   "name"
@@ -95,6 +116,9 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "depreciations", ["period_id"], :name => "index_depreciations_on_period_id"
+  add_index "depreciations", ["type_id"], :name => "index_depreciations_on_type_id"
 
   create_table "dim_dates", :force => true do |t|
     t.datetime "created_at"
@@ -141,6 +165,9 @@ ActiveRecord::Schema.define(:version => 201006221234568) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "invoices", ["type_id"], :name => "index_invoices_on_type_id"
+  add_index "invoices", ["user_id"], :name => "index_invoices_on_user_id"
 
   create_table "menus", :force => true do |t|
     t.integer  "parent_id"
